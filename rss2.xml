@@ -8,8 +8,42 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 16 Apr 2016 13:30:34 GMT</pubDate>
+    <pubDate>Sat, 16 Apr 2016 17:28:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2016年使用Github写博客</title>
+      <link>http://yoursite.com/write-blog-with-github/</link>
+      <guid>http://yoursite.com/write-blog-with-github/</guid>
+      <pubDate>Sat, 16 Apr 2016 16:27:03 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;why&quot;&gt;&lt;a href=&quot;#why&quot; class=&quot;headerlink&quot; title=&quot;why&quot;&gt;&lt;/a&gt;why&lt;/h1&gt;&lt;p&gt;本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。&lt;/p&gt;
+&lt;p&gt;但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用…&lt;/p&gt;
+&lt;p&gt;鉴于最近github打开的速度异常快，所以决定开始使用github作为载体，继续记录代码和无聊的生活。&lt;/p&gt;
+&lt;h1 id=&quot;搭建过程&quot;&gt;&lt;a href=&quot;#搭建过程&quot; class=&quot;headerlink&quot; title=&quot;搭建过程&quot;&gt;&lt;/a&gt;搭建过程&lt;/h1&gt;&lt;p&gt;工具原料采用hexo，网上教程很多，碰到不少坑，以下简单总结下遇到的几个&lt;/p&gt;
+&lt;h2 id=&quot;1-根本安装不了hexo啊&quot;&gt;&lt;a href=&quot;#1-根本安装不了hexo啊&quot; class=&quot;headerlink&quot; title=&quot;1.根本安装不了hexo啊&quot;&gt;&lt;/a&gt;1.根本安装不了hexo啊&lt;/h2&gt;&lt;p&gt;大部分的教程第一步都是安装nodejs然后安装hexo&lt;br&gt;安装命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;但是考虑局域网的情况这个根本不好使&lt;br&gt;所以需要先安装淘宝的cnpm作为替代&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;h1 id=&quot;why&quot;&gt;&lt;a href=&quot;#why&quot; class=&quot;headerlink&quot; title=&quot;why&quot;&gt;&lt;/a&gt;why&lt;/h1&gt;&lt;p&gt;本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。&lt;/p&gt;
+&lt;p&gt;但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用…&lt;/p&gt;
+&lt;p&gt;鉴于最近github打开的速度异常快，所以决定开始使用github作为载体，继续记录代码和无聊的生活。&lt;/p&gt;
+&lt;h1 id=&quot;搭建过程&quot;&gt;&lt;a href=&quot;#搭建过程&quot; class=&quot;headerlink&quot; title=&quot;搭建过程&quot;&gt;&lt;/a&gt;搭建过程&lt;/h1&gt;&lt;p&gt;工具原料采用hexo，网上教程很多，碰到不少坑，以下简单总结下遇到的几个&lt;/p&gt;
+&lt;h2 id=&quot;1-根本安装不了hexo啊&quot;&gt;&lt;a href=&quot;#1-根本安装不了hexo啊&quot; class=&quot;headerlink&quot; title=&quot;1.根本安装不了hexo啊&quot;&gt;&lt;/a&gt;1.根本安装不了hexo啊&lt;/h2&gt;&lt;p&gt;大部分的教程第一步都是安装nodejs然后安装hexo&lt;br&gt;安装命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;但是考虑局域网的情况这个根本不好使&lt;br&gt;所以需要先安装淘宝的cnpm作为替代&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cnpm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样可以成功全局安装hexo&lt;/p&gt;
+&lt;h2 id=&quot;2-ERROR-Deployer-not-found-github-or-git&quot;&gt;&lt;a href=&quot;#2-ERROR-Deployer-not-found-github-or-git&quot; class=&quot;headerlink&quot; title=&quot;2.ERROR Deployer not found: github or git&quot;&gt;&lt;/a&gt;2.ERROR Deployer not found: github or git&lt;/h2&gt;&lt;p&gt;看了好几个教程写的deploy的配置，写的千奇百怪&lt;br&gt;我的hexo版本是3.2.0,，正确的配置是&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: https://github.com/cloudroc/cloudroc.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  message: a little wroks&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;同时需要安装hexo git插件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样正常运行 hexo deploy就可以部署到git了&lt;/p&gt;
+&lt;h2 id=&quot;3-从wrodpress博客导入hexo&quot;&gt;&lt;a href=&quot;#3-从wrodpress博客导入hexo&quot; class=&quot;headerlink&quot; title=&quot;3.从wrodpress博客导入hexo&quot;&gt;&lt;/a&gt;3.从wrodpress博客导入hexo&lt;/h2&gt;&lt;p&gt;请参考这篇文章 &lt;a href=&quot;http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/&lt;/a&gt;&lt;br&gt;写的比较详细，一步步来是可以从wordpress导入hexo的，&lt;/p&gt;
+&lt;p&gt;hexo-migrator-wordpress这个插件非常强大，我遇到的问题是因为我的wordpress文章标题都是汉字，插件导过来的时候有的比较简单给翻译为英文了，有的无法翻译就变得文件名超长类似uuid的样子…&lt;/p&gt;
+&lt;p&gt;所以需要自己再编辑一下文件名，把之前写的文章标题都取个英文名字，这个过程很有趣，顺便回顾了一下这几年的经历，顺便附一张图&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f2z1khtacej20bi0m8q5x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/write-blog-with-github/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>jfinal集成原生mybatis</title>
@@ -606,32 +640,6 @@ if __name__ == &quot;__main__&quot;:
 </content:encoded>
       
       <comments>http://yoursite.com/fried-yogurt/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>宽窄巷子</title>
-      <link>http://yoursite.com/narrow-and-wide/</link>
-      <guid>http://yoursite.com/narrow-and-wide/</guid>
-      <pubDate>Sun, 20 Sep 2015 12:58:16 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近烟又抽多了，没有戒断的征兆。&lt;/p&gt;
-&lt;p&gt;来了趟成都。&lt;/p&gt;
-&lt;p&gt;趁周六他们都去参加婚礼，所以取消加班。正大光明的起身出去转了一遭。本来想去武侯祠，听了别人的建议就去了趟宽窄巷子。照例自己去的，所以此行比较无聊。买了天价的小吃（10元3个的春卷）还有一杯冰米酒，逛
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;最近烟又抽多了，没有戒断的征兆。&lt;/p&gt;
-&lt;p&gt;来了趟成都。&lt;/p&gt;
-&lt;p&gt;趁周六他们都去参加婚礼，所以取消加班。正大光明的起身出去转了一遭。本来想去武侯祠，听了别人的建议就去了趟宽窄巷子。照例自己去的，所以此行比较无聊。买了天价的小吃（10元3个的春卷）还有一杯冰米酒，逛了一圈。因为地方比较小，所以又去了附近的人民公园，里面矗立着一个辛亥革命的纪念碑。&lt;/p&gt;
-&lt;p&gt;最后买了两个鲜无花果，觉得还是晒干的更喜欢一些。&lt;/p&gt;
-&lt;p&gt;本来成都是个吃货的天堂，不过最近没有食欲，加上真的比较辣，吃的不多。&lt;/p&gt;
-&lt;p&gt;还好宿舍可以自己做饭，能吃点自己喜欢的挂面+荷包蛋。&lt;/p&gt;
-&lt;p&gt;晚上尝试做了酱油炒饭，因为中午外面的米饭做的不错，所以味道还是不错的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503gw1ew97so15h0j20k028a7ji.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/narrow-and-wide/#disqus_thread</comments>
     </item>
     
   </channel>

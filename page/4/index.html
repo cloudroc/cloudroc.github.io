@@ -261,6 +261,145 @@
             
               
                 
+                <a class="post-title-link" href="/magnet-thunder-urs/" itemprop="url">
+                  磁力链接magnet:?xt=urn:btih:与迅雷thunder://地址进行转换
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-10-19T11:05:24+08:00" content="2015-10-19">
+              2015-10-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/magnet-thunder-urs/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="magnet-thunder-urs/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在研究DHT，发现现在很多bt搜索的网站在放上磁力链接和种子的同时，又加上了一个thunder的地址。</p>
+<p>磁力链接的获取好说，用海外主机伪装DHT节点使劲爬就可以，但是这个迅雷地址怎么来的，很无解啊…</p>
+<p>于是搜索了好久，才发现这个迅雷地址是用磁力地址加密来的，直接看代码吧：</p>
+<pre class="c-sharp">
+# -*- coding: utf-8 -*-
+import base64
+
+def thunderEncode(url):
+    return ''.join(['thunder://',base64.b64encode(''.join(['AA',url,'ZZ']))])
+
+# using example
+if __name__ == "__main__":
+    tUrl = thunderEncode("magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173")
+    print (tUrl)
+</pre>
+
+<p>AA ZZ怎来的，我也不知道，但是地址是对的，不信你试试</p>
+<p>数据sample：</p>
+<p>磁力链接 ：magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173</p>
+<p>迅雷链接：thunder://QUFtYWduZXQ6P3h0PXVybjpidGloOmQ5ZjQ4ZjRkZGNjY2RkMTRkMjdjNzU5Nzc0NzJlYWM5MDU4NDcxNzNaWg==</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/fried-yogurt/" itemprop="url">
                   炒酸奶
                 </a>
@@ -882,141 +1021,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/buy-it-if-you-like-it/" itemprop="url">
-                  喜欢就买
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-08-11T20:29:15+08:00" content="2015-08-11">
-              2015-08-11
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/buy-it-if-you-like-it/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="buy-it-if-you-like-it/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近买了一个日版七代的kindle paper white，之前一直使用安卓上面的kindle应用，曾经带来不少快乐，但是后来总是闪退，刷机之后也忘记了安装。</p>
-<p>这次直接买了一个pw3，果然不同凡响，阅读兴趣大增，用kindle看完了一直磨磨唧唧没读完的《永恒的终结》，对里面的因果链逻辑不做分析，就记住里面的口头禅“伟大的时间之神啊”。</p>
-<p>今年真正做到了“喜欢就买，不行就分，多喝点水”的处事规则，下一步就差戒烟了。</p>
-<p><img src="http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1euyxm2jqnoj20k00qowfk.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1euyxm35qwqj20k00qoab9.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1euyxm3t4c0j20k00qodgr.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1062,7 +1066,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">100</span>
+              <span class="site-state-item-count">101</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1070,7 +1074,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">26</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -1079,7 +1083,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-count">67</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
