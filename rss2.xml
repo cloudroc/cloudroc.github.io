@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>凤凰山笔记</title>
+    <link>http://yoursite.com/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
+    <pubDate>Sat, 16 Apr 2016 13:30:34 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>jfinal集成原生mybatis</title>
+      <link>http://yoursite.com/jfinal-merge-mybatis/</link>
+      <guid>http://yoursite.com/jfinal-merge-mybatis/</guid>
+      <pubDate>Thu, 14 Apr 2016 08:43:01 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一直想做jfinal和原生mybatis的集成&lt;br&gt;jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。&lt;/p&gt;
+&lt;p&gt;虽然很忙，但是做了两天终于有了这个简单的集成：&lt;br&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/honta&quot;&gt;https://github.com/cloudroc/honta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;做了这么几个改造：&lt;/p&gt;
+&lt;p&gt;1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成&lt;/p&gt;
+&lt;p&gt;2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close&lt;/p&gt;
+&lt;p&gt;使用示例：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;User user = SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.selectOne(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.selectByUserName&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;, &lt;span class=&quot;string&quot;&gt;&quot;admin&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;一直想做jfinal和原生mybatis的集成&lt;br&gt;jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。&lt;/p&gt;
+&lt;p&gt;虽然很忙，但是做了两天终于有了这个简单的集成：&lt;br&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/honta&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/honta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;做了这么几个改造：&lt;/p&gt;
+&lt;p&gt;1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成&lt;/p&gt;
+&lt;p&gt;2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close&lt;/p&gt;
+&lt;p&gt;使用示例：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;User user = SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.selectOne(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.selectByUserName&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;, &lt;span class=&quot;string&quot;&gt;&quot;admin&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;使用示例&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//测试失败提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MyTx.tx(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; IAtom()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; SQLException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//插入&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        user.setUsername(&lt;span class=&quot;string&quot;&gt;&quot;FAIL&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .insert(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.insert&quot;&lt;/span&gt;,user);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//失败情况&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .insert(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.insertXXXX&quot;&lt;/span&gt;,user);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;4.做了基本测试，模拟并发的情况性能还是比较喜人的&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/7d6b7503jw1f2wbufjs41j20z508bta6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/jfinal-merge-mybatis/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Moon清华大学演讲全文</title>
+      <link>http://yoursite.com/moon-speach-in-Tsinghua/</link>
+      <guid>http://yoursite.com/moon-speach-in-Tsinghua/</guid>
+      <pubDate>Wed, 06 Apr 2016 11:49:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Moon（张宰怙）不必多说，看过玩过魔兽的都知道，最近去清华大学演讲了，以下是转载微博全（chang）文（tu）&lt;/p&gt;
+&lt;p&gt;向这位把所有青春献给电竞，又“不忘初心”的韩国人致敬，虽然近期不会买他店里的鼠标…&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;Moon（张宰怙）不必多说，看过玩过魔兽的都知道，最近去清华大学演讲了，以下是转载微博全（chang）文（tu）&lt;/p&gt;
+&lt;p&gt;向这位把所有青春献给电竞，又“不忘初心”的韩国人致敬，虽然近期不会买他店里的鼠标…&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006ls8l1jw1f2ii33oa2aj30c81mfdsa.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/moon-speach-in-Tsinghua/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>愚人节锻炼下脖子吧</title>
+      <link>http://yoursite.com/2016-april-fools-day/</link>
+      <guid>http://yoursite.com/2016-april-fools-day/</guid>
+      <pubDate>Fri, 01 Apr 2016 06:15:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;跟风下开源中国，愚人节锻炼下脖子吧&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1f2h6gomg8wj21b60q27fh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;原理：&lt;br&gt;在主题style.css里面加入
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;跟风下开源中国，愚人节锻炼下脖子吧&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1f2h6gomg8wj21b60q27fh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;原理：&lt;br&gt;在主题style.css里面加入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;body&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    -webkit-transform: rotate(3deg);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    -moz-transform: rotate(3deg);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    -o-transform: rotate(3deg);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	padding-top:20px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;只有webkit内核浏览器适用&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/2016-april-fools-day/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>你永远赶不上诺兰了</title>
+      <link>http://yoursite.com/batman-vs-superman/</link>
+      <guid>http://yoursite.com/batman-vs-superman/</guid>
+      <pubDate>Sun, 27 Mar 2016 16:19:29 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;怀着对老爷无比信仰之情去看了蝙蝠侠大战超人，是巨幕，但是觉得这票不值…&lt;/p&gt;
+&lt;p&gt;1.剧情乱七八糟，一人一线讲的都不清楚，要不是死忠粉肯定不知道你在描述什么&lt;br&gt;2.这明明就是超人2，为嘛起个名字叫《蝙蝠侠大战超人》，以为你是对黑暗骑士归来动画版的致敬，结果老爷就是个
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;怀着对老爷无比信仰之情去看了蝙蝠侠大战超人，是巨幕，但是觉得这票不值…&lt;/p&gt;
+&lt;p&gt;1.剧情乱七八糟，一人一线讲的都不清楚，要不是死忠粉肯定不知道你在描述什么&lt;br&gt;2.这明明就是超人2，为嘛起个名字叫《蝙蝠侠大战超人》，以为你是对黑暗骑士归来动画版的致敬，结果老爷就是个打酱油的&lt;br&gt;3.这个版本的卢瑟怎么成了蛇精病，你确定不是扮演的小丑？&lt;br&gt;4.老爷穿越那个梗，难道就是为了拍预告片拉票房吗？&lt;br&gt;5.虽然片名叫蝙蝠侠大战超人，但是还是讲的是大战外星人，真的是无语&lt;br&gt;6.老爷的扮演好无力，说的话做的事莫名其妙，形象上很像吴秀波这个雅痞。从宿命感、逻辑性上不如黑暗骑士归来动画版，从人物塑造更加渣的不行了，远不如诺兰版的蝙蝠侠3部曲。就连旁边坐的素不相识妹子都说虽然很帅，但是不如上个版本帅（诺兰版）&lt;/p&gt;
+&lt;p&gt;搜了下这个导演叫扎克，扎克这辈子是赶不上诺兰了，我估计再拍就成了变形金刚这样的烂片了。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/batman-vs-superman/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>纸牌屋</title>
+      <link>http://yoursite.com/house-of-cards/</link>
+      <guid>http://yoursite.com/house-of-cards/</guid>
+      <pubDate>Sun, 13 Mar 2016 14:14:50 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Netflix很给力，一次性放出纸牌屋第四季。&lt;/p&gt;
+&lt;p&gt;下木大爷这季很惨，基本所有人都想和他背道而驰，除了Doug，还被枪击了一次差点直接剧终。&lt;br&gt;第七集的开头看的很心酸，片头开始的时候，下木大爷刚刚做完手术独自在洗手间吃着一堆药片，大爷的实力派竞争对手Conwa
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;Netflix很给力，一次性放出纸牌屋第四季。&lt;/p&gt;
+&lt;p&gt;下木大爷这季很惨，基本所有人都想和他背道而驰，除了Doug，还被枪击了一次差点直接剧终。&lt;br&gt;第七集的开头看的很心酸，片头开始的时候，下木大爷刚刚做完手术独自在洗手间吃着一堆药片，大爷的实力派竞争对手Conway却在洗手间和自己的娇妻啪啪啪…&lt;/p&gt;
+&lt;p&gt;想起星际穿越里面的老科学家经常吟的一首诗：&lt;br&gt;Do not go gentle into that good night,&lt;br&gt;Old age should burn and rave at close of day;&lt;br&gt;Rage, rage against the dying of the light.&lt;/p&gt;
+&lt;p&gt;…….&lt;/p&gt;
+&lt;p&gt;最近看纸牌屋原著，虽然主角也叫Francis，缩写也是FU，但是描写的是英国政坛。翻译的还好就是人名太难记了。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/house-of-cards/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>豆瓣FM简约版 Chrome插件 v1.0.2</title>
+      <link>http://yoursite.com/douban-simple-chrome-plugin/</link>
+      <guid>http://yoursite.com/douban-simple-chrome-plugin/</guid>
+      <pubDate>Fri, 04 Mar 2016 05:19:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
+&lt;p&gt;所以改进了一下增加了设置高度、宽度、距左、距上的像素设置选项，这样即使一开始显示不好，只要慢慢调整总能达到一个黄金比例。&lt;/p&gt;
+&lt;p&gt;选项界面：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f1krbtv6snj20c307uq3f.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;（简单粗糙，不喜勿喷…）&lt;/p&gt;
+&lt;p&gt;为了保持简约风格没有引用jq这种类库，所以写了很多document.getElementById之类的语句，才发现写起来这么费劲，单词字母这么多很容易拼写错误，这才发现最早发明$这个函数的那个人是那么伟大，时间就是美元啊。&lt;/p&gt;
+&lt;p&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/douban-simple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/douban-simple&lt;/a&gt;&lt;br&gt;插件网盘下载：&lt;a href=&quot;http://pan.baidu.com/s/1mhpsUr2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhpsUr2&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/douban-simple-chrome-plugin/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>批量删除新浪微博</title>
+      <link>http://yoursite.com/batch-delete-weibo/</link>
+      <guid>http://yoursite.com/batch-delete-weibo/</guid>
+      <pubDate>Thu, 25 Feb 2016 07:56:43 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：&lt;a href=&quot;http://weibo.com/lnk5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com/lnk5&lt;/a&gt;&lt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：&lt;a href=&quot;http://weibo.com/lnk5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com/lnk5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。&lt;/p&gt;
+&lt;p&gt;我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。&lt;/p&gt;
+&lt;p&gt;这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在console里面寻找元素的困难性。针对这个开始想到的是写个chrome插件在background里面引入，后来发现直接在console里面append元素就可以实现，有了jquery类库，其他都不是问题了。&lt;/p&gt;
+&lt;p&gt;以下是代码：&lt;/p&gt;
+&lt;p&gt;（1）引入jquery类库，这段必须单独执行&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;var fileref=document.createElement(‘script’)&lt;/p&gt;
+&lt;p&gt;fileref.setAttribute(“type”,”text/javascript”)&lt;/p&gt;
+&lt;p&gt;fileref.setAttribute(“src”, ‘&lt;a href=&quot;http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js&lt;/a&gt;‘)&lt;/p&gt;
+&lt;p&gt;document.getElementsByTagName(“head”)[0].appendChild(fileref);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（2）在页内寻找“删除”按钮模拟点击之后模拟点击“确定”&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;var list = $(“a[title=’删除此条微博’]”);&lt;/p&gt;
+&lt;p&gt;for(var i =0;i&amp;lt;list.length;i++){&lt;/p&gt;
+&lt;p&gt;list[i].click();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;var dels = $(“a[node-type=’ok’]”);&lt;/p&gt;
+&lt;p&gt;for(var i =0 ;i&amp;lt;dels.length;i++){&lt;/p&gt;
+&lt;p&gt;dels[i].click();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（3）微博是分页的所以还需要频繁的刷新从新执行脚本，但是chrome的console支持上下键回滚脚本，但是也比一条条删除省力了&lt;/p&gt;
+&lt;p&gt;同样的你可以利用console实现微博批量点赞，这个也很简单的。&lt;/p&gt;
+&lt;p&gt;那么问题来了…. 请不要问了。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/batch-delete-weibo/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>第一个selenium+python脚本</title>
+      <link>http://yoursite.com/first-selenium-python/</link>
+      <guid>http://yoursite.com/first-selenium-python/</guid>
+      <pubDate>Fri, 19 Feb 2016 08:54:34 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;selenium是个自动化测试框架，至于我一开始为什么会知道，然后接触了一些已经完全忘记了…&lt;/p&gt;
+&lt;p&gt;之前接触的都是java的，看到现在大部分人都使用python编写，估计是python语法简单运行方便吧。所以也想试试，顺便借助这种实际运用学习下python也好。&lt;/
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;selenium是个自动化测试框架，至于我一开始为什么会知道，然后接触了一些已经完全忘记了…&lt;/p&gt;
+&lt;p&gt;之前接触的都是java的，看到现在大部分人都使用python编写，估计是python语法简单运行方便吧。所以也想试试，顺便借助这种实际运用学习下python也好。&lt;/p&gt;
+&lt;p&gt;这里只以chrome为例子，我也不用这个来写测试用例…&lt;/p&gt;
+&lt;p&gt;1、安装python配置环境变量什么的就不说了&lt;br&gt;2、安装pip，首先下载pip的压缩包，地址&lt;a href=&quot;https://pypi.python.org/pypi/pip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pypi.python.org/pypi/pip&lt;/a&gt;&lt;br&gt;随便解压到一个地方，然后进入目录运行命令：python setup.py install&lt;br&gt;然后cd到 C:\Python27\Scripts（这是我的安装目录），运行命令： pip install -U selenium，如果你联网了的话很快就能安装完毕&lt;br&gt;pip还是很好用的&lt;br&gt;3、下载chromedriver，地址：&lt;a href=&quot;https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program&lt;/a&gt; Files\Google\Chrome\Application&lt;/p&gt;
+&lt;p&gt;4、最后编写运行python程序：&lt;/p&gt;
+&lt;pre name=&quot;code&quot; class=&quot;c-sharp&quot;&gt;
+# -*- coding:utf-8 -*-
+
+from selenium import  webdriver
+
+driver = webdriver.Chrome()
+
+driver.get(&quot;http://www.2345.com/?k718881649&quot;)
+
+print driver.title
+
+driver.quit()
+&lt;/pre&gt;
+
+&lt;p&gt;5、这样就完了吗？其实还有一个坑，我第一次运行出现了错误：&lt;br&gt;    os.path.basename(self.path), self.start_error_message)&lt;br&gt;selenium.common.exceptions.WebDriverException:&lt;strong&gt; Message: ‘chromedriver’ executable needs to be in PATH.&lt;/strong&gt; Please see &lt;a href=&quot;https://sites.google.com/a/chromium.org/chromedriver/home&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://sites.google.com/a/chromium.org/chromedriver/home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exception AttributeError: “‘Service’ object has no attribute ‘process’” in &lt;bound method=&quot;&quot; service.__del__=&quot;&quot; of=&quot;&quot; &lt;selenium.webdriver.chrome.service.service=&quot;&quot; object=&quot;&quot; at=&quot;&quot; 0x00000000029ea588=&quot;&quot;&gt;&amp;gt; ignored&lt;/bound&gt;&lt;/p&gt;
+&lt;p&gt;Process finished with exit code 1&lt;/p&gt;
+&lt;p&gt;注意加粗部分，如果想顺利运行，还需要把C:\Program Files\Google\Chrome\Application这个路径，加到环境变量path里面，做到在cmd运行chromedriver不报错即可&lt;/p&gt;
+&lt;p&gt;6、如果顺利，程序运行后会打开chrome浏览器访问这个网址&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/first-selenium-python/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>又掉海里了</title>
+      <link>http://yoursite.com/san-pang/</link>
+      <guid>http://yoursite.com/san-pang/</guid>
+      <pubDate>Wed, 10 Feb 2016 08:18:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;除夕那天朝鲜又试验火箭来着，不过有一颗又掉海里了。&lt;/p&gt;
+&lt;p&gt;去年是漫长的一年，蹉跎中没做成几件事，年关无事看了几本书，唯一读完的是乔治•奥威尔的《动物农场》。这部书可能没有另外一部《1984》出名，但是类型是一样的，主旨在于讽刺专制统治的虚伪和丑陋——在追求平等与自由
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;除夕那天朝鲜又试验火箭来着，不过有一颗又掉海里了。&lt;/p&gt;
+&lt;p&gt;去年是漫长的一年，蹉跎中没做成几件事，年关无事看了几本书，唯一读完的是乔治•奥威尔的《动物农场》。这部书可能没有另外一部《1984》出名，但是类型是一样的，主旨在于讽刺专制统治的虚伪和丑陋——在追求平等与自由的旗号下谋求的只是“有些人更加平等”。&lt;/p&gt;
+&lt;p&gt;故事的结尾很有意思，就是人和猪和好了并一起打起了扑克，这里的猪映射的是苏联的统治阶级，人是资本主义剥削阶级。这个结局很有寓言性，和现在的结果差不多，一个解体了，一个变成了有特色的，其实都是和别人和好了，虽然继续坚持特权，但是还是想有钱一起赚。只有一只还在坚持射火箭。&lt;/p&gt;
+&lt;p&gt;不过我坚信这种专制的土壤早晚都会消失的，比较看好facebook去年提出的千架无人机供全球50亿人上网的计划，这样即使紧急情况拔网线也不好使了吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f0uay411ngj20p10c177y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/san-pang/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>人物传记</title>
+      <link>http://yoursite.com/Biography/</link>
+      <guid>http://yoursite.com/Biography/</guid>
+      <pubDate>Thu, 14 Jan 2016 02:45:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;看完两本书《真实的汪精卫》《特斯拉自传》，kindle里面还放着一本《蒋介石传》，留在后面看。&lt;/p&gt;
+&lt;p&gt;这两位其实都是理想主义者，一生都为了实现自己理想努力。&lt;/p&gt;
+&lt;p&gt;最早对汪兆铭的印象是一本汪精卫大传，应该叫这个名字吧。就是初中语文老师给我们一人随机发一本书，
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;看完两本书《真实的汪精卫》《特斯拉自传》，kindle里面还放着一本《蒋介石传》，留在后面看。&lt;/p&gt;
+&lt;p&gt;这两位其实都是理想主义者，一生都为了实现自己理想努力。&lt;/p&gt;
+&lt;p&gt;最早对汪兆铭的印象是一本汪精卫大传，应该叫这个名字吧。就是初中语文老师给我们一人随机发一本书，让我们拿回去读，记得是个蓝色皮面。我从中间开始看的虽然没看完，但是印象比较深刻，因为尺度比较大。写山本五十六糜烂生活又写了戴笠和蒋介石称兄道弟互骂娘希匹，以及陈璧君在监狱中的生活，还有就是还都南京的时候要求何应钦务必炸掉汪精卫的坟墓…因为当时历史课讲的正好是这段所以印象略深，后来老师收回去了，所以没看完，后来想起来也挺遗憾。&lt;/p&gt;
+&lt;p&gt;看了这本真实的汪精卫，不想过多评论，因为某些需要终归要脸谱化一些人，但是就人品和德行来说，我觉得汪兆铭是个可以让每个时代的高官都无地自容的人。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…而汪精卫却提出“不做官，不做议员、不嫖、不赌、不纳妾、不吸鸦片”的“六不主义”…&lt;br&gt;至今台湾国名党，在召开重要会议之前必须朗读孙中山总理的遗言，而这个遗言其实是汪精卫所写，孙中山只是签个字而已，这个其实也算其对后世的深远影响了。&lt;br&gt;所谓“卖国贼汪精卫”，只是一个理想主义者的失败而已吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对特斯拉印象较深有两点，他自己说的可以进行精确的思想试验，就是说实际试验结果其实和他在头脑中思考的结果一致。另外一个就是他对未来的预测以及深刻思考，真的是神人，大概一百年前就能想到现在发展的大致情形。&lt;br&gt;里面有一个点子很赞，估计可以投入生产：抛弃现有的传统洗澡清洁方式，直接使用静电吸附进行自身清洁。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/Biography/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2016元旦</title>
+      <link>http://yoursite.com/2016-new-year/</link>
+      <guid>http://yoursite.com/2016-new-year/</guid>
+      <pubDate>Thu, 31 Dec 2015 16:11:44 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;2015年很失败！&lt;/p&gt;
+&lt;p&gt;不多BB，不然都是负能量，想到两首诗：&lt;/p&gt;
+&lt;p&gt;登幽州台歌&lt;br&gt;朝代：唐代&lt;br&gt;作者：陈子昂&lt;br&gt;原文：&lt;br&gt;前不见古人，后不见来者。&lt;br&gt;念天地之悠悠，独怆然而涕下。&lt;/p&gt;
+&lt;p&gt;登鹳雀楼&lt;br&gt;朝代：唐代&lt;br&gt;作者：
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;2015年很失败！&lt;/p&gt;
+&lt;p&gt;不多BB，不然都是负能量，想到两首诗：&lt;/p&gt;
+&lt;p&gt;登幽州台歌&lt;br&gt;朝代：唐代&lt;br&gt;作者：陈子昂&lt;br&gt;原文：&lt;br&gt;前不见古人，后不见来者。&lt;br&gt;念天地之悠悠，独怆然而涕下。&lt;/p&gt;
+&lt;p&gt;登鹳雀楼&lt;br&gt;朝代：唐代&lt;br&gt;作者：王之涣&lt;br&gt;原文：&lt;br&gt;白日依山尽，黄河入海流。&lt;br&gt;欲穷千里目，更上一层楼。&lt;/p&gt;
+&lt;p&gt;第一首翻译成白话应该是这样的：前面没有人，后面也没人，这世界好大呀，于是我就真的哭了。&lt;br&gt;第二首翻译成白话应该是这样的：太阳下山了，河流到海里去了。你想看得远一点，就给我爬高啊。&lt;/p&gt;
+&lt;p&gt;两首诗作为总结了，这是建博客以来最好的总结。&lt;/p&gt;
+&lt;p&gt;2016年新年快乐！&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/2016-new-year/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>phantomjs签到</title>
+      <link>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/</link>
+      <guid>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/</guid>
+      <pubDate>Fri, 25 Dec 2015 07:08:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近用积分换了一个2345的抱枕，皮面比较脏，不过放在办公司还好。&lt;/p&gt;
+&lt;p&gt;因为SAE收费，所以之前的SAE上的Python签到也不能运行了，所以只能想起来才会去2345签到一次，有点影响本来就很少的收入啦，haha.&lt;/p&gt;
+&lt;p&gt;看到微信可以绑定2345账号，并且
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近用积分换了一个2345的抱枕，皮面比较脏，不过放在办公司还好。&lt;/p&gt;
+&lt;p&gt;因为SAE收费，所以之前的SAE上的Python签到也不能运行了，所以只能想起来才会去2345签到一次，有点影响本来就很少的收入啦，haha.&lt;/p&gt;
+&lt;p&gt;看到微信可以绑定2345账号，并且登录和签到根本不需要验证码，抓了下url，大概格式如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://jifen.2345.com/m/guess.php?ctl=login&amp;amp;act=checkBind&amp;amp;openid=xxxxx&amp;amp;urlParam=xxxx&amp;amp;t=xxxx&amp;amp;s=xxxx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jifen.2345.com/m/guess.php?ctl=login&amp;amp;act=checkBind&amp;amp;openid=xxxxx&amp;amp;urlParam=xxxx&amp;amp;t=xxxx&amp;amp;s=xxxx&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;xxxx都是特定的内容，用于用户的验证，这样用户可以直接通过微信登录不需要用户名密码了&lt;/p&gt;
+&lt;p&gt;最近看到同事用phantomjs进行网页截图，很好很强大，简单研究了一下，想用它写个签到脚本。&lt;/p&gt;
+&lt;p&gt;于是有了下面的粗糙代码，写的不好。主要是phantomjs有自身的局限性，比如不能像java Python那样按照代码的顺序执行，而是像Javascript一样，是基于消息驱动的。代码的执行都是异步化的。所以有些痛苦，感觉用于自动化测试应该效果不很理想。&lt;/p&gt;
+&lt;p&gt;运行方式：./phantomjs 2345.js&lt;/p&gt;
+&lt;pre name=&quot;code&quot; class=&quot;c-sharp&quot;&gt;
+
+//设置输出编码
+phantom.outputEncoding = &#39;gb2312&#39;;
+
+var page ;
+
+//绑定微信号登录，防止验证码的问题
+var myurl = &quot;绑定2345微信后可从微信客户端获取&quot;;
+
+var shoujiurl = &quot;http://shouji.2345.com/index.php&quot;;
+
+var renderPage = function (url) {
+page = require(&#39;webpage&#39;).create();
+
+page.onConsoleMessage = function(msg, lineNum, sourceId) {
+  console.log(&#39;CONSOLE: &#39; + msg + &#39; (from line #&#39; + lineNum + &#39; in &quot;&#39; + sourceId + &#39;&quot;)&#39;);
+};
+
+page.onNavigationRequested = function(url, type, willNavigate, main) {
+    if (main &amp;&amp; url!=myurl &amp;&amp; url!=shoujiurl) {
+        myurl = url;
+        console.log(&quot;redirect caught&quot;)
+        page.close()
+        setTimeout(&#39;renderPage(myurl)&#39;,1); //Note the setTimeout here
+    }
+};
+
+page.open(url, function(status) {
+    if (status===&quot;success&quot;) {
+            console.log(&quot;The final url is :&quot;+myurl);
+
+            //pc推广
+            page.evaluate(function() {
+                var href= $(&quot;.aSignBtn&quot;).attr(&quot;href&quot;);
+                console.log(&quot;href = &quot;+href);
+
+                if($(&quot;.aSignBtn&quot;).attr(&quot;onclick&quot;)){
+                    $(&quot;.aSignBtn&quot;).attr(&quot;onclick&quot;,href);
+                    $(&quot;.aSignBtn&quot;).click();
+                }else{
+                    console.log(&quot;pc already checked&quot;);
+                }
+
+                console.log(&quot;pc checked...&quot;);
+            });
+
+            //手机推广
+            page.open(shoujiurl, function(status) {
+                    page.evaluate(function() {
+                        console.log($(&quot;.signBtn&quot;).html());
+                        $(&quot;.signBtn&quot;).click();
+
+                        console.log(&quot;shouji checked...&quot;);
+                    });
+            });
+    } else {
+            console.log(&quot;failed&quot;)
+            phantom.exit(1);
+    }
+});
+
+}
+
+renderPage(myurl);
+
+setTimeout(function(){
+    page.close;
+    page = require(&#39;webpage&#39;).create();
+
+    page.settings.userAgent = &#39;Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200&#39;;
+    //console.log(&#39;The default user agent is &#39; + page.settings.userAgent);
+
+    page.open(&quot;http://www.2345.com/?k718881649&quot;,function(status){
+        //page.render(&#39;index.png&#39;);
+        console.log(&quot;visit index page...&quot;);
+        phantom.exit(1);
+    });
+},15000);
+
+&lt;/pre&gt;</content:encoded>
+      
+      <comments>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>豆瓣radio简约版</title>
+      <link>http://yoursite.com/douban-simple/</link>
+      <guid>http://yoursite.com/douban-simple/</guid>
+      <pubDate>Sat, 19 Dec 2015 17:53:05 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一直用豆瓣FM，虽然推荐的音乐越来越不给力，但是习惯一旦养成真的不好改。&lt;/p&gt;
+&lt;p&gt;尝试用过很多chrome的豆瓣插件，各有各的新意，但是都用不惯，而且我只要关闭主浏览器窗口，插件也就跟着一起关闭了。&lt;/p&gt;
+&lt;p&gt;其实我的需求很简单，只要开个一个&lt;a href=&quot;ht
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;一直用豆瓣FM，虽然推荐的音乐越来越不给力，但是习惯一旦养成真的不好改。&lt;/p&gt;
+&lt;p&gt;尝试用过很多chrome的豆瓣插件，各有各的新意，但是都用不惯，而且我只要关闭主浏览器窗口，插件也就跟着一起关闭了。&lt;/p&gt;
+&lt;p&gt;其实我的需求很简单，只要开个一个&lt;a href=&quot;http://douban.fm/radio的小网页就好，和主浏览器窗口无关就好。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://douban.fm/radio的小网页就好，和主浏览器窗口无关就好。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;于是就有了这个简约版的插件，其实主代码就一句：&lt;br&gt; window.open (‘&lt;a href=&quot;http://douban.fm/radio&amp;#39;,&amp;#39;douban&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://douban.fm/radio&amp;#39;,&amp;#39;douban&lt;/a&gt;‘,&lt;br&gt;      ‘height=276,width=521,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no’);&lt;/p&gt;
+&lt;p&gt;但是实现了关闭主浏览器之后依旧保留小窗口的需求，感觉不错。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更正一下，应该用个iframe判断下加载的高度限定下窗口的大小，有空改吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1ez5hysb33aj20fs09440b.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;github地址：&lt;a href=&quot;https://github.com/cloudroc/douban-simple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/douban-simple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;图标很挫，后面换一下&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/douban-simple/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Google 发布 Angular 2 Beta</title>
+      <link>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/</link>
+      <guid>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/</guid>
+      <pubDate>Fri, 18 Dec 2015 07:50:21 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;详细介绍请看：&lt;a href=&quot;http://angularjs.blogspot.jp/2015/12/angular-2-beta.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;发行说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Angular 2 未来更新计划
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;详细介绍请看：&lt;a href=&quot;http://angularjs.blogspot.jp/2015/12/angular-2-beta.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;发行说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Angular 2 未来更新计划包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reducing Angular 2’s binary size for even more speed improvements.&lt;/li&gt;
+&lt;li&gt;Improving CLI functionality across the entire development process.&lt;/li&gt;
+&lt;li&gt;Creating a new API for the Component Router, with a focus on making it developer-friendly.&lt;/li&gt;
+&lt;li&gt;Providing more documentation for EcmaScript.&lt;/li&gt;
+&lt;li&gt;An architectural style guide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;以上只是新闻，凑字数…&lt;/p&gt;
+&lt;p&gt;最近晚上回去都会翻看《用AngularJS开发下一代Web应用》，虽然已经跟随我好久了，但是一直没看完，果然书非借不能读也。&lt;/p&gt;
+&lt;p&gt;索性重新开始读，并且尝试一种懒人学习方法：&lt;br&gt;不开电脑的情况下…&lt;br&gt;1、翻看小说一样看技术书籍，看见语法粗略用笔写一下单词，加深对标签或者函数的印象&lt;br&gt;2、看到书中代码,简单根据理解，想象运行效果，不懂得标记一下，继续往下看&lt;br&gt;3、基本都看完之后，翻阅示例源码逐个示例运行并与在书中的标记对比&lt;/p&gt;
+&lt;p&gt;以上，因为现有工作用不到，缺乏在实践中加深的过程。只是希望得到知识和见识的增长，估计效果不会很理想，但是跪在坚持…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>web抓包工具Betwixt</title>
+      <link>http://yoursite.com/Betwixt/</link>
+      <guid>http://yoursite.com/Betwixt/</guid>
+      <pubDate>Mon, 07 Dec 2015 07:02:20 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;如果你觉得chrome自带的network抓包工具很好很强大的话，那么这个工具让你可以在本机全局层面使用类似chrome devtools的界面来分析流量了&lt;/p&gt;
+&lt;p&gt;其实git里面写的很详细，git地址：&lt;a href=&quot;https://github.com/kdzw
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;如果你觉得chrome自带的network抓包工具很好很强大的话，那么这个工具让你可以在本机全局层面使用类似chrome devtools的界面来分析流量了&lt;/p&gt;
+&lt;p&gt;其实git里面写的很详细，git地址：&lt;a href=&quot;https://github.com/kdzwinel/betwixt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/kdzwinel/betwixt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;BTW,作者弄得那个动态图也很炫酷，一下就会被吸引住&lt;/p&gt;
+&lt;p&gt;简单说下：&lt;br&gt;1.下载源码&lt;br&gt;2.安装nodejs&lt;br&gt;3.命令行到安装目录，运行npm install 接着运行npm start，然后就可以用啦&lt;br&gt;4.如果chrome没有被goagent或者shadowsocket接管的话，需要设置一下端口代理，这个软件默认的是8008&lt;/p&gt;
+&lt;p&gt;设置方法：IE-&amp;gt;设置-&amp;gt;Internet选项-&amp;gt;连接-&amp;gt;局域网设置&lt;br&gt;-&amp;gt;按照下图设置&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1eyr3wiyr1mj20ft0e7ac9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后就能看到效果啦&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1eyr3won2x4j20ls0gg40v.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/Betwixt/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>西行漫记</title>
+      <link>http://yoursite.com/read-star-over-china/</link>
+      <guid>http://yoursite.com/read-star-over-china/</guid>
+      <pubDate>Sun, 15 Nov 2015 10:05:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这篇当然不是讲&lt;del datetime=&quot;2015-11-15T09:53:38+00:00&quot;&gt;我西行或者西游记啦&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;最近辐射4上市，顺便玩完了辐射3，大呼神作！&lt;/p&gt;
+&lt;p&gt;虽然是09年的游戏，但是自己没玩过这类自由度非常高的RPG游戏。顶多就
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这篇当然不是讲&lt;del datetime=&quot;2015-11-15T09:53:38+00:00&quot;&gt;我西行或者西游记啦&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;最近辐射4上市，顺便玩完了辐射3，大呼神作！&lt;/p&gt;
+&lt;p&gt;虽然是09年的游戏，但是自己没玩过这类自由度非常高的RPG游戏。顶多就是玩过仙剑4，但是地图局限性很大，并且只能走规定的线路。而且剧情单一，顶多就是隐藏剧情。玩过之后和看电影一样，也是中国和日本游戏的局限性了。&lt;/p&gt;
+&lt;p&gt;辐射3完全不同，根据人物的选择可以触发不同的剧情造成不同的后果，可能是美国人信奉的actions have consequence。&lt;/p&gt;
+&lt;p&gt;另外一点就是地图巨大，一路下来，可能碰见各种NPC还有各种废土生物，你可以一路积德行善或者一路杀伐果断，甚至可以杀NPC。&lt;/p&gt;
+&lt;p&gt;除了广袤的废土，还有各种地图和山洞、地铁，里面危险重重，起初是自己孤孤单单，后面慢慢有了小弟，路上显得不是那么寂寞，这让我想起了西游记…&lt;/p&gt;
+&lt;p&gt;值得吐槽的是，里面虽然设定中国对美帝实施了核进攻，但是中国军官的指挥刀竟然是“大宝剑”，而且还有老式驳壳枪。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1ey1t3gl0ivj20c813x455.jpg&quot; alt=&quot;&quot;&gt;[caption width=”440” align=”alignnone”]&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1ey6bbbv8a2j20kg0nimz0.jpg&quot; alt=&quot;&quot;&gt; 孤独的根号3.24[/caption]&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/read-star-over-china/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>哥谭</title>
+      <link>http://yoursite.com/gothanm/</link>
+      <guid>http://yoursite.com/gothanm/</guid>
+      <pubDate>Tue, 03 Nov 2015 11:30:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;又是美剧更新季，按照前两年的经验这应该是每年最快乐和充实的时间段。&lt;/p&gt;
+&lt;p&gt;今年这种感觉差了很多，可能没时间也没心情看，很多美剧只是简单拖动一下进度条，看看情节的发展。&lt;/p&gt;
+&lt;p&gt;唯一一部比较吸引我的是哥谭，相比第一季，这季拍的真的叫人大呼过瘾。&lt;/p&gt;
+&lt;p&gt;第
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;又是美剧更新季，按照前两年的经验这应该是每年最快乐和充实的时间段。&lt;/p&gt;
+&lt;p&gt;今年这种感觉差了很多，可能没时间也没心情看，很多美剧只是简单拖动一下进度条，看看情节的发展。&lt;/p&gt;
+&lt;p&gt;唯一一部比较吸引我的是哥谭，相比第一季，这季拍的真的叫人大呼过瘾。&lt;/p&gt;
+&lt;p&gt;第一季的情节有点无聊，本来以为能看到老爷布鲁斯还是少爷的时候如何英明神武，结果成了戈登局长的专属季，故事都是围绕他的感情和事业纠葛。&lt;/p&gt;
+&lt;p&gt;这季虽然继续让戈登当主角，但是加入了很多老爷日后强劲对手发迹的描写，小丑的前身和谜语人尤其的刻画入骨。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/gothanm/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>磁力链接magnet:?xt=urn:btih:与迅雷thunder://地址进行转换</title>
+      <link>http://yoursite.com/magnet-thunder-urs/</link>
+      <guid>http://yoursite.com/magnet-thunder-urs/</guid>
+      <pubDate>Mon, 19 Oct 2015 03:05:24 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;在研究DHT，发现现在很多bt搜索的网站在放上磁力链接和种子的同时，又加上了一个thunder的地址。&lt;/p&gt;
+&lt;p&gt;磁力链接的获取好说，用海外主机伪装DHT节点使劲爬就可以，但是这个迅雷地址怎么来的，很无解啊…&lt;/p&gt;
+&lt;p&gt;于是搜索了好久，才发现这个迅雷地址是用磁力地址
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;在研究DHT，发现现在很多bt搜索的网站在放上磁力链接和种子的同时，又加上了一个thunder的地址。&lt;/p&gt;
+&lt;p&gt;磁力链接的获取好说，用海外主机伪装DHT节点使劲爬就可以，但是这个迅雷地址怎么来的，很无解啊…&lt;/p&gt;
+&lt;p&gt;于是搜索了好久，才发现这个迅雷地址是用磁力地址加密来的，直接看代码吧：&lt;/p&gt;
+&lt;pre class=&quot;c-sharp&quot;&gt;
+# -*- coding: utf-8 -*-
+import base64
+
+def thunderEncode(url):
+    return &#39;&#39;.join([&#39;thunder://&#39;,base64.b64encode(&#39;&#39;.join([&#39;AA&#39;,url,&#39;ZZ&#39;]))])
+
+# using example
+if __name__ == &quot;__main__&quot;:
+    tUrl = thunderEncode(&quot;magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173&quot;)
+    print (tUrl)
+&lt;/pre&gt;
+
+&lt;p&gt;AA ZZ怎来的，我也不知道，但是地址是对的，不信你试试&lt;/p&gt;
+&lt;p&gt;数据sample：&lt;/p&gt;
+&lt;p&gt;磁力链接 ：magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173&lt;/p&gt;
+&lt;p&gt;迅雷链接：thunder://QUFtYWduZXQ6P3h0PXVybjpidGloOmQ5ZjQ4ZjRkZGNjY2RkMTRkMjdjNzU5Nzc0NzJlYWM5MDU4NDcxNzNaWg==&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/magnet-thunder-urs/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>炒酸奶</title>
+      <link>http://yoursite.com/fried-yogurt/</link>
+      <guid>http://yoursite.com/fried-yogurt/</guid>
+      <pubDate>Sun, 27 Sep 2015 13:54:59 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这几天成都依旧阴天，每天都会有小雨，貌似是不欢迎我。&lt;/p&gt;
+&lt;p&gt;前天晚上出去吃了一次成都的烧烤。因为本来晚饭就吃的很多，所以没怎么吃，但是喝了一肚子酒。然后又去了一个小酒吧，喝的德国黑啤酒，碰见两个年长的姐姐，聊得很有意思。就是混着喝酒回去头很疼。&lt;/p&gt;
+&lt;p&gt;于是昨
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这几天成都依旧阴天，每天都会有小雨，貌似是不欢迎我。&lt;/p&gt;
+&lt;p&gt;前天晚上出去吃了一次成都的烧烤。因为本来晚饭就吃的很多，所以没怎么吃，但是喝了一肚子酒。然后又去了一个小酒吧，喝的德国黑啤酒，碰见两个年长的姐姐，聊得很有意思。就是混着喝酒回去头很疼。&lt;/p&gt;
+&lt;p&gt;于是昨天睡了一天，吃了同屋小伙的炝锅面。这小伙是直接把油热了热，就煮面了，葱蒜鸡蛋其实都买了，也难为他上了这么多年研究生。&lt;/p&gt;
+&lt;p&gt;今天是中秋。貌似很多年的中秋都是在外面过的，今年也不例外。下午去看了港囧，很多地方很搞笑，也让我想起了以前的一些事情，家庭依旧是个遥远的概念。&lt;/p&gt;
+&lt;p&gt;回来的时候吃了份炒酸奶，就是平时喝的比较浓的那种酸奶“炒”的。炒酸奶的是个东北妹儿，聊了一会，走的时候把钢勺子都送给了我。&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/fried-yogurt/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>宽窄巷子</title>
+      <link>http://yoursite.com/narrow-and-wide/</link>
+      <guid>http://yoursite.com/narrow-and-wide/</guid>
+      <pubDate>Sun, 20 Sep 2015 12:58:16 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近烟又抽多了，没有戒断的征兆。&lt;/p&gt;
+&lt;p&gt;来了趟成都。&lt;/p&gt;
+&lt;p&gt;趁周六他们都去参加婚礼，所以取消加班。正大光明的起身出去转了一遭。本来想去武侯祠，听了别人的建议就去了趟宽窄巷子。照例自己去的，所以此行比较无聊。买了天价的小吃（10元3个的春卷）还有一杯冰米酒，逛
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近烟又抽多了，没有戒断的征兆。&lt;/p&gt;
+&lt;p&gt;来了趟成都。&lt;/p&gt;
+&lt;p&gt;趁周六他们都去参加婚礼，所以取消加班。正大光明的起身出去转了一遭。本来想去武侯祠，听了别人的建议就去了趟宽窄巷子。照例自己去的，所以此行比较无聊。买了天价的小吃（10元3个的春卷）还有一杯冰米酒，逛了一圈。因为地方比较小，所以又去了附近的人民公园，里面矗立着一个辛亥革命的纪念碑。&lt;/p&gt;
+&lt;p&gt;最后买了两个鲜无花果，觉得还是晒干的更喜欢一些。&lt;/p&gt;
+&lt;p&gt;本来成都是个吃货的天堂，不过最近没有食欲，加上真的比较辣，吃的不多。&lt;/p&gt;
+&lt;p&gt;还好宿舍可以自己做饭，能吃点自己喜欢的挂面+荷包蛋。&lt;/p&gt;
+&lt;p&gt;晚上尝试做了酱油炒饭，因为中午外面的米饭做的不错，所以味道还是不错的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503gw1ew97so15h0j20k028a7ji.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/narrow-and-wide/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

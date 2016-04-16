@@ -1,0 +1,939 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="2345.com,2345自动签到,httpclient," />
+
+
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="凤凰山笔记" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="提到http://www.2345.com/这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。
+之前用python写过，2345自动签到，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。
+经过一下午的研究，当然是上个周末了…发现m.2345.com上面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="签到系列最终篇:2345每日自动签到领积分">
+<meta property="og:url" content="http://yoursite.com/2345-coins/index.html">
+<meta property="og:site_name" content="凤凰山笔记">
+<meta property="og:description" content="提到http://www.2345.com/这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。
+之前用python写过，2345自动签到，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。
+经过一下午的研究，当然是上个周末了…发现m.2345.com上面">
+<meta property="og:updated_time" content="2016-04-16T12:25:46.831Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="签到系列最终篇:2345每日自动签到领积分">
+<meta name="twitter:description" content="提到http://www.2345.com/这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。
+之前用python写过，2345自动签到，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。
+经过一下午的研究，当然是上个周末了…发现m.2345.com上面">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 925690,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 签到系列最终篇:2345每日自动签到领积分 | 凤凰山笔记 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">凤凰山笔记</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">这是最好的时代，也是最坏的时代</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'wjEACQsGVHNzjwiBid1V','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                签到系列最终篇:2345每日自动签到领积分
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-11-26T21:33:35+08:00" content="2013-11-26">
+              2013-11-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2345-coins/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2345-coins/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>提到<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">http://www.2345.com/</a>这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。</p>
+<p>之前用python写过，<a href="http://www.kaedeen.com/382.html" target="_blank" rel="external">2345自动签到</a>，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。</p>
+<p>经过一下午的研究，当然是上个周末了…发现m.2345.com上面的登陆还是没有验证码的，而且会创建一个domain为*.2345.com的cookie，这样就能完成登陆啦，然后签到什么的都是浮云..嘿嘿</p>
+<p>看代码：</p>
+<pre name="code" class="c-sharp">
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import net.sf.json.JSONObject;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.NameValuePair;
+import org.apache.http.ParseException;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
+
+/**
+ * 
+ * @ClassName: Jifen2345
+ * @Description: 2345自动签到 由于2345把登陆页面都加上了数字验证，但是发现 m.2345.com
+ *               仍然不需要验证码即可创建domain为*.2345.com的cookie 2013-11-19
+ * @author kaedeen.com
+ * @date 2013-11-19 下午9:00:08
+ * 
+ */
+public class Jifen2345 {
+
+    private static final Logger logger = Logger.getLogger(Jifen2345.class);
+
+    private static DefaultHttpClient httpclient = null;// HttpClient对象
+
+    private static HttpResponse response = null;
+
+    private static String mloginUrl = "http://m.2345.com/index.php?c=login&a=ajaxLogin";// 手机登陆请求地址
+
+    private static String checkinUrl = "http://jifen.2345.com/jifen/every_day_signature_new.php";// 签到请求地址
+
+    private String userName = "";// 用户名
+
+    private String passWord = "";// 密码明文
+
+    /**
+     * 构造函数
+     * 
+     * @param userName
+     * @param passWord
+     */
+    public Jifen2345(String userName, String passWord) {
+        this.userName = userName;
+        this.passWord = passWord;
+    }
+
+    /**
+     * 登陆
+     * 
+     * @return
+     */
+    public boolean login(){
+
+        boolean flag = false;
+
+        httpclient = new DefaultHttpClient();
+        // 设定cookie策略
+        HttpClientParams.setCookiePolicy(httpclient.getParams(),CookiePolicy.BROWSER_COMPATIBILITY);
+
+        List<namevaluepair> formparams =new ArrayList<namevaluepair>();
+        formparams.add(new BasicNameValuePair("username", userName));
+        formparams.add(new BasicNameValuePair("password", passWord));
+
+        HttpPost httppost = new HttpPost(mloginUrl);
+        httppost.setHeader("Accept", "*/*");
+        httppost.setHeader("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4,zh-TW;q=0.2");
+        httppost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+        httppost.setHeader("Host", "m.2345.com");
+        httppost.setHeader("Origin", "http://m.2345.com");
+        httppost.setHeader("Proxy-Connection", "keep-alive");
+        httppost.setHeader("Referer", "http://m.2345.com/index.php?c=login");
+        httppost.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36");
+
+        try {
+            httppost.setEntity(new UrlEncodedFormEntity(formparams,  HTTP.UTF_8));
+
+            //获取登陆应答内容
+            response = httpclient.execute(httppost);
+
+            if(response.getStatusLine().getStatusCode()==HttpStatus.SC_OK){
+                int code=getLoginCode();
+                if(0==code){
+                    flag=true;
+                }else{
+                    logger.info(userName+"-用户名或密码有误！");
+                }
+            }else{
+                logger.info(userName+"-2345登陆请求出错，post返回状态:"+response.getStatusLine().getStatusCode());
+                return false;
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            httppost.abort();
+        }
+
+        return flag;
+    }
+
+    /**
+     * 每日签到
+     * @return
+     */
+    public boolean everyDaySignature(){
+
+        boolean flag = false;
+
+        HttpPost httppost = new HttpPost(checkinUrl); 
+        httppost.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36");
+        httppost.addHeader("Host","jifen.2345.com");
+        httppost.addHeader("Referer","http://jifen.2345.com/index.php");
+
+        try {
+
+            //获取登陆应答内容
+            response = httpclient.execute(httppost);
+
+            if(response.getStatusLine().getStatusCode()==HttpStatus.SC_OK){
+                HttpEntity httpEntity = response.getEntity(); 
+                String responseStr = EntityUtils.toString(httpEntity);
+                //logger.info(userName+"-签到请求返回："+responseStr);
+                if(responseStr.startsWith("succ")){
+                    flag=true;
+                    logger.info(userName+"-签到成功！："+responseStr);
+                }
+            }else{
+                logger.info(userName+"-2345签到请求出错，post返回状态:"+response.getStatusLine().getStatusCode());
+                return false;
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            httppost.abort();
+        }
+
+        return flag;
+
+    }
+
+    /*返回字符串
+    * {"code":0,"msg":"u7528u6237u540du6216u5bc6u7801u4e0du5bf9"}
+    */
+    private int getLoginCode(){
+
+        int code=2;
+        HttpEntity httpEntity = response.getEntity(); 
+        String responseJsonStr = "";
+        try {
+            responseJsonStr = EntityUtils.toString(httpEntity);
+            //logger.info("responseJsonStr---"+responseJsonStr);
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }//取出应答字符串 
+
+        Map map = JSONObject.fromObject(responseJsonStr);
+
+        code=(Integer) map.get("code");
+
+        logger.info(userName+"-捕获登陆返回code："+code);
+
+        return code;
+    }
+
+}
+</namevaluepair></namevaluepair></pre>
+
+<p><strong>一点点牢骚：</strong><br>其实去年就写了<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">2345</a>自动签到的程序，也挂在sae上面签到了一年了吧，因为自己不装机也不坑害别人装他们的浏览器或者软件，只是靠签到，所以一直收入甚微，到现在估计折合软妹币也就49元左右的样子…</p>
+<p>话说回来，写这些签到模拟登陆的程序都是个人兴趣，不指望用来赚钱，自己也真心不会赚钱,google adsense都“莫名其妙”被封了，所以基本没啥额外收入了。</p>
+<p>大家看代码时候有啥问题，请您留言，我看到会解答。如果伸手要直接可运行程序什么什么的，那个只能给好朋友，所有代码都在这里你都不想研究，我也帮不上你…</p>
+<p>我会把代码尽快放到github或者其他上面，敬请关注。</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div>很惭愧，只做了些微小的工作，您的支持将鼓励我继续努力创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.png" alt="cloudroc WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="cloudroc Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/2345-com/" rel="tag">#2345.com</a>
+          
+            <a href="/tags/2345自动签到/" rel="tag">#2345自动签到</a>
+          
+            <a href="/tags/httpclient/" rel="tag">#httpclient</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/360-everyday-checkin/" rel="next" title="360每日自动签到">
+                <i class="fa fa-chevron-left"></i> 360每日自动签到
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/new-404-page/" rel="prev" title="换了个404页面">
+                换了个404页面 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2345-coins/"
+           data-title="签到系列最终篇:2345每日自动签到领积分" data-url="http://yoursite.com/2345-coins/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tp2.sinaimg.cn/3100298625/180/5755694830"
+               alt="cloudroc" />
+          <p class="site-author-name" itemprop="name">cloudroc</p>
+          <p class="site-description motion-element" itemprop="description">很惭愧，只做了些微小的工作，也没赚到钱</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">100</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/rss2.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/cloudroc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/cloudroc" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element">
+            <div class="links-of-blogroll-title">
+              <i class="fa fa-globe fa-fw"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.kaedeen.com/" title="凤凰山笔记" target="_blank">凤凰山笔记</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.2345.com/?k718881649" title="网址导航" target="_blank">网址导航</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cloudroc</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"kaedeen"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
