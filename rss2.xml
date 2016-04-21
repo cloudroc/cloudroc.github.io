@@ -8,8 +8,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 16 Apr 2016 17:37:02 GMT</pubDate>
+    <pubDate>Thu, 21 Apr 2016 00:40:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>诸事不顺</title>
+      <link>http://yoursite.com/everything-went-wrong/</link>
+      <guid>http://yoursite.com/everything-went-wrong/</guid>
+      <pubDate>Wed, 20 Apr 2016 13:41:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这周诸事不顺。&lt;br&gt;先是伴随两年形影不离的谷歌5儿子阵亡，简单说就是花屏，屏幕乱按，搜了下说是排线座的问题，或者是接触不良导致，但是去科技市场问了问一致口径都是你要换屏最低400大钱起。这些人最起码的检测都不做吗？&lt;/p&gt;
+&lt;p&gt;再就是从周一开始家里宽带一直不能上网，报修
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这周诸事不顺。&lt;br&gt;先是伴随两年形影不离的谷歌5儿子阵亡，简单说就是花屏，屏幕乱按，搜了下说是排线座的问题，或者是接触不良导致，但是去科技市场问了问一致口径都是你要换屏最低400大钱起。这些人最起码的检测都不做吗？&lt;/p&gt;
+&lt;p&gt;再就是从周一开始家里宽带一直不能上网，报修到现在才有人来，而且比原约定的时间晚了一个多小时。来的技工是个粗野大汉，又是锊线又是检测，嘴了一直念叨各种参数，真的和程序员一个性格。但是最终还是没修好，又得推迟到了明天&lt;/p&gt;
+&lt;p&gt;还有些其他事情，总之突出一个不顺利。&lt;/p&gt;
+&lt;p&gt;这期间一直在研究java登录微博的事情。为什么要弄这个呢？微博有个好处，你在发微博之前上传图片的时候，其实已经生成了图片在新浪服务器的url，而且最大的好处是没有会话和权限的限制，也就是不存在盗链被重定向的问题。这个可是一个作为图床的利器啊，相信很多博主都知道这个，而且有人做了chrome的插件。&lt;/p&gt;
+&lt;p&gt;研究的过程碰到很多困难，更加彰显出这周的艰辛，反正终于搞定了，后面慢慢放代码吧。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/everything-went-wrong/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>2016年使用Github写博客</title>
@@ -615,31 +637,6 @@ if __name__ == &quot;__main__&quot;:
 </content:encoded>
       
       <comments>http://yoursite.com/magnet-thunder-urs/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>炒酸奶</title>
-      <link>http://yoursite.com/fried-yogurt/</link>
-      <guid>http://yoursite.com/fried-yogurt/</guid>
-      <pubDate>Sun, 27 Sep 2015 13:54:59 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这几天成都依旧阴天，每天都会有小雨，貌似是不欢迎我。&lt;/p&gt;
-&lt;p&gt;前天晚上出去吃了一次成都的烧烤。因为本来晚饭就吃的很多，所以没怎么吃，但是喝了一肚子酒。然后又去了一个小酒吧，喝的德国黑啤酒，碰见两个年长的姐姐，聊得很有意思。就是混着喝酒回去头很疼。&lt;/p&gt;
-&lt;p&gt;于是昨
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这几天成都依旧阴天，每天都会有小雨，貌似是不欢迎我。&lt;/p&gt;
-&lt;p&gt;前天晚上出去吃了一次成都的烧烤。因为本来晚饭就吃的很多，所以没怎么吃，但是喝了一肚子酒。然后又去了一个小酒吧，喝的德国黑啤酒，碰见两个年长的姐姐，聊得很有意思。就是混着喝酒回去头很疼。&lt;/p&gt;
-&lt;p&gt;于是昨天睡了一天，吃了同屋小伙的炝锅面。这小伙是直接把油热了热，就煮面了，葱蒜鸡蛋其实都买了，也难为他上了这么多年研究生。&lt;/p&gt;
-&lt;p&gt;今天是中秋。貌似很多年的中秋都是在外面过的，今年也不例外。下午去看了港囧，很多地方很搞笑，也让我想起了以前的一些事情，家庭依旧是个遥远的概念。&lt;/p&gt;
-&lt;p&gt;回来的时候吃了份炒酸奶，就是平时喝的比较浓的那种酸奶“炒”的。炒酸奶的是个东北妹儿，聊了一会，走的时候把钢勺子都送给了我。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/fried-yogurt/#disqus_thread</comments>
     </item>
     
   </channel>

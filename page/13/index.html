@@ -271,6 +271,164 @@
             
               
                 
+                <a class="post-title-link" href="/one-way-to-use-simsimi/" itemprop="url">
+                  分享个调用小黄鸡的思路
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-02-03T12:49:27+08:00" content="2013-02-03">
+              2013-02-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/one-way-to-use-simsimi/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="one-way-to-use-simsimi/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前几周小黄鸡的盗版微信大批阵亡，原因基本都是“大量用户举报”。</p>
+<p>话说小黄鸡被封或者说限制有一段时间了。大概是每个ip只能向官方请求几千次，棒子的服务器就认为你恶意调用了，就会返回</p>
+<blockquote>
+<p>Unauthorized access!. In this program(site, app), the SimSimi API is being used illegally. Please contact us. <a href="http://developer.simsimi.com/" target="_blank" rel="external">http://developer.simsimi.com</a><br>然后呢，然后你就没得玩了。</p>
+</blockquote>
+<p>我看有的朋友之前收集了不少词库，这次被封也不是很怕，之前利用分词调用之前的词库就行了。但是我当时根本没弄词库这回事啊~就不骂自己了吧</p>
+<p>———————-奇丑无比的分割线————————————————————————-</p>
+<p>萌生了个想法，是不是可以调用人人上和小黄鸡的聊天呢？人家是有棒子官方key的撒~</p>
+<p>正好oschina上面有人发了如何用python模拟登陆人人网，传送门：<a href="http://www.oschina.net/code/snippet_148170_10661" target="_blank" rel="external">Python登录人人网并抓取新鲜事</a></p>
+<p>于是照葫芦画瓢，登陆之后加了一段调用小黄鸡对话的代码，发现果然可行，吼吼~</p>
+<p>见图：<br><a href="http://ww1.sinaimg.cn/large/a74ecc4cjw1e1g53jiovzj.jpg" target="_blank" rel="external"><br><img src="http://ww3.sinaimg.cn/bmiddle/a74ecc4cjw1e1g40r9dg9j.jpg" alt="" title="调用人人小黄鸡">
+</a><br>但是缺点也是很多的，目前发现两个：</p>
+<p>1、如果发的太快，返回的基本都是“呵呵”。我觉得有两种可能，一个可能是作者为了屏蔽广告，也可能是太快了，人人网从棒子那里没返回</p>
+<p>2、这个缺点优点蛋疼啊，就是超过340条左右，人人小黄鸡就不返回了，需要重新登录。</p>
+<p>代码就不上了，毕竟我也是试验阶段，先把思路分享给大家。如果哪位蝗虫不幸看到了并且利用起来，那就祝贺你了~</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/weibo-present/" itemprop="url">
                   微博鼠标垫一枚
                 </a>
@@ -921,135 +1079,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/finally-blog-can-open/" itemprop="url">
-                  博客总算能打开了……
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-01-16T00:01:04+08:00" content="2013-01-16">
-              2013-01-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/finally-blog-can-open/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="finally-blog-can-open/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>以前一直用的是自助绑定域名，也就通过新浪自己的海外代理连接SAE重定向域名，巨费流量而且访问效果很差，甚至有时会被GFW reset成502返回……</p>
-<p>然后前几天就一直也没打开，那个叫蛋疼菊紧啊</p>
-<p>于是现在暂时用个5G的外国免费空间做个反向代理吧，也比较慢，不过勉强可以打开了。最近也没空考虑买空间备案的事啊，领导今天又催我了…</p>
-<p>再说说说自己最近受得教训。</p>
-<p>由于盗用了鲁哥的山杏，以及平时PV过高，被果断加了黑名单，于是马上积极承认和改正了错误并保证以后不犯，总算平息了一场风波。</p>
-<p>前几天抓包弄得xiaoi机器人，由于<a href="http://50vip.com/" target="_blank" rel="external">红色石头</a>放出来代码，几个群的哥们马上启用，结果没几天就被小i官方封掉了，报的都是403 forbidden错误……我连夜那个修改啊，终于早上能用了。虽然小i比较垃圾，但是本丝也不告诉你怎么改，呵呵。</p>
-<p>不得不说免费共享在中国是完全行不通的。外国人喜欢开源，那是开发的人真心喜欢，很少有功利性质。加上外国人也赞赏这种行为，所以人家paypal链接总是有人点。中国人不一样，好，开源了是吧。要么直接拿走，要么留下邮箱索要，连个AD都不点……你挂的支付宝链接更没人点！</p>
-<p>说到最后其实我也是个可耻的蝗虫……</p>
-<p>不吐槽，洗洗睡</p>
-<p>&nbsp;</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1095,7 +1124,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">101</span>
+              <span class="site-state-item-count">102</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1112,7 +1141,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">69</span>
+                <span class="site-state-item-count">72</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
