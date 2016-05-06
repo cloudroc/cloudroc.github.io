@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Tue, 26 Apr 2016 04:16:06 GMT</pubDate>
+    <pubDate>Fri, 06 May 2016 14:40:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Chuck is the God.</title>
+      <link>http://yoursite.com/Chuck-is-the-God/</link>
+      <guid>http://yoursite.com/Chuck-is-the-God/</guid>
+      <pubDate>Tue, 26 Apr 2016 02:26:17 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;好久没看美剧，昨天看了最新更新的supernatural，上帝终于出现了，而且是Chuck。虽然网友早就已经推测到了，但是整整十一季，官方终于正式承认了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1f3m
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;好久没看美剧，昨天看了最新更新的supernatural，上帝终于出现了，而且是Chuck。虽然网友早就已经推测到了，但是整整十一季，官方终于正式承认了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1f3m18uobwoj20g4092gls.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Supernatural.S11E20 mark.&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/Chuck-is-the-God/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>（不）相信</title>
@@ -606,32 +626,6 @@ setTimeout(function(){
 </content:encoded>
       
       <comments>http://yoursite.com/Betwixt/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>西行漫记</title>
-      <link>http://yoursite.com/read-star-over-china/</link>
-      <guid>http://yoursite.com/read-star-over-china/</guid>
-      <pubDate>Sun, 15 Nov 2015 10:05:51 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这篇当然不是讲&lt;del datetime=&quot;2015-11-15T09:53:38+00:00&quot;&gt;我西行或者西游记啦&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;最近辐射4上市，顺便玩完了辐射3，大呼神作！&lt;/p&gt;
-&lt;p&gt;虽然是09年的游戏，但是自己没玩过这类自由度非常高的RPG游戏。顶多就
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这篇当然不是讲&lt;del datetime=&quot;2015-11-15T09:53:38+00:00&quot;&gt;我西行或者西游记啦&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;最近辐射4上市，顺便玩完了辐射3，大呼神作！&lt;/p&gt;
-&lt;p&gt;虽然是09年的游戏，但是自己没玩过这类自由度非常高的RPG游戏。顶多就是玩过仙剑4，但是地图局限性很大，并且只能走规定的线路。而且剧情单一，顶多就是隐藏剧情。玩过之后和看电影一样，也是中国和日本游戏的局限性了。&lt;/p&gt;
-&lt;p&gt;辐射3完全不同，根据人物的选择可以触发不同的剧情造成不同的后果，可能是美国人信奉的actions have consequence。&lt;/p&gt;
-&lt;p&gt;另外一点就是地图巨大，一路下来，可能碰见各种NPC还有各种废土生物，你可以一路积德行善或者一路杀伐果断，甚至可以杀NPC。&lt;/p&gt;
-&lt;p&gt;除了广袤的废土，还有各种地图和山洞、地铁，里面危险重重，起初是自己孤孤单单，后面慢慢有了小弟，路上显得不是那么寂寞，这让我想起了西游记…&lt;/p&gt;
-&lt;p&gt;值得吐槽的是，里面虽然设定中国对美帝实施了核进攻，但是中国军官的指挥刀竟然是“大宝剑”，而且还有老式驳壳枪。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1ey1t3gl0ivj20c813x455.jpg&quot; alt=&quot;&quot;&gt;[caption width=”440” align=”alignnone”]&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1ey6bbbv8a2j20kg0nimz0.jpg&quot; alt=&quot;&quot;&gt; 孤独的根号3.24[/caption]&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/read-star-over-china/#disqus_thread</comments>
     </item>
     
   </channel>

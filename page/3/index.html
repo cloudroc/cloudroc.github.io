@@ -271,6 +271,161 @@
             
               
                 
+                <a class="post-title-link" href="/first-selenium-python/" itemprop="url">
+                  第一个selenium+python脚本
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-19T16:54:34+08:00" content="2016-02-19">
+              2016-02-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/first-selenium-python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="first-selenium-python/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>selenium是个自动化测试框架，至于我一开始为什么会知道，然后接触了一些已经完全忘记了…</p>
+<p>之前接触的都是java的，看到现在大部分人都使用python编写，估计是python语法简单运行方便吧。所以也想试试，顺便借助这种实际运用学习下python也好。</p>
+<p>这里只以chrome为例子，我也不用这个来写测试用例…</p>
+<p>1、安装python配置环境变量什么的就不说了<br>2、安装pip，首先下载pip的压缩包，地址<a href="https://pypi.python.org/pypi/pip" target="_blank" rel="external">https://pypi.python.org/pypi/pip</a><br>随便解压到一个地方，然后进入目录运行命令：python setup.py install<br>然后cd到 C:\Python27\Scripts（这是我的安装目录），运行命令： pip install -U selenium，如果你联网了的话很快就能安装完毕<br>pip还是很好用的<br>3、下载chromedriver，地址：<a href="https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program" target="_blank" rel="external">https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program</a> Files\Google\Chrome\Application</p>
+<p>4、最后编写运行python程序：</p>
+<pre name="code" class="c-sharp">
+# -*- coding:utf-8 -*-
+
+from selenium import  webdriver
+
+driver = webdriver.Chrome()
+
+driver.get("http://www.2345.com/?k718881649")
+
+print driver.title
+
+driver.quit()
+</pre>
+
+<p>5、这样就完了吗？其实还有一个坑，我第一次运行出现了错误：<br>    os.path.basename(self.path), self.start_error_message)<br>selenium.common.exceptions.WebDriverException:<strong> Message: ‘chromedriver’ executable needs to be in PATH.</strong> Please see <a href="https://sites.google.com/a/chromium.org/chromedriver/home" target="_blank" rel="external">https://sites.google.com/a/chromium.org/chromedriver/home</a></p>
+<p>Exception AttributeError: “‘Service’ object has no attribute ‘process’” in <bound method="" service.__del__="" of="" <selenium.webdriver.chrome.service.service="" object="" at="" 0x00000000029ea588="">&gt; ignored</bound></p>
+<p>Process finished with exit code 1</p>
+<p>注意加粗部分，如果想顺利运行，还需要把C:\Program Files\Google\Chrome\Application这个路径，加到环境变量path里面，做到在cmd运行chromedriver不报错即可</p>
+<p>6、如果顺利，程序运行后会打开chrome浏览器访问这个网址</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/san-pang/" itemprop="url">
                   又掉海里了
                 </a>
@@ -1002,151 +1157,6 @@ setTimeout(function(){
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/google-e5-8f-91-e5-b8-83-angular-2-beta/" itemprop="url">
-                  Google 发布 Angular 2 Beta
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-18T15:50:21+08:00" content="2015-12-18">
-              2015-12-18
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/代码/" itemprop="url" rel="index">
-                    <span itemprop="name">代码</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/代码/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/google-e5-8f-91-e5-b8-83-angular-2-beta/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="google-e5-8f-91-e5-b8-83-angular-2-beta/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>详细介绍请看：<a href="http://angularjs.blogspot.jp/2015/12/angular-2-beta.html" target="_blank" rel="external">发行说明</a></p>
-<p>Angular 2 未来更新计划包括：</p>
-<ul>
-<li>Reducing Angular 2’s binary size for even more speed improvements.</li>
-<li>Improving CLI functionality across the entire development process.</li>
-<li>Creating a new API for the Component Router, with a focus on making it developer-friendly.</li>
-<li>Providing more documentation for EcmaScript.</li>
-<li>An architectural style guide</li>
-</ul>
-<hr>
-<p>以上只是新闻，凑字数…</p>
-<p>最近晚上回去都会翻看《用AngularJS开发下一代Web应用》，虽然已经跟随我好久了，但是一直没看完，果然书非借不能读也。</p>
-<p>索性重新开始读，并且尝试一种懒人学习方法：<br>不开电脑的情况下…<br>1、翻看小说一样看技术书籍，看见语法粗略用笔写一下单词，加深对标签或者函数的印象<br>2、看到书中代码,简单根据理解，想象运行效果，不懂得标记一下，继续往下看<br>3、基本都看完之后，翻阅示例源码逐个示例运行并与在书中的标记对比</p>
-<p>以上，因为现有工作用不到，缺乏在实践中加深的过程。只是希望得到知识和见识的增长，估计效果不会很理想，但是跪在坚持…</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1192,7 +1202,7 @@ setTimeout(function(){
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-count">105</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1200,7 +1210,7 @@ setTimeout(function(){
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -1209,7 +1219,7 @@ setTimeout(function(){
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">72</span>
+                <span class="site-state-item-count">73</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
