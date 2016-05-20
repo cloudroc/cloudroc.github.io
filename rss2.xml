@@ -8,8 +8,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 06 May 2016 15:03:01 GMT</pubDate>
+    <pubDate>Fri, 20 May 2016 05:59:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>jfinal和mybatis集成的问题</title>
+      <link>http://yoursite.com/questions-about-jfinal-merge-with-mybatis/</link>
+      <guid>http://yoursite.com/questions-about-jfinal-merge-with-mybatis/</guid>
+      <pubDate>Fri, 20 May 2016 05:32:22 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;做了jfinal集成mybatis的工作，发现了这么几个方面的问题：&lt;/p&gt;
+&lt;p&gt;1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。&lt;/p&gt;
+&lt;p&gt;但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增删查改了，类似这样：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	NoticeMapper noticeMapper ;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * 根据id查询一条数据&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; id&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; Notice &lt;span class=&quot;title&quot;&gt;findOneByid&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String id)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; noticeMapper.findOneByid(id);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2、虽然实现了自动扫描mapper配置文件的功能。但是mybaits-spring里面那种自动扫描mapper接口的方式无法实现。&lt;/p&gt;
+&lt;p&gt;3、要实现上面说的两点务必要使用依赖注入这种方式了，也就是使用spring了。虽然jfinal也提供了集成spring的方式，但是难道要这样 jfinal集成spring-&amp;gt;用spring去集成mybatis？这种玩法就不如直接springmvc和mybatis直接集成了~~&lt;br&gt;当时做jfinal集成的目的就是嫌弃spring过多莫名其妙的配置文件的玩法，同时不喜欢jfinal的ActiveRecord的玩法，更多无脑的偏爱mybatis吧&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;做了jfinal集成mybatis的工作，发现了这么几个方面的问题：&lt;/p&gt;
+&lt;p&gt;1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。&lt;/p&gt;
+&lt;p&gt;但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增删查改了，类似这样：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	NoticeMapper noticeMapper ;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * 根据id查询一条数据&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; id&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; Notice &lt;span class=&quot;title&quot;&gt;findOneByid&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String id)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; noticeMapper.findOneByid(id);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2、虽然实现了自动扫描mapper配置文件的功能。但是mybaits-spring里面那种自动扫描mapper接口的方式无法实现。&lt;/p&gt;
+&lt;p&gt;3、要实现上面说的两点务必要使用依赖注入这种方式了，也就是使用spring了。虽然jfinal也提供了集成spring的方式，但是难道要这样 jfinal集成spring-&amp;gt;用spring去集成mybatis？这种玩法就不如直接springmvc和mybatis直接集成了~~&lt;br&gt;当时做jfinal集成的目的就是嫌弃spring过多莫名其妙的配置文件的玩法，同时不喜欢jfinal的ActiveRecord的玩法，更多无脑的偏爱mybatis吧&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;4、我觉得还是先研究jfinal集成shiro吧，&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/questions-about-jfinal-merge-with-mybatis/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Chuck is the God.</title>
@@ -603,29 +628,6 @@ setTimeout(function(){
 </content:encoded>
       
       <comments>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>web抓包工具Betwixt</title>
-      <link>http://yoursite.com/Betwixt/</link>
-      <guid>http://yoursite.com/Betwixt/</guid>
-      <pubDate>Mon, 07 Dec 2015 07:02:20 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;如果你觉得chrome自带的network抓包工具很好很强大的话，那么这个工具让你可以在本机全局层面使用类似chrome devtools的界面来分析流量了&lt;/p&gt;
-&lt;p&gt;其实git里面写的很详细，git地址：&lt;a href=&quot;https://github.com/kdzw
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;如果你觉得chrome自带的network抓包工具很好很强大的话，那么这个工具让你可以在本机全局层面使用类似chrome devtools的界面来分析流量了&lt;/p&gt;
-&lt;p&gt;其实git里面写的很详细，git地址：&lt;a href=&quot;https://github.com/kdzwinel/betwixt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/kdzwinel/betwixt&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;BTW,作者弄得那个动态图也很炫酷，一下就会被吸引住&lt;/p&gt;
-&lt;p&gt;简单说下：&lt;br&gt;1.下载源码&lt;br&gt;2.安装nodejs&lt;br&gt;3.命令行到安装目录，运行npm install 接着运行npm start，然后就可以用啦&lt;br&gt;4.如果chrome没有被goagent或者shadowsocket接管的话，需要设置一下端口代理，这个软件默认的是8008&lt;/p&gt;
-&lt;p&gt;设置方法：IE-&amp;gt;设置-&amp;gt;Internet选项-&amp;gt;连接-&amp;gt;局域网设置&lt;br&gt;-&amp;gt;按照下图设置&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1eyr3wiyr1mj20ft0e7ac9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;然后就能看到效果啦&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1eyr3won2x4j20ls0gg40v.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/Betwixt/#disqus_thread</comments>
     </item>
     
   </channel>
