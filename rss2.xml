@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 20 May 2016 05:59:59 GMT</pubDate>
+    <pubDate>Sat, 28 May 2016 01:59:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>不作恶</title>
+      <link>http://yoursite.com/do-not-be-evil/</link>
+      <guid>http://yoursite.com/do-not-be-evil/</guid>
+      <pubDate>Fri, 27 May 2016 13:50:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Google核心价值观的第六点：“做正确的事：不恶。我们所做的一切都诚实和正直。我们的经营做法无可非议。我们赚钱做好事。“做正确的事：不恶”英语原文是：Do the right thing:don’t be evil.&lt;/p&gt;
+&lt;p&gt;现在想到google就会谈论魏则西事件。
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;Google核心价值观的第六点：“做正确的事：不恶。我们所做的一切都诚实和正直。我们的经营做法无可非议。我们赚钱做好事。“做正确的事：不恶”英语原文是：Do the right thing:don’t be evil.&lt;/p&gt;
+&lt;p&gt;现在想到google就会谈论魏则西事件。当技术公司走向商业之路之后难免迫于有权势的客户或者极大的商业利益修改一些东西，或者开发不愿意看到的东西，渐渐的就开始作恶了。再有就是我相信每个人都有类似的经历，幻想去造成破坏，而且没有利益驱使。&lt;/p&gt;
+&lt;p&gt;所以像google这样有个基本准则限定自己的行为很关键很有意义，至少很有约束力。因为evil如何定义还靠larry page去确定。&lt;/p&gt;
+&lt;p&gt;最近在看凯文·凯利的《必然》，写的很有水平，我仅仅靠站公交和上厕所的时间就已看完大半，可见这本书的吸引力。里面有很多黑当前社会主义政体的言论，不知道为什么可以在大陆发行，可能那些人don’t care.&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/do-not-be-evil/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>jfinal和mybatis集成的问题</title>
@@ -597,37 +618,6 @@ setTimeout(function(){
 </content:encoded>
       
       <comments>http://yoursite.com/douban-simple/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Google 发布 Angular 2 Beta</title>
-      <link>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/</link>
-      <guid>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/</guid>
-      <pubDate>Fri, 18 Dec 2015 07:50:21 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;详细介绍请看：&lt;a href=&quot;http://angularjs.blogspot.jp/2015/12/angular-2-beta.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;发行说明&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Angular 2 未来更新计划
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;详细介绍请看：&lt;a href=&quot;http://angularjs.blogspot.jp/2015/12/angular-2-beta.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;发行说明&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Angular 2 未来更新计划包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Reducing Angular 2’s binary size for even more speed improvements.&lt;/li&gt;
-&lt;li&gt;Improving CLI functionality across the entire development process.&lt;/li&gt;
-&lt;li&gt;Creating a new API for the Component Router, with a focus on making it developer-friendly.&lt;/li&gt;
-&lt;li&gt;Providing more documentation for EcmaScript.&lt;/li&gt;
-&lt;li&gt;An architectural style guide&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;以上只是新闻，凑字数…&lt;/p&gt;
-&lt;p&gt;最近晚上回去都会翻看《用AngularJS开发下一代Web应用》，虽然已经跟随我好久了，但是一直没看完，果然书非借不能读也。&lt;/p&gt;
-&lt;p&gt;索性重新开始读，并且尝试一种懒人学习方法：&lt;br&gt;不开电脑的情况下…&lt;br&gt;1、翻看小说一样看技术书籍，看见语法粗略用笔写一下单词，加深对标签或者函数的印象&lt;br&gt;2、看到书中代码,简单根据理解，想象运行效果，不懂得标记一下，继续往下看&lt;br&gt;3、基本都看完之后，翻阅示例源码逐个示例运行并与在书中的标记对比&lt;/p&gt;
-&lt;p&gt;以上，因为现有工作用不到，缺乏在实践中加深的过程。只是希望得到知识和见识的增长，估计效果不会很理想，但是跪在坚持…&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/google-e5-8f-91-e5-b8-83-angular-2-beta/#disqus_thread</comments>
     </item>
     
   </channel>
