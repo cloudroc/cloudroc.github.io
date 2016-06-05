@@ -8,8 +8,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 28 May 2016 01:59:01 GMT</pubDate>
+    <pubDate>Sun, 05 Jun 2016 02:17:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>solr起步</title>
+      <link>http://yoursite.com/start-with-solr/</link>
+      <guid>http://yoursite.com/start-with-solr/</guid>
+      <pubDate>Sun, 05 Jun 2016 01:50:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;想帮朋友弄个文档服务器的全文搜索，于是这周开始研究solr，过程依旧有点坎坷。&lt;/p&gt;
+&lt;p&gt;首先网上的中文资料很少，找到的大部分没有写清楚。另外solr版本变化很大从3.5一直到6.0的资料都有但是大部分仅仅局限于部署。所以部署完solr之后很长一段时间都没有弄明白几个配
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;想帮朋友弄个文档服务器的全文搜索，于是这周开始研究solr，过程依旧有点坎坷。&lt;/p&gt;
+&lt;p&gt;首先网上的中文资料很少，找到的大部分没有写清楚。另外solr版本变化很大从3.5一直到6.0的资料都有但是大部分仅仅局限于部署。所以部署完solr之后很长一段时间都没有弄明白几个配置文件应该怎么配置，以及应该怎样集成tika进行doc pdf文件的索引…&lt;/p&gt;
+&lt;p&gt;于是抛弃了这种寄托希望于google搜索和中文博主分享的想法，拿起一本英文版的solr in action来看，到昨天为止终于成功了，这里还需要感谢歪国人的两篇关于solr和tika集成的博文，细细看完竟然茅塞顿开。&lt;/p&gt;
+&lt;p&gt;链接：&lt;br&gt;&lt;a href=&quot;http://www.codewrecks.com/blog/index.php/2013/05/27/hilight-matched-text-inside-documents-indexed-with-solr-plus-tika/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.codewrecks.com/blog/index.php/2013/05/27/hilight-matched-text-inside-documents-indexed-with-solr-plus-tika/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;附上我做的粗糙搜索网页效果：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1f4k4idqwhzj20tb0po7fr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/start-with-solr/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>不作恶</title>
@@ -589,35 +611,6 @@ setTimeout(function(){
 &lt;/pre&gt;</content:encoded>
       
       <comments>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>豆瓣radio简约版</title>
-      <link>http://yoursite.com/douban-simple/</link>
-      <guid>http://yoursite.com/douban-simple/</guid>
-      <pubDate>Sat, 19 Dec 2015 17:53:05 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;一直用豆瓣FM，虽然推荐的音乐越来越不给力，但是习惯一旦养成真的不好改。&lt;/p&gt;
-&lt;p&gt;尝试用过很多chrome的豆瓣插件，各有各的新意，但是都用不惯，而且我只要关闭主浏览器窗口，插件也就跟着一起关闭了。&lt;/p&gt;
-&lt;p&gt;其实我的需求很简单，只要开个一个&lt;a href=&quot;ht
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;一直用豆瓣FM，虽然推荐的音乐越来越不给力，但是习惯一旦养成真的不好改。&lt;/p&gt;
-&lt;p&gt;尝试用过很多chrome的豆瓣插件，各有各的新意，但是都用不惯，而且我只要关闭主浏览器窗口，插件也就跟着一起关闭了。&lt;/p&gt;
-&lt;p&gt;其实我的需求很简单，只要开个一个&lt;a href=&quot;http://douban.fm/radio的小网页就好，和主浏览器窗口无关就好。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://douban.fm/radio的小网页就好，和主浏览器窗口无关就好。&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;于是就有了这个简约版的插件，其实主代码就一句：&lt;br&gt; window.open (‘&lt;a href=&quot;http://douban.fm/radio&amp;#39;,&amp;#39;douban&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://douban.fm/radio&amp;#39;,&amp;#39;douban&lt;/a&gt;‘,&lt;br&gt;      ‘height=276,width=521,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no’);&lt;/p&gt;
-&lt;p&gt;但是实现了关闭主浏览器之后依旧保留小窗口的需求，感觉不错。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;更正一下，应该用个iframe判断下加载的高度限定下窗口的大小，有空改吧。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1ez5hysb33aj20fs09440b.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;github地址：&lt;a href=&quot;https://github.com/cloudroc/douban-simple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/douban-simple&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;图标很挫，后面换一下&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/douban-simple/#disqus_thread</comments>
     </item>
     
   </channel>
