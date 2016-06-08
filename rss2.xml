@@ -8,8 +8,36 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sun, 05 Jun 2016 02:17:04 GMT</pubDate>
+    <pubDate>Wed, 08 Jun 2016 05:20:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用solr4.0+tika索引文件夹下所有文件</title>
+      <link>http://yoursite.com/import-folder-of-documnet-with-solar4.0-plus-tika/</link>
+      <guid>http://yoursite.com/import-folder-of-documnet-with-solar4.0-plus-tika/</guid>
+      <pubDate>Wed, 08 Jun 2016 01:50:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从&lt;a href=&quot;https://tika.apache.org/1
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从&lt;a href=&quot;https://tika.apache.org/1.3/formats.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。&lt;/p&gt;
+&lt;p&gt;首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目录下，我强烈建议你将contrib\extraction\lib下所有的文件复制到你的core下面，这样你可以随意使用solr自带的 Data Import Handler，并且避免缺少jar包的各种错误。&lt;/p&gt;
+&lt;p&gt;以下为一个文档导入的配置文件示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;dataConfig&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;dataSource type=&quot;BinFileDataSource&quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;document&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;entity name=&quot;files&quot; dataSource=&quot;null&quot; rootEntity=&quot;false&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            processor=&quot;FileListEntityProcessor&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            baseDir=&quot;c:/temp/docs&quot; fileName=&quot;.*\.(doc)|(pdf)|(docx)&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            onError=&quot;skip&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            recursive=&quot;true&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;lt;field column=&quot;fileAbsolutePath&quot; name=&quot;id&quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;lt;field column=&quot;fileSize&quot; name=&quot;size&quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;lt;field column=&quot;fileLastModified&quot; name=&quot;lastModified&quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;lt;entity&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    name=&quot;documentImport&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    processor=&quot;TikaEntityProcessor&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    url=&quot;$&amp;#123;files.fileAbsolutePath&amp;#125;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    format=&quot;text&quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;lt;field column=&quot;file&quot; name=&quot;fileName&quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;lt;field column=&quot;Author&quot; name=&quot;author&quot; meta=&quot;true&quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;lt;field column=&quot;title&quot; name=&quot;title&quot; meta=&quot;true&quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &amp;lt;field column=&quot;text&quot; name=&quot;text&quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;lt;/entity&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/entity&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/document&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/dataConfig&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这是最简单的一个导入示例，但是有几个关键点你需要明白：&lt;/p&gt;
+&lt;p&gt;在我所有的schema.xml中都有一个名字叫id的field，它能帮助你唯一确认一个文件，然后它也能告诉solr你这个文件的索引是要被插入还是更新。然后就是用了一个叫做BinFiledataSource的数据源，这个东西可以很容易的抓取到文件夹下文档的一些标准值，如文档名称、最后修改日期，但是它并不能获取文档里面的文本内容。这个叫BinFiledataSource的数据源有个文档实例叫做“files”，并且有个rootEntity=”false”，这个原因是它并非真正的根节点实例，而根节点实例才是用来对文档进行索引的，其他的属性仅仅简单的说明哪个文件夹要去被抓取，文档的扩展名等，但是这些都可以被solr进行索引的。&lt;/p&gt;
+&lt;p&gt;所以我决定在实例中使用以下3个属性加入索引：&lt;br&gt;&lt;strong&gt;1.fileAbsolutePath:&lt;/strong&gt; 这个可以用来作为文档的唯一索引&lt;br&gt;&lt;strong&gt;2.fileSize:&lt;/strong&gt; 文档的大小&lt;br&gt;&lt;strong&gt;3.fileLastModified:&lt;/strong&gt; 文档的最后修改时间&lt;/p&gt;
+&lt;p&gt;这三个字段之后有个叫做documentImport的实体，使用的处理器为TikaEntityProcessor，这个处理器可以帮助你抽取文档中的文本和metadata(作者、标题等这些属性)，下面列一下我想存在索引里面的字段：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.file:&lt;/strong&gt;文件名称，与上面写的fileAbsolutePath不同&lt;br&gt;&lt;strong&gt;2.Autor、Title:&lt;/strong&gt;都是文档的meta属性&lt;br&gt;&lt;strong&gt;3.text:&lt;/strong&gt;文档的文本内容&lt;/p&gt;
+&lt;p&gt;当然不要忘了schema.xml也应该有这些字段的配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;string&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; required=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; multiValued=&lt;span class=&quot;string&quot;&gt;&quot;false&quot;&lt;/span&gt; /&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;fileName&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;string&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;author&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;string&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;title&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;string&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;size&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;plong&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;lastModified&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;pdate&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;field name=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; type=&lt;span class=&quot;string&quot;&gt;&quot;text_general&quot;&lt;/span&gt; indexed=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; stored=&lt;span class=&quot;string&quot;&gt;&quot;false&quot;&lt;/span&gt; multiValued=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样你通过solr4.0自带的UI中进行dataimport即可，具体搜索测试这里不作赘述。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/import-folder-of-documnet-with-solar4.0-plus-tika/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>solr起步</title>
@@ -503,114 +531,6 @@ driver.quit()
 </content:encoded>
       
       <comments>http://yoursite.com/2016-new-year/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>phantomjs签到</title>
-      <link>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/</link>
-      <guid>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/</guid>
-      <pubDate>Fri, 25 Dec 2015 07:08:12 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近用积分换了一个2345的抱枕，皮面比较脏，不过放在办公司还好。&lt;/p&gt;
-&lt;p&gt;因为SAE收费，所以之前的SAE上的Python签到也不能运行了，所以只能想起来才会去2345签到一次，有点影响本来就很少的收入啦，haha.&lt;/p&gt;
-&lt;p&gt;看到微信可以绑定2345账号，并且
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;最近用积分换了一个2345的抱枕，皮面比较脏，不过放在办公司还好。&lt;/p&gt;
-&lt;p&gt;因为SAE收费，所以之前的SAE上的Python签到也不能运行了，所以只能想起来才会去2345签到一次，有点影响本来就很少的收入啦，haha.&lt;/p&gt;
-&lt;p&gt;看到微信可以绑定2345账号，并且登录和签到根本不需要验证码，抓了下url，大概格式如下：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://jifen.2345.com/m/guess.php?ctl=login&amp;amp;act=checkBind&amp;amp;openid=xxxxx&amp;amp;urlParam=xxxx&amp;amp;t=xxxx&amp;amp;s=xxxx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jifen.2345.com/m/guess.php?ctl=login&amp;amp;act=checkBind&amp;amp;openid=xxxxx&amp;amp;urlParam=xxxx&amp;amp;t=xxxx&amp;amp;s=xxxx&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;xxxx都是特定的内容，用于用户的验证，这样用户可以直接通过微信登录不需要用户名密码了&lt;/p&gt;
-&lt;p&gt;最近看到同事用phantomjs进行网页截图，很好很强大，简单研究了一下，想用它写个签到脚本。&lt;/p&gt;
-&lt;p&gt;于是有了下面的粗糙代码，写的不好。主要是phantomjs有自身的局限性，比如不能像java Python那样按照代码的顺序执行，而是像Javascript一样，是基于消息驱动的。代码的执行都是异步化的。所以有些痛苦，感觉用于自动化测试应该效果不很理想。&lt;/p&gt;
-&lt;p&gt;运行方式：./phantomjs 2345.js&lt;/p&gt;
-&lt;pre name=&quot;code&quot; class=&quot;c-sharp&quot;&gt;
-
-//设置输出编码
-phantom.outputEncoding = &#39;gb2312&#39;;
-
-var page ;
-
-//绑定微信号登录，防止验证码的问题
-var myurl = &quot;绑定2345微信后可从微信客户端获取&quot;;
-
-var shoujiurl = &quot;http://shouji.2345.com/index.php&quot;;
-
-var renderPage = function (url) {
-page = require(&#39;webpage&#39;).create();
-
-page.onConsoleMessage = function(msg, lineNum, sourceId) {
-  console.log(&#39;CONSOLE: &#39; + msg + &#39; (from line #&#39; + lineNum + &#39; in &quot;&#39; + sourceId + &#39;&quot;)&#39;);
-};
-
-page.onNavigationRequested = function(url, type, willNavigate, main) {
-    if (main &amp;&amp; url!=myurl &amp;&amp; url!=shoujiurl) {
-        myurl = url;
-        console.log(&quot;redirect caught&quot;)
-        page.close()
-        setTimeout(&#39;renderPage(myurl)&#39;,1); //Note the setTimeout here
-    }
-};
-
-page.open(url, function(status) {
-    if (status===&quot;success&quot;) {
-            console.log(&quot;The final url is :&quot;+myurl);
-
-            //pc推广
-            page.evaluate(function() {
-                var href= $(&quot;.aSignBtn&quot;).attr(&quot;href&quot;);
-                console.log(&quot;href = &quot;+href);
-
-                if($(&quot;.aSignBtn&quot;).attr(&quot;onclick&quot;)){
-                    $(&quot;.aSignBtn&quot;).attr(&quot;onclick&quot;,href);
-                    $(&quot;.aSignBtn&quot;).click();
-                }else{
-                    console.log(&quot;pc already checked&quot;);
-                }
-
-                console.log(&quot;pc checked...&quot;);
-            });
-
-            //手机推广
-            page.open(shoujiurl, function(status) {
-                    page.evaluate(function() {
-                        console.log($(&quot;.signBtn&quot;).html());
-                        $(&quot;.signBtn&quot;).click();
-
-                        console.log(&quot;shouji checked...&quot;);
-                    });
-            });
-    } else {
-            console.log(&quot;failed&quot;)
-            phantom.exit(1);
-    }
-});
-
-}
-
-renderPage(myurl);
-
-setTimeout(function(){
-    page.close;
-    page = require(&#39;webpage&#39;).create();
-
-    page.settings.userAgent = &#39;Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200&#39;;
-    //console.log(&#39;The default user agent is &#39; + page.settings.userAgent);
-
-    page.open(&quot;http://www.2345.com/?k718881649&quot;,function(status){
-        //page.render(&#39;index.png&#39;);
-        console.log(&quot;visit index page...&quot;);
-        phantom.exit(1);
-    });
-},15000);
-
-&lt;/pre&gt;</content:encoded>
-      
-      <comments>http://yoursite.com/phantomjs-e7-ad-be-e5-88-b0/#disqus_thread</comments>
     </item>
     
   </channel>
