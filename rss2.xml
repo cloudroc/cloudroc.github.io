@@ -8,8 +8,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Wed, 08 Jun 2016 05:20:23 GMT</pubDate>
+    <pubDate>Fri, 17 Jun 2016 13:51:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>西游记古群整理版</title>
+      <link>http://yoursite.com/my-journey-to-the-west/</link>
+      <guid>http://yoursite.com/my-journey-to-the-west/</guid>
+      <pubDate>Fri, 17 Jun 2016 13:12:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这周在杨老师的提点下,在孔子旧书网终于买到了西游记古群整理版。九五品，96年出版，02年印刷的，里面有的字是口口口，不过真的是一本满足。&lt;/p&gt;
+&lt;p&gt;这本书是我儿时的回忆。&lt;/p&gt;
+&lt;p&gt;说是儿时其实是初中，那时候的老师“很坏”，期末考试要在假期结束后进行，这样你暑假必须
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这周在杨老师的提点下,在孔子旧书网终于买到了西游记古群整理版。九五品，96年出版，02年印刷的，里面有的字是口口口，不过真的是一本满足。&lt;/p&gt;
+&lt;p&gt;这本书是我儿时的回忆。&lt;/p&gt;
+&lt;p&gt;说是儿时其实是初中，那时候的老师“很坏”，期末考试要在假期结束后进行，这样你暑假必须得复习才行。那个暑假，我在街头买了这本西游记（甚至记得那个小贩是席地而坐，在摊位摆了很多书），其实是盗版的，皮面很软，而且有很多字是口口口，现在想想可能盗版字库里面没有这几个字所以就那么印刷了。那个时候娱乐方式很少，我都没摸过电脑（后来成了天天敲代码…），这本书看的特别过瘾，因为里面有很多旁注，帮你理解某句话的深意，那时候看的特别过瘾，所以天天看，看完一遍之后又反复看某些章节…因为看的太多了，加上假期结束要考试，父亲见我不好好学习一气之前将书扯为两半…后来这本书就再也找不到了，一直都挺遗憾的。&lt;/p&gt;
+&lt;p&gt;那时候一直以为是古群加的旁注，所以默默记下了这个名字，其实都是李卓吾批评版。现在翻看这本买到的旧书也没有写李卓吾的名字，但是确实是李卓吾批评版的。大学毕业以后为了弥补遗憾从当当网也买过李卓吾批评版的西游记上下册，而且还有配套插图，但是总觉得批注变少了，或者被删了与记忆不符？所以深觉无爱。有了这本之后都不重要了，因为对逝去的快乐有了那么一点祭奠。&lt;/p&gt;
+&lt;p&gt;这些年越来越不开心，做了些微小的工作，也没有赚到钱。正如西游记开篇所说：欲知造化会元功，须看《西游释厄传》。旁批：释厄二字着眼，不能释厄，不然不读《西游》&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f4yitugaewj20qo0qoq8o.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/7d6b7503jw1f4yk77w1dlj20qo0qotf2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;口口处为嚼舌&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/my-journey-to-the-west/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>使用solr4.0+tika索引文件夹下所有文件</title>
@@ -505,32 +529,6 @@ driver.quit()
 </content:encoded>
       
       <comments>http://yoursite.com/Biography/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>2016元旦</title>
-      <link>http://yoursite.com/2016-new-year/</link>
-      <guid>http://yoursite.com/2016-new-year/</guid>
-      <pubDate>Thu, 31 Dec 2015 16:11:44 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;2015年很失败！&lt;/p&gt;
-&lt;p&gt;不多BB，不然都是负能量，想到两首诗：&lt;/p&gt;
-&lt;p&gt;登幽州台歌&lt;br&gt;朝代：唐代&lt;br&gt;作者：陈子昂&lt;br&gt;原文：&lt;br&gt;前不见古人，后不见来者。&lt;br&gt;念天地之悠悠，独怆然而涕下。&lt;/p&gt;
-&lt;p&gt;登鹳雀楼&lt;br&gt;朝代：唐代&lt;br&gt;作者：
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;2015年很失败！&lt;/p&gt;
-&lt;p&gt;不多BB，不然都是负能量，想到两首诗：&lt;/p&gt;
-&lt;p&gt;登幽州台歌&lt;br&gt;朝代：唐代&lt;br&gt;作者：陈子昂&lt;br&gt;原文：&lt;br&gt;前不见古人，后不见来者。&lt;br&gt;念天地之悠悠，独怆然而涕下。&lt;/p&gt;
-&lt;p&gt;登鹳雀楼&lt;br&gt;朝代：唐代&lt;br&gt;作者：王之涣&lt;br&gt;原文：&lt;br&gt;白日依山尽，黄河入海流。&lt;br&gt;欲穷千里目，更上一层楼。&lt;/p&gt;
-&lt;p&gt;第一首翻译成白话应该是这样的：前面没有人，后面也没人，这世界好大呀，于是我就真的哭了。&lt;br&gt;第二首翻译成白话应该是这样的：太阳下山了，河流到海里去了。你想看得远一点，就给我爬高啊。&lt;/p&gt;
-&lt;p&gt;两首诗作为总结了，这是建博客以来最好的总结。&lt;/p&gt;
-&lt;p&gt;2016年新年快乐！&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/2016-new-year/#disqus_thread</comments>
     </item>
     
   </channel>
