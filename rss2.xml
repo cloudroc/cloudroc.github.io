@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Wed, 13 Jul 2016 07:38:42 GMT</pubDate>
+    <pubDate>Sat, 30 Jul 2016 10:26:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>宁静致远</title>
+      <link>http://yoursite.com/lost-in-past/</link>
+      <guid>http://yoursite.com/lost-in-past/</guid>
+      <pubDate>Sat, 30 Jul 2016 10:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;下周就八月了，匆匆中大半年已经成为过去。&lt;/p&gt;
+&lt;p&gt;最近接到几个项目，所以没有时间做微小的工作。但是无聊的时间还是会有的，写了一个自己公司自动打卡签到的程序。虽然对公司技术保留意见，但是给员工做的这个移动版签到的程序还是可圈可点的，如果不是碰见我这种人，估计员工只能到公
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;下周就八月了，匆匆中大半年已经成为过去。&lt;/p&gt;
+&lt;p&gt;最近接到几个项目，所以没有时间做微小的工作。但是无聊的时间还是会有的，写了一个自己公司自动打卡签到的程序。虽然对公司技术保留意见，但是给员工做的这个移动版签到的程序还是可圈可点的，如果不是碰见我这种人，估计员工只能到公司门口才能打卡…&lt;/p&gt;
+&lt;p&gt;前几天路过*山岭，遇到故人闲聊了一会，叙述各自生活艰辛不表。这个地方可谓触景生情，曾经的美好和幻想中的未来已经是泡影了，每次想起来依旧很懊悔。想到两部电影，一个是黑衣人3中K和J的对话：What is The most powerful weapon in the universe?Sugar?No,regret.另一个是盗梦空间中小李子潜意识中的mal，小李子知道是自己虚构出来的，但是始终不愿意斩断。&lt;/p&gt;
+&lt;p&gt;静以修身，俭以养德，宁静以致远，才能过好这一生吧。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://yoursite.com/lost-in-past/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>捐鞋子</title>
@@ -499,28 +520,6 @@ driver.quit()
 </content:encoded>
       
       <comments>http://yoursite.com/first-selenium-python/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>又掉海里了</title>
-      <link>http://yoursite.com/san-pang/</link>
-      <guid>http://yoursite.com/san-pang/</guid>
-      <pubDate>Wed, 10 Feb 2016 08:18:32 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;除夕那天朝鲜又试验火箭来着，不过有一颗又掉海里了。&lt;/p&gt;
-&lt;p&gt;去年是漫长的一年，蹉跎中没做成几件事，年关无事看了几本书，唯一读完的是乔治•奥威尔的《动物农场》。这部书可能没有另外一部《1984》出名，但是类型是一样的，主旨在于讽刺专制统治的虚伪和丑陋——在追求平等与自由
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;除夕那天朝鲜又试验火箭来着，不过有一颗又掉海里了。&lt;/p&gt;
-&lt;p&gt;去年是漫长的一年，蹉跎中没做成几件事，年关无事看了几本书，唯一读完的是乔治•奥威尔的《动物农场》。这部书可能没有另外一部《1984》出名，但是类型是一样的，主旨在于讽刺专制统治的虚伪和丑陋——在追求平等与自由的旗号下谋求的只是“有些人更加平等”。&lt;/p&gt;
-&lt;p&gt;故事的结尾很有意思，就是人和猪和好了并一起打起了扑克，这里的猪映射的是苏联的统治阶级，人是资本主义剥削阶级。这个结局很有寓言性，和现在的结果差不多，一个解体了，一个变成了有特色的，其实都是和别人和好了，虽然继续坚持特权，但是还是想有钱一起赚。只有一只还在坚持射火箭。&lt;/p&gt;
-&lt;p&gt;不过我坚信这种专制的土壤早晚都会消失的，比较看好facebook去年提出的千架无人机供全球50亿人上网的计划，这样即使紧急情况拔网线也不好使了吧。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f0uay411ngj20p10c177y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://yoursite.com/san-pang/#disqus_thread</comments>
     </item>
     
   </channel>

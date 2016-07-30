@@ -271,6 +271,146 @@
             
               
                 
+                <a class="post-title-link" href="/jfinal-merge-mybatis/" itemprop="url">
+                  jfinal集成原生mybatis
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-14T16:43:01+08:00" content="2016-04-14">
+              2016-04-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/jfinal-merge-mybatis/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="jfinal-merge-mybatis/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>一直想做jfinal和原生mybatis的集成<br>jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。</p>
+<p>虽然很忙，但是做了两天终于有了这个简单的集成：<br>git地址：<a href="https://github.com/cloudroc/honta">https://github.com/cloudroc/honta</a></p>
+<p>做了这么几个改造：</p>
+<p>1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成</p>
+<p>2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close</p>
+<p>使用示例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">User user = SqlSessionUtil.getSqlSession()</span><br><span class="line">.selectOne(<span class="string">"cn.jarjar.test.dao.UserMapper.selectByUserName"</span></span><br><span class="line">, <span class="string">"admin"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/jfinal-merge-mybatis/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/moon-speach-in-Tsinghua/" itemprop="url">
                   Moon清华大学演讲全文
                 </a>
@@ -877,151 +1017,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/batch-delete-weibo/" itemprop="url">
-                  批量删除新浪微博
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-25T15:56:43+08:00" content="2016-02-25">
-              2016-02-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/代码/" itemprop="url" rel="index">
-                    <span itemprop="name">代码</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/batch-delete-weibo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="batch-delete-weibo/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：<a href="http://weibo.com/lnk5" target="_blank" rel="external">http://weibo.com/lnk5</a></p>
-<p>没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。</p>
-<p>我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。</p>
-<p>这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在console里面寻找元素的困难性。针对这个开始想到的是写个chrome插件在background里面引入，后来发现直接在console里面append元素就可以实现，有了jquery类库，其他都不是问题了。</p>
-<p>以下是代码：</p>
-<p>（1）引入jquery类库，这段必须单独执行</p>
-<blockquote>
-<p>var fileref=document.createElement(‘script’)</p>
-<p>fileref.setAttribute(“type”,”text/javascript”)</p>
-<p>fileref.setAttribute(“src”, ‘<a href="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js" target="_blank" rel="external">http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js</a>‘)</p>
-<p>document.getElementsByTagName(“head”)[0].appendChild(fileref);</p>
-</blockquote>
-<p>（2）在页内寻找“删除”按钮模拟点击之后模拟点击“确定”</p>
-<blockquote>
-<p>var list = $(“a[title=’删除此条微博’]”);</p>
-<p>for(var i =0;i&lt;list.length;i++){</p>
-<p>list[i].click();</p>
-<p>}</p>
-<p>var dels = $(“a[node-type=’ok’]”);</p>
-<p>for(var i =0 ;i&lt;dels.length;i++){</p>
-<p>dels[i].click();</p>
-<p>}</p>
-</blockquote>
-<p>（3）微博是分页的所以还需要频繁的刷新从新执行脚本，但是chrome的console支持上下键回滚脚本，但是也比一条条删除省力了</p>
-<p>同样的你可以利用console实现微博批量点赞，这个也很简单的。</p>
-<p>那么问题来了…. 请不要问了。</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1067,7 +1062,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">111</span>
+              <span class="site-state-item-count">112</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
