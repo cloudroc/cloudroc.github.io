@@ -358,11 +358,11 @@
 <p>可以通过扫描下面的二维码或者直接添加微信号<strong>xiaoibot</strong>进行关注哈~</p>
 <p><img src="http://ww1.sinaimg.cn/large/a74ecc4cjw1e0mj45fm30j.jpg" alt="" title="xiaoibot"></p>
 <p>关于源码：</p>
-<p>其实很简单，我是抓包分析小i机器人wap版然后用正则表达式处理了一下，原理和之前我博客微信一样，博客微信的源码已经公布了， <a href="http://www.kaedeen.com/weixin-source-code/" target="_blank" rel="external">Kaedeen博客公众微信源码</a>。</p>
+<p>其实很简单，我是抓包分析小i机器人wap版然后用正则表达式处理了一下，原理和之前我博客微信一样，博客微信的源码已经公布了， <a href="http://www.kaedeen.com/weixin-source-code/">Kaedeen博客公众微信源码</a>。</p>
 <p>源码已经被<a href="http://wzwahl36.net/" target="_blank" rel="external">红色石头</a>公布了，我也不藏着掖着了，大家可以帮我改改，有好意见要告诉我哦~</p>
 <pre><code>     &lt;div style=&quot;background:#fdfdfd;color:black;&quot;&gt;&lt;u&gt;HTML+PHP语言&lt;/u&gt;: &lt;/div&gt;
 &lt;div class=&quot;source&quot; style=&quot;font-family: &apos;[object HTMLOptionElement]&apos;, Consolas, &apos;Lucida Console&apos;, &apos;Courier New&apos;; color: rgb(246, 243, 232); background-color: rgb(36, 36, 36);&quot;&gt;&lt;span style=&quot;color: rgb(229, 120, 109);&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-</code></pre><p><span style="color: rgb(149, 228, 84); font-style: italic;">/<strong></strong></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 作者：Kaedeen &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em>来源：<a href="http://www.kaedeen.com/" target="_blank" rel="external">http://www.kaedeen.com/</a> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 日期：2013.1.7 &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> * &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> /</span> </p>
+</code></pre><p><span style="color: rgb(149, 228, 84); font-style: italic;">/<strong></strong></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 作者：Kaedeen &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em>来源：<a href="http://www.kaedeen.com/">http://www.kaedeen.com/</a> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 日期：2013.1.7 &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> * &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> /</span> </p>
 <p><span style="color: rgb(153, 150, 139); font-style: italic;">//define your token</span><br><span style="color: rgb(246, 243, 232);">define</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;TOKEN&quot;</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;kaede&quot;</span>);<br><span style="color: rgb(202, 230, 130);">$wxObj</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(138, 198, 242);">new</span> <span style="color: rgb(246, 243, 232);">weixinCallbackApi</span>();<br><span style="color: rgb(153, 150, 139); font-style: italic;">//$wxObj-&gt;valid(); //第一次验证时使用</span><br><span style="color: rgb(202, 230, 130);">$wxObj</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">responseMsg</span>();</p>
 <p><span style="color: rgb(138, 198, 242);">class</span> <span style="color: rgb(246, 243, 232);">weixinCallbackApi</span><br><span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">public</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">valid</span>()<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$echoStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$_GET</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;echostr&quot;</span><span style="color: rgb(246, 243, 232);">];</span></p>
 <p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//valid signature , option</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(202, 230, 130);">$this</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">checkSignature</span><span style="color: rgb(246, 243, 232);">()){</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">echo</span> <span style="color: rgb(202, 230, 130);">$echoStr</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">exit</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span></p>
@@ -770,9 +770,9 @@
             <p>**梅林传奇这个儿童剧今天剧终了。</p>
 <p>虽然被定义为儿童剧让我很是纠结，但是追了五年，一朝剧终总是让我有些无力吐槽了….</p>
 <p>发现个真理，英剧总是少不了基情~</p>
-<p>直接上截图吧<br>**<br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/1.jpg" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/1.jpg" alt="" title="1"></a></p>
-<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/2.jpg" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/2.jpg" alt="" title="2"></a></p>
-<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/3.jpg" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/3.jpg" alt="" title="3"></a><br><strong>最后一张图是同人做的</strong><br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/00.gif" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/00.gif" alt="" title="00"></a></p>
+<p>直接上截图吧<br>**<br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/1.jpg"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/1.jpg" alt="" title="1"></a></p>
+<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/2.jpg"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/2.jpg" alt="" title="2"></a></p>
+<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/3.jpg"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/3.jpg" alt="" title="3"></a><br><strong>最后一张图是同人做的</strong><br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/00.gif"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/00.gif" alt="" title="00"></a></p>
 
           
         
@@ -918,7 +918,7 @@
           
             <p>虽然花了一整天写了一个公共微信的代码，结果发现关注的童鞋并不是很多，数了数加上自己只有七位童鞋关注… ⊙﹏⊙b汗</p>
 <p>所以决定把源码共享给大家，虽然自己写的不怎么样，但也是花了一天的精力。从研究微信平台的API到如何搜索自己博客的文章，到如何调用小黄鸡，如何调用查询天气、公交等外部网站接口，自己还是学到不少东西。</p>
-<p>具体的功能介绍可以看这里：<a href="http://www.weixinju.com/w5200" target="_blank" rel="external">http://www.weixinju.com/w5200</a> 或者这里  <a href="http://www.kaedeen.com/weixin/" target="_blank" rel="external">http://www.kaedeen.com/weixin/</a></p>
+<p>具体的功能介绍可以看这里：<a href="http://www.weixinju.com/w5200" target="_blank" rel="external">http://www.weixinju.com/w5200</a> 或者这里  <a href="http://www.kaedeen.com/weixin/">http://www.kaedeen.com/weixin/</a></p>
 <p>源码百度网盘地址：<a href="http://pan.baidu.com/share/link?shareid=190154&amp;uk=1914144947&amp;third=0" target="_blank" rel="external">http://pan.baidu.com/share/link?shareid=190154&amp;uk=1914144947&amp;third=0</a></p>
 <p>大家可以在这个的基础上进一步扩展，很多微信只有我开发的微信功能的一种，我把几个不同的功能糅合在了一块，这个概念多谢红色石头。</p>
 <p>有博客的童鞋也可以自己弄一个，呵呵。如果自己推广才能很好，应该可以拉到很多粉丝啦。可惜我不是这块料呢…<img src="file:///C:UserswupengAppDataLocalTempSGTpbq5788 05218EE.gif" alt="">纠结..⊙﹏⊙</p>
@@ -1057,7 +1057,7 @@
       
         
           
-            <p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-middle-rank.jpg" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-middle-rank.jpg" alt="" title="sae-middle-rank"></a></p>
+            <p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-middle-rank.jpg"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-middle-rank.jpg" alt="" title="sae-middle-rank"></a></p>
 <p>刚才有个同事刚回来就去洗澡，把我烧了半天的洗澡水全用完了（想哭…），然后问了一句“有吹风机没？”，我头发这么短能有吗？弱弱的回了一句“没有”。然后撇下一句“这穷！”，就回屋了…看在大家都平安过了是芥末日，忍了。以后努力挣钱。。。</p>
 
           

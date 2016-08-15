@@ -425,11 +425,12 @@
       <pubDate>Fri, 04 Mar 2016 05:19:40 GMT</pubDate>
       <description>
       
-        &lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p
+        &lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
+&lt;p&gt;所以改进了一下增加了设置高度、宽度、距左、距上的像素
       
       </description>
       
-      <content:encoded>&lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
+      <content:encoded>&lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
 &lt;p&gt;所以改进了一下增加了设置高度、宽度、距左、距上的像素设置选项，这样即使一开始显示不好，只要慢慢调整总能达到一个黄金比例。&lt;/p&gt;
 &lt;p&gt;选项界面：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f1krbtv6snj20c307uq3f.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;（简单粗糙，不喜勿喷…）&lt;/p&gt;
 &lt;p&gt;为了保持简约风格没有引用jq这种类库，所以写了很多document.getElementById之类的语句，才发现写起来这么费劲，单词字母这么多很容易拼写错误，这才发现最早发明$这个函数的那个人是那么伟大，时间就是美元啊。&lt;/p&gt;
