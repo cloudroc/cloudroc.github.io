@@ -8,8 +8,38 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 30 Jul 2016 14:30:29 GMT</pubDate>
+    <pubDate>Tue, 16 Aug 2016 02:52:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hexo博客手机APP</title>
+      <link>http://www.kaedeen.com/hexo-app/</link>
+      <guid>http://www.kaedeen.com/hexo-app/</guid>
+      <pubDate>Tue, 16 Aug 2016 02:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;学习了下Hbuilder+Mui，Mui这个框架是快速开发安卓和ios端H5应用的一个利器。唯一的缺点就是开源项目太少，并且开发文档编写水平低，有的重要函数都不知道是用来做什么的….&lt;/p&gt;
+&lt;p&gt;由于h5对我来说学习成本比较低，所以简单给博客做了一个app。是根据官方提供的的36kr阅读器改造而来的，具体参见：&lt;a href=&quot;https://github.com/dcloudio/casecode/tree/master/reader&quot;&gt;https://github.com/dcloudio/casecode/tree/master/reader&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;针对hexo类博客需要注意的是，博客本身都是静态html，怎么考虑文章的增量获取和刷新呢？仅仅通过rss不行，因为rss最多只显示最新的几十篇文章。所以最好采用类似谷歌之前rss阅读器的那种api接口，但是google rss已经退出市场，只能找feedly进行代替。&lt;/p&gt;
+&lt;p&gt;feedly api接口文档：&lt;a href=&quot;https://developer.feedly.com/&quot;&gt;https://developer.feedly.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有了文章获取的接口，剩下的就是开发了，其实就是把36kr阅读器改改，官方提供的这个例子并不好，代码耦合太多，后续有时间可以进一步改进。&lt;/p&gt;
+&lt;p&gt;附上安卓版安装包和截图：&lt;br&gt;apk下载：&lt;a href=&quot;http://pan.baidu.com/s/1boNLtsr&quot;&gt;http://pan.baidu.com/s/1boNLtsr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;截图：&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;学习了下Hbuilder+Mui，Mui这个框架是快速开发安卓和ios端H5应用的一个利器。唯一的缺点就是开源项目太少，并且开发文档编写水平低，有的重要函数都不知道是用来做什么的….&lt;/p&gt;
+&lt;p&gt;由于h5对我来说学习成本比较低，所以简单给博客做了一个app。是根据官方提供的的36kr阅读器改造而来的，具体参见：&lt;a href=&quot;https://github.com/dcloudio/casecode/tree/master/reader&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/dcloudio/casecode/tree/master/reader&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;针对hexo类博客需要注意的是，博客本身都是静态html，怎么考虑文章的增量获取和刷新呢？仅仅通过rss不行，因为rss最多只显示最新的几十篇文章。所以最好采用类似谷歌之前rss阅读器的那种api接口，但是google rss已经退出市场，只能找feedly进行代替。&lt;/p&gt;
+&lt;p&gt;feedly api接口文档：&lt;a href=&quot;https://developer.feedly.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://developer.feedly.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有了文章获取的接口，剩下的就是开发了，其实就是把36kr阅读器改改，官方提供的这个例子并不好，代码耦合太多，后续有时间可以进一步改进。&lt;/p&gt;
+&lt;p&gt;附上安卓版安装包和截图：&lt;br&gt;apk下载：&lt;a href=&quot;http://pan.baidu.com/s/1boNLtsr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1boNLtsr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;截图：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f6ve9388d9j20jz0zkwgd.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1f6vea1rssoj20jz0zkacy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;PS:IOS端没有证书所以不能发布，重复文章是因为feedly自身的问题…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/hexo-app/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>宁静致远</title>
@@ -480,47 +510,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/batch-delete-weibo/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>第一个selenium+python脚本</title>
-      <link>http://www.kaedeen.com/first-selenium-python/</link>
-      <guid>http://www.kaedeen.com/first-selenium-python/</guid>
-      <pubDate>Fri, 19 Feb 2016 08:54:34 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;selenium是个自动化测试框架，至于我一开始为什么会知道，然后接触了一些已经完全忘记了…&lt;/p&gt;
-&lt;p&gt;之前接触的都是java的，看到现在大部分人都使用python编写，估计是python语法简单运行方便吧。所以也想试试，顺便借助这种实际运用学习下python也好。&lt;/
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;selenium是个自动化测试框架，至于我一开始为什么会知道，然后接触了一些已经完全忘记了…&lt;/p&gt;
-&lt;p&gt;之前接触的都是java的，看到现在大部分人都使用python编写，估计是python语法简单运行方便吧。所以也想试试，顺便借助这种实际运用学习下python也好。&lt;/p&gt;
-&lt;p&gt;这里只以chrome为例子，我也不用这个来写测试用例…&lt;/p&gt;
-&lt;p&gt;1、安装python配置环境变量什么的就不说了&lt;br&gt;2、安装pip，首先下载pip的压缩包，地址&lt;a href=&quot;https://pypi.python.org/pypi/pip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pypi.python.org/pypi/pip&lt;/a&gt;&lt;br&gt;随便解压到一个地方，然后进入目录运行命令：python setup.py install&lt;br&gt;然后cd到 C:\Python27\Scripts（这是我的安装目录），运行命令： pip install -U selenium，如果你联网了的话很快就能安装完毕&lt;br&gt;pip还是很好用的&lt;br&gt;3、下载chromedriver，地址：&lt;a href=&quot;https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://sites.google.com/a/chromium.org/chromedriver/home，如果是windows系统，下载win32版本就行。解压出exe文件，放到chrome浏览器的安装目录下，我的路径是：C:\Program&lt;/a&gt; Files\Google\Chrome\Application&lt;/p&gt;
-&lt;p&gt;4、最后编写运行python程序：&lt;/p&gt;
-&lt;pre name=&quot;code&quot; class=&quot;c-sharp&quot;&gt;
-# -*- coding:utf-8 -*-
-
-from selenium import  webdriver
-
-driver = webdriver.Chrome()
-
-driver.get(&quot;http://www.2345.com/?k718881649&quot;)
-
-print driver.title
-
-driver.quit()
-&lt;/pre&gt;
-
-&lt;p&gt;5、这样就完了吗？其实还有一个坑，我第一次运行出现了错误：&lt;br&gt;    os.path.basename(self.path), self.start_error_message)&lt;br&gt;selenium.common.exceptions.WebDriverException:&lt;strong&gt; Message: ‘chromedriver’ executable needs to be in PATH.&lt;/strong&gt; Please see &lt;a href=&quot;https://sites.google.com/a/chromium.org/chromedriver/home&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://sites.google.com/a/chromium.org/chromedriver/home&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Exception AttributeError: “‘Service’ object has no attribute ‘process’” in &lt;bound method=&quot;&quot; service.__del__=&quot;&quot; of=&quot;&quot; &lt;selenium.webdriver.chrome.service.service=&quot;&quot; object=&quot;&quot; at=&quot;&quot; 0x00000000029ea588=&quot;&quot;&gt;&amp;gt; ignored&lt;/bound&gt;&lt;/p&gt;
-&lt;p&gt;Process finished with exit code 1&lt;/p&gt;
-&lt;p&gt;注意加粗部分，如果想顺利运行，还需要把C:\Program Files\Google\Chrome\Application这个路径，加到环境变量path里面，做到在cmd运行chromedriver不报错即可&lt;/p&gt;
-&lt;p&gt;6、如果顺利，程序运行后会打开chrome浏览器访问这个网址&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/first-selenium-python/#disqus_thread</comments>
     </item>
     
   </channel>
