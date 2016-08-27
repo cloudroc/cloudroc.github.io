@@ -271,6 +271,278 @@
             
               
                 
+                <a class="post-title-link" href="/java-mail-crawl/" itemprop="url">
+                  java登陆qq邮箱获取联系人列表
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-05-07T18:33:47+08:00" content="2013-05-07">
+              2013-05-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/java-mail-crawl/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="java-mail-crawl/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>之前采集好了好多QQ邮箱，想通过程序把邮件发出去，但是各大邮箱限制太多，一发就进垃圾邮箱，还有就是发的太多了就直接封ip了，发也发不出去。能成功发出去三四封就不错了……</p>
+<p>所以想通过登陆wap版的qq模拟进行发信，开始以为成功了。后来发现也不行，发了几封之后的邮件都跑到草稿箱里面了……</p>
+<p>现在放出获取联系人的代码，希望对有心人有所帮助</p>
+<p>PS:代码比较简陋没有经过整理，但是确实可以完成登录QQ邮箱并获取联系人信息，如果朋友想解析出联系人，可以使用jsoup或者正则</p>
+<pre name="code" class="c-sharp">
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.AbstractHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
+
+/**
+ * 
+ * 
+ * @author www.kaedeen.com
+ *
+ */
+public class GetContactList {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        String userName="XXXXX@qq.com";
+        String passWord="PASSWORD";
+
+        //0.确定host
+        String host=getQQMailHost();
+
+        //1.登陆
+        String sid="";
+        HttpClient httpClient = new DefaultHttpClient();
+        String url="http://"+host+"/cgi-bin/login";
+        List<namevaluepair> nvps = new ArrayList<namevaluepair>();
+        nvps.add(new BasicNameValuePair("device", ""));
+        nvps.add(new BasicNameValuePair("f", "xhtml"));
+        nvps.add(new BasicNameValuePair("tfcont", ""));
+        nvps.add(new BasicNameValuePair("uin", userName));
+        nvps.add(new BasicNameValuePair("aliastype", "@qq.com"));
+        nvps.add(new BasicNameValuePair("pwd", passWord));
+        nvps.add(new BasicNameValuePair("btlogin", "登陆"));
+        nvps.add(new BasicNameValuePair("mss", ""));
+
+        HttpPost httpPost =new HttpPost(url);
+        HttpResponse httpResponse=null;//登陆请求返回信息
+        String reponseBody="";
+        try {
+            httpPost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
+            httpPost.addHeader("Referer", "http://w.mail.qq.com/cgi-bin/loginpage?f=xhtml");
+            httpPost.addHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1 ");
+            httpResponse=httpClient.execute(httpPost);
+
+            HttpEntity resEntity =  httpResponse.getEntity();
+            reponseBody=EntityUtils.toString(resEntity);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            httpPost.abort();
+        }
+
+        Pattern pattern = Pattern.compile("/today\?sid\=(.*)&first=1");
+        Matcher m = pattern.matcher(reponseBody);
+        if (m.find()) {
+            sid=m.group(1);
+        } else {
+            System.out.println("获取sid失败！");
+        }    
+
+        //2、获取联系人
+        HttpGet httpget =new HttpGet("http://"+host+"/cgi-bin/addr_listall?sid="+sid);
+        httpget.setHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1 ");
+        try {
+            //简单复用之前变量
+            httpResponse = httpClient.execute(httpget);
+
+            HttpEntity resEntity =  httpResponse.getEntity();
+            reponseBody=EntityUtils.toString(resEntity);
+
+            System.out.println(reponseBody);
+
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
+     * 获取动态host地址
+     * @return
+     */
+    public static String getQQMailHost()
+    {
+        String host="";
+
+        HttpClient httpClient = new DefaultHttpClient();
+        String url="http://w.mail.qq.com/cgi-bin/loginpage?f=xhtml";
+        HttpGet httpget =new HttpGet(url);
+        httpget.setHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1 ");
+        try {
+            HttpResponse httpResponse = httpClient.execute(httpget);
+            Pattern pattern = Pattern.compile("Set-Cookie: edition\=(.*); Domain=.mail.qq.com; Path=/; Expires");
+            Matcher m = pattern.matcher(httpResponse.toString());
+            if (m.find()) {
+                host=m.group(1);
+            } else {
+                System.out.println("获取host失败！");
+            }    
+
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return host;
+    }
+
+}
+</namevaluepair></namevaluepair></pre>
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/i-have-to-find-a-new-place/" itemprop="url">
                   或无安身之地
                 </a>
@@ -937,144 +1209,6 @@ http://pan.baidu.com/share/link?shareid=534479&uk=1914144947
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/SimSimi-new-trick/" itemprop="url">
-                  据说SimSimi小黄鸡要全面收费了,本宅表示毫无压力
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-03-12T22:56:43+08:00" content="2013-03-12">
-              2013-03-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/技术宅/" itemprop="url" rel="index">
-                    <span itemprop="name">技术宅</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/SimSimi-new-trick/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="SimSimi-new-trick/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天看红色石头博客，貌似小黄鸡在人人网的推动下走向了商业化，开始针对API接口进行收费，本宅对此表示毫无压力…</p>
-<p>我博客的公众微信也具备自动聊天这个功能（是去广告绿色小黄鸡哦~），请参见 <a href="http://www.kaedeen.com/526.html">本博公众微信聊天机器人功能修复</a> 这篇文章，里面说的还算详细。</p>
-<p>有童鞋想问我怎么弄或者怎么架设的，我说明一下这个既不是“小九”也不是自己采集的KV数据库进行架设的。忍不住吐下槽，小九那个东东挺一般，属于盗用过小黄鸡以及我之前弄过的小i然后利用自己采集结果做的。我加了他们那个群，每天的垃圾邮件倒是不少，烦不胜烦。</p>
-<p>言归正传，如果哪位童鞋有心看过我的博客，会发现我发过一篇文章<a href="http://www.kaedeen.com/465.html">分享个调用小黄鸡的思路</a>，其实我最终也是这么来实现的。源码以及使用方法暂时不想公布，怕被广大蝗虫滥用，然后大家都没得玩，当然欢迎你根据我提供的那个思路自己进行研究。这样才有意思，不是吗？嘿嘿…</p>
-<p>如果您想和我合作搞些有意思的东东可以直接和我联系，免费提供小黄鸡接口。如果是想用在商业目的或者仅仅是索要接口，请建立在互惠互利的基础上，毕竟人家官方都收费了，当然您可以去申请免费7天的trial key。</p>
-<p>上几张调戏的图片，呵呵</p>
-<p><img src="http://ww2.sinaimg.cn/bmiddle/a74e55b4jw1e2nduhj1esj.jpg" alt="" title="调戏结果1"><br> <img src="http://ww1.sinaimg.cn/bmiddle/a74ecc4cjw1e2l0okqhw6j.jpg" alt="" title="调戏结果2"></p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1120,7 +1254,7 @@ http://pan.baidu.com/share/link?shareid=534479&uk=1914144947
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">113</span>
+              <span class="site-state-item-count">114</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1128,7 +1262,7 @@ http://pan.baidu.com/share/link?shareid=534479&uk=1914144947
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>

@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Tue, 16 Aug 2016 02:52:35 GMT</pubDate>
+    <pubDate>Sat, 27 Aug 2016 07:51:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我想</title>
+      <link>http://www.kaedeen.com/work-hard-live-better/</link>
+      <guid>http://www.kaedeen.com/work-hard-live-better/</guid>
+      <pubDate>Sat, 27 Aug 2016 07:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这周重新听了一遍袁腾飞老师的精华学校教学视频。他讲的中国近代史和徐中约先生的中国近现代史遥相呼应，收益不浅。&lt;/p&gt;
+&lt;p&gt;去年和今年读了很多历史类的书籍，加上反复看了纸牌屋这类腹黑政治类剧。最大的感触就是看的时候感觉学习到了，但是为人处事过程中还是用不上，更多继承了之前的
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这周重新听了一遍袁腾飞老师的精华学校教学视频。他讲的中国近代史和徐中约先生的中国近现代史遥相呼应，收益不浅。&lt;/p&gt;
+&lt;p&gt;去年和今年读了很多历史类的书籍，加上反复看了纸牌屋这类腹黑政治类剧。最大的感触就是看的时候感觉学习到了，但是为人处事过程中还是用不上，更多继承了之前的明知不可为偏要为之的古怪性格，自我性格塑造真是一件很难的事情。&lt;/p&gt;
+&lt;p&gt;思前想后如果这样很难的话，不如尽力保持端正的态度，少说多做，把握和寻找机会。&lt;/p&gt;
+&lt;p&gt;看了北京折叠，虽然不喜欢女性写的书，但是里面写的事情好像自己都经历过，有种酸痛的感觉。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/work-hard-live-better/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Hexo博客手机APP</title>
@@ -468,48 +489,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/douban-simple-chrome-plugin/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>批量删除新浪微博</title>
-      <link>http://www.kaedeen.com/batch-delete-weibo/</link>
-      <guid>http://www.kaedeen.com/batch-delete-weibo/</guid>
-      <pubDate>Thu, 25 Feb 2016 07:56:43 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：&lt;a href=&quot;http://weibo.com/lnk5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com/lnk5&lt;/a&gt;&lt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：&lt;a href=&quot;http://weibo.com/lnk5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com/lnk5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。&lt;/p&gt;
-&lt;p&gt;我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。&lt;/p&gt;
-&lt;p&gt;这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在console里面寻找元素的困难性。针对这个开始想到的是写个chrome插件在background里面引入，后来发现直接在console里面append元素就可以实现，有了jquery类库，其他都不是问题了。&lt;/p&gt;
-&lt;p&gt;以下是代码：&lt;/p&gt;
-&lt;p&gt;（1）引入jquery类库，这段必须单独执行&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;var fileref=document.createElement(‘script’)&lt;/p&gt;
-&lt;p&gt;fileref.setAttribute(“type”,”text/javascript”)&lt;/p&gt;
-&lt;p&gt;fileref.setAttribute(“src”, ‘&lt;a href=&quot;http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js&lt;/a&gt;‘)&lt;/p&gt;
-&lt;p&gt;document.getElementsByTagName(“head”)[0].appendChild(fileref);&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;（2）在页内寻找“删除”按钮模拟点击之后模拟点击“确定”&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;var list = $(“a[title=’删除此条微博’]”);&lt;/p&gt;
-&lt;p&gt;for(var i =0;i&amp;lt;list.length;i++){&lt;/p&gt;
-&lt;p&gt;list[i].click();&lt;/p&gt;
-&lt;p&gt;}&lt;/p&gt;
-&lt;p&gt;var dels = $(“a[node-type=’ok’]”);&lt;/p&gt;
-&lt;p&gt;for(var i =0 ;i&amp;lt;dels.length;i++){&lt;/p&gt;
-&lt;p&gt;dels[i].click();&lt;/p&gt;
-&lt;p&gt;}&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;（3）微博是分页的所以还需要频繁的刷新从新执行脚本，但是chrome的console支持上下键回滚脚本，但是也比一条条删除省力了&lt;/p&gt;
-&lt;p&gt;同样的你可以利用console实现微博批量点赞，这个也很简单的。&lt;/p&gt;
-&lt;p&gt;那么问题来了…. 请不要问了。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/batch-delete-weibo/#disqus_thread</comments>
     </item>
     
   </channel>
