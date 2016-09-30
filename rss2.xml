@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 27 Aug 2016 07:53:05 GMT</pubDate>
+    <pubDate>Fri, 30 Sep 2016 13:48:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>加入简书</title>
+      <link>http://www.kaedeen.com/join-jianshu/</link>
+      <guid>http://www.kaedeen.com/join-jianshu/</guid>
+      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
+&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
+&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。&lt;/p&gt;
+&lt;p&gt;另外一点就是简书为普通小博主也提供了一个写文章的平台，再就是支持md编辑器书写文章，于是从博客精选了几篇技术文章发到简书作为备份。仔细筛选之后，发现只有6篇文章拿的出手，shame…&lt;/p&gt;
+&lt;p&gt;我在简书的文章合集地址是：&lt;a href=&quot;http://www.jianshu.com/notebooks/6521770/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/6521770/latest&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>我想</title>
@@ -467,28 +488,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/house-of-cards/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>豆瓣FM简约版 Chrome插件 v1.0.2</title>
-      <link>http://www.kaedeen.com/douban-simple-chrome-plugin/</link>
-      <guid>http://www.kaedeen.com/douban-simple-chrome-plugin/</guid>
-      <pubDate>Fri, 04 Mar 2016 05:19:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
-&lt;p&gt;所以改进了一下增加了设置高度、宽度、距左、距上的像素
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;之前做了一个&lt;a href=&quot;http://www.kaedeen.com/archives/911&quot;&gt;豆瓣FM简约版的chrome插件&lt;/a&gt;，但是高度和宽度是写死的，安装到别人的机器上总是显示的很奇怪。&lt;/p&gt;
-&lt;p&gt;所以改进了一下增加了设置高度、宽度、距左、距上的像素设置选项，这样即使一开始显示不好，只要慢慢调整总能达到一个黄金比例。&lt;/p&gt;
-&lt;p&gt;选项界面：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f1krbtv6snj20c307uq3f.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;（简单粗糙，不喜勿喷…）&lt;/p&gt;
-&lt;p&gt;为了保持简约风格没有引用jq这种类库，所以写了很多document.getElementById之类的语句，才发现写起来这么费劲，单词字母这么多很容易拼写错误，这才发现最早发明$这个函数的那个人是那么伟大，时间就是美元啊。&lt;/p&gt;
-&lt;p&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/douban-simple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/douban-simple&lt;/a&gt;&lt;br&gt;插件网盘下载：&lt;a href=&quot;http://pan.baidu.com/s/1mhpsUr2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhpsUr2&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/douban-simple-chrome-plugin/#disqus_thread</comments>
     </item>
     
   </channel>
