@@ -8,8 +8,41 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 30 Sep 2016 13:48:02 GMT</pubDate>
+    <pubDate>Sat, 01 Oct 2016 12:15:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>简书刷分插件</title>
+      <link>http://www.kaedeen.com/jianshu-plugin/</link>
+      <guid>http://www.kaedeen.com/jianshu-plugin/</guid>
+      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
+&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
+&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
+&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
+&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
+&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
+&lt;p&gt;#&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;#&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot;&gt;&lt;a href=&quot;#（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot; class=&quot;headerlink&quot; title=&quot;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f8czuc8hacj20d6084q3j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot;&gt;&lt;a href=&quot;#（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot; class=&quot;headerlink&quot; title=&quot;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图&lt;/strong&gt;：&lt;/h1&gt;&lt;p&gt;这张图是关注用户的URL请求，涂抹的部分就是用户ID&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0snwe4ej215h08wgnj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这张图是喜欢文章的URL请求，涂抹的部分就是文章ID&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1f8d0u1lgczj21350adacg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot;&gt;&lt;a href=&quot;#（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot; class=&quot;headerlink&quot; title=&quot;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot;&gt;&lt;/a&gt;&lt;strong&gt;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;点击后的效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1f8czuct9s2j20iu094q3x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;（5）手机端查询积分获取的情况：&quot;&gt;&lt;a href=&quot;#（5）手机端查询积分获取的情况：&quot; class=&quot;headerlink&quot; title=&quot;（5）手机端查询积分获取的情况：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（5）手机端查询积分获取的情况：&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1f8d0xr5qlzj20fb0fpta1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot;&gt;&lt;a href=&quot;#大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot; class=&quot;headerlink&quot; title=&quot;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot;&gt;&lt;/a&gt;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&lt;/h2&gt;&lt;p&gt;PS:脚本刷积分也许成了多年的技术癖好，幸好不在阿里不然估计会被开除…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/jianshu-plugin/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>加入简书</title>
@@ -24,7 +57,7 @@
       </description>
       
       <content:encoded>&lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
-&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。&lt;/p&gt;
+&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。并且从app到网站一个广告都没有，可谓是业界良心啊。&lt;/p&gt;
 &lt;p&gt;另外一点就是简书为普通小博主也提供了一个写文章的平台，再就是支持md编辑器书写文章，于是从博客精选了几篇技术文章发到简书作为备份。仔细筛选之后，发现只有6篇文章拿的出手，shame…&lt;/p&gt;
 &lt;p&gt;我在简书的文章合集地址是：&lt;a href=&quot;http://www.jianshu.com/notebooks/6521770/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/6521770/latest&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
@@ -466,28 +499,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/batman-vs-superman/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>纸牌屋</title>
-      <link>http://www.kaedeen.com/house-of-cards/</link>
-      <guid>http://www.kaedeen.com/house-of-cards/</guid>
-      <pubDate>Sun, 13 Mar 2016 14:14:50 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Netflix很给力，一次性放出纸牌屋第四季。&lt;/p&gt;
-&lt;p&gt;下木大爷这季很惨，基本所有人都想和他背道而驰，除了Doug，还被枪击了一次差点直接剧终。&lt;br&gt;第七集的开头看的很心酸，片头开始的时候，下木大爷刚刚做完手术独自在洗手间吃着一堆药片，大爷的实力派竞争对手Conwa
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;Netflix很给力，一次性放出纸牌屋第四季。&lt;/p&gt;
-&lt;p&gt;下木大爷这季很惨，基本所有人都想和他背道而驰，除了Doug，还被枪击了一次差点直接剧终。&lt;br&gt;第七集的开头看的很心酸，片头开始的时候，下木大爷刚刚做完手术独自在洗手间吃着一堆药片，大爷的实力派竞争对手Conway却在洗手间和自己的娇妻啪啪啪…&lt;/p&gt;
-&lt;p&gt;想起星际穿越里面的老科学家经常吟的一首诗：&lt;br&gt;Do not go gentle into that good night,&lt;br&gt;Old age should burn and rave at close of day;&lt;br&gt;Rage, rage against the dying of the light.&lt;/p&gt;
-&lt;p&gt;…….&lt;/p&gt;
-&lt;p&gt;最近看纸牌屋原著，虽然主角也叫Francis，缩写也是FU，但是描写的是英国政坛。翻译的还好就是人名太难记了。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/house-of-cards/#disqus_thread</comments>
     </item>
     
   </channel>
