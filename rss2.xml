@@ -8,41 +8,8 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 01 Oct 2016 12:15:51 GMT</pubDate>
+    <pubDate>Sat, 01 Oct 2016 11:33:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>简书刷分插件</title>
-      <link>http://www.kaedeen.com/jianshu-plugin/</link>
-      <guid>http://www.kaedeen.com/jianshu-plugin/</guid>
-      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
-&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
-&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
-&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
-&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
-&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
-&lt;p&gt;#&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;#&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot;&gt;&lt;a href=&quot;#（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot; class=&quot;headerlink&quot; title=&quot;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f8czuc8hacj20d6084q3j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot;&gt;&lt;a href=&quot;#（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot; class=&quot;headerlink&quot; title=&quot;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图&lt;/strong&gt;：&lt;/h1&gt;&lt;p&gt;这张图是关注用户的URL请求，涂抹的部分就是用户ID&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0snwe4ej215h08wgnj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这张图是喜欢文章的URL请求，涂抹的部分就是文章ID&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1f8d0u1lgczj21350adacg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot;&gt;&lt;a href=&quot;#（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot; class=&quot;headerlink&quot; title=&quot;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&quot;&gt;&lt;/a&gt;&lt;strong&gt;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;点击后的效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1f8czuct9s2j20iu094q3x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;（5）手机端查询积分获取的情况：&quot;&gt;&lt;a href=&quot;#（5）手机端查询积分获取的情况：&quot; class=&quot;headerlink&quot; title=&quot;（5）手机端查询积分获取的情况：&quot;&gt;&lt;/a&gt;&lt;strong&gt;（5）手机端查询积分获取的情况：&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1f8d0xr5qlzj20fb0fpta1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot;&gt;&lt;a href=&quot;#大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot; class=&quot;headerlink&quot; title=&quot;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&quot;&gt;&lt;/a&gt;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&lt;/h2&gt;&lt;p&gt;PS:脚本刷积分也许成了多年的技术癖好，幸好不在阿里不然估计会被开除…&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/jianshu-plugin/#disqus_thread</comments>
-    </item>
     
     <item>
       <title>加入简书</title>
@@ -63,6 +30,44 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>简书刷分插件</title>
+      <link>http://www.kaedeen.com/jianshu-plugin/</link>
+      <guid>http://www.kaedeen.com/jianshu-plugin/</guid>
+      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
+&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
+&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
+&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
+&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
+&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f8czuc8hacj20d6084q3j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比如打开某篇文章，URL格式为&lt;a href=&quot;http://www.jianshu.com/p/xxxxxxxx，点击关注按钮和喜欢按钮抓取URL信息&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/xxxxxxxx，点击关注按钮和喜欢按钮抓取URL信息&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这张图是关注用户的URL请求，涂抹的部分就是用户ID&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0snwe4ej215h08wgnj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这张图是喜欢文章的URL请求，涂抹的部分就是文章ID&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1f8d0u1lgczj21350adacg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&lt;/strong&gt;&lt;br&gt;点击后的效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1f8czuct9s2j20iu094q3x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（5）手机端查询积分获取的情况：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1f8d0xr5qlzj20fb0fpta1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PS:脚本刷积分也许成了多年的技术癖好，幸好不在阿里不然估计会被开除…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/jianshu-plugin/#disqus_thread</comments>
     </item>
     
     <item>
