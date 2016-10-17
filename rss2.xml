@@ -8,8 +8,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 01 Oct 2016 12:22:25 GMT</pubDate>
+    <pubDate>Mon, 17 Oct 2016 08:22:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>三国合战</title>
+      <link>http://www.kaedeen.com/ThreeKingdoms-Conqueror/</link>
+      <guid>http://www.kaedeen.com/ThreeKingdoms-Conqueror/</guid>
+      <pubDate>Mon, 17 Oct 2016 08:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;终于玩通关三国合战，有点不容易…&lt;/p&gt;
+&lt;p&gt;三国合战是easytech出品的一个战棋类回合制游戏，以前一直以为这个公司是个外国公司，专门做欧洲战争题材的回合制手机游戏的，结果google了一下原来是个苏州的小公司，估计有外资的注入，所以前期的游戏以一战二战还有拿破仑题材
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;终于玩通关三国合战，有点不容易…&lt;/p&gt;
+&lt;p&gt;三国合战是easytech出品的一个战棋类回合制游戏，以前一直以为这个公司是个外国公司，专门做欧洲战争题材的回合制手机游戏的，结果google了一下原来是个苏州的小公司，估计有外资的注入，所以前期的游戏以一战二战还有拿破仑题材战争为主。三国合战其实是以欧陆战争4为基础的一个游戏，但是我认为比欧陆4可玩性更高一些。&lt;/p&gt;
+&lt;p&gt;和之前玩通关的单机版欧陆3不同，三国合战定位是一个网游，但是玩家很少，游戏设计的互动性也很少（就是简单抢抢资源，加强下老家的防御建筑和更换下驻守武将什么的），但是这也是我喜欢easytech出品的游戏的一个地方，完全可以当单机游戏玩。&lt;/p&gt;
+&lt;p&gt;因为使用的ios设备，所以以前安卓上的修改器不能随意使用了，索性就在不充值的情况下慢慢玩好了，到前几周为止终于全部通过关了，包括合战的剧情和争霸类的项目。因为不充值玉佩，所以只能靠每天开宝箱和抢劫赚取玉佩。前后应该玩了好几个月吧，感谢陪伴。&lt;/p&gt;
+&lt;p&gt;以下截图为战胜汉献帝的胜利图片，表示已经通关。&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f8vbod3x0pj21120ku12a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/ThreeKingdoms-Conqueror/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>简书刷分插件</title>
@@ -19,7 +41,14 @@
       <description>
       
         &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
-&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录
+&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
+&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
+&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
+&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
       
       </description>
       
@@ -32,6 +61,7 @@
 &lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;strong&gt;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f8czuc8hacj20d6084q3j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&lt;/strong&gt;&lt;/p&gt;
@@ -484,26 +514,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/2016-april-fools-day/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>你永远赶不上诺兰了</title>
-      <link>http://www.kaedeen.com/batman-vs-superman/</link>
-      <guid>http://www.kaedeen.com/batman-vs-superman/</guid>
-      <pubDate>Sun, 27 Mar 2016 16:19:29 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;怀着对老爷无比信仰之情去看了蝙蝠侠大战超人，是巨幕，但是觉得这票不值…&lt;/p&gt;
-&lt;p&gt;1.剧情乱七八糟，一人一线讲的都不清楚，要不是死忠粉肯定不知道你在描述什么&lt;br&gt;2.这明明就是超人2，为嘛起个名字叫《蝙蝠侠大战超人》，以为你是对黑暗骑士归来动画版的致敬，结果老爷就是个
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;怀着对老爷无比信仰之情去看了蝙蝠侠大战超人，是巨幕，但是觉得这票不值…&lt;/p&gt;
-&lt;p&gt;1.剧情乱七八糟，一人一线讲的都不清楚，要不是死忠粉肯定不知道你在描述什么&lt;br&gt;2.这明明就是超人2，为嘛起个名字叫《蝙蝠侠大战超人》，以为你是对黑暗骑士归来动画版的致敬，结果老爷就是个打酱油的&lt;br&gt;3.这个版本的卢瑟怎么成了蛇精病，你确定不是扮演的小丑？&lt;br&gt;4.老爷穿越那个梗，难道就是为了拍预告片拉票房吗？&lt;br&gt;5.虽然片名叫蝙蝠侠大战超人，但是还是讲的是大战外星人，真的是无语&lt;br&gt;6.老爷的扮演好无力，说的话做的事莫名其妙，形象上很像吴秀波这个雅痞。从宿命感、逻辑性上不如黑暗骑士归来动画版，从人物塑造更加渣的不行了，远不如诺兰版的蝙蝠侠3部曲。就连旁边坐的素不相识妹子都说虽然很帅，但是不如上个版本帅（诺兰版）&lt;/p&gt;
-&lt;p&gt;搜了下这个导演叫扎克，扎克这辈子是赶不上诺兰了，我估计再拍就成了变形金刚这样的烂片了。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/batman-vs-superman/#disqus_thread</comments>
     </item>
     
   </channel>
