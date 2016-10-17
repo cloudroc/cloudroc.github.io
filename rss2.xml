@@ -8,35 +8,14 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 01 Oct 2016 11:33:38 GMT</pubDate>
+    <pubDate>Sat, 01 Oct 2016 12:22:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>加入简书</title>
-      <link>http://www.kaedeen.com/join-jianshu/</link>
-      <guid>http://www.kaedeen.com/join-jianshu/</guid>
-      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
-&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
-&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。并且从app到网站一个广告都没有，可谓是业界良心啊。&lt;/p&gt;
-&lt;p&gt;另外一点就是简书为普通小博主也提供了一个写文章的平台，再就是支持md编辑器书写文章，于是从博客精选了几篇技术文章发到简书作为备份。仔细筛选之后，发现只有6篇文章拿的出手，shame…&lt;/p&gt;
-&lt;p&gt;我在简书的文章合集地址是：&lt;a href=&quot;http://www.jianshu.com/notebooks/6521770/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/6521770/latest&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
-    </item>
     
     <item>
       <title>简书刷分插件</title>
       <link>http://www.kaedeen.com/jianshu-plugin/</link>
       <guid>http://www.kaedeen.com/jianshu-plugin/</guid>
-      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
+      <pubDate>Sat, 01 Oct 2016 09:30:26 GMT</pubDate>
       <description>
       
         &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
@@ -68,6 +47,27 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/jianshu-plugin/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>加入简书</title>
+      <link>http://www.kaedeen.com/join-jianshu/</link>
+      <guid>http://www.kaedeen.com/join-jianshu/</guid>
+      <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
+&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
+&lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。并且从app到网站一个广告都没有，可谓是业界良心啊。&lt;/p&gt;
+&lt;p&gt;另外一点就是简书为普通小博主也提供了一个写文章的平台，再就是支持md编辑器书写文章，于是从博客精选了几篇技术文章发到简书作为备份。仔细筛选之后，发现只有6篇文章拿的出手，shame…&lt;/p&gt;
+&lt;p&gt;我在简书的文章合集地址是：&lt;a href=&quot;http://www.jianshu.com/notebooks/6521770/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/6521770/latest&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
     </item>
     
     <item>
