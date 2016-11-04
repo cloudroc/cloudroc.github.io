@@ -271,132 +271,6 @@
             
               
                 
-                <a class="post-title-link" href="/questions-about-jfinal-merge-with-mybatis/" itemprop="url">
-                  jfinal和mybatis集成的问题
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-20T13:32:22+08:00" content="2016-05-20">
-              2016-05-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/questions-about-jfinal-merge-with-mybatis/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="questions-about-jfinal-merge-with-mybatis/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>做了jfinal集成mybatis的工作，发现了这么几个方面的问题：</p>
-<p>1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。</p>
-<p>但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增删查改了，类似这样：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">	NoticeMapper noticeMapper ;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span><br><span class="line">	 * 根据id查询一条数据</span><br><span class="line">	 * <span class="doctag">@param</span> id</span><br><span class="line">	 * <span class="doctag">@return</span></span><br><span class="line">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Notice <span class="title">findOneByid</span><span class="params">(String id)</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> noticeMapper.findOneByid(id);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
-<p>2、虽然实现了自动扫描mapper配置文件的功能。但是mybaits-spring里面那种自动扫描mapper接口的方式无法实现。</p>
-<p>3、要实现上面说的两点务必要使用依赖注入这种方式了，也就是使用spring了。虽然jfinal也提供了集成spring的方式，但是难道要这样 jfinal集成spring-&gt;用spring去集成mybatis？这种玩法就不如直接springmvc和mybatis直接集成了~~<br>当时做jfinal集成的目的就是嫌弃spring过多莫名其妙的配置文件的玩法，同时不喜欢jfinal的ActiveRecord的玩法，更多无脑的偏爱mybatis吧<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/questions-about-jfinal-merge-with-mybatis/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/Chuck-is-the-God/" itemprop="url">
                   Chuck is the God.
                 </a>
@@ -998,6 +872,146 @@
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/jfinal-merge-mybatis/" itemprop="url">
+                  jfinal集成原生mybatis
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-14T16:43:01+08:00" content="2016-04-14">
+              2016-04-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/jfinal-merge-mybatis/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="jfinal-merge-mybatis/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>一直想做jfinal和原生mybatis的集成<br>jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。</p>
+<p>虽然很忙，但是做了两天终于有了这个简单的集成：<br>git地址：<a href="https://github.com/cloudroc/honta">https://github.com/cloudroc/honta</a></p>
+<p>做了这么几个改造：</p>
+<p>1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成</p>
+<p>2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close</p>
+<p>使用示例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">User user = SqlSessionUtil.getSqlSession()</span><br><span class="line">.selectOne(<span class="string">"cn.jarjar.test.dao.UserMapper.selectByUserName"</span></span><br><span class="line">, <span class="string">"admin"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/jfinal-merge-mybatis/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -1043,7 +1057,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">118</span>
+              <span class="site-state-item-count">117</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
