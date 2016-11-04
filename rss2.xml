@@ -8,8 +8,34 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Thu, 03 Nov 2016 09:29:18 GMT</pubDate>
+    <pubDate>Fri, 04 Nov 2016 03:52:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用Hexo NexT主题上传文章到github-pages css js 出现404问题的解决方案</title>
+      <link>http://www.kaedeen.com/next-theme-css-js-404/</link>
+      <guid>http://www.kaedeen.com/next-theme-css-js-404/</guid>
+      <pubDate>Fri, 04 Nov 2016 03:30:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;昨天上传文章到github pages之后博客就打不开了，抓包发现类似”&lt;a href=&quot;http://www.kaedeen.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&amp;quot;的这种css和js文件都
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;昨天上传文章到github pages之后博客就打不开了，抓包发现类似”&lt;a href=&quot;http://www.kaedeen.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&amp;quot;的这种css和js文件都出下了404错误，导致博客成为一片空白&quot;&gt;http://www.kaedeen.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&amp;quot;的这种css和js文件都出下了404错误，导致博客成为一片空白&lt;/a&gt;…&lt;/p&gt;
+&lt;p&gt;问题的症结是vendors文件夹下面资源不会被加载。&lt;/p&gt;
+&lt;p&gt;这个问题耗费了大半上午，没有找到解决方案。最后准备在NexT主题里面反馈这个issue的时候发现已经有人反馈了这个issue，呵呵…&lt;/p&gt;
+&lt;p&gt;引用回复：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thanks for reaching out! We recently updated to Jekyll v3.3, which ignores the vendor folder by default. If you’re not using Jekyll, you can add a .nojekyll file to the root of your repository to disable Jekyll from building your site. Once you do that, your site should build with your vendor folder.&lt;/p&gt;
+&lt;p&gt;各位，这是我给github官方邮件，他们的回复，就是在根目录下加一个.nojekyll 资源就可以访问了。&lt;br&gt;但是如果.nojekyll加在source文件夹内，不会被hexo 生成出来，不知道各位谁有解决办法？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;简单说就是在github pages的repo的根目录加一个.nojekyll的文件就可以解决了，关于windows如何建立.nojekyll文件可以参见这篇文章：&lt;a href=&quot;http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外，更换其他的主题，即hexo编译后没有vendor文件夹的主题，也可以解决这个问题。后续有时间只能更换主题了。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/next-theme-css-js-404/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>读书2016</title>
@@ -496,27 +522,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/jfinal-merge-mybatis/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Moon清华大学演讲全文</title>
-      <link>http://www.kaedeen.com/moon-speach-in-Tsinghua/</link>
-      <guid>http://www.kaedeen.com/moon-speach-in-Tsinghua/</guid>
-      <pubDate>Wed, 06 Apr 2016 11:49:32 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Moon（张宰怙）不必多说，看过玩过魔兽的都知道，最近去清华大学演讲了，以下是转载微博全（chang）文（tu）&lt;/p&gt;
-&lt;p&gt;向这位把所有青春献给电竞，又“不忘初心”的韩国人致敬，虽然近期不会买他店里的鼠标…&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;Moon（张宰怙）不必多说，看过玩过魔兽的都知道，最近去清华大学演讲了，以下是转载微博全（chang）文（tu）&lt;/p&gt;
-&lt;p&gt;向这位把所有青春献给电竞，又“不忘初心”的韩国人致敬，虽然近期不会买他店里的鼠标…&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006ls8l1jw1f2ii33oa2aj30c81mfdsa.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/moon-speach-in-Tsinghua/#disqus_thread</comments>
     </item>
     
   </channel>
