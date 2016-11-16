@@ -8,8 +8,31 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 05 Nov 2016 02:02:54 GMT</pubDate>
+    <pubDate>Wed, 16 Nov 2016 04:53:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>多铆蒸刚</title>
+      <link>http://www.kaedeen.com/Multi-riveting-just-steam/</link>
+      <guid>http://www.kaedeen.com/Multi-riveting-just-steam/</guid>
+      <pubDate>Wed, 16 Nov 2016 03:50:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;双十一从淘宝买了一个1:700的大和号战列舰模型，周末的几天基本完工了。&lt;/p&gt;
+&lt;p&gt;因为比例太小，所以拼接粘合的时候特别费力，虽然拿着电子镊极度小心的弄，最终还是把舰桥的天线弄歪，不过应该看不出来…&lt;/p&gt;
+&lt;p&gt;记得小时候第一次看到俾斯麦和大和、武藏的时候就十分喜欢，
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;双十一从淘宝买了一个1:700的大和号战列舰模型，周末的几天基本完工了。&lt;/p&gt;
+&lt;p&gt;因为比例太小，所以拼接粘合的时候特别费力，虽然拿着电子镊极度小心的弄，最终还是把舰桥的天线弄歪，不过应该看不出来…&lt;/p&gt;
+&lt;p&gt;记得小时候第一次看到俾斯麦和大和、武藏的时候就十分喜欢，应该是从一部叫《探索兵器世界/三毛大世界》的彩色儿童读物看到的，后来才知道这种对多炮塔舰船的痴迷属于多炮塔神教的范畴…&lt;/p&gt;
+&lt;p&gt;完工后的素颜照，未涂色以及贴纸仅仅把军旗粘上了&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1f9ts35fcw0j20jp16q0zf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;多铆蒸刚，炮塔至大！&lt;br&gt;亿万星辰，亿万炮塔！&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.kaedeen.com/Multi-riveting-just-steam/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>使用Hexo NexT主题上传文章到github-pages css js 出现404问题的解决方案</title>
@@ -143,7 +166,7 @@
       <content:encoded>&lt;p&gt;最近了注册了简书，同时下载了简书的app。&lt;/p&gt;
 &lt;p&gt;首先网站觉得做的一般，如果简单看看网站很难发现什么亮点，甚至不明白网站立意。但是app做的比较精致，功能比较全面，尤其是搜索功能做的很好。再者就是文章质量较高，包罗万象，与知乎的装逼风格相比，内容略倾向于干货。所以近日果断卸载了知乎日报，改用简书作为公交读物。并且从app到网站一个广告都没有，可谓是业界良心啊。&lt;/p&gt;
 &lt;p&gt;另外一点就是简书为普通小博主也提供了一个写文章的平台，再就是支持md编辑器书写文章，于是从博客精选了几篇技术文章发到简书作为备份。仔细筛选之后，发现只有6篇文章拿的出手，shame…&lt;/p&gt;
-&lt;p&gt;我在简书的文章合集地址是：&lt;a href=&quot;http://www.jianshu.com/notebooks/6521770/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/notebooks/6521770/latest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我在简书的文章合集地址是：//TODO&lt;/p&gt;
 </content:encoded>
       
       <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
@@ -490,38 +513,6 @@
 </content:encoded>
       
       <comments>http://www.kaedeen.com/write-blog-with-github/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>jfinal集成原生mybatis</title>
-      <link>http://www.kaedeen.com/jfinal-merge-mybatis/</link>
-      <guid>http://www.kaedeen.com/jfinal-merge-mybatis/</guid>
-      <pubDate>Thu, 14 Apr 2016 08:43:01 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;一直想做jfinal和原生mybatis的集成&lt;br&gt;jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。&lt;/p&gt;
-&lt;p&gt;虽然很忙，但是做了两天终于有了这个简单的集成：&lt;br&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/honta&quot;&gt;https://github.com/cloudroc/honta&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;做了这么几个改造：&lt;/p&gt;
-&lt;p&gt;1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成&lt;/p&gt;
-&lt;p&gt;2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close&lt;/p&gt;
-&lt;p&gt;使用示例：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;User user = SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.selectOne(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.selectByUserName&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;, &lt;span class=&quot;string&quot;&gt;&quot;admin&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;一直想做jfinal和原生mybatis的集成&lt;br&gt;jfinal虽然说不上和spring一样高大全，但是就轻量级这个方面真的没话说，作者詹波还是很有前瞻性的早早放弃spring的配置文件加载，选择API编程式启动。&lt;/p&gt;
-&lt;p&gt;虽然很忙，但是做了两天终于有了这个简单的集成：&lt;br&gt;git地址：&lt;a href=&quot;https://github.com/cloudroc/honta&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/honta&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;做了这么几个改造：&lt;/p&gt;
-&lt;p&gt;1.实现了jfinal集成原生mybatis，以jfinal plugin的方式集成&lt;/p&gt;
-&lt;p&gt;2.工具类SqlSessionUtil实现了线程安全的sqlsession的调用，不用使用原mybatis sqlsession先open再close&lt;/p&gt;
-&lt;p&gt;使用示例：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;User user = SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.selectOne(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.selectByUserName&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;, &lt;span class=&quot;string&quot;&gt;&quot;admin&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;3.实现简单的编程式事务模板，能保证事务执行失败，进行回滚&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;使用示例&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//测试失败提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MyTx.tx(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; IAtom()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; SQLException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//插入&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        user.setUsername(&lt;span class=&quot;string&quot;&gt;&quot;FAIL&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .insert(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.insert&quot;&lt;/span&gt;,user);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//失败情况&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    SqlSessionUtil.getSqlSession()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    .insert(&lt;span class=&quot;string&quot;&gt;&quot;cn.jarjar.test.dao.UserMapper.insertXXXX&quot;&lt;/span&gt;,user);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;4.做了基本测试，模拟并发的情况性能还是比较喜人的&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/7d6b7503jw1f2wbufjs41j20z508bta6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.kaedeen.com/jfinal-merge-mybatis/#disqus_thread</comments>
     </item>
     
   </channel>
