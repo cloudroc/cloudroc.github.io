@@ -275,6 +275,157 @@
             
               
                 
+                <a class="post-title-link" href="/xiami-auto-checkin/" itemprop="url">
+                  虾米自动签到
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2012-12-05T13:28:10+08:00" content="2012-12-05">
+              2012-12-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/啰B嗦/" itemprop="url" rel="index">
+                    <span itemprop="name">啰B嗦</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/啰B嗦/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/xiami-auto-checkin/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="xiami-auto-checkin/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>上周末看了几位牛人用python写虾米网自动签到，其中还有一个利用sae平台上cron任务实现了自动签到。</p>
+<p>于是也顺便申请了一下sae上的python内测，来实验了一下虾米的自动签到，已经成功签到了两天，呵呵……</p>
+<p>以下是需要的代码，其中config.yaml是用来部署cron任务的。我现在是让它每天7：00自动执行自动签到，sae中有对应的cron日志可以检测是否执行成功。</p>
+<p><div style="background: #fdfdfd; color: black;"><a href="http://wellplay.sinaapp.com" target="_blank" rel="external">index.wsgi</a></div></p>
+<p><div class="source" style="font-family: Consolas, 'Lucida Console', 'Courier New'; color: #ffffff; background-color: #1e1e27;"><span style="color: #008800; font-style: italic; background-color: #0f140f;">01 </span><span style="color: #008800; font-style: italic; background-color: #0f140f;">#-<em>-coding:utf-8-</em>- </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">02 </span><span style="color: #ffffff;">from</span> <span style="color: #ffffff;">bottle</span> <span style="color: #ffffff;">import</span> <span style="color: #ffffff;">Bottle</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">run</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">03 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">04 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">sae</span><br><span style="color: #f810b0;">05 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">urllib2</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">06 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">urllib</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">07 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">cookielib</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">08 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">re</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">09 </span><br><span style="color: #f810b0;">10 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">11 </span><span style="color: #ffffff;">app</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">Bottle</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">12 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">13 </span><span style="color: #ffffff;">@app.route</span>(<span style="color: #0086d2;">‘/hello’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">14 </span><span style="color: #fb660a; font-weight: bold;">def</span> <span style="color: #ff0086; font-weight: bold;">hello</span><span style="color: #ffffff;">():</span><br><span style="color: #f810b0;">15 </span> <span style="color: #fb660a; font-weight: bold;">return</span> <span style="color: #0086d2;">“Hello, world! - Bottle”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">16 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">17 </span><span style="color: #ffffff;">@app.route</span>(<span style="color: #0086d2;">‘/xiamicheckin’</span> <span style="color: #ffffff;">,</span> <span style="color: #ffffff;">method</span><span style="color: #ffffff;">=</span><span style="color: #0086d2;">‘GET’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">18 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">19 </span><span style="color: #fb660a; font-weight: bold;">def</span> <span style="color: #ff0086; font-weight: bold;">xiami</span><span style="color: #ffffff;">():</span><br><span style="color: #f810b0;">20 </span> <span style="color: #ffffff;">email</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">“xxxx@qq.com”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">21 </span> <span style="color: #ffffff;">password</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">“<strong><strong>**</strong></strong>“</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">22 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">23 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Init</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">24 </span> <span style="color: #ffffff;">opener</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">build_opener</span>(<span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">HTTPCookieProcessor</span>(<span style="color: #ffffff;">cookielib</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">CookieJar</span>()))<br><span style="color: #f810b0;">25 </span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">install_opener</span>(<span style="color: #ffffff;">opener</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">26 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">27 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Login</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">28 </span> <span style="color: #ffffff;">login_url</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">‘<a href="http://www.xiami.com/web/login" target="_blank" rel="external">http://www.xiami.com/web/login</a>‘</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">29 </span> <span style="color: #ffffff;">login_data</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlencode</span><span style="color: #ffffff;">({</span><span style="color: #0086d2;">‘email’</span><span style="color: #ffffff;">:</span><span style="color: #ffffff;">email</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘password’</span><span style="color: #ffffff;">:</span><span style="color: #ffffff;">password</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘LoginButton’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘登陆’</span><span style="color: #ffffff;">,})</span><br><span style="color: #f810b0;">30 </span> <span style="color: #ffffff;">login_headers</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">{</span><span style="color: #0086d2;">‘Referer’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘<a href="http://www.xiami.com/web/login" target="_blank" rel="external">http://www.xiami.com/web/login</a>‘</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘User-Agent’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘Opera/9.60’</span><span style="color: #ffffff;">,}</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">31 </span> <span style="color: #ffffff;">login_request</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">Request</span>(<span style="color: #ffffff;">login_url</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">login_data</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">login_headers</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">32 </span> <span style="color: #ffffff;">login_response</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlopen</span>(<span style="color: #ffffff;">login_request</span>)<span style="color: #ffffff;">.</span><span style="color: #ffffff;">read</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">33 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">34 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Checkin</span><br><span style="color: #f810b0;">35 </span> <span style="color: #ffffff;">checkin_pattern</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">re</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">compile</span>(<span style="color: #0086d2;">r’&lt;a class=”check_in” href=”(.*?)”&gt;’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">36 </span> <span style="color: #ffffff;">checkin_result</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">checkin_pattern</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">search</span>(<span style="color: #ffffff;">login_response</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">37 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">38 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;">#return checkin_result.group(1)</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">39 </span><br><span style="color: #f810b0;">40 </span> <span style="color: #ffffff;">checkin_url</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">‘<a href="http://www.xiami.com" target="_blank" rel="external">http://www.xiami.com</a>‘</span> <span style="color: #ffffff;">+</span> <span style="color: #ffffff;">checkin_result</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">group</span>(<span style="color: #0086f7; font-weight: bold;">1</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">41 </span> <span style="color: #ffffff;">checkin_headers</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">{</span><span style="color: #0086d2;">‘Referer’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘<a href="http://www.xiami.com/web" target="_blank" rel="external">http://www.xiami.com/web</a>‘</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘User-Agent’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘Opera/9.60’</span><span style="color: #ffffff;">,}</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">42 </span> <span style="color: #ffffff;">checkin_request</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">Request</span>(<span style="color: #ffffff;">checkin_url</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">None</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">checkin_headers</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">43 </span> <span style="color: #ffffff;">checkin_response</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlopen</span>(<span style="color: #ffffff;">checkin_request</span>)<span style="color: #ffffff;">.</span><span style="color: #ffffff;">read</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">44 </span><br><span style="color: #f810b0;">45 </span> <span style="color: #fb660a; font-weight: bold;">return</span> <span style="color: #0086d2;">“whatever its done!”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">46 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">47 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">48 </span><span style="color: #ffffff;">application</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">sae</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">create_wsgi_app</span>(<span style="color: #ffffff;">app</span>)</div></p>
+<p><div style="background: #fdfdfd; color: black;"><span style="text-decoration: underline;">XML+Django/Jinja语言</span>: <a href="http://wellplay.sinaapp.com" target="_blank" rel="external">config.yaml</a></div></p>
+<p><div class="source" style="font-family: Consolas, 'Lucida Console', 'Courier New'; color: #ffffff; background-color: #1e1e27;"><span style="color: #008800; font-style: italic; background-color: #0f140f;">01 </span>—<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">02 </span>name: cloudroc<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">03 </span>version: 1<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">04 </span>accesskey: l4x2m5jwzj<br><span style="color: #f810b0;">05 </span>cron:<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">06 </span> - description: xiami_auto_checkin<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">07 </span> url: xiamicheckin<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">08 </span> schedule: every day of month 07:00<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">09 </span> timezone: Beijing<br><span style="color: #f810b0;">10 </span>…</div><br>初学python感觉代码很草根，不像java那么博大精深看半天还感觉莫名奇妙，python里面模拟http请求的类库无比强大，也难怪google里面很多搜索元件都用python实现。</p>
+<p>就是python的缩进实在太头疼，开始config.yaml总是配置不成功，后来才发现是空格和tab都用了造成的，哎。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/google-guitar/" itemprop="url">
                   谷歌吉他
                 </a>
@@ -912,150 +1063,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/carry-on-my-wayward-son-supernatual/" itemprop="url">
-                  Carry On My Wayward Son -邪恶力量主题曲
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2012-11-01T05:16:51+08:00" content="2012-11-01">
-              2012-11-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/啰B嗦/技术宅/" itemprop="url" rel="index">
-                    <span itemprop="name">技术宅</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/carry-on-my-wayward-son-supernatual/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="carry-on-my-wayward-son-supernatual/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong> Carry On My Wayward Son</strong>由<strong>Kansas</strong>或称<strong>温拿五虎</strong>创作并演唱。</p>
-<blockquote>
-<p>1970年成军的老牌摇滚乐团<strong>KANSAS</strong>是第一个使用美国地名作为团名的摇滚团体，也是第一个将小提琴融入摇滚乐的团体，他们的音乐往往都在两种完全不同的方向中进行，不过在编曲和伴奏上往往也都能够配合着主题的化而有所转变，这也是他们特有的音乐风格。其扎实宽广的作风及前卫的实验精神，奠立了其在摇滚史上不可动摇的地位，许多对80年代后期摇滚乐风影响甚大的作品皆出自他们之手，其中被民谣吉他界奉为瑰宝的作品《Dust In The Wind》即为不可多得的传世经典之一。</p>
-<p>著名美剧<strong>《Supernatural》</strong>中将Kansas的经典作品<strong>《Carry on wayward son》</strong>作为每季季末主题曲，并在第六季第11集中将《Dust In The Wind》作为台词。<br>想想从上大学时开始追的美剧们，现在只剩下邪恶力量和梅林传奇了，其他的不是烂尾就是工作后没兴趣看了。话说前阵听说梅林传奇被BBC定义为<em>儿童剧</em>时，哥的节操顿时华丽丽地掉了一地……WTF！</p>
-</blockquote>
-<p>作为一个技术宅，有了自己的小站之后自然不会只记录自己无聊的生活，最近在想做个爬虫程序把每周更新的美剧下载地址同步到sae的博客里面，现在暂时只是思想实验而已。</p>
-<p>最后把 Carry On My Wayward Son的歌词放上，歌词很有感染力。</p>
-<blockquote>
-<p><pre id="content-786991122">Carry On My Wayward Son – Kansas </pre></p>
-<p>Carry on my wayward son<br>任性的孩子 紧随我的脚步吧<br>There’ll be peace when you are done<br>当你到达之时 安宁近在咫尺<br>Lay your weary head to rest<br>疲惫之心找到解脱<br>Don’t you cry no more<br>不要再为悲伤哭泣 </p>
-<p>Once I rose above the noise and confusion<br>曾今 我远离尘世纷扰<br>Just to get a glimpse beyond this illusion<br>只为一窥超越人世的真理<br>I was soaring ever higher<br>我曾翱翔于蓝天之上<br>But I flew too high<br>然而我太过胸怀大志<br>Though my eyes could see I still was a blind man<br>自以为我看透一切却仍旧目光短浅<br>Though my mind could think I still was a mad man<br>自以为能理性思考却仍是井底之蛙<br>I hear the voices when I’m dreaming<br>在梦中我听见一阵耳语<br>I can hear them say<br>我听见他们说<br>Carry on my wayward son<br>任性的孩子   紧随我的脚步吧<br>There’ll be peace when you are done<br>当你到达之时 安宁近在咫尺<br>Lay your weary head to rest<br>疲惫之心找到解脱<br>Don’t you cry no more<br>不要再为悲伤哭泣<br>Masquerading as a man with a reason<br>冒充成一个做事合乎情理的人<br>My charade is the event of the season<br>我的宿命就是这个时代的产物<br>And if I claim to be a wise man, well<br>如果我声称成为一代哲人，那么<br>It surely means that I don’t know<br>这明确的代表我已茫然失措<br>On a stormy sea of moving emotion<br>在反复无常的情感海洋之上<br>Tossed about I’m like a ship on the ocean<br>我像是一艘随时下沉的小船 </p>
-<p>I set a course for winds of fortune<br>我为命运之风扬起风帆<br>But I hear the voices say<br>但我却听见一阵声音说<br>Carry on my wayward son<br>孩子   紧随我探寻梦想的脚步吧<br>There’ll be peace when you are done<br>当你到达之时 安宁近在咫尺<br>Lay your weary head to rest<br>疲惫之心找到解脱<br>Don’t you cry no more<br>不要再为悲伤哭泣<br>Carry on, you will always remember<br>坚持住 ，你将永远铭记于心<br>Carry on, nothing equals the splendor<br>坚持住，辉煌无可比拟<br>The center lights around your vanity<br>虚荣之心被圣洁之光包围<br>But surely heaven waits for you<br>毫无疑问天堂之门永远为你打开<br>Carry on my wayward son<br>孩子   紧随我探寻梦想的脚步吧<br>There’ll be peace when you are done<br>当你到达之时 安宁近在咫尺<br>Lay your weary head to rest<br>疲惫之心找到解脱<br>Don’t you cry no more<br>不要再为悲伤哭泣</p>
-<object width="257" height="33" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.xiami.com/widget/470304_1769984789/singlePlayer.swf"><param name="wmode" value="transparent"><embed width="257" height="33" type="application/x-shockwave-flash" src="http://www.xiami.com/widget/470304_1769984789/singlePlayer.swf" wmode="transparent"></object></blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1101,7 +1108,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">121</span>
+              <span class="site-state-item-count">122</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
