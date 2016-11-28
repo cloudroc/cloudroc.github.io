@@ -5,11 +5,11 @@
     
   <url>
     <loc>http://www.kaedeen.com/java-run-js/</loc>
-    <lastmod>2016-11-28T11:01:45.962Z</lastmod>
+    <lastmod>2016-11-28T11:42:59.710Z</lastmod>
     <data>
         <display>
         <title>使用java执行javascript脚本</title>
-        <pubTime>2016-04-22T02:26:17.000Z</pubTime>
+        <pubTime>2016-11-28T12:26:17.000Z</pubTime>
         
         <tag>java</tag>
          
@@ -739,17 +739,54 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/jinan-osc/</loc>
+    <loc>http://www.kaedeen.com/geek-iciba/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>济南OSC源创会</title>
-        <pubTime>2014-05-17T13:37:11.000Z</pubTime>
+        <title>我不会告诉你这是一个技术宅自己开发的一个爬虫程序，每天爬取爱词霸首页的每日一句然后发到自己的博客上……</title>
+        <pubTime>2012-11-26T06:09:35.000Z</pubTime>
         
+        <tag>技术宅</tag>
+         
+        <tag>每日一句</tag>
+         
+        <tag>爬虫</tag>
+         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="爬虫" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/%E7%88%AC%E8%99%AB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/goagent-cannot-conect/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>解决goagent连不上的问题</title>
+        <pubTime>2012-12-08T02:56:05.000Z</pubTime>
+        
+        <tag>goagent</tag>
+         
+        <tag>教程</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -800,26 +837,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/farewell-merlin/</loc>
+    <loc>http://www.kaedeen.com/gothanm/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>再见，《梅林传奇》</title>
-        <pubTime>2012-12-25T15:04:59.000Z</pubTime>
+        <title>哥谭</title>
+        <pubTime>2015-11-03T11:30:00.000Z</pubTime>
         
-        <tag>梅林传奇</tag>
-         
-        <tag>节操</tag>
-         
-        <tag>英剧</tag>
-         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -827,17 +855,24 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/batch-delete-weibo/</loc>
+    <loc>http://www.kaedeen.com/SimSimi-new-trick/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>批量删除新浪微博</title>
-        <pubTime>2016-02-25T07:56:43.000Z</pubTime>
+        <title>据说SimSimi小黄鸡要全面收费了,本宅表示毫无压力</title>
+        <pubTime>2013-03-12T14:56:43.000Z</pubTime>
         
+        <tag>小黄鸡</tag>
+         
+        <tag>微信</tag>
+         
          
            
              
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -863,63 +898,6 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/gothanm/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>哥谭</title>
-        <pubTime>2015-11-03T11:30:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/batman-vs-superman/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>你永远赶不上诺兰了</title>
-        <pubTime>2016-03-27T16:19:29.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/house-of-cards/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>纸牌屋</title>
-        <pubTime>2016-03-13T14:14:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.kaedeen.com/health-is-everything/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -927,26 +905,6 @@
         <title>身体最重要</title>
         <pubTime>2015-03-22T12:02:36.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/how-programer-pretent-to-workhard/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>程序员如何成功的假装在很努力的工作</title>
-        <pubTime>2013-06-29T14:03:01.000Z</pubTime>
-        
-        <tag>码农</tag>
-         
          
            
              
@@ -976,6 +934,68 @@
 
     
   <url>
+    <loc>http://www.kaedeen.com/2016-new-year/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>2016元旦</title>
+        <pubTime>2015-12-31T16:11:44.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+          
+             
+              <breadCrumb title="感悟" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/house-of-cards/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>纸牌屋</title>
+        <pubTime>2016-03-13T14:14:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/how-programer-pretent-to-workhard/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>程序员如何成功的假装在很努力的工作</title>
+        <pubTime>2013-06-29T14:03:01.000Z</pubTime>
+        
+        <tag>码农</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.kaedeen.com/i-have-to-find-a-new-place/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -992,6 +1012,24 @@
           
              
               <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/i-loved-u-nancy/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>夜空中最亮的星</title>
+        <pubTime>2014-11-28T14:04:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1037,17 +1075,39 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/i-loved-u-nancy/</loc>
+    <loc>http://www.kaedeen.com/batch-delete-weibo/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>夜空中最亮的星</title>
-        <pubTime>2014-11-28T14:04:56.000Z</pubTime>
+        <title>批量删除新浪微博</title>
+        <pubTime>2016-02-25T07:56:43.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/inspur-ddos/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>爱召车注册页面短信DDOS攻击漏洞</title>
+        <pubTime>2013-06-01T17:00:40.000Z</pubTime>
+        
+        <tag>DDOS</tag>
+         
+        <tag>爱召车</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1082,17 +1142,20 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/2014-birthday/</loc>
+    <loc>http://www.kaedeen.com/batman-vs-superman/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>今年的腊八是八号</title>
-        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
+        <title>你永远赶不上诺兰了</title>
+        <pubTime>2016-03-27T16:19:29.000Z</pubTime>
         
          
            
              
               <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -1100,12 +1163,12 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/bestman/</loc>
+    <loc>http://www.kaedeen.com/2014-birthday/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>当伴郎的节奏</title>
-        <pubTime>2013-12-10T09:04:06.000Z</pubTime>
+        <title>今年的腊八是八号</title>
+        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
         
          
            
@@ -1132,37 +1195,6 @@
           
              
               <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/carry-on-my-wayward-son-supernatual/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>Carry On My Wayward Son -邪恶力量主题曲</title>
-        <pubTime>2012-10-31T21:16:51.000Z</pubTime>
-        
-        <tag>技术宅</tag>
-         
-        <tag>梅林传奇</tag>
-         
-        <tag>美剧</tag>
-         
-        <tag>节操</tag>
-         
-        <tag>邪恶力量</tag>
-         
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1201,13 +1233,23 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/chuanqi-rose/</loc>
+    <loc>http://www.kaedeen.com/carry-on-my-wayward-son-supernatual/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>纸折玫瑰一朵</title>
-        <pubTime>2013-08-06T12:06:08.000Z</pubTime>
+        <title>Carry On My Wayward Son -邪恶力量主题曲</title>
+        <pubTime>2012-10-31T21:16:51.000Z</pubTime>
         
+        <tag>技术宅</tag>
+         
+        <tag>梅林传奇</tag>
+         
+        <tag>美剧</tag>
+         
+        <tag>节操</tag>
+         
+        <tag>邪恶力量</tag>
+         
          
            
              
@@ -1222,81 +1264,56 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/inspur-ddos/</loc>
+    <loc>http://www.kaedeen.com/bestman/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>爱召车注册页面短信DDOS攻击漏洞</title>
-        <pubTime>2013-06-01T17:00:40.000Z</pubTime>
-        
-        <tag>DDOS</tag>
-         
-        <tag>爱召车</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/code-monkey/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>Code Monkey</title>
-        <pubTime>2012-11-09T10:42:52.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/crazy-max/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>疯狂的麦克斯</title>
-        <pubTime>2015-08-02T15:28:48.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/2016-new-year/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>2016元旦</title>
-        <pubTime>2015-12-31T16:11:44.000Z</pubTime>
+        <title>当伴郎的节奏</title>
+        <pubTime>2013-12-10T09:04:06.000Z</pubTime>
         
          
            
              
               <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/jinan-osc/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>济南OSC源创会</title>
+        <pubTime>2014-05-17T13:37:11.000Z</pubTime>
+        
+         
+           
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/chuanqi-rose/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>纸折玫瑰一朵</title>
+        <pubTime>2013-08-06T12:06:08.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
              
-              <breadCrumb title="感悟" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1322,17 +1339,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/last-day-in-jinghong/</loc>
+    <loc>http://www.kaedeen.com/code-monkey/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>在景洪的最后一天</title>
-        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
+        <title>Code Monkey</title>
+        <pubTime>2012-11-09T10:42:52.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -1340,12 +1357,12 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/dark-knight/</loc>
+    <loc>http://www.kaedeen.com/last-day-in-jinghong/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>黑暗骑士</title>
-        <pubTime>2015-02-17T08:51:17.000Z</pubTime>
+        <title>在景洪的最后一天</title>
+        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
         
          
            
@@ -1394,12 +1411,12 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/Moteki.2011/</loc>
+    <loc>http://www.kaedeen.com/crazy-max/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>深夜食堂&桃花期</title>
-        <pubTime>2015-08-06T04:18:34.000Z</pubTime>
+        <title>疯狂的麦克斯</title>
+        <pubTime>2015-08-02T15:28:48.000Z</pubTime>
         
          
            
@@ -1412,17 +1429,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/Betwixt/</loc>
+    <loc>http://www.kaedeen.com/dark-knight/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>web抓包工具Betwixt</title>
-        <pubTime>2015-12-07T07:02:20.000Z</pubTime>
+        <title>黑暗骑士</title>
+        <pubTime>2015-02-17T08:51:17.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1460,24 +1477,6 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/narrow-and-wide/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>宽窄巷子</title>
-        <pubTime>2015-09-20T12:58:16.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.kaedeen.com/new-404-page/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1496,17 +1495,29 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/douban-simple-chrome-plugin/</loc>
+    <loc>http://www.kaedeen.com/2345-coins/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>豆瓣FM简约版 Chrome插件 v1.0.2</title>
-        <pubTime>2016-03-04T05:19:40.000Z</pubTime>
+        <title>签到系列最终篇:2345每日自动签到领积分</title>
+        <pubTime>2013-11-26T13:33:35.000Z</pubTime>
         
+        <tag>2345.com</tag>
+         
+        <tag>2345自动签到</tag>
+         
+        <tag>httpclient</tag>
+         
          
            
              
               <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -1514,17 +1525,74 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/douban-simple/</loc>
+    <loc>http://www.kaedeen.com/Moteki.2011/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>豆瓣radio简约版</title>
-        <pubTime>2015-12-19T17:53:05.000Z</pubTime>
+        <title>深夜食堂&桃花期</title>
+        <pubTime>2015-08-06T04:18:34.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/narrow-and-wide/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>宽窄巷子</title>
+        <pubTime>2015-09-20T12:58:16.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/Betwixt/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>web抓包工具Betwixt</title>
+        <pubTime>2015-12-07T07:02:20.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/phantomjs-e7-ad-be-e5-88-b0/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>phantomjs签到</title>
+        <pubTime>2015-12-25T07:08:12.000Z</pubTime>
         
          
            
              
               <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1539,11 +1607,11 @@
         <title>分享个调用小黄鸡的思路</title>
         <pubTime>2013-02-03T04:49:27.000Z</pubTime>
         
+        <tag>python</tag>
+         
         <tag>小黄鸡</tag>
          
         <tag>技术宅</tag>
-         
-        <tag>python</tag>
          
         <tag>爬虫</tag>
          
@@ -1566,44 +1634,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/Mybatis-Unrecognized-JDBC-type-1111/</loc>
+    <loc>http://www.kaedeen.com/douban-simple-chrome-plugin/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>解决ibatis或者mybatis错误类型：Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null</title>
-        <pubTime>2013-03-12T08:50:15.000Z</pubTime>
-        
-        <tag>ibatis</tag>
-         
-        <tag>mybatis</tag>
-         
-        <tag>错误代码</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/phantomjs-e7-ad-be-e5-88-b0/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>phantomjs签到</title>
-        <pubTime>2015-12-25T07:08:12.000Z</pubTime>
+        <title>豆瓣FM简约版 Chrome插件 v1.0.2</title>
+        <pubTime>2016-03-04T05:19:40.000Z</pubTime>
         
          
            
              
               <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1634,6 +1675,24 @@
 
     
   <url>
+    <loc>http://www.kaedeen.com/douban-simple/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>豆瓣radio简约版</title>
+        <pubTime>2015-12-19T17:53:05.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.kaedeen.com/etcs-in-kunming/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1645,31 +1704,6 @@
            
              
               <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/SimSimi-new-trick/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>据说SimSimi小黄鸡要全面收费了,本宅表示毫无压力</title>
-        <pubTime>2013-03-12T14:56:43.000Z</pubTime>
-        
-        <tag>小黄鸡</tag>
-         
-        <tag>微信</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -1743,6 +1777,30 @@
 
     
   <url>
+    <loc>http://www.kaedeen.com/Mybatis-Unrecognized-JDBC-type-1111/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>解决ibatis或者mybatis错误类型：Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null</title>
+        <pubTime>2013-03-12T08:50:15.000Z</pubTime>
+        
+        <tag>ibatis</tag>
+         
+        <tag>mybatis</tag>
+         
+        <tag>错误代码</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.kaedeen.com/reread-bailuyuan/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1752,24 +1810,6 @@
         
         <tag>白鹿原</tag>
          
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/fangfalun/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>笛卡儿在方法论</title>
-        <pubTime>2013-08-22T06:10:14.000Z</pubTime>
-        
          
            
              
@@ -1805,6 +1845,33 @@
 
     
   <url>
+    <loc>http://www.kaedeen.com/sae-gand-me/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>SAE如何绑定Gandi免费.me域名</title>
+        <pubTime>2012-12-13T14:15:40.000Z</pubTime>
+        
+        <tag>教程</tag>
+         
+        <tag>Gandi免费域名</tag>
+         
+        <tag>SAE</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.kaedeen.com/sae-middle-rank/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1828,36 +1895,6 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/2345-coins/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>签到系列最终篇:2345每日自动签到领积分</title>
-        <pubTime>2013-11-26T13:33:35.000Z</pubTime>
-        
-        <tag>2345.com</tag>
-         
-        <tag>2345自动签到</tag>
-         
-        <tag>httpclient</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.kaedeen.com/san-pang/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1869,33 +1906,6 @@
            
              
               <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/sae-gand-me/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>SAE如何绑定Gandi免费.me域名</title>
-        <pubTime>2012-12-13T14:15:40.000Z</pubTime>
-        
-        <tag>教程</tag>
-         
-        <tag>SAE</tag>
-         
-        <tag>Gandi免费域名</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -1923,17 +1933,35 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/finally-blog-can-open/</loc>
+    <loc>http://www.kaedeen.com/spring-pray/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>博客总算能打开了……</title>
-        <pubTime>2013-01-15T16:01:04.000Z</pubTime>
+        <title>满城春色 双手合十</title>
+        <pubTime>2014-02-16T14:00:04.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/fangfalun/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>笛卡儿在方法论</title>
+        <pubTime>2013-08-22T06:10:14.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1966,17 +1994,27 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/spring-pray/</loc>
+    <loc>http://www.kaedeen.com/taobo-coins/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>满城春色 双手合十</title>
-        <pubTime>2014-02-16T14:00:04.000Z</pubTime>
+        <title>每日自动领取淘金币（java httpclient4）</title>
+        <pubTime>2013-11-24T13:34:26.000Z</pubTime>
         
+        <tag>httpclient</tag>
+         
+        <tag>淘宝金币</tag>
+         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -2032,27 +2070,21 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/taobo-coins/</loc>
+    <loc>http://www.kaedeen.com/the-meaningful-stuff-2012/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>每日自动领取淘金币（java httpclient4）</title>
-        <pubTime>2013-11-24T13:34:26.000Z</pubTime>
+        <title>什么才是有意义的事情</title>
+        <pubTime>2012-12-15T16:30:27.000Z</pubTime>
         
-        <tag>httpclient</tag>
+        <tag>微信</tag>
          
-        <tag>淘宝金币</tag>
+        <tag>伟大的wall</tag>
          
          
            
              
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2078,20 +2110,26 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/first-selenium-python/</loc>
+    <loc>http://www.kaedeen.com/farewell-merlin/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>第一个selenium+python脚本</title>
-        <pubTime>2016-02-19T08:54:34.000Z</pubTime>
+        <title>再见，《梅林传奇》</title>
+        <pubTime>2012-12-25T15:04:59.000Z</pubTime>
         
+        <tag>梅林传奇</tag>
+         
+        <tag>节操</tag>
+         
+        <tag>英剧</tag>
+         
          
            
              
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
              
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2099,21 +2137,25 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/the-meaningful-stuff-2012/</loc>
+    <loc>http://www.kaedeen.com/three-goods/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>什么才是有意义的事情</title>
-        <pubTime>2012-12-15T16:30:27.000Z</pubTime>
+        <title>有三宝</title>
+        <pubTime>2013-01-17T00:26:04.000Z</pubTime>
         
-        <tag>微信</tag>
+        <tag>diaos</tag>
          
-        <tag>伟大的wall</tag>
+        <tag>白富美</tag>
+         
+        <tag>矮穷挫</tag>
+         
+        <tag>高富帅</tag>
          
          
            
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -2127,6 +2169,24 @@
         <display>
         <title>我们最幸福</title>
         <pubTime>2014-11-13T03:20:51.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.kaedeen.com/to-move-on/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>该扔的扔，该放弃的放弃，不然阻碍前行的脚步。</title>
+        <pubTime>2014-01-15T14:44:13.000Z</pubTime>
         
          
            
@@ -2154,32 +2214,6 @@
            
              
               <breadCrumb title="感悟" url="http://www.kaedeen.com/categories/%E6%84%9F%E6%82%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/three-goods/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>有三宝</title>
-        <pubTime>2013-01-17T00:26:04.000Z</pubTime>
-        
-        <tag>diaos</tag>
-         
-        <tag>白富美</tag>
-         
-        <tag>矮穷挫</tag>
-         
-        <tag>高富帅</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -2232,24 +2266,6 @@
            
              
               <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/to-move-on/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>该扔的扔，该放弃的放弃，不然阻碍前行的脚步。</title>
-        <pubTime>2014-01-15T14:44:13.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -2381,22 +2397,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/forget-the-key/</loc>
+    <loc>http://www.kaedeen.com/finally-blog-can-open/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>加班到这么晚，还忘记带钥匙，悲催……</title>
-        <pubTime>2013-07-11T15:35:49.000Z</pubTime>
+        <title>博客总算能打开了……</title>
+        <pubTime>2013-01-15T16:01:04.000Z</pubTime>
         
-        <tag>Ora错误</tag>
-         
          
            
              
-              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2404,17 +2415,20 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/fried-yogurt/</loc>
+    <loc>http://www.kaedeen.com/first-selenium-python/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>炒酸奶</title>
-        <pubTime>2015-09-27T13:54:59.000Z</pubTime>
+        <title>第一个selenium+python脚本</title>
+        <pubTime>2016-02-19T08:54:34.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -2446,19 +2460,29 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/xiaoi-end/</loc>
+    <loc>http://www.kaedeen.com/xiami-auto-checkin/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>小i微信被人举报，大家都没得玩了……</title>
-        <pubTime>2013-01-18T08:39:03.000Z</pubTime>
+        <title>虾米自动签到</title>
+        <pubTime>2012-12-05T05:28:10.000Z</pubTime>
         
-        <tag>小i机器人</tag>
+        <tag>python</tag>
+         
+        <tag>技术宅</tag>
+         
+        <tag>代码</tag>
          
          
            
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -2491,54 +2515,19 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/xiami-auto-checkin/</loc>
+    <loc>http://www.kaedeen.com/xiaoi-end/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>虾米自动签到</title>
-        <pubTime>2012-12-05T05:28:10.000Z</pubTime>
+        <title>小i微信被人举报，大家都没得玩了……</title>
+        <pubTime>2013-01-18T08:39:03.000Z</pubTime>
         
-        <tag>技术宅</tag>
-         
-        <tag>python</tag>
-         
-        <tag>代码</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.kaedeen.com/xiaoibot-weixin/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>小i机器人微信版(已公布源码 )</title>
-        <pubTime>2013-01-08T14:37:19.000Z</pubTime>
-        
-        <tag>微信</tag>
-         
         <tag>小i机器人</tag>
          
          
            
              
-              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2574,6 +2563,31 @@
 
     
   <url>
+    <loc>http://www.kaedeen.com/xiaoibot-weixin/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>小i机器人微信版(已公布源码 )</title>
+        <pubTime>2013-01-08T14:37:19.000Z</pubTime>
+        
+        <tag>微信</tag>
+         
+        <tag>小i机器人</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.kaedeen.com/yuantengfei-chengjisihan/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -2598,29 +2612,22 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/geek-iciba/</loc>
+    <loc>http://www.kaedeen.com/forget-the-key/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>我不会告诉你这是一个技术宅自己开发的一个爬虫程序，每天爬取爱词霸首页的每日一句然后发到自己的博客上……</title>
-        <pubTime>2012-11-26T06:09:35.000Z</pubTime>
+        <title>加班到这么晚，还忘记带钥匙，悲催……</title>
+        <pubTime>2013-07-11T15:35:49.000Z</pubTime>
         
-        <tag>技术宅</tag>
-         
-        <tag>每日一句</tag>
-         
-        <tag>爬虫</tag>
+        <tag>Ora错误</tag>
          
          
            
              
-              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="博客" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
              
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="爬虫" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/%E7%88%AC%E8%99%AB/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2628,24 +2635,17 @@
 
     
   <url>
-    <loc>http://www.kaedeen.com/goagent-cannot-conect/</loc>
+    <loc>http://www.kaedeen.com/fried-yogurt/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>解决goagent连不上的问题</title>
-        <pubTime>2012-12-08T02:56:05.000Z</pubTime>
+        <title>炒酸奶</title>
+        <pubTime>2015-09-27T13:54:59.000Z</pubTime>
         
-        <tag>goagent</tag>
-         
-        <tag>教程</tag>
-         
          
            
              
-              <breadCrumb title="技术宅" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="教程" url="http://www.kaedeen.com/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="啰B嗦" url="http://www.kaedeen.com/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
