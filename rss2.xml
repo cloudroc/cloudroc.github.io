@@ -4,7 +4,7 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>凤凰山笔记</title>
-    <link>http://www.kaedeen.com/</link>
+    <link>http://blog.jarjar.cn/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
@@ -13,8 +13,8 @@
     
     <item>
       <title>使用ant脚本生成jar包</title>
-      <link>http://www.kaedeen.com/use-ant-to-build-jar/</link>
-      <guid>http://www.kaedeen.com/use-ant-to-build-jar/</guid>
+      <link>http://blog.jarjar.cn/use-ant-to-build-jar/</link>
+      <guid>http://blog.jarjar.cn/use-ant-to-build-jar/</guid>
       <pubDate>Thu, 15 Dec 2016 02:26:17 GMT</pubDate>
       <description>
       
@@ -29,13 +29,13 @@
 &lt;h1 id=&quot;运行方式：&quot;&gt;&lt;a href=&quot;#运行方式：&quot; class=&quot;headerlink&quot; title=&quot;运行方式：&quot;&gt;&lt;/a&gt;运行方式：&lt;/h1&gt;&lt;p&gt;eclipse为例，选中ant脚本，右键run as -&amp;gt; ant build(第2个option) -&amp;gt; 命令执行顺序是先init 再 jar，默认可能只有jar，需要手工选择一下&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/use-ant-to-build-jar/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/use-ant-to-build-jar/#disqus_thread</comments>
     </item>
     
     <item>
       <title>使用java执行javascript脚本</title>
-      <link>http://www.kaedeen.com/java-run-js/</link>
-      <guid>http://www.kaedeen.com/java-run-js/</guid>
+      <link>http://blog.jarjar.cn/java-run-js/</link>
+      <guid>http://blog.jarjar.cn/java-run-js/</guid>
       <pubDate>Mon, 28 Nov 2016 12:26:17 GMT</pubDate>
       <description>
       
@@ -48,13 +48,13 @@
 &lt;p&gt;以下代码可以执行一个js文件中的某个js方法：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;RunJs&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; FileNotFoundException, ScriptException, NoSuchMethodException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ScriptEngineManager scriptEngineManager = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ScriptEngineManager();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScriptEngine engine = scriptEngineManager.getEngineByExtension(&lt;span class=&quot;string&quot;&gt;&quot;js&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        BufferedReader reader = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; BufferedReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; InputStreamReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; FileInputStream(&lt;span class=&quot;string&quot;&gt;&quot;google_tk.js&quot;&lt;/span&gt;)));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        engine.eval(reader);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Invocable invocable = (Invocable)engine;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;//这里参数 第一个是js文件中的js function名字，第二个是funciton接受的参数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Object result = invocable.invokeFunction(&lt;span class=&quot;string&quot;&gt;&quot;VL&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;happy new year!&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(result);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * java调用js&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; filePath&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; menthod&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; parm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; String &lt;span class=&quot;title&quot;&gt;invokeJs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String filePath,String menthod,String parm)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ScriptEngineManager scriptEngineManager = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ScriptEngineManager();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScriptEngine engine = scriptEngineManager.getEngineByExtension(&lt;span class=&quot;string&quot;&gt;&quot;js&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        BufferedReader reader = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; BufferedReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; InputStreamReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; FileInputStream(filePath)));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        engine.eval(reader);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Invocable invocable = (Invocable)engine;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Object result = invocable.invokeFunction(menthod,parm);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/java-run-js/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/java-run-js/#disqus_thread</comments>
     </item>
     
     <item>
       <title>卡斯特罗 20161125</title>
-      <link>http://www.kaedeen.com/regards-for-castro/</link>
-      <guid>http://www.kaedeen.com/regards-for-castro/</guid>
+      <link>http://blog.jarjar.cn/regards-for-castro/</link>
+      <guid>http://blog.jarjar.cn/regards-for-castro/</guid>
       <pubDate>Sat, 26 Nov 2016 06:50:26 GMT</pubDate>
       <description>
       
@@ -74,13 +74,13 @@
 &lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1fa5ihsl7nzj209g0ek0u8.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1fa5ihti54uj208c08u74f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/regards-for-castro/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/regards-for-castro/#disqus_thread</comments>
     </item>
     
     <item>
       <title>多铆蒸刚</title>
-      <link>http://www.kaedeen.com/Multi-riveting-just-steam/</link>
-      <guid>http://www.kaedeen.com/Multi-riveting-just-steam/</guid>
+      <link>http://blog.jarjar.cn/Multi-riveting-just-steam/</link>
+      <guid>http://blog.jarjar.cn/Multi-riveting-just-steam/</guid>
       <pubDate>Wed, 16 Nov 2016 03:50:26 GMT</pubDate>
       <description>
       
@@ -97,13 +97,13 @@
 &lt;p&gt;多铆蒸刚，炮塔至大！&lt;br&gt;亿万星辰，亿万炮塔！&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/Multi-riveting-just-steam/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/Multi-riveting-just-steam/#disqus_thread</comments>
     </item>
     
     <item>
       <title>使用Hexo NexT主题上传文章到github-pages css js 出现404问题的解决方案</title>
-      <link>http://www.kaedeen.com/next-theme-css-js-404/</link>
-      <guid>http://www.kaedeen.com/next-theme-css-js-404/</guid>
+      <link>http://blog.jarjar.cn/next-theme-css-js-404/</link>
+      <guid>http://blog.jarjar.cn/next-theme-css-js-404/</guid>
       <pubDate>Fri, 04 Nov 2016 03:30:26 GMT</pubDate>
       <description>
       
@@ -123,13 +123,13 @@
 &lt;p&gt;另外，更换其他的主题，即hexo编译后没有vendor文件夹的主题，也可以解决这个问题。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/next-theme-css-js-404/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/next-theme-css-js-404/#disqus_thread</comments>
     </item>
     
     <item>
       <title>读书2016</title>
-      <link>http://www.kaedeen.com/read-book-2016/</link>
-      <guid>http://www.kaedeen.com/read-book-2016/</guid>
+      <link>http://blog.jarjar.cn/read-book-2016/</link>
+      <guid>http://blog.jarjar.cn/read-book-2016/</guid>
       <pubDate>Thu, 03 Nov 2016 08:30:26 GMT</pubDate>
       <description>
       
@@ -146,13 +146,13 @@
 &lt;p&gt;今天聊到大学课本的事情，想想家里仅留下的一本大学课本竟然是《计算机科学概论》，准备好好再读一遍，做点笔记。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/read-book-2016/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/read-book-2016/#disqus_thread</comments>
     </item>
     
     <item>
       <title>三国合战</title>
-      <link>http://www.kaedeen.com/ThreeKingdoms-Conqueror/</link>
-      <guid>http://www.kaedeen.com/ThreeKingdoms-Conqueror/</guid>
+      <link>http://blog.jarjar.cn/ThreeKingdoms-Conqueror/</link>
+      <guid>http://blog.jarjar.cn/ThreeKingdoms-Conqueror/</guid>
       <pubDate>Mon, 17 Oct 2016 08:30:26 GMT</pubDate>
       <description>
       
@@ -168,13 +168,13 @@
 &lt;p&gt;以下截图为战胜汉献帝的胜利图片，表示已经通关。&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f8vbod3x0pj21120ku12a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/ThreeKingdoms-Conqueror/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/ThreeKingdoms-Conqueror/#disqus_thread</comments>
     </item>
     
     <item>
       <title>简书刷分插件</title>
-      <link>http://www.kaedeen.com/jianshu-plugin/</link>
-      <guid>http://www.kaedeen.com/jianshu-plugin/</guid>
+      <link>http://blog.jarjar.cn/jianshu-plugin/</link>
+      <guid>http://blog.jarjar.cn/jianshu-plugin/</guid>
       <pubDate>Sat, 01 Oct 2016 09:30:26 GMT</pubDate>
       <description>
       
@@ -214,13 +214,13 @@
 &lt;p&gt;PS:脚本刷积分也许成了多年的技术癖好，幸好不在阿里不然估计会被开除…&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/jianshu-plugin/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/jianshu-plugin/#disqus_thread</comments>
     </item>
     
     <item>
       <title>加入简书</title>
-      <link>http://www.kaedeen.com/join-jianshu/</link>
-      <guid>http://www.kaedeen.com/join-jianshu/</guid>
+      <link>http://blog.jarjar.cn/join-jianshu/</link>
+      <guid>http://blog.jarjar.cn/join-jianshu/</guid>
       <pubDate>Fri, 30 Sep 2016 07:30:26 GMT</pubDate>
       <description>
       
@@ -235,13 +235,13 @@
 &lt;p&gt;我在简书的文章合集地址是：//TODO&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/join-jianshu/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/join-jianshu/#disqus_thread</comments>
     </item>
     
     <item>
       <title>我想</title>
-      <link>http://www.kaedeen.com/work-hard-live-better/</link>
-      <guid>http://www.kaedeen.com/work-hard-live-better/</guid>
+      <link>http://blog.jarjar.cn/work-hard-live-better/</link>
+      <guid>http://blog.jarjar.cn/work-hard-live-better/</guid>
       <pubDate>Sat, 27 Aug 2016 07:30:26 GMT</pubDate>
       <description>
       
@@ -256,13 +256,13 @@
 &lt;p&gt;看了北京折叠，虽然不喜欢女性写的书，但是里面写的事情好像自己都经历过，有种酸痛的感觉。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/work-hard-live-better/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/work-hard-live-better/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo博客手机APP</title>
-      <link>http://www.kaedeen.com/hexo-app/</link>
-      <guid>http://www.kaedeen.com/hexo-app/</guid>
+      <link>http://blog.jarjar.cn/hexo-app/</link>
+      <guid>http://blog.jarjar.cn/hexo-app/</guid>
       <pubDate>Tue, 16 Aug 2016 02:30:26 GMT</pubDate>
       <description>
       
@@ -286,13 +286,13 @@
 &lt;p&gt;PS:IOS端没有证书所以不能发布，重复文章是因为feedly自身的问题…&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/hexo-app/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/hexo-app/#disqus_thread</comments>
     </item>
     
     <item>
       <title>宁静致远</title>
-      <link>http://www.kaedeen.com/lost-in-past/</link>
-      <guid>http://www.kaedeen.com/lost-in-past/</guid>
+      <link>http://blog.jarjar.cn/lost-in-past/</link>
+      <guid>http://blog.jarjar.cn/lost-in-past/</guid>
       <pubDate>Sat, 30 Jul 2016 10:30:26 GMT</pubDate>
       <description>
       
@@ -307,13 +307,13 @@
 &lt;p&gt;静以修身，俭以养德，宁静以致远，才能过好这一生吧。&lt;/p&gt;
 &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=28138269&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</content:encoded>
       
-      <comments>http://www.kaedeen.com/lost-in-past/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/lost-in-past/#disqus_thread</comments>
     </item>
     
     <item>
       <title>捐鞋子</title>
-      <link>http://www.kaedeen.com/donation/</link>
-      <guid>http://www.kaedeen.com/donation/</guid>
+      <link>http://blog.jarjar.cn/donation/</link>
+      <guid>http://blog.jarjar.cn/donation/</guid>
       <pubDate>Wed, 13 Jul 2016 07:30:26 GMT</pubDate>
       <description>
       
@@ -325,13 +325,13 @@
       <content:encoded>&lt;p&gt;最近工作和琐事缠身，没有从事微小工作的研究。&lt;br&gt;上周末把一双穿了两年的鞋子简单的刷了刷，放到了小区楼下的旧衣收集箱中。仔细看了下说明，鞋子也在收集的范围之中就投放了进去。这双鞋子质量尚可，仅仅鞋底有点微微裂开，应该还可以再穿一年的。希望新的主人不要嫌弃吧。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/donation/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/donation/#disqus_thread</comments>
     </item>
     
     <item>
       <title>西游记古群整理版</title>
-      <link>http://www.kaedeen.com/my-journey-to-the-west/</link>
-      <guid>http://www.kaedeen.com/my-journey-to-the-west/</guid>
+      <link>http://blog.jarjar.cn/my-journey-to-the-west/</link>
+      <guid>http://blog.jarjar.cn/my-journey-to-the-west/</guid>
       <pubDate>Fri, 17 Jun 2016 13:12:26 GMT</pubDate>
       <description>
       
@@ -349,13 +349,13 @@
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f4yitugaewj20qo0qoq8o.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/7d6b7503jw1f4yk77w1dlj20qo0qotf2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;口口处为嚼舌&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/my-journey-to-the-west/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/my-journey-to-the-west/#disqus_thread</comments>
     </item>
     
     <item>
       <title>使用solr4.0+tika索引文件夹下所有文件</title>
-      <link>http://www.kaedeen.com/import-folder-of-documnet-with-solar4.0-plus-tika/</link>
-      <guid>http://www.kaedeen.com/import-folder-of-documnet-with-solar4.0-plus-tika/</guid>
+      <link>http://blog.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/</link>
+      <guid>http://blog.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/</guid>
       <pubDate>Wed, 08 Jun 2016 01:50:26 GMT</pubDate>
       <description>
       
@@ -377,13 +377,13 @@
 &lt;p&gt;这样你通过solr4.0自带的UI中进行dataimport即可，具体搜索测试这里不作赘述。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/import-folder-of-documnet-with-solar4.0-plus-tika/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/#disqus_thread</comments>
     </item>
     
     <item>
       <title>solr起步</title>
-      <link>http://www.kaedeen.com/start-with-solr/</link>
-      <guid>http://www.kaedeen.com/start-with-solr/</guid>
+      <link>http://blog.jarjar.cn/start-with-solr/</link>
+      <guid>http://blog.jarjar.cn/start-with-solr/</guid>
       <pubDate>Sun, 05 Jun 2016 01:50:26 GMT</pubDate>
       <description>
       
@@ -399,13 +399,13 @@
 &lt;p&gt;附上我做的粗糙搜索网页效果：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1f4k4idqwhzj20tb0po7fr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/start-with-solr/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/start-with-solr/#disqus_thread</comments>
     </item>
     
     <item>
       <title>不作恶</title>
-      <link>http://www.kaedeen.com/do-not-be-evil/</link>
-      <guid>http://www.kaedeen.com/do-not-be-evil/</guid>
+      <link>http://blog.jarjar.cn/do-not-be-evil/</link>
+      <guid>http://blog.jarjar.cn/do-not-be-evil/</guid>
       <pubDate>Fri, 27 May 2016 13:50:26 GMT</pubDate>
       <description>
       
@@ -420,13 +420,13 @@
 &lt;p&gt;最近在看凯文·凯利的《必然》，写的很有水平，我仅仅靠站公交和上厕所的时间就已看完大半，可见这本书的吸引力。里面有很多黑当前社会主义政体的言论，不知道为什么可以在大陆发行，可能那些人don’t care.&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/do-not-be-evil/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/do-not-be-evil/#disqus_thread</comments>
     </item>
     
     <item>
       <title>jfinal和mybatis集成的问题</title>
-      <link>http://www.kaedeen.com/questions-about-jfinal-merge-with-mybatis/</link>
-      <guid>http://www.kaedeen.com/questions-about-jfinal-merge-with-mybatis/</guid>
+      <link>http://blog.jarjar.cn/questions-about-jfinal-merge-with-mybatis/</link>
+      <guid>http://blog.jarjar.cn/questions-about-jfinal-merge-with-mybatis/</guid>
       <pubDate>Fri, 20 May 2016 05:32:22 GMT</pubDate>
       <description>
       
@@ -445,13 +445,13 @@
 &lt;p&gt;3、要实现上面说的两点务必要使用依赖注入这种方式了，也就是使用spring了。虽然jfinal也提供了集成spring的方式，但是难道要这样 jfinal集成spring-&amp;gt;用spring去集成mybatis？这种玩法就不如直接springmvc和mybatis直接集成了~~&lt;br&gt;当时做jfinal集成的目的就是嫌弃spring过多莫名其妙的配置文件的玩法，同时不喜欢jfinal的ActiveRecord的玩法，更多无脑的偏爱mybatis吧&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;4、我觉得还是先研究jfinal集成shiro吧，&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/questions-about-jfinal-merge-with-mybatis/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/questions-about-jfinal-merge-with-mybatis/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Chuck is the God.</title>
-      <link>http://www.kaedeen.com/Chuck-is-the-God/</link>
-      <guid>http://www.kaedeen.com/Chuck-is-the-God/</guid>
+      <link>http://blog.jarjar.cn/Chuck-is-the-God/</link>
+      <guid>http://blog.jarjar.cn/Chuck-is-the-God/</guid>
       <pubDate>Fri, 06 May 2016 12:26:17 GMT</pubDate>
       <description>
       
@@ -465,13 +465,13 @@
 &lt;p&gt;Supernatural.S11E20 mark.&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/Chuck-is-the-God/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/Chuck-is-the-God/#disqus_thread</comments>
     </item>
     
     <item>
       <title>（不）相信</title>
-      <link>http://www.kaedeen.com/believe-or-not/</link>
-      <guid>http://www.kaedeen.com/believe-or-not/</guid>
+      <link>http://blog.jarjar.cn/believe-or-not/</link>
+      <guid>http://blog.jarjar.cn/believe-or-not/</guid>
       <pubDate>Tue, 26 Apr 2016 02:26:17 GMT</pubDate>
       <description>
       
@@ -499,7 +499,7 @@
 &lt;p&gt;相信与不相信之间，彷彿还有令人沉吟的深度。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://www.kaedeen.com/believe-or-not/#disqus_thread</comments>
+      <comments>http://blog.jarjar.cn/believe-or-not/#disqus_thread</comments>
     </item>
     
   </channel>
