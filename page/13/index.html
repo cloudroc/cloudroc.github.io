@@ -55,7 +55,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo,java,html5,mybatis,jfinal,life" />
 
 
 
@@ -125,7 +125,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?bccaf2f8a25f81f1fe174f6765c791c5";
+      hm.src = "//hm.baidu.com/hm.js?c5127ebccef09f61efbb5ce4885b2c1f";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -253,6 +253,344 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2345-coins/" itemprop="url">
+                  签到系列最终篇:2345每日自动签到领积分
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-11-26T21:33:35+08:00" content="2013-11-26">
+              2013-11-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2345-coins/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2345-coins/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>提到<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">http://www.2345.com/</a>这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。</p>
+<p>之前用python写过，<a href="http://www.kaedeen.com/382.html">2345自动签到</a>，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。</p>
+<p>经过一下午的研究，当然是上个周末了…发现m.2345.com上面的登陆还是没有验证码的，而且会创建一个domain为*.2345.com的cookie，这样就能完成登陆啦，然后签到什么的都是浮云..嘿嘿</p>
+<p>看代码：</p>
+<pre name="code" class="c-sharp">
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import net.sf.json.JSONObject;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.NameValuePair;
+import org.apache.http.ParseException;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
+
+/**
+ * 
+ * @ClassName: Jifen2345
+ * @Description: 2345自动签到 由于2345把登陆页面都加上了数字验证，但是发现 m.2345.com
+ *               仍然不需要验证码即可创建domain为*.2345.com的cookie 2013-11-19
+ * @author kaedeen.com
+ * @date 2013-11-19 下午9:00:08
+ * 
+ */
+public class Jifen2345 {
+
+    private static final Logger logger = Logger.getLogger(Jifen2345.class);
+
+    private static DefaultHttpClient httpclient = null;// HttpClient对象
+
+    private static HttpResponse response = null;
+
+    private static String mloginUrl = "http://m.2345.com/index.php?c=login&a=ajaxLogin";// 手机登陆请求地址
+
+    private static String checkinUrl = "http://jifen.2345.com/jifen/every_day_signature_new.php";// 签到请求地址
+
+    private String userName = "";// 用户名
+
+    private String passWord = "";// 密码明文
+
+    /**
+     * 构造函数
+     * 
+     * @param userName
+     * @param passWord
+     */
+    public Jifen2345(String userName, String passWord) {
+        this.userName = userName;
+        this.passWord = passWord;
+    }
+
+    /**
+     * 登陆
+     * 
+     * @return
+     */
+    public boolean login(){
+
+        boolean flag = false;
+
+        httpclient = new DefaultHttpClient();
+        // 设定cookie策略
+        HttpClientParams.setCookiePolicy(httpclient.getParams(),CookiePolicy.BROWSER_COMPATIBILITY);
+
+        List<namevaluepair> formparams =new ArrayList<namevaluepair>();
+        formparams.add(new BasicNameValuePair("username", userName));
+        formparams.add(new BasicNameValuePair("password", passWord));
+
+        HttpPost httppost = new HttpPost(mloginUrl);
+        httppost.setHeader("Accept", "*/*");
+        httppost.setHeader("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4,zh-TW;q=0.2");
+        httppost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+        httppost.setHeader("Host", "m.2345.com");
+        httppost.setHeader("Origin", "http://m.2345.com");
+        httppost.setHeader("Proxy-Connection", "keep-alive");
+        httppost.setHeader("Referer", "http://m.2345.com/index.php?c=login");
+        httppost.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36");
+
+        try {
+            httppost.setEntity(new UrlEncodedFormEntity(formparams,  HTTP.UTF_8));
+
+            //获取登陆应答内容
+            response = httpclient.execute(httppost);
+
+            if(response.getStatusLine().getStatusCode()==HttpStatus.SC_OK){
+                int code=getLoginCode();
+                if(0==code){
+                    flag=true;
+                }else{
+                    logger.info(userName+"-用户名或密码有误！");
+                }
+            }else{
+                logger.info(userName+"-2345登陆请求出错，post返回状态:"+response.getStatusLine().getStatusCode());
+                return false;
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            httppost.abort();
+        }
+
+        return flag;
+    }
+
+    /**
+     * 每日签到
+     * @return
+     */
+    public boolean everyDaySignature(){
+
+        boolean flag = false;
+
+        HttpPost httppost = new HttpPost(checkinUrl); 
+        httppost.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36");
+        httppost.addHeader("Host","jifen.2345.com");
+        httppost.addHeader("Referer","http://jifen.2345.com/index.php");
+
+        try {
+
+            //获取登陆应答内容
+            response = httpclient.execute(httppost);
+
+            if(response.getStatusLine().getStatusCode()==HttpStatus.SC_OK){
+                HttpEntity httpEntity = response.getEntity(); 
+                String responseStr = EntityUtils.toString(httpEntity);
+                //logger.info(userName+"-签到请求返回："+responseStr);
+                if(responseStr.startsWith("succ")){
+                    flag=true;
+                    logger.info(userName+"-签到成功！："+responseStr);
+                }
+            }else{
+                logger.info(userName+"-2345签到请求出错，post返回状态:"+response.getStatusLine().getStatusCode());
+                return false;
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            httppost.abort();
+        }
+
+        return flag;
+
+    }
+
+    /*返回字符串
+    * {"code":0,"msg":"u7528u6237u540du6216u5bc6u7801u4e0du5bf9"}
+    */
+    private int getLoginCode(){
+
+        int code=2;
+        HttpEntity httpEntity = response.getEntity(); 
+        String responseJsonStr = "";
+        try {
+            responseJsonStr = EntityUtils.toString(httpEntity);
+            //logger.info("responseJsonStr---"+responseJsonStr);
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }//取出应答字符串 
+
+        Map map = JSONObject.fromObject(responseJsonStr);
+
+        code=(Integer) map.get("code");
+
+        logger.info(userName+"-捕获登陆返回code："+code);
+
+        return code;
+    }
+
+}
+</namevaluepair></namevaluepair></pre>
+
+<p><strong>一点点牢骚：</strong><br>其实去年就写了<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">2345</a>自动签到的程序，也挂在sae上面签到了一年了吧，因为自己不装机也不坑害别人装他们的浏览器或者软件，只是靠签到，所以一直收入甚微，到现在估计折合软妹币也就49元左右的样子…</p>
+<p>话说回来，写这些签到模拟登陆的程序都是个人兴趣，不指望用来赚钱，自己也真心不会赚钱,google adsense都“莫名其妙”被封了，所以基本没啥额外收入了。</p>
+<p>大家看代码时候有啥问题，请您留言，我看到会解答。如果伸手要直接可运行程序什么什么的，那个只能给好朋友，所有代码都在这里你都不想研究，我也帮不上你…</p>
+<p>我会把代码尽快放到github或者其他上面，敬请关注。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1352,138 +1690,6 @@ Taobao taobao=new Taobao(userName,passWord);
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/forget-the-key/" itemprop="url">
-                  加班到这么晚，还忘记带钥匙，悲催……
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-07-11T23:35:49+08:00" content="2013-07-11">
-              2013-07-11
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/forget-the-key/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="forget-the-key/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>RT<br>非常悲催啊，还好被同事收留了，都急的差点给开锁公司打电话……明天再想办法<br>不过找到了一个 ORA-00603: ORACLE server session terminated by fatal error 的问题根源，<br>等彻底解决了再记录一下，算是今天做了一件有意义的事吧</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1529,7 +1735,7 @@ Taobao taobao=new Taobao(userName,passWord);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">122</span>
+              <span class="site-state-item-count">123</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1770,6 +1976,9 @@ Taobao taobao=new Taobao(userName,passWord);
   
 
   
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
 </body>
 </html>

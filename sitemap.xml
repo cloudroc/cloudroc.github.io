@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.kaedeen.com/use-ant-to-build-jar/</loc>
+    
+    <lastmod>2016-12-15T02:51:26.169Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.kaedeen.com/java-run-js/</loc>
     
-    <lastmod>2016-11-28T11:42:59.710Z</lastmod>
+    <lastmod>2016-12-15T02:38:59.640Z</lastmod>
     
   </url>
   
@@ -257,13 +264,6 @@
     <loc>http://www.kaedeen.com/2345-auto-checkin/</loc>
     
     <lastmod>2016-04-16T12:28:11.909Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.kaedeen.com/SimSimi-new-trick/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
@@ -864,6 +864,13 @@
   
   <url>
     <loc>http://www.kaedeen.com/farewell-merlin/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.kaedeen.com/SimSimi-new-trick/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
