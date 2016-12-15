@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Thu, 15 Dec 2016 02:51:26 GMT</pubDate>
+    <pubDate>Thu, 15 Dec 2016 11:00:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>使用ant脚本编译jar包</title>
+      <title>使用ant脚本生成jar包</title>
       <link>http://www.kaedeen.com/use-ant-to-build-jar/</link>
       <guid>http://www.kaedeen.com/use-ant-to-build-jar/</guid>
       <pubDate>Thu, 15 Dec 2016 02:26:17 GMT</pubDate>
