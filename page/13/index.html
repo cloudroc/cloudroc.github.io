@@ -340,7 +340,7 @@
         
           
             <p>提到<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">http://www.2345.com/</a>这个网址大家可能不会陌生，这是一家专门推广自己浏览器和软件的公司，同时也吸引了大量推广员以及电脑维修点帮他推广，安装他们的软件。</p>
-<p>之前用python写过，<a href="http://www.kaedeen.com/382.html">2345自动签到</a>，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。</p>
+<p>之前用python写过，<a href="http://www.kaedeen.com/382.html" target="_blank" rel="external">2345自动签到</a>，但是最近发现2345那帮人在登陆上做了手脚，每次都让你做个数学题，也就是验证码了，所以不能自动登陆了，也就没法签到了。</p>
 <p>经过一下午的研究，当然是上个周末了…发现m.2345.com上面的登陆还是没有验证码的，而且会创建一个domain为*.2345.com的cookie，这样就能完成登陆啦，然后签到什么的都是浮云..嘿嘿</p>
 <p>看代码：</p>
 <pre name="code" class="c-sharp">
@@ -677,7 +677,7 @@ public class Jifen2345 {
       
         
           
-            <p>上一篇讲了<a href="http://www.kaedeen.com/693.html" title="每日自动登陆淘宝领取金币">每日自动登陆淘宝领取金币</a>，这一篇讲讲如何登陆360，并每日自动签到</p>
+            <p>上一篇讲了<a href="http://www.kaedeen.com/693.html" title="每日自动登陆淘宝领取金币" target="_blank" rel="external">每日自动登陆淘宝领取金币</a>，这一篇讲讲如何登陆360，并每日自动签到</p>
 <p>这次的难点主要集中在登陆这里了，开始抓包发现360登陆验证很麻烦，但是后来发现一个简单的方法。<br>因为我安装了360安全卫士，发现点击那个金币的按钮能直接验证登陆，哈哈~所以httpclient直接get这个url就能创建cookie完成登陆了~</p>
 <p>上面说的不明白，看图：<br><img src="http://ww3.sinaimg.cn/large/7d6b7503tw1eaxe7rxa0fj207l03naa5.jpg" alt="" title="360安全卫士"></p>
 <p>具体请看代码了：</p>
