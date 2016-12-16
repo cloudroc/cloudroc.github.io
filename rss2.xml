@@ -8,8 +8,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Thu, 15 Dec 2016 11:00:45 GMT</pubDate>
+    <pubDate>Fri, 16 Dec 2016 02:54:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>将hexo博客同时同步托管到github和coding.net,解决百度不收录问题</title>
+      <link>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</link>
+      <guid>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</guid>
+      <pubDate>Fri, 16 Dec 2016 02:26:17 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;背景：&quot;&gt;&lt;a href=&quot;#背景：&quot; class=&quot;headerlink&quot; title=&quot;背景：&quot;&gt;&lt;/a&gt;背景：&lt;/h1&gt;&lt;p&gt;由于github禁止百度爬虫访问，造成托管在github Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再
+      
+      </description>
+      
+      <content:encoded>&lt;h1 id=&quot;背景：&quot;&gt;&lt;a href=&quot;#背景：&quot; class=&quot;headerlink&quot; title=&quot;背景：&quot;&gt;&lt;/a&gt;背景：&lt;/h1&gt;&lt;p&gt;由于github禁止百度爬虫访问，造成托管在github Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误…&lt;/p&gt;
+&lt;h1 id=&quot;解决方案：&quot;&gt;&lt;a href=&quot;#解决方案：&quot; class=&quot;headerlink&quot; title=&quot;解决方案：&quot;&gt;&lt;/a&gt;解决方案：&lt;/h1&gt;&lt;h2 id=&quot;将hexo同时同步到github和coding-net&quot;&gt;&lt;a href=&quot;#将hexo同时同步到github和coding-net&quot; class=&quot;headerlink&quot; title=&quot;将hexo同时同步到github和coding.net&quot;&gt;&lt;/a&gt;将hexo同时同步到github和coding.net&lt;/h2&gt;&lt;p&gt;###（1）在github使用hexo可以参见相关文章： ###&lt;br&gt;&lt;a href=&quot;http://blog.jarjar.cn/write-blog-with-github/&quot; title=&quot;2016年使用Github写博客&quot;&gt;http://blog.jarjar.cn/write-blog-with-github/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;###（2）在coding.net开启pages功能 ###&lt;br&gt;在coding.net上注册后，创建一个与用户名相同的项目，如用户名是cloudroc，则项目名称也是cloudroc。创建项目后，在项目的Pages页面里，修改Pages服务的关联分支为master，然后开启Pages服务。再填入你要绑定的域名。注意项目类型我这里设置的是共有。&lt;/p&gt;
+&lt;p&gt;###（3）在本机建立coding.net的ssh key ###&lt;br&gt;首先本地需要安装git客户端，在任意路径右键-&amp;gt;git bash here&lt;br&gt;输入：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -t rsa -C &amp;quot;yourmail@domain.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;可以一路按enter键，然后可在C:\Users\主机名.ssh下找到，文件名：id_rsa(私钥)，id_rsa.pub(公钥)&lt;/p&gt;
+&lt;p&gt;最后在coding.net，刚建立的pages项目中维护这个公钥，如下图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503gw1fasfq2slsmj20kr0av0sx.jpg&quot; alt=&quot;rsa public key&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###（4）修改hexo目录的_config.yml，设置多个仓库同步 ###&lt;br&gt;示例：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    github: https://github.com/cloudroc/cloudroc.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    coding: git@git.coding.net:cloudroc/cloudroc.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  message: a little wroks&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这里github好像只能是https，ssh是不行的，但是coding.net的ssh没有问题&lt;/p&gt;
+&lt;h2 id=&quot;在DNSPOD设置CNAME&quot;&gt;&lt;a href=&quot;#在DNSPOD设置CNAME&quot; class=&quot;headerlink&quot; title=&quot;在DNSPOD设置CNAME&quot;&gt;&lt;/a&gt;在DNSPOD设置CNAME&lt;/h2&gt;&lt;p&gt;首先要在coding里你的pages项目绑定一个域名，然后会提示你需要将你的域名cname到pages.coding.me，照着做就好。&lt;br&gt;我使用的dnspod，设置完之后讲这个cname的&lt;strong&gt;线路类型&lt;/strong&gt;选择为&lt;strong&gt;百度&lt;/strong&gt;，这样百度爬虫就会去找你在coding上面的镜像了。这个过程可能很慢，百度嘛，呵呵&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>使用ant脚本生成jar包</title>
@@ -466,40 +491,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/Chuck-is-the-God/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>（不）相信</title>
-      <link>http://blog.jarjar.cn/believe-or-not/</link>
-      <guid>http://blog.jarjar.cn/believe-or-not/</guid>
-      <pubDate>Tue, 26 Apr 2016 02:26:17 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这篇是我感觉从上大学以后到现在看到的最好的散文，其实记住的散文不多，能记到现在的只有《背影》这篇。&lt;/p&gt;
-&lt;p&gt;以下为原文：&lt;br&gt;二十岁之前相信的很多东西，后来一件一件变成不相信。&lt;/p&gt;
-&lt;p&gt;曾经相信过爱国，后来知道「国」的定义有问题，通常那谆谆善诱要你爱国的人所定义的「国」，不一定可爱，不一定值得爱，而且更可能值得推翻。&lt;/p&gt;
-&lt;p&gt;曾经相信过历史，后来知道，原来历史的一半是编造。前朝史永远是后朝人在写，后朝人永远在否定前朝，他的后朝又来否定他，但是负负不一定得正，只是累积渐进的扭曲变形移位，使真相永远掩盖，无法复原。说「不容青史尽成灰」，表达的正是，不错，青史往往是要成灰的。指鹿為马，也往往是可以得逞和胜利的。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这篇是我感觉从上大学以后到现在看到的最好的散文，其实记住的散文不多，能记到现在的只有《背影》这篇。&lt;/p&gt;
-&lt;p&gt;以下为原文：&lt;br&gt;二十岁之前相信的很多东西，后来一件一件变成不相信。&lt;/p&gt;
-&lt;p&gt;曾经相信过爱国，后来知道「国」的定义有问题，通常那谆谆善诱要你爱国的人所定义的「国」，不一定可爱，不一定值得爱，而且更可能值得推翻。&lt;/p&gt;
-&lt;p&gt;曾经相信过历史，后来知道，原来历史的一半是编造。前朝史永远是后朝人在写，后朝人永远在否定前朝，他的后朝又来否定他，但是负负不一定得正，只是累积渐进的扭曲变形移位，使真相永远掩盖，无法复原。说「不容青史尽成灰」，表达的正是，不错，青史往往是要成灰的。指鹿為马，也往往是可以得逞和胜利的。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;曾经相信过文明的力量，后来知道，原来人的愚昧和野蛮不因文明的进展而消失，只是愚昧野蛮有很多不同的面貌：纯朴的农民工人、深沉的知识份子、自信的政治领袖、替天行道的王师，都可能有不同形式的巨大愚昧和巨大野蛮，而且野蛮和文明之间，竟然只有极其细微、随时可以被抹掉的一线之隔。&lt;/p&gt;
-&lt;p&gt;曾经相信过正义，后来知道，原来同时完全可以存在两种正义，而且彼此抵触，冰火不容。选择其中之一，正义同时就意味著不正义。而且，你绝对看不出，某些人在某一个特定的时机热烈主张某一个特定的正义，其中隐藏著深不可测的不正义。&lt;/p&gt;
-&lt;p&gt;曾经相信过理想主义者，后来知道，理想主义者往往经不起权力的测试：一掌有权力，他或者变成当初自己誓死反对的「邪恶」，或者，他在现实的场域里不堪一击，一下就被弄权者拉下马来，完全没有机会去实现他的理想。理想主义者要有品格，才能不被权力腐化；理想主义者要有能力，才能将理想转化为实践。可是理想主义者兼具品格及能力者，几希。&lt;/p&gt;
-&lt;p&gt;曾经相信过爱情，后来知道，原来爱情必须转化为亲情才可能持久，但是转化为亲情的爱情，犹如化入杯水中的冰块──它还是冰块吗？&lt;/p&gt;
-&lt;p&gt;曾经相信过海枯石烂作为永恒不灭的表征，后来知道，原来海其实很容易枯，石，原来很容易烂。雨水，很可能不再来，沧海，不会再成桑田。原来，自己脚下所踩的地球，很容易被毁灭。海枯石烂的永恒，原来不存在。&lt;/p&gt;
-&lt;p&gt;二十岁之前相信的很多东西，有些其实到今天也还相信。&lt;/p&gt;
-&lt;p&gt;譬如国也许不可爱，但是土地和人可以爱。譬如史也许不能信，但是对于真相的追求可以无止尽。譬如文明也许脆弱不堪，但是除文明外我们其实别无依靠。譬如正义也许极为可疑，但是在乎正义比不在乎要安全。譬如理想主义者也许成就不了大事大业，但是没有他们社会一定不一样。譬如爱情总是幻灭的多，但是萤火虫在夜里发光从来就不是为了保持光。譬如海枯石烂的永恒也许不存在，但是如果一粒沙里有一个无穷的宇宙，一剎那里想必也有一个不变不移的时间。&lt;/p&gt;
-&lt;p&gt;那么，有没有什么，是我二十岁前不相信的，现在却信了呢？&lt;/p&gt;
-&lt;p&gt;有的，不过都是些最平凡的老生常谈。曾经不相信「性格决定命运」，现在相信了。曾经不相信「色即是空」，现在相信了。曾经不相信「船到桥头自然直」，现在有点信了。曾经不相信无法实证的事情，现在也还没准备相信，但是，有些无关实证的感觉，我明白了，譬如李叔同圆寂前最后的手书：「君子之交，其淡如水，执象而求，咫尺千里。问余何适，廓尔忘言，华枝春满，天心月圆。」&lt;/p&gt;
-&lt;p&gt;相信与不相信之间，彷彿还有令人沉吟的深度。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/believe-or-not/#disqus_thread</comments>
     </item>
     
   </channel>
