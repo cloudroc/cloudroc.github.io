@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.jarjar.cn/db2-error-code/</loc>
+    
+    <lastmod>2016-12-17T14:54:00.056Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
     
     <lastmod>2016-12-16T02:59:01.782Z</lastmod>
@@ -271,13 +278,6 @@
     <loc>http://blog.jarjar.cn/2345-auto-checkin/</loc>
     
     <lastmod>2016-04-16T12:28:11.909Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
@@ -878,6 +878,13 @@
   
   <url>
     <loc>http://blog.jarjar.cn/goagent-cannot-conect/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     

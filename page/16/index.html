@@ -219,6 +219,191 @@
             
               
                 
+                <a class="post-title-link" href="/Mybatis-Unrecognized-JDBC-type-1111/" itemprop="url">
+                  解决ibatis或者mybatis错误类型：Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-03-12T16:50:15+08:00" content="2013-03-12">
+              2013-03-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/Mybatis-Unrecognized-JDBC-type-1111/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="Mybatis-Unrecognized-JDBC-type-1111/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天与项目同事调程序，发现报一下错误，好是郁闷.</p>
+<blockquote>
+<p>org.apache.ibatis.exceptions.PersistenceException:</p>
+<h3 id="Error-updating-database-Cause-org-apache-ibatis-type-TypeException-Error-setting-null-for-parameter-22-with-JdbcType-OTHER-Try-setting-a-different-JdbcType-for-this-parameter-or-a-different-jdbcTypeForNull-configuration-property-Cause-com-ibm-db2-jcc-am-SqlException-jcc-10271-10295-3-57-82-Unrecognized-JDBC-type-1111-ERRORCODE-4228-SQLSTATE-null"><a href="#Error-updating-database-Cause-org-apache-ibatis-type-TypeException-Error-setting-null-for-parameter-22-with-JdbcType-OTHER-Try-setting-a-different-JdbcType-for-this-parameter-or-a-different-jdbcTypeForNull-configuration-property-Cause-com-ibm-db2-jcc-am-SqlException-jcc-10271-10295-3-57-82-Unrecognized-JDBC-type-1111-ERRORCODE-4228-SQLSTATE-null" class="headerlink" title="Error updating database. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #22 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: com.ibm.db2.jcc.am.SqlException: [jcc][10271][10295][3.57.82] Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null"></a>Error updating database. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #22 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: com.ibm.db2.jcc.am.SqlException: [jcc][10271][10295][3.57.82] Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null</h3><p>…………….<br>错误直接定向到对应的insert或者update的sqlmap.xml文件</p>
+<p><pre name="code" class="c-sharp"></pre></p>
+<p><insert id="insertCrmChgReq" parametertype="Map"><br>        &lt;![CDATA[<br>        INSERT INTO<br>    CRM_CHANGE_REQUEST<br>    (<br>        REQ_ID,<br>        CUST_ID,<br>        CHANGE_TYPE,<br>        CHANGE_TYPE_NAME,<br>        CHANGE_FRM,<br>        CHANGE_TO,<br>        CHANGE_REASON,<br>        CRT_USER_ID,<br>        CRT_USER_NAME,<br>        CRT_DATE,<br>        PROCESS_ID,<br>        ACTIVITY_ID,<br>        AUDIT_DATE,<br>        CHG_KIND<br>    )<br>    VALUES<br>    (</insert></p>
+<pre><code>    #{REQ_ID},
+    #{CUST_ID},
+    #{CHANGE_TYPE},
+    #{CHANGE_TYPE_NAME},
+    #{CHANGE_FRM},
+    #{CHANGE_TO},
+    #{CHANGE_REASON},
+    #{CRT_USER_ID},
+    #{CRT_USER_NAME},
+    #{CRT_DATE},
+    #{PROCESS_ID},
+    #{ACTIVITY_ID},
+    #{AUDIT_DATE},
+    #{CHG_KIND}
+)
+    ]]&gt;
+&lt;/insert&gt;
+</code></pre><p><br>经过一番谷歌发现是<strong>如果null值得话，mybatis或者ibatis中要指定jdbctype，否则就会报错，主要原因是batis无法进行类型转换</strong><br>其实经过试验，<strong>batis会默认对象为string对象，所以varchar的可以不指定jdbctype也不会报错，如果是数字或者日期类型如果可能为null值得话就必须进行转换</strong></p>
+</blockquote>
+<p>以上文件简单修改一下就可以不报错了,即指定jdbctype</p>
+<pre name="code" class="c-sharp">
+<insert id="insertCrmChgReq" parametertype="Map">
+        <!--[CDATA[
+        INSERT INTO
+    CRM_CHANGE_REQUEST
+    (
+        REQ_ID,
+        CUST_ID,
+        CHANGE_TYPE,
+        CHANGE_TYPE_NAME,
+        CHANGE_FRM,
+        CHANGE_TO,
+        CHANGE_REASON,
+        CRT_USER_ID,
+        CRT_USER_NAME,
+        CRT_DATE,
+        PROCESS_ID,
+        ACTIVITY_ID,
+        AUDIT_DATE,
+        CHG_KIND
+    )
+    VALUES
+    (
+        #{REQ_ID},
+        #{CUST_ID},
+        #{CHANGE_TYPE},
+        #{CHANGE_TYPE_NAME},
+        #{CHANGE_FRM},
+        #{CHANGE_TO},
+        #{CHANGE_REASON},
+        #{CRT_USER_ID},
+        #{CRT_USER_NAME},
+        #{CRT_DATE},
+        #{PROCESS_ID},
+        #{ACTIVITY_ID},
+        #{AUDIT_DATE ,jdbcType=DATE},
+        #{CHG_KIND}
+    )
+        ]]-->
+    </insert>
+</pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/weibo-chat-robot/" itemprop="url">
                   本博公众微信聊天机器人功能修复
                 </a>
@@ -1023,129 +1208,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/weibo-present/" itemprop="url">
-                  微博鼠标垫一枚
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-01-26T23:52:55+08:00" content="2013-01-26">
-              2013-01-26
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/weibo-present/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="weibo-present/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>前段时间用<a href="http://cloudbbs.org/forum.php" target="_blank" rel="external">Cloudbbs</a>的论坛币购买的微博鼠标垫终于到了~</p>
-<p>顺便测试一下Light Box 2 插件吧。</p>
-<p><strong><a href="http://ww1.sinaimg.cn/large/a74ecc4cjw1e17efri76uj.jpg" title="实物图" target="_blank" rel="external">查看大图</a></strong></p>
-<p><a href="http://ww1.sinaimg.cn/bmiddle/a74eed94jw1e17eilauq3j.jpg" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/bmiddle/a74eed94jw1e17eilauq3j.jpg" alt="" title="微博鼠标垫"></a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1191,7 +1253,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1208,7 +1270,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">80</span>
+                <span class="site-state-item-count">82</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

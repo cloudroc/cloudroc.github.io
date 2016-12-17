@@ -219,6 +219,186 @@
             
               
                 
+                <a class="post-title-link" href="/grow-old-with-2345/" itemprop="url">
+                  与2345签到共同成长
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-05-01T15:19:11+08:00" content="2015-05-01">
+              2015-05-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/grow-old-with-2345/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="grow-old-with-2345/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>刚写下这个标题就有点觉得不科学，其实应该是和<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">2345签到</a>共同变老吧。</p>
+<p>整整一年多时间没有发代码，去年也是太累，今年没有好转的迹象，应该会更累的，然后就是慢慢变老……</p>
+<p><a href="http://www.2345.com/?k718881649" target="_blank" rel="external">2345签到</a>一直在改，估计是发现有人自动签到，所以加了很多限制，从他们的js发现很多判定模拟登录的脚本了。但是…其实水平还是有限，无法做到淘宝那么牛逼啊，仔细分析下抓包还有脚本还是能发现些蛛丝马迹，完成程序自动签到的。BTW，他们的js代码好多注释，省去很多弯路哈</p>
+<p>本来是用java的httpclient做的，并且想放到sae上面，但是发现本地运行好好的，放sae就有问题，尝试建立cookie的存储还是不行，云空间什么的有点无力。然后试了试sae的python，发现竟然python可以完美的模拟登录，但是python水平实在太弱，就有了下面的代码：</p>
+<pre name="code" class="c-sharp">
+#新版2345自动签到
+@app.route('/2345checkin1' , method='GET')
+def checkin():
+    username = "xxxx@126.com"
+    password = "自己把密码md5一下"
+    cmd = "login"
+    weakpass = "0"
+    vTime = "抓包获取"
+    weakpass = "0"
+    showWay = "ajax"
+    forward = "http://jifen.2345.com/m/login.php"
+
+    # Init
+    opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookielib.CookieJar()))
+    urllib2.install_opener(opener)
+
+    # Login登录
+    login_url = 'http://jifen.2345.com/jifenLogin.php'
+    login_data = urllib.urlencode({ 'cmd':cmd,'forward':forward,'password':password,'username':username,'vTime':vTime,'weakpass':weakpass,'showWay':showWay})
+    login_headers = {'Referer':'http://jifen.2345.com/', 'User-Agent':'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200'}
+    login_request = urllib2.Request(login_url, login_data, login_headers)
+    login_response = urllib2.urlopen(login_request).read()
+
+    #get md5code
+    index_url = "http://jifen.2345.com/index.php"
+    index_request = urllib2.Request(index_url,None , login_headers)
+    index_response = urllib2.urlopen(index_request).read()
+
+    #pattern这段主要是官方为了防止模拟领取写的脚本验证了
+    u_pattern = re.compile(r'var u = "(.*)";')
+    u_result = u_pattern.search(index_response)
+    u = u_result.group(1)
+
+    code_pattern = re.compile(r'var code = "(.*)";')
+    code_result = code_pattern.search(index_response)
+    code = code_result.group(1)
+
+    token = md5(u+code)
+
+    #checkin签到
+    chekin_url = "http://jifen.2345.com/jifen/every_day_signature_new.php"
+    checkin_data = urllib.urlencode({ 'sign_token':token})
+    checkin_headers = {'Referer':'http://jifen.2345.com/', 'User-Agent':'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200','X-Requested-With':'XMLHttpRequest'}
+    checkin_request = urllib2.Request(chekin_url, checkin_data, checkin_headers)
+    checkin_response = urllib2.urlopen(checkin_request).read()
+
+    #buy
+    buy_url = "http://buy.2345.com/sign_up/"
+    buy_headers = {'Referer':'http://buy.2345.com/?sign=1', 'User-Agent':'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200','X-Requested-With':'XMLHttpRequest'}
+    buy_request = urllib2.Request(buy_url, None, buy_headers)
+    buy_response = urllib2.urlopen(buy_request).read()
+
+    return buy_response
+</pre>
+
+<p>完成的事情：<br>1、自动登录<br>2、自动签到<br>3、自动领取<a href="http://www.2345.com/?k718881649" target="_blank" rel="external">buy.2345.com</a>的签到金币，据说可以提现的</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/happiness/" itemprop="url">
                   增加幸福感
                 </a>
@@ -821,129 +1001,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/i-loved-u-nancy/" itemprop="url">
-                  夜空中最亮的星
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-11-28T22:04:56+08:00" content="2014-11-28">
-              2014-11-28
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/i-loved-u-nancy/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="i-loved-u-nancy/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>当然下面的内容和标题不相关，因为今天听到这首歌，觉得多少有点感动。</p>
-<p>刚交了暖气费，就来到了全国最热的地方之一西双版纳。这次的工作安排有点违背我的意愿，尽管如此，到了这里又吃到了制作简单但是口感略爽的米干和饵丝，就这鱼(zhong)腥(kou)草(wei)更加有云南味道。</p>
-<p>这几天开始了跑步，每天大概只跑一点几公里，不到两公里，不过这也是从高中以后第一次开始有计划的锻炼。事情很多，不过希望继续坚持，同时坚持看书，虽然没有学习天赋，看起大书就会有抵触，不过贵在坚持。</p>
-<p>BTW，安卓版的kindle十分好用，但是最近总是闪退，只能抽空刷机了。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -989,7 +1046,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">124</span>
+              <span class="site-state-item-count">125</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1006,7 +1063,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">80</span>
+                <span class="site-state-item-count">82</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

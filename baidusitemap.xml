@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/db2-error-code/</loc>
+    <lastmod>2016-12-17T14:54:00.056Z</lastmod>
+    <data>
+        <display>
+        <title>DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法) DB2错误代码整理</title>
+        <pubTime>2016-12-17T14:56:17.000Z</pubTime>
+        
+        <tag>错误代码</tag>
+         
+        <tag>db2</tag>
+         
+        <tag>errorcode</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
     <lastmod>2016-12-16T02:59:01.782Z</lastmod>
     <data>
@@ -778,27 +802,6 @@
           
              
               <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>Google 发布 Angular 2 Beta</title>
-        <pubTime>2015-12-18T07:50:21.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -2692,6 +2695,27 @@
           
              
               <breadCrumb title="教程" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>Google 发布 Angular 2 Beta</title>
+        <pubTime>2015-12-18T07:50:21.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
