@@ -219,6 +219,160 @@
             
               
                 
+                <a class="post-title-link" href="/regular-expression-quick-start/" itemprop="url">
+                  正则表达式快速入门教程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-17T22:56:17+08:00" content="2016-12-17">
+              2016-12-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/regular-expression-quick-start/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="regular-expression-quick-start/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>看到一本书写的正则表达式教程非常好，特地整理出来，可以让大家迅速掌握正则表但是</p>
+<p>grep是常用的linux命令，用于字符串数据的对比，将符合条件的字符串打印出来。</p>
+<h1 id="grep-‘搜寻字符串’-filename"><a href="#grep-‘搜寻字符串’-filename" class="headerlink" title="grep ‘搜寻字符串’ filename"></a>grep ‘搜寻字符串’ filename</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例子：</span><br></pre></td></tr></table></figure>
+<h1 id="grep-‘root’-etc-passwd"><a href="#grep-‘root’-etc-passwd" class="headerlink" title="grep ‘root’ /etc/passwd"></a>grep ‘root’ /etc/passwd</h1><p>root:x:0:0:root:/root:/bin/bash<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为了显示突出显示效果，可以定义grep别名：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-’grep-–color-auto’"><a href="#grep-’grep-–color-auto’" class="headerlink" title="grep=’grep –color=auto’"></a>grep=’grep –color=auto’</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">范例文件[r.txt](http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt)</span><br><span class="line">在linux可以通过下列命令获取：</span><br></pre></td></tr></table></figure>
+<h1 id="wget-http-linux-vbird-org-linux-basic-0330regularex-regular-express-txt"><a href="#wget-http-linux-vbird-org-linux-basic-0330regularex-regular-express-txt" class="headerlink" title="wget http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt"></a>wget <a href="http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt" target="_blank" rel="external">http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt</a></h1><h1 id="mv-regular-express-txt-r-txt"><a href="#mv-regular-express-txt-r-txt" class="headerlink" title="mv regular_express.txt r.txt"></a>mv regular_express.txt r.txt</h1><h1 id="cat-r-txt"><a href="#cat-r-txt" class="headerlink" title="cat r.txt"></a>cat r.txt</h1><p>“Open Source” is a good mechanism to develop programs.<br>apple is my favorite food.<br>Football game is not use feet only.<br>this dress doesn’t fit me.<br>However, this dress is about $ 3183 dollars.<br>GNU is free air not free beer.<br>Her hair is very beauty.<br>I can’t finish the test.<br>Oh! The soup taste good.<br>motorcycle is cheap than car.<br>This window is clear.<br>the symbol ‘*’ is represented as start.<br>Oh!     My god!<br>The gd software is a library for drafting programs.<br>You are the best is mean you are the no. 1.<br>The world <happy> is the same with “glad”.<br>I like dog.<br>google is the best tools for search keyword.<br>goooooogle yes!<br>go! go! Let’s go.</happy></p>
+<h1 id="I-am-VBird"><a href="#I-am-VBird" class="headerlink" title="I am VBird"></a>I am VBird</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这文件一共22行，最后一行是空白行。</span><br><span class="line">## 基础正则表达式的练习</span><br><span class="line">#### 例一：</span><br></pre></td></tr></table></figure>
+<h1 id="grep-n-‘the’-r-txt"><a href="#grep-n-‘the’-r-txt" class="headerlink" title="grep -n ‘the’ r.txt"></a>grep -n ‘the’ r.txt</h1><p>8:I can’t finish the test.<br>12:the symbol ‘*’ is represented as start.<br>15:You are the best is mean you are the no. 1.<br>16:The world <happy> is the same with “glad”.<br>18:google is the best tools for search keyword.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 例二：用中括号[]来查找</span><br><span class="line">如果想查找test或taste这两个单词，发现它们的共同点是&apos;t?st&apos;。可以这样查找：</span><br></pre></td></tr></table></figure></happy></p>
+<h1 id="grep-n-‘t-ae-st’-r-txt"><a href="#grep-n-‘t-ae-st’-r-txt" class="headerlink" title="grep -n ‘t[ae]st’ r.txt"></a>grep -n ‘t[ae]st’ r.txt</h1><p>8:I can’t finish the test.<br>9:Oh! The soup taste good.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[]不论有几个字符，它都只代表某“一个”字符。如果想查找有oo的字符：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘oo’-r-txt"><a href="#grep-n-‘oo’-r-txt" class="headerlink" title="grep -n ‘oo’ r.txt"></a>grep -n ‘oo’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>2:apple is my favorite food.<br>3:Football game is not use feet only.<br>9:Oh! The soup taste good.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果不想要oo前面有g的话：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-g-oo’-r-txt"><a href="#grep-n-‘-g-oo’-r-txt" class="headerlink" title="grep -n ‘[^g]oo’ r.txt"></a>grep -n ‘[^g]oo’ r.txt</h1><p>2:apple is my favorite food.<br>3:Football game is not use feet only.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果想要oo前面有小写字母：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-a-z-oo’-r-txt"><a href="#grep-n-‘-a-z-oo’-r-txt" class="headerlink" title="grep -n ‘[^a-z]oo’ r.txt"></a>grep -n ‘[^a-z]oo’ r.txt</h1><p>3:Football game is not use feet only.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类似想法还有：[a-z]、[A-Z]、[0-9]、[a-zA-Z0-9]等，例如：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-0-9-’-r-txt"><a href="#grep-n-‘-0-9-’-r-txt" class="headerlink" title="grep -n ‘[0-9]’ r.txt"></a>grep -n ‘[0-9]’ r.txt</h1><p>5:However, this dress is about $ 3183 dollars.<br>15:You are the best is mean you are the no. 1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 例三：行首与行尾字符^$</span><br><span class="line">只列出行首有the的行：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-the’-r-txt"><a href="#grep-n-‘-the’-r-txt" class="headerlink" title="grep -n ‘^the’ r.txt"></a>grep -n ‘^the’ r.txt</h1><p>12:the symbol ‘*’ is represented as start.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">列出行首是小写字母的行：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-a-z-’-r-txt"><a href="#grep-n-‘-a-z-’-r-txt" class="headerlink" title="grep -n ‘^[a-z]’ r.txt"></a>grep -n ‘^[a-z]’ r.txt</h1><p>2:apple is my favorite food.<br>4:this dress doesn’t fit me.<br>10:motorcycle is cheap than car.<br>12:the symbol ‘*’ is represented as start.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br>20:go! go! Let’s go.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果要列出行首不是英文字母的行：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-a-zA-Z-’-r-txt"><a href="#grep-n-‘-a-zA-Z-’-r-txt" class="headerlink" title="grep -n ‘^[^a-zA-Z]’ r.txt"></a>grep -n ‘^[^a-zA-Z]’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>21:# I am VBird<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">注意：^符号用在方括号[]里外是不同的。在[]内表示“反向选择”，在[]外则表示定位在行首。</span><br><span class="line">要找出结尾是小数点(.)的行：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-’-r-txt"><a href="#grep-n-‘-’-r-txt" class="headerlink" title="grep -n ‘.$’ r.txt"></a>grep -n ‘.$’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>2:apple is my favorite food.<br>3:Football game is not use feet only.<br>4:this dress doesn’t fit me.<br>10:motorcycle is cheap than car.<br>11:This window is clear.<br>12:the symbol ‘*’ is represented as start.<br>15:You are the best is mean you are the no. 1.<br>16:The world <happy> is the same with “glad”.<br>17:I like dog.<br>18:google is the best tools for search keyword.<br>20:go! go! Let’s go.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">小数点在正则表达式中有特殊含义（下面讲），需要用反斜线(\)转义。第5到9行的结尾也是小数点，怎么没有打印出来？用cat -A将5到9行打印出来：</span><br></pre></td></tr></table></figure></happy></p>
+<h1 id="cat-An-r-txt-head-n-10-tail-n-6"><a href="#cat-An-r-txt-head-n-10-tail-n-6" class="headerlink" title="cat -An r.txt | head -n 10 | tail -n 6"></a>cat -An r.txt | head -n 10 | tail -n 6</h1><pre><code> 5  However, this dress is about $ 3183 dollars.^M$
+ 6  GNU is free air not free beer.^M$
+ 7  Her hair is very beauty.^M$
+ 8  I can&apos;t finish the test.^M$
+ 9  Oh! The soup taste good.^M$
+10  motorcycle is cheap than car.$
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5~9行是windows(DOS)格式的断行字符(^M$)，而第10行是linux格式断行字符。通过这个也就理解了为啥用$符号表示行尾。如果想找出空白行：</span><br></pre></td></tr></table></figure>
+<h1 id="grep-n-‘-’-r-txt-1"><a href="#grep-n-‘-’-r-txt-1" class="headerlink" title="grep -n ‘^$’ r.txt"></a>grep -n ‘^$’ r.txt</h1><p>22:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">linux的配置文件中有大量以#开始的注释，如果想不显示空行和注释：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-v-‘-’-etc-deluser-conf-grep-v-‘-’"><a href="#grep-v-‘-’-etc-deluser-conf-grep-v-‘-’" class="headerlink" title="grep -v ‘^$’ /etc/deluser.conf | grep -v ‘^#’"></a>grep -v ‘^$’ /etc/deluser.conf | grep -v ‘^#’</h1><p>REMOVE_HOME = 0<br>REMOVE_ALL_FILES = 0<br>BACKUP = 0<br>BACKUP_TO = “.”<br>ONLY_IF_EMPTY = 0<br>EXCLUDE_FSTYPES = “(proc|sysfs|usbfs|devpts|tmpfs|afs)”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#### 例四：任意一个字符.与重复字符*</span><br><span class="line">.(小数点)：表示一定有一个任意字符；  </span><br><span class="line">*(星号)：表示重复前一个字符0到无穷次；  </span><br><span class="line">假设要找出g??d的字符串：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘g-d’-r-txt"><a href="#grep-n-‘g-d’-r-txt" class="headerlink" title="grep -n ‘g..d’ r.txt"></a>grep -n ‘g..d’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>9:Oh! The soup taste good.<br>16:The world <happy> is the same with “glad”.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">假如要列出oo,ooo,oooo等数据，需要用到*星号。需要注意的是&apos;o*&apos;表示&apos;&apos;,&apos;o&apos;,&apos;oo&apos;,&apos;ooo&apos;等，即空字符也用&apos;o*&apos;表示。而&apos;oo*&apos;，表示&apos;o&apos;,&apos;oo&apos;,&apos;ooo&apos;等，即至少有一个o。同理，想表示至少两个o用&apos;ooo*&apos;：</span><br></pre></td></tr></table></figure></happy></p>
+<h1 id="grep-n-‘ooo-’-r-txt"><a href="#grep-n-‘ooo-’-r-txt" class="headerlink" title="grep -n ‘ooo*’ r.txt"></a>grep -n ‘ooo*’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>2:apple is my favorite food.<br>3:Football game is not use feet only.<br>9:Oh! The soup taste good.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如何查找两个g之间至少一个o，即gog,goog,gooog等：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘goo-g’-r-txt"><a href="#grep-n-‘goo-g’-r-txt" class="headerlink" title="grep -n ‘goo*g’ r.txt"></a>grep -n ‘goo*g’ r.txt</h1><p>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果要查找以g开头以g结尾的字符串，是&apos;g*g&apos;吗？正确的应是&apos;g.*g&apos;：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘g-g’-r-txt"><a href="#grep-n-‘g-g’-r-txt" class="headerlink" title="grep -n ‘g.*g’ r.txt"></a>grep -n ‘g.*g’ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>14:The gd software is a library for drafting programs.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br>20:go! go! Let’s go.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果只留下英文单词，则：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘g-a-zA-Z-g’-r-txt"><a href="#grep-n-‘g-a-zA-Z-g’-r-txt" class="headerlink" title="grep -n ‘g[a-zA-Z]*g’ r.txt"></a>grep -n ‘g[a-zA-Z]*g’ r.txt</h1><p>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果查找任意数字：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘-0-9-0-9-’-r-txt"><a href="#grep-n-‘-0-9-0-9-’-r-txt" class="headerlink" title="grep -n ‘[0-9][0-9]*’ r.txt"></a>grep -n ‘[0-9][0-9]*’ r.txt</h1><p>5:However, this dress is about $ 3183 dollars.<br>15:You are the best is mean you are the no. 1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#### 例五：限定连续RE字符范围&#123;&#125;</span><br><span class="line">之前，用.和*来设置0个到无限个重复字符，如果需要限定重复次数呢？这需要用到限定范围的字符&#123;&#125;了。由于在shell中&#123;&#125;有特殊含义，需要用反斜线\进行转义。假如要找到两个o的字符串：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘o-2-‘-r-txt"><a href="#grep-n-‘o-2-‘-r-txt" class="headerlink" title="grep -n ‘o{2}‘ r.txt"></a>grep -n ‘o{2}‘ r.txt</h1><p>1:”Open Source” is a good mechanism to develop programs.<br>2:apple is my favorite food.<br>3:Football game is not use feet only.<br>9:Oh! The soup taste good.<br>18:google is the best tools for search keyword.<br>19:goooooogle yes!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">假设要要查找g后面2到5个o，然后再接一个g的字符串，则：</span><br></pre></td></tr></table></figure></p>
+<h1 id="grep-n-‘go-2-5-g’-r-txt"><a href="#grep-n-‘go-2-5-g’-r-txt" class="headerlink" title="grep -n ‘go{2,5}g’ r.txt"></a>grep -n ‘go{2,5}g’ r.txt</h1><p>18:google is the best tools for search keyword.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">第19行由于有6个o，导致没有被选择上。</span><br><span class="line"></span><br><span class="line">##基础正则表达式的总结</span><br><span class="line">RE字符 | 含义</span><br><span class="line">------------ | -------------</span><br><span class="line">^word | 带查找的字符串(word)在行首</span><br><span class="line">word$ | 带查找的字符串(word)在行尾</span><br><span class="line">.   | 代表一定有一个任意字符</span><br><span class="line">\   | 转义字符</span><br><span class="line">*   | 重复0次到无穷次的前一个字符</span><br><span class="line">[list] | 列举出想要选取的字符，如&apos;a[al]y&apos;表示可以查找aay,aly。</span><br><span class="line">[n1-n2] | 列举出想要选取的字符范围，如&apos;[0-9]&apos;表示十进制数字字符</span><br><span class="line">[^list] | 定义不要的字符或范围，如&apos;[^A-Z]&apos;表示不要大写字符</span><br><span class="line">\&#123;n,m\&#125; | 连续n到m个前一个RE字符</span><br><span class="line"></span><br><span class="line">##扩展正则表达式</span><br><span class="line">grep使用扩展正则表达式要加-E参数或直接使用egrep别名命令。  </span><br><span class="line"></span><br><span class="line">RE字符 | 含义</span><br><span class="line">------------ | -------------</span><br><span class="line">+   |  重复1次到无穷次的前一个字符</span><br><span class="line">?   | 代表0个或1个任意字符</span><br><span class="line">\|  | 用或(or)的方式找出数个字符串.例如，```egrep -n &apos;gd|good&apos; r.txt```  </span><br><span class="line">()  | 找出&quot;组&quot;字符串。如查找glad或good，```egrep -n &apos;g(la|oo)d&apos; r.txt```  </span><br><span class="line">()+ | 重复1次到无穷次前面的组。如查找&quot;AxyzxyzxyzxyzC&quot;，```echo &apos;AxyzxyzxyzxyzC&apos; | egrep &apos;A(xyz)+C&apos;</span><br></pre></td></tr></table></figure></p>
+<p>需要强调的是感叹号！在正则表达式中并不是特殊字符。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/db2-error-code/" itemprop="url">
                   DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法) DB2错误代码整理
                 </a>
@@ -831,130 +985,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/Multi-riveting-just-steam/" itemprop="url">
-                  多铆蒸刚
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-16T11:50:26+08:00" content="2016-11-16">
-              2016-11-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index">
-                    <span itemprop="name">life</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/Multi-riveting-just-steam/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="Multi-riveting-just-steam/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>双十一从淘宝买了一个1:700的大和号战列舰模型，周末的几天基本完工了。</p>
-<p>因为比例太小，所以拼接粘合的时候特别费力，虽然拿着电子镊极度小心的弄，最终还是把舰桥的天线弄歪，不过应该看不出来…</p>
-<p>记得小时候第一次看到俾斯麦和大和、武藏的时候就十分喜欢，应该是从一部叫《探索兵器世界/三毛大世界》的彩色儿童读物看到的，后来才知道这种对多炮塔舰船的痴迷属于多炮塔神教的范畴…</p>
-<p>下面是完工后的素颜照，未涂色以及贴纸，仅仅把军旗粘上了。三个三联装的主炮和主炮后的前后两门副炮可以自由转动，其他都是胶水粘合的。<br><img src="http://ww4.sinaimg.cn/mw690/7d6b7503jw1f9ts35fcw0j20jp16q0zf.jpg" alt=""></p>
-<p>多铆蒸刚，炮塔至大！<br>亿万星辰，亿万炮塔！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1000,7 +1030,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">125</span>
+              <span class="site-state-item-count">126</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1017,7 +1047,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">82</span>
+                <span class="site-state-item-count">84</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
