@@ -60,22 +60,22 @@
 
 
 
-<meta name="description" content="DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)
-DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
-DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDB">
+<meta name="description" content="DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
+DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDBCIDEA .1、创建数据库的时候，报42704错误。如： 
+Sql代码1.=&amp;gt;c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法) DB2错误代码整理">
 <meta property="og:url" content="http://blog.jarjar.cn/db2-error-code/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)
-DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
-DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDB">
-<meta property="og:updated_time" content="2016-12-17T14:54:00.056Z">
+<meta property="og:description" content="DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
+DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDBCIDEA .1、创建数据库的时候，报42704错误。如： 
+Sql代码1.=&amp;gt;c">
+<meta property="og:updated_time" content="2016-12-23T11:39:24.841Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法) DB2错误代码整理">
-<meta name="twitter:description" content="DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)
-DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
-DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDB">
+<meta name="twitter:description" content="DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 
+DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDBCIDEA .1、创建数据库的时候，报42704错误。如： 
+Sql代码1.=&amp;gt;c">
 
 
 
@@ -289,10 +289,9 @@ DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDB">
       
 
       
-        <p>DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)</p>
-<p>DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 </p>
+        <p>DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 </p>
 <p>DB2常见错误及解决办法 博客分类： DB2<br>DB2SQLMTKJDBCIDEA .<br>1、创建数据库的时候，报42704错误。如： </p>
-<p>Sql代码<br>1.=&gt;create database test<br>2.=&gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704<br>=&gt;create database test<br>=&gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：<br>Sql代码<br>1.=&gt;create database test using codeset gbk territory cn<br>=&gt;create database test using codeset gbk territory cn</p>
+<p>Sql代码<br>1.=&gt;create database test<br>2.=&gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704<br>=&gt;create database test<br>=&gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：<br>Sql代码<br>1.=&gt;create database test using codeset gbk territory cn<br>=&gt;create database test using codeset gbk territory cn<br><a id="more"></a></p>
 <p>2、在连接数据的时候，报57017错误。如： </p>
 <p>Sql代码<br>1.=&gt;connect to test user test using test<br>2.=&gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017<br>=&gt;connect to test user test using test<br>=&gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017解决办法： </p>
 <p>Sql代码<br>1.=&gt;db2set db2codepage=1386<br>=&gt;db2set db2codepage=1386</p>
@@ -303,7 +302,6 @@ DB2常见错误及解决办法 博客分类： DB2DB2SQLMTKJDB">
 <li>Backup pending<br>=&gt;db2 drop table t_base_acc_manageacc<br>=&gt;SQL0290N  Table space access is not allowed.  SQLSTATE=55039</li>
 </ol>
 <p>=&gt;db2 list tablespaces show detail<br>Tablespace ID                        = 2<br>Name                                 = USERSPACE1<br>Type                                 = System managed space<br>Contents                             = Any data<br>State                                = 0x0020<br>Detailed explanation:<br>   Backup pending 原因：在归档的数据库做过load或者改了参数重新启动了db<br>解决办法： </p>
-<a id="more"></a>
 <p>Sql代码<br>1.备份数据库<br>2.=&gt;db2 backup db<br>备份数据库<br>=&gt;db2 backup db</p>
 <p>4、在对数据库进行备份的时候，报57019错误。如： </p>
 <p>Sql代码<br>1.=&gt;db2 backup database dbname to /xx/xx compress<br>2.=&gt;SQL1035N The database is currently in use. SQLSTATE=57019<br>=&gt;db2 backup database dbname to /xx/xx compress<br>=&gt;SQL1035N The database is currently in use. SQLSTATE=57019解决办法： </p>

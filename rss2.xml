@@ -153,27 +153,15 @@
       <pubDate>Sat, 17 Dec 2016 14:56:17 GMT</pubDate>
       <description>
       
-        &lt;p&gt;DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)&lt;/p&gt;
-&lt;p&gt;DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 &lt;/p&gt;
+        &lt;p&gt;DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 &lt;/p&gt;
 &lt;p&gt;DB2常见错误及解决办法 博客分类： DB2&lt;br&gt;DB2SQLMTKJDBCIDEA .&lt;br&gt;1、创建数据库的时候，报42704错误。如： &lt;/p&gt;
-&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test&lt;br&gt;2.=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704&lt;br&gt;=&amp;gt;create database test&lt;br&gt;=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：&lt;br&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;=&amp;gt;create database test using codeset gbk territory cn&lt;/p&gt;
-&lt;p&gt;2、在连接数据的时候，报57017错误。如： &lt;/p&gt;
-&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;connect to test user test using test&lt;br&gt;2.=&amp;gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017&lt;br&gt;=&amp;gt;connect to test user test using test&lt;br&gt;=&amp;gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017解决办法： &lt;/p&gt;
-&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;db2set db2codepage=1386&lt;br&gt;=&amp;gt;db2set db2codepage=1386&lt;/p&gt;
-&lt;p&gt;3、在对数据库进行操作的时候，报55039错误。如： &lt;/p&gt;
-&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;db2 drop table t_base_acc_manageacc&lt;br&gt;2.=&amp;gt;SQL0290N  Table space access is not allowed.  SQLSTATE=55039   &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;4.=&amp;gt;db2 list tablespaces show detail&lt;br&gt;5.Tablespace ID                        = 2&lt;br&gt;6.Name                                 = USERSPACE1&lt;br&gt;7.Type                                 = System managed space&lt;br&gt;8.Contents                             = Any data&lt;br&gt;9.State                                = 0x0020&lt;br&gt;10.Detailed explanation:   &lt;/li&gt;
-&lt;li&gt;Backup pending&lt;br&gt;=&amp;gt;db2 drop table t_base_acc_manageacc&lt;br&gt;=&amp;gt;SQL0290N  Table space access is not allowed.  SQLSTATE=55039&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;=&amp;gt;db2 list tablespaces show detail&lt;br&gt;Tablespace ID                        = 2&lt;br&gt;Name                                 = USERSPACE1&lt;br&gt;Type                                 = System managed space&lt;br&gt;Contents                             = Any data&lt;br&gt;State                                = 0x0020&lt;br&gt;Detailed explanation:&lt;br&gt;   Backup pending 原因：在归档的数据库做过load或者改了参数重新启动了db&lt;br&gt;解决办法： &lt;/p&gt;
+&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test&lt;br&gt;2.=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704&lt;br&gt;=&amp;gt;create database test&lt;br&gt;=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：&lt;br&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;
       
       </description>
       
-      <content:encoded>&lt;p&gt;DB2_sqlcode_sqlstate(按sqlcode排序__常见错误及解决办法)&lt;/p&gt;
-&lt;p&gt;DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 &lt;/p&gt;
+      <content:encoded>&lt;p&gt;DB2是IBM出口的一系列关系型数据库管理系统，分别在不同的操作系统平台上服务。虽然DB2产品是基于UNIX的系统和个人计算机操作系统，在基于UNIX系统和微软在windows系统下的Access方面，DB2追寻了ORACLE的数据库产品。 &lt;/p&gt;
 &lt;p&gt;DB2常见错误及解决办法 博客分类： DB2&lt;br&gt;DB2SQLMTKJDBCIDEA .&lt;br&gt;1、创建数据库的时候，报42704错误。如： &lt;/p&gt;
-&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test&lt;br&gt;2.=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704&lt;br&gt;=&amp;gt;create database test&lt;br&gt;=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：&lt;br&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;=&amp;gt;create database test using codeset gbk territory cn&lt;/p&gt;
+&lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test&lt;br&gt;2.=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704&lt;br&gt;=&amp;gt;create database test&lt;br&gt;=&amp;gt;SQL0204N  “SYSTEM_1386_US” is an undefined name.  SQLSTATE=42704解决办法：&lt;br&gt;Sql代码&lt;br&gt;1.=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;=&amp;gt;create database test using codeset gbk territory cn&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2、在连接数据的时候，报57017错误。如： &lt;/p&gt;
 &lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;connect to test user test using test&lt;br&gt;2.=&amp;gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017&lt;br&gt;=&amp;gt;connect to test user test using test&lt;br&gt;=&amp;gt;SQL0332N  Character conversion from the source code page “1386” to the target code page “819” is not supported. SQLSTATE=57017解决办法： &lt;/p&gt;
 &lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;db2set db2codepage=1386&lt;br&gt;=&amp;gt;db2set db2codepage=1386&lt;/p&gt;
@@ -184,7 +172,6 @@
 &lt;li&gt;Backup pending&lt;br&gt;=&amp;gt;db2 drop table t_base_acc_manageacc&lt;br&gt;=&amp;gt;SQL0290N  Table space access is not allowed.  SQLSTATE=55039&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;=&amp;gt;db2 list tablespaces show detail&lt;br&gt;Tablespace ID                        = 2&lt;br&gt;Name                                 = USERSPACE1&lt;br&gt;Type                                 = System managed space&lt;br&gt;Contents                             = Any data&lt;br&gt;State                                = 0x0020&lt;br&gt;Detailed explanation:&lt;br&gt;   Backup pending 原因：在归档的数据库做过load或者改了参数重新启动了db&lt;br&gt;解决办法： &lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Sql代码&lt;br&gt;1.备份数据库&lt;br&gt;2.=&amp;gt;db2 backup db&lt;br&gt;备份数据库&lt;br&gt;=&amp;gt;db2 backup db&lt;/p&gt;
 &lt;p&gt;4、在对数据库进行备份的时候，报57019错误。如： &lt;/p&gt;
 &lt;p&gt;Sql代码&lt;br&gt;1.=&amp;gt;db2 backup database dbname to /xx/xx compress&lt;br&gt;2.=&amp;gt;SQL1035N The database is currently in use. SQLSTATE=57019&lt;br&gt;=&amp;gt;db2 backup database dbname to /xx/xx compress&lt;br&gt;=&amp;gt;SQL1035N The database is currently in use. SQLSTATE=57019解决办法： &lt;/p&gt;
