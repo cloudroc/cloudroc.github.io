@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
+    <lastmod>2016-12-23T11:42:29.351Z</lastmod>
+    <data>
+        <display>
+        <title>将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</title>
+        <pubTime>2016-12-16T02:26:17.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>coding.net</tag>
+         
+        <tag>baidu</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/db2-error-code/</loc>
     <lastmod>2016-12-23T11:39:24.841Z</lastmod>
     <data>
@@ -35,9 +61,9 @@
         <title>jfinal集成原生mybatis</title>
         <pubTime>2016-04-14T08:43:01.000Z</pubTime>
         
-        <tag>mybaits</tag>
-         
         <tag>jfinal</tag>
+         
+        <tag>mybaits</tag>
          
          
            
@@ -65,32 +91,6 @@
         <tag>re</tag>
          
         <tag>正则表达式</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
-    <lastmod>2016-12-16T02:59:01.782Z</lastmod>
-    <data>
-        <display>
-        <title>将hexo博客同时同步托管到github和coding.net,解决百度不收录问题</title>
-        <pubTime>2016-12-16T02:26:17.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-        <tag>coding.net</tag>
-         
-        <tag>baidu</tag>
          
          
            
@@ -851,31 +851,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/SimSimi-new-trick/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>据说SimSimi小黄鸡要全面收费了,本宅表示毫无压力</title>
-        <pubTime>2013-03-12T14:56:43.000Z</pubTime>
-        
-        <tag>小黄鸡</tag>
-         
-        <tag>微信</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/happiness/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -887,6 +862,30 @@
            
              
               <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/Mybatis-Unrecognized-JDBC-type-1111/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>解决ibatis或者mybatis错误类型：Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null</title>
+        <pubTime>2013-03-12T08:50:15.000Z</pubTime>
+        
+        <tag>ibatis</tag>
+         
+        <tag>mybatis</tag>
+         
+        <tag>错误代码</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
           
         </display>
     </data>
@@ -1004,6 +1003,24 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/i-loved-u-nancy/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>夜空中最亮的星</title>
+        <pubTime>2014-11-28T14:04:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/i-have-to-find-a-new-place/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1020,24 +1037,6 @@
           
              
               <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/i-loved-u-nancy/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>夜空中最亮的星</title>
-        <pubTime>2014-11-28T14:04:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1065,6 +1064,24 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/if-we-meet-again/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>相逢何必曾相识</title>
+        <pubTime>2014-04-07T14:56:34.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/batman-vs-superman/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1079,24 +1096,6 @@
           
              
               <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/if-we-meet-again/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>相逢何必曾相识</title>
-        <pubTime>2014-04-07T14:56:34.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1153,17 +1152,20 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
+    <loc>http://blog.jarjar.cn/buy-it-if-you-like-it/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>今年的腊八是八号</title>
-        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
+        <title>喜欢就买</title>
+        <pubTime>2015-08-11T12:29:15.000Z</pubTime>
         
          
            
              
               <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -1189,20 +1191,29 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/buy-it-if-you-like-it/</loc>
+    <loc>http://blog.jarjar.cn/2345-coins/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>喜欢就买</title>
-        <pubTime>2015-08-11T12:29:15.000Z</pubTime>
+        <title>签到系列最终篇:2345每日自动签到领积分</title>
+        <pubTime>2013-11-26T13:33:35.000Z</pubTime>
         
+        <tag>2345.com</tag>
+         
+        <tag>2345自动签到</tag>
+         
+        <tag>httpclient</tag>
+         
          
            
              
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
           
              
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+             
+              <breadCrumb title="教程" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -1241,6 +1252,27 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/chuanqi-rose/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>纸折玫瑰一朵</title>
+        <pubTime>2013-08-06T12:06:08.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/carry-on-my-wayward-son-supernatual/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1258,27 +1290,6 @@
          
         <tag>邪恶力量</tag>
          
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/chuanqi-rose/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>纸折玫瑰一朵</title>
-        <pubTime>2013-08-06T12:06:08.000Z</pubTime>
-        
          
            
              
@@ -1311,12 +1322,12 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/code-monkey/</loc>
+    <loc>http://blog.jarjar.cn/crazy-max/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>Code Monkey</title>
-        <pubTime>2012-11-09T10:42:52.000Z</pubTime>
+        <title>疯狂的麦克斯</title>
+        <pubTime>2015-08-02T15:28:48.000Z</pubTime>
         
          
            
@@ -1329,12 +1340,12 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/crazy-max/</loc>
+    <loc>http://blog.jarjar.cn/code-monkey/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>疯狂的麦克斯</title>
-        <pubTime>2015-08-02T15:28:48.000Z</pubTime>
+        <title>Code Monkey</title>
+        <pubTime>2012-11-09T10:42:52.000Z</pubTime>
         
          
            
@@ -1365,17 +1376,17 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/dark-knight/</loc>
+    <loc>http://blog.jarjar.cn/Moteki.2011/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>黑暗骑士</title>
-        <pubTime>2015-02-17T08:51:17.000Z</pubTime>
+        <title>深夜食堂&桃花期</title>
+        <pubTime>2015-08-06T04:18:34.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -1419,29 +1430,17 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/2345-coins/</loc>
+    <loc>http://blog.jarjar.cn/dark-knight/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>签到系列最终篇:2345每日自动签到领积分</title>
-        <pubTime>2013-11-26T13:33:35.000Z</pubTime>
+        <title>黑暗骑士</title>
+        <pubTime>2015-02-17T08:51:17.000Z</pubTime>
         
-        <tag>2345.com</tag>
-         
-        <tag>2345自动签到</tag>
-         
-        <tag>httpclient</tag>
-         
          
            
              
-              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-             
-              <breadCrumb title="教程" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1449,12 +1448,48 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/Moteki.2011/</loc>
+    <loc>http://blog.jarjar.cn/new-404-page/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>深夜食堂&桃花期</title>
-        <pubTime>2015-08-06T04:18:34.000Z</pubTime>
+        <title>换了个404页面</title>
+        <pubTime>2013-11-30T08:38:35.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>今年的腊八是八号</title>
+        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/narrow-and-wide/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>宽窄巷子</title>
+        <pubTime>2015-09-20T12:58:16.000Z</pubTime>
         
          
            
@@ -1490,42 +1525,6 @@
           
              
               <breadCrumb title="教程" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E6%8A%80%E6%9C%AF%E5%AE%85/%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/narrow-and-wide/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>宽窄巷子</title>
-        <pubTime>2015-09-20T12:58:16.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/new-404-page/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>换了个404页面</title>
-        <pubTime>2013-11-30T08:38:35.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1689,30 +1688,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/Mybatis-Unrecognized-JDBC-type-1111/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>解决ibatis或者mybatis错误类型：Unrecognized JDBC type: 1111. ERRORCODE=-4228, SQLSTATE=null</title>
-        <pubTime>2013-03-12T08:50:15.000Z</pubTime>
-        
-        <tag>ibatis</tag>
-         
-        <tag>mybatis</tag>
-         
-        <tag>错误代码</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/fangfalun/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1724,6 +1699,31 @@
            
              
               <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/SimSimi-new-trick/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>据说SimSimi小黄鸡要全面收费了,本宅表示毫无压力</title>
+        <pubTime>2013-03-12T14:56:43.000Z</pubTime>
+        
+        <tag>小黄鸡</tag>
+         
+        <tag>微信</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
           
         </display>
     </data>
@@ -2382,24 +2382,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/white-legs-in-summer/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>夏天之大白腿</title>
-        <pubTime>2015-06-02T07:37:23.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/who-you-are/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -2416,6 +2398,24 @@
           
              
               <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/white-legs-in-summer/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>夏天之大白腿</title>
+        <pubTime>2015-06-02T07:37:23.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -2609,31 +2609,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/xiaoibot-weixin/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>小i机器人微信版(已公布源码 )</title>
-        <pubTime>2013-01-08T14:37:19.000Z</pubTime>
-        
-        <tag>微信</tag>
-         
-        <tag>小i机器人</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/years-a-knife/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -2655,6 +2630,31 @@
           
              
               <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/xiaoibot-weixin/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>小i机器人微信版(已公布源码 )</title>
+        <pubTime>2013-01-08T14:37:19.000Z</pubTime>
+        
+        <tag>微信</tag>
+         
+        <tag>小i机器人</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>

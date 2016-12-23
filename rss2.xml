@@ -269,7 +269,7 @@
     </item>
     
     <item>
-      <title>将hexo博客同时同步托管到github和coding.net,解决百度不收录问题</title>
+      <title>将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</title>
       <link>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</link>
       <guid>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</guid>
       <pubDate>Fri, 16 Dec 2016 02:26:17 GMT</pubDate>
