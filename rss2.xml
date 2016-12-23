@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 23 Dec 2016 07:46:06 GMT</pubDate>
+    <pubDate>Fri, 23 Dec 2016 07:51:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -19,7 +19,7 @@
       <description>
       
         &lt;blockquote&gt;
-&lt;p&gt;摘要：&lt;br&gt;看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。&lt;/p&gt;
+&lt;p&gt;摘要：&lt;br&gt;看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;grep是常用的linux命令，用于字符串数据的对比，将符合条件的字符串打印出来。&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;grep &amp;apos;搜寻字符串&amp;apos; filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -30,7 +30,7 @@
       </description>
       
       <content:encoded>&lt;blockquote&gt;
-&lt;p&gt;摘要：&lt;br&gt;看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。&lt;/p&gt;
+&lt;p&gt;摘要：&lt;br&gt;看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;grep是常用的linux命令，用于字符串数据的对比，将符合条件的字符串打印出来。&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;grep &amp;apos;搜寻字符串&amp;apos; filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
