@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 23 Dec 2016 07:51:37 GMT</pubDate>
+    <pubDate>Fri, 23 Dec 2016 08:00:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -126,20 +126,16 @@
 &lt;td&gt;代表0个或1个任意字符&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;\&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;用或(or)的方式找出数个字符串.例如，egrep -n ‘gd&lt;/td&gt;
-&lt;td&gt;good’ r.txt  &lt;/td&gt;
+&lt;td&gt;&amp;verbar;&lt;/td&gt;
+&lt;td&gt;用或(or)的方式找出数个字符串.例如，egrep -n ‘gd&amp;verbar; good’ r.txt&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;()&lt;/td&gt;
-&lt;td&gt;找出”组”字符串。如查找glad或good， egrep -n ‘g(la&lt;/td&gt;
-&lt;td&gt;oo)d’ r.txt &lt;/td&gt;
+&lt;td&gt;找出”组”字符串。如查找glad或good， egrep -n ‘g(la&amp;verbar; oo)d’ r.txt &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;()+&lt;/td&gt;
-&lt;td&gt;重复1次到无穷次前面的组。如查找”AxyzxyzxyzxyzC”，echo ‘AxyzxyzxyzxyzC’&lt;/td&gt;
-&lt;td&gt;egrep ‘A(xyz)+C’&lt;/td&gt;
+&lt;td&gt;重复1次到无穷次前面的组。如查找”AxyzxyzxyzxyzC”，echo ‘AxyzxyzxyzxyzC’ &amp;verbar;  egrep ‘A(xyz)+C’&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

@@ -70,7 +70,7 @@ grep是常用的linux命令，用于字符串数据的对比，将符合条件�
 <meta property="og:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。
 
 grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
-<meta property="og:updated_time" content="2016-12-23T07:51:37.796Z">
+<meta property="og:updated_time" content="2016-12-23T08:00:59.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式快速入门教程">
 <meta name="twitter:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。
@@ -386,20 +386,16 @@ grep是常用的linux命令，用于字符串数据的对比，将符合条件�
 <td>代表0个或1个任意字符</td>
 </tr>
 <tr>
-<td>\</td>
-<td></td>
-<td>用或(or)的方式找出数个字符串.例如，egrep -n ‘gd</td>
-<td>good’ r.txt  </td>
+<td>&verbar;</td>
+<td>用或(or)的方式找出数个字符串.例如，egrep -n ‘gd&verbar; good’ r.txt</td>
 </tr>
 <tr>
 <td>()</td>
-<td>找出”组”字符串。如查找glad或good， egrep -n ‘g(la</td>
-<td>oo)d’ r.txt </td>
+<td>找出”组”字符串。如查找glad或good， egrep -n ‘g(la&verbar; oo)d’ r.txt </td>
 </tr>
 <tr>
 <td>()+</td>
-<td>重复1次到无穷次前面的组。如查找”AxyzxyzxyzxyzC”，echo ‘AxyzxyzxyzxyzC’</td>
-<td>egrep ‘A(xyz)+C’</td>
+<td>重复1次到无穷次前面的组。如查找”AxyzxyzxyzxyzC”，echo ‘AxyzxyzxyzxyzC’ &verbar;  egrep ‘A(xyz)+C’</td>
 </tr>
 </tbody>
 </table>
