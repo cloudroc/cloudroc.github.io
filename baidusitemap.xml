@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/sync-wiz-with-nutstore/</loc>
+    <lastmod>2016-12-28T08:21:32.823Z</lastmod>
+    <data>
+        <display>
+        <title>通过坚果云同步wiz笔记，应对wiz全面收费问题</title>
+        <pubTime>2016-12-28T09:16:18.000Z</pubTime>
+        
+        <tag>wiz</tag>
+         
+        <tag>坚果</tag>
+         
+        <tag>云同步</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
     <lastmod>2016-12-23T11:42:29.351Z</lastmod>
     <data>
@@ -844,30 +868,6 @@
            
              
               <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/2016-new-year/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>2016元旦</title>
-        <pubTime>2015-12-31T16:11:44.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
-          
-             
-              <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>
@@ -2740,6 +2740,30 @@
            
              
               <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/2016-new-year/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>2016元旦</title>
+        <pubTime>2015-12-31T16:11:44.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
+          
+             
+              <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
           
         </display>
     </data>

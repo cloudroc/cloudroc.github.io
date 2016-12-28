@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.jarjar.cn/sync-wiz-with-nutstore/</loc>
+    
+    <lastmod>2016-12-28T08:21:32.823Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</loc>
     
     <lastmod>2016-12-23T11:42:29.351Z</lastmod>
@@ -290,13 +297,6 @@
   
   <url>
     <loc>http://blog.jarjar.cn/kindle-comics/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.jarjar.cn/2016-new-year/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -892,6 +892,13 @@
   
   <url>
     <loc>http://blog.jarjar.cn/gothanm/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.jarjar.cn/2016-new-year/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     

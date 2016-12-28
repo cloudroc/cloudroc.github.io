@@ -8,8 +8,31 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 23 Dec 2016 08:05:25 GMT</pubDate>
+    <pubDate>Wed, 28 Dec 2016 08:21:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>通过坚果云同步wiz笔记，应对wiz全面收费问题</title>
+      <link>http://blog.jarjar.cn/sync-wiz-with-nutstore/</link>
+      <guid>http://blog.jarjar.cn/sync-wiz-with-nutstore/</guid>
+      <pubDate>Wed, 28 Dec 2016 09:16:18 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;12月9日消息，昨日，知名跨平台云笔记软件“为知笔记”发布公告，宣布自试用期结束后全面收费，如果免费用户不升级成VIP的话便只能使用本地笔记功能，无法同步云端。同时，为知笔记也下调了VIP的价格，从12元每月改为6元每月，年付费60元。在2017年
+      
+      </description>
+      
+      <content:encoded>&lt;blockquote&gt;
+&lt;p&gt;12月9日消息，昨日，知名跨平台云笔记软件“为知笔记”发布公告，宣布自试用期结束后全面收费，如果免费用户不升级成VIP的话便只能使用本地笔记功能，无法同步云端。同时，为知笔记也下调了VIP的价格，从12元每月改为6元每月，年付费60元。在2017年1月1日前升级的用户，年费优惠至50元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;马上就17年了，突然看到这个消息也不知道怎么评价是好，毕竟用了wiz接近6年了，经历了wiz很多版本和政策的更迭，的确认为是个好工具，走上这条路也是没有办法的办法。&lt;/p&gt;
+&lt;p&gt;今天想到一个临时不充值会员也能解决wiz同步的解决方案：&lt;br&gt;（1）下载wiz提供的便携免安装版的压缩包，解压&lt;br&gt;（2）登录wiz帐号，同步好之前所有的笔记&lt;br&gt;（3）注册坚果云帐号，下载坚果客户端，安装….&lt;br&gt;（4）设置坚果的同步目录，把wiz的便携版放到这个目录里面&lt;/p&gt;
+&lt;p&gt;然后就ok了,坐等同步就可以了,临时可以应对不能同步笔记的问题。希望有帮助。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/sync-wiz-with-nutstore/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>正则表达式快速入门教程</title>
@@ -682,27 +705,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/start-with-solr/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>不作恶</title>
-      <link>http://blog.jarjar.cn/do-not-be-evil/</link>
-      <guid>http://blog.jarjar.cn/do-not-be-evil/</guid>
-      <pubDate>Fri, 27 May 2016 13:50:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Google核心价值观的第六点：“做正确的事：不恶。我们所做的一切都诚实和正直。我们的经营做法无可非议。我们赚钱做好事。“做正确的事：不恶”英语原文是：Do the right thing:don’t be evil.&lt;/p&gt;
-&lt;p&gt;现在想到google就会谈论魏则西事件。
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;Google核心价值观的第六点：“做正确的事：不恶。我们所做的一切都诚实和正直。我们的经营做法无可非议。我们赚钱做好事。“做正确的事：不恶”英语原文是：Do the right thing:don’t be evil.&lt;/p&gt;
-&lt;p&gt;现在想到google就会谈论魏则西事件。当技术公司走向商业之路之后难免迫于有权势的客户或者极大的商业利益修改一些东西，或者开发不愿意看到的东西，渐渐的就开始作恶了。再有就是我相信每个人都有类似的经历，幻想去造成破坏，而且没有利益驱使。&lt;/p&gt;
-&lt;p&gt;所以像google这样有个基本准则限定自己的行为很关键很有意义，至少很有约束力。因为evil如何定义还靠larry page去确定。&lt;/p&gt;
-&lt;p&gt;最近在看凯文·凯利的《必然》，写的很有水平，我仅仅靠站公交和上厕所的时间就已看完大半，可见这本书的吸引力。里面有很多黑当前社会主义政体的言论，不知道为什么可以在大陆发行，可能那些人don’t care.&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/do-not-be-evil/#disqus_thread</comments>
     </item>
     
   </channel>
