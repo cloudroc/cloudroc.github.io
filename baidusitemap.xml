@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/happy-new-year-2017/</loc>
+    <lastmod>2016-12-30T07:28:05.825Z</lastmod>
+    <data>
+        <display>
+        <title>2016 summary</title>
+        <pubTime>2016-12-31T09:16:18.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://blog.jarjar.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/sync-wiz-with-nutstore/</loc>
     <lastmod>2016-12-28T08:21:32.823Z</lastmod>
     <data>
@@ -857,30 +877,12 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
+    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>深夜食堂2.0</title>
-        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/happiness/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>增加幸福感</title>
-        <pubTime>2015-04-04T03:26:23.000Z</pubTime>
+        <title>在景洪的最后一天</title>
+        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
         
          
            
@@ -1340,17 +1342,17 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
+    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>今年的腊八是八号</title>
-        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
+        <title>深夜食堂2.0</title>
+        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -1358,12 +1360,12 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
+    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>在景洪的最后一天</title>
-        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
+        <title>今年的腊八是八号</title>
+        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
         
          
            
@@ -2764,6 +2766,24 @@
           
              
               <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/happiness/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>增加幸福感</title>
+        <pubTime>2015-04-04T03:26:23.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>

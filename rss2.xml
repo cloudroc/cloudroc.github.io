@@ -8,8 +8,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Wed, 28 Dec 2016 08:21:32 GMT</pubDate>
+    <pubDate>Fri, 30 Dec 2016 07:28:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2016 summary</title>
+      <link>http://blog.jarjar.cn/happy-new-year-2017/</link>
+      <guid>http://blog.jarjar.cn/happy-new-year-2017/</guid>
+      <pubDate>Sat, 31 Dec 2016 09:16:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;A lot of pain，gained a little， but no regrets &amp;amp; sorrows.&lt;br&gt;Happy new Year.&lt;br&gt;Best wishes.&lt;/p&gt;
+
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;A lot of pain，gained a little， but no regrets &amp;amp; sorrows.&lt;br&gt;Happy new Year.&lt;br&gt;Best wishes.&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/happy-new-year-2017/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>通过坚果云同步wiz笔记，应对wiz全面收费问题</title>
@@ -683,28 +701,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>solr起步</title>
-      <link>http://blog.jarjar.cn/start-with-solr/</link>
-      <guid>http://blog.jarjar.cn/start-with-solr/</guid>
-      <pubDate>Sun, 05 Jun 2016 01:50:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;想帮朋友弄个文档服务器的全文搜索，于是这周开始研究solr，过程依旧有点坎坷。&lt;/p&gt;
-&lt;p&gt;首先网上的中文资料很少，找到的大部分没有写清楚。另外solr版本变化很大从3.5一直到6.0的资料都有但是大部分仅仅局限于部署。所以部署完solr之后很长一段时间都没有弄明白几个配
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;想帮朋友弄个文档服务器的全文搜索，于是这周开始研究solr，过程依旧有点坎坷。&lt;/p&gt;
-&lt;p&gt;首先网上的中文资料很少，找到的大部分没有写清楚。另外solr版本变化很大从3.5一直到6.0的资料都有但是大部分仅仅局限于部署。所以部署完solr之后很长一段时间都没有弄明白几个配置文件应该怎么配置，以及应该怎样集成tika进行doc pdf文件的索引…&lt;/p&gt;
-&lt;p&gt;于是抛弃了这种寄托希望于google搜索和中文博主分享的想法，拿起一本英文版的solr in action来看，到昨天为止终于成功了，这里还需要感谢歪国人的两篇关于solr和tika集成的博文，细细看完竟然茅塞顿开。&lt;/p&gt;
-&lt;p&gt;链接：&lt;br&gt;&lt;a href=&quot;http://www.codewrecks.com/blog/index.php/2013/05/27/hilight-matched-text-inside-documents-indexed-with-solr-plus-tika/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.codewrecks.com/blog/index.php/2013/05/27/hilight-matched-text-inside-documents-indexed-with-solr-plus-tika/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;附上我做的粗糙搜索网页效果：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1f4k4idqwhzj20tb0po7fr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/start-with-solr/#disqus_thread</comments>
     </item>
     
   </channel>
