@@ -8,18 +8,21 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 06 Jan 2017 06:27:32 GMT</pubDate>
+    <pubDate>Fri, 06 Jan 2017 06:30:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>总有一种力量让我们泪流满面</title>
+      <title>一行js代码破解百度云大文件下载限制</title>
       <link>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</link>
       <guid>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</guid>
       <pubDate>Fri, 06 Jan 2017 06:05:18 GMT</pubDate>
       <description>
       
         &lt;p&gt;最近做了一个直接在下载百度云大文件，而不用启动百度云客户端的chrome插件，插件核心代码只有一行，分享一下。&lt;/p&gt;
-&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度网盘里面的小文件，直接用浏览器和下载工具就行，但是大文件、还有文件夹就只能使用客户端了。因为百度云的PC页面会默认要求你使用客户端进行下载…&lt;/p&gt;
+&lt;p&gt;这个很烦：&lt;br&gt;1.百度云客户端下载很慢，而且故意限速&lt;br&gt;2.我使用的chrome浏览器，经常启动不了百度云客户端&lt;/p&gt;
+&lt;p&gt;看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Object.defineProperty(this , &amp;apos;navigator&amp;apos; , &amp;#123;value: &amp;#123; platform: &amp;quot;&amp;quot; &amp;#125;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。&lt;/p&gt;
       
       </description>
       
@@ -28,6 +31,7 @@
 &lt;p&gt;这个很烦：&lt;br&gt;1.百度云客户端下载很慢，而且故意限速&lt;br&gt;2.我使用的chrome浏览器，经常启动不了百度云客户端&lt;/p&gt;
 &lt;p&gt;看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Object.defineProperty(this , &amp;apos;navigator&amp;apos; , &amp;#123;value: &amp;#123; platform: &amp;quot;&amp;quot; &amp;#125;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;插件使用效果&quot;&gt;&lt;a href=&quot;#插件使用效果&quot; class=&quot;headerlink&quot; title=&quot;插件使用效果&quot;&gt;&lt;/a&gt;插件使用效果&lt;/h1&gt;&lt;p&gt;一番捣腾之后，这个插件终于做出来了，实际运行效果如图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1fbgvliwo0fj20vx0dcq7r.jpg&quot; alt=&quot;插件使用效果1&quot;&gt;&lt;/p&gt;
 &lt;p&gt;很大的一个文件夹直接就获取了下载地址….，把这个链接复制到迅雷就可以很快的把文件下载下来了。&lt;/p&gt;
 &lt;p&gt;插件安装截图：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1fbgw59rygbj20mt04q0tg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
