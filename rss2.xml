@@ -8,8 +8,38 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 31 Dec 2016 14:07:16 GMT</pubDate>
+    <pubDate>Fri, 06 Jan 2017 06:27:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>总有一种力量让我们泪流满面</title>
+      <link>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</link>
+      <guid>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</guid>
+      <pubDate>Fri, 06 Jan 2017 06:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近做了一个直接在下载百度云大文件，而不用启动百度云客户端的chrome插件，插件核心代码只有一行，分享一下。&lt;/p&gt;
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近做了一个直接在下载百度云大文件，而不用启动百度云客户端的chrome插件，插件核心代码只有一行，分享一下。&lt;/p&gt;
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度网盘里面的小文件，直接用浏览器和下载工具就行，但是大文件、还有文件夹就只能使用客户端了。因为百度云的PC页面会默认要求你使用客户端进行下载…&lt;/p&gt;
+&lt;p&gt;这个很烦：&lt;br&gt;1.百度云客户端下载很慢，而且故意限速&lt;br&gt;2.我使用的chrome浏览器，经常启动不了百度云客户端&lt;/p&gt;
+&lt;p&gt;看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Object.defineProperty(this , &amp;apos;navigator&amp;apos; , &amp;#123;value: &amp;#123; platform: &amp;quot;&amp;quot; &amp;#125;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。&lt;/p&gt;
+&lt;h1 id=&quot;插件使用效果&quot;&gt;&lt;a href=&quot;#插件使用效果&quot; class=&quot;headerlink&quot; title=&quot;插件使用效果&quot;&gt;&lt;/a&gt;插件使用效果&lt;/h1&gt;&lt;p&gt;一番捣腾之后，这个插件终于做出来了，实际运行效果如图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1fbgvliwo0fj20vx0dcq7r.jpg&quot; alt=&quot;插件使用效果1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;很大的一个文件夹直接就获取了下载地址….，把这个链接复制到迅雷就可以很快的把文件下载下来了。&lt;/p&gt;
+&lt;p&gt;插件安装截图：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1fbgw59rygbj20mt04q0tg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;插件下载&quot;&gt;&lt;a href=&quot;#插件下载&quot; class=&quot;headerlink&quot; title=&quot;插件下载&quot;&gt;&lt;/a&gt;插件下载&lt;/h1&gt;&lt;p&gt;插件已开源：&lt;br&gt; &lt;a href=&quot;https://github.com/cloudroc/baidu-nolimit&quot; title=&quot;github地址&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/baidu-nolimit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;插件下载地址：&lt;br&gt;链接: &lt;a href=&quot;https://pan.baidu.com/s/1hs4wiSs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1hs4wiSs&lt;/a&gt; 密码: 3vup&lt;br&gt;（安装方法请自行百度）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考链接：&lt;br&gt;知乎：&lt;a href=&quot;https://www.zhihu.com/question/36609103&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/36609103&lt;/a&gt;&lt;br&gt;stackoverflow：&lt;a href=&quot;http://stackoverflow.com/questions/23202136/changing-navigator-useragent-using-chrome-extension&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/23202136/changing-navigator-useragent-using-chrome-extension&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>总有一种力量让我们泪流满面</title>
@@ -684,30 +714,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/donation/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>西游记古群整理版</title>
-      <link>http://blog.jarjar.cn/my-journey-to-the-west/</link>
-      <guid>http://blog.jarjar.cn/my-journey-to-the-west/</guid>
-      <pubDate>Fri, 17 Jun 2016 13:12:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这周在杨老师的提点下,在孔子旧书网终于买到了西游记古群整理版。九五品，96年出版，02年印刷的，里面有的字是口口口，不过真的是一本满足。&lt;/p&gt;
-&lt;p&gt;这本书是我儿时的回忆。&lt;/p&gt;
-&lt;p&gt;说是儿时其实是初中，那时候的老师“很坏”，期末考试要在假期结束后进行，这样你暑假必须
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这周在杨老师的提点下,在孔子旧书网终于买到了西游记古群整理版。九五品，96年出版，02年印刷的，里面有的字是口口口，不过真的是一本满足。&lt;/p&gt;
-&lt;p&gt;这本书是我儿时的回忆。&lt;/p&gt;
-&lt;p&gt;说是儿时其实是初中，那时候的老师“很坏”，期末考试要在假期结束后进行，这样你暑假必须得复习才行。那个暑假，我在街头买了这本西游记（甚至记得那个小贩是席地而坐，在摊位摆了很多书），其实是盗版的，皮面很软，而且有很多字是口口口，现在想想可能盗版字库里面没有这几个字所以就那么印刷了。那个时候娱乐方式很少，我都没摸过电脑（后来成了天天敲代码…），这本书看的特别过瘾，因为里面有很多旁注，帮你理解某句话的深意，所以天天看，看完一遍之后又反复看某些章节…因为看的太多了，加上假期结束要考试，父亲见我不好好学习一气之前将书扯为两半…后来这本书就再也找不到了，一直都挺遗憾的。&lt;/p&gt;
-&lt;p&gt;那时候一直以为是古群加的旁注，所以默默记下了这个名字，其实都是李卓吾批评版。现在翻看这本买到的旧书也没有写李卓吾的名字，但是确实是李卓吾批评版的。大学毕业以后为了弥补遗憾从当当网也买过李卓吾批评版的西游记上下册，而且还有配套插图，但是总觉得批注变少了，或者被删了与记忆不符？所以深觉无爱。有了这本之后都不重要了，因为对逝去的快乐有了那么一点祭奠。&lt;/p&gt;
-&lt;p&gt;这些年越来越不开心，做了些微小的工作，也没有赚到钱。正如西游记开篇所说：欲知造化会元功，须看《西游释厄传》。旁批：释厄二字着眼，不能释厄，不如不读《西游》&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f4yitugaewj20qo0qoq8o.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/7d6b7503jw1f4yk77w1dlj20qo0qotf2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;口口处为嚼舌&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/my-journey-to-the-west/#disqus_thread</comments>
     </item>
     
   </channel>

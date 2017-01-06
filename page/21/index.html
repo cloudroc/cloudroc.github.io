@@ -219,6 +219,173 @@
             
               
                 
+                <a class="post-title-link" href="/wordpress-for-sae-auto-mail/" itemprop="url">
+                  实现WordPress for SAE回复评论邮件自动提醒
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2012-12-07T23:26:25+08:00" content="2012-12-07">
+              2012-12-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/博客/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/博客/技术宅/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/wordpress-for-sae-auto-mail/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="wordpress-for-sae-auto-mail/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天把换成wp4sae的3.4.1版本，现在很多插件都能直接使用了。但是貌似 <a href="http://wp4sae.org/author/elmerzhang/" target="_blank" rel="external">ElmerZhang</a> 现在把wp4sae放到新浪云商店专门去赚钱了，官方博客最后一次更新还是今年6月份的时候了，以后估计也只会更新云商店里面的了。</p>
+<p>从开启sinaapp二级域名的博客开始，就一直想实现wp独立博客那种博文一旦有了回复会自动发邮件给评论的作者的功能。</p>
+<p>SAE的WordPress自带有<strong>WP-Mail-SMTP</strong>插件，在配置好邮箱设置后，默认可实现博文有评论时自动给博主发邮件提醒。但是阅读者发表评论后，一旦有了回复，是不会给阅读者（也就是这条评论的作者）发邮件提醒的。</p>
+<p><strong>所以要实现的功能概况来讲有两点：</strong></p>
+<ol>
+<li>博客有新评论会自动发邮件通知博主</li>
+<li>访客评论后收到回复也通过邮件被通知<br>几经谷歌终于找到了解决方案，现在和大家分享一下。</li>
+</ol>
+<p><strong>Step 0：</strong></p>
+<p>如果已经开启了<strong>WP-Mail-SMTP</strong> 那就先停用或者直接卸载掉吧，然后用<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="external"><strong>Configure SMTP</strong></a>这个插件来替代。</p>
+<p><strong>Step 1:</strong></p>
+<p>在wordpress中配置<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="external"><strong>Configure SMTP</strong> </a>，参见下图</p>
+<p><img src="http://pic.filec2c.com/img/wpgogogo/0d25a927/" alt="" title="Configure SMTP配置"></p>
+<p>&nbsp;</p>
+<p><strong>注意：</strong>作者仅仅使用QQ邮箱实验成功（其他邮箱未试验），国内估计是某墙的存在，“Send e-mail via Gmail”您就别选了……还有就是SMTP username是完整的QQ邮箱，SMTP password 是你QQ邮箱的密码。</p>
+<p><strong> Step 2:</strong></p>
+<p>开启QQ邮箱的<strong>SMTP 服务</strong>，QQ邮箱的SMTP服务默认没有打开，请在【邮箱设置】的【帐号】中开启相关服务。</p>
+<p><img src="http://pic.filec2c.com/img/wpgogogo/33e1ef9b/" alt="" title="QQ邮箱SMTP服务开启"></p>
+<p>&nbsp;</p>
+<p><strong>Step 3：</strong></p>
+<p>在wordpress中发送测试邮件，并查收邮件，默认会发送至你博客使用的邮箱的。</p>
+<p><img src="http://pic.filec2c.com/img/wpgogogo/53f3760f/" alt="" title="wp中测试消息"></p>
+<p><img src="http://pic.filec2c.com/img/wpgogogo/f6e3c76f/" alt="" title="邮箱收到邮件"></p>
+<p>&nbsp;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/www-kaedeen-com/" itemprop="url">
                   博客终于有自己的域名了
                 </a>
@@ -881,134 +1048,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/code-monkey/" itemprop="url">
-                  Code Monkey
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2012-11-09T18:42:52+08:00" content="2012-11-09">
-              2012-11-09
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/code-monkey/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="code-monkey/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>工作两年多了，从最早的苦逼但是又总是傻乐的码畜现在也算一个正宗码农了……</p>
-<p>前几天弄了一个<a href="http://dotaherotest.sinaapp.com" target="_blank" rel="external">《测测你是dota里面哪个英雄》</a>的新浪应用，还没通过审核，但是也终于借这个东东被别人推荐成了sinaapp的“普通开发人员”。下一步就要申请中级开发人员了，这样这个小破博客就能一直跑下去。</p>
-<p>周末的宿舍总是很冷清，一块住的同事基本都结婚了，一到周末都回家和老婆孩子团聚去鸟。周日又是光棍节，眼睁睁的看着周围以前一起侃大山的宅男屌丝们都有自己的gf，自己却连个好基友都找不到……</p>
-<p>连我爹都替我着急了，硬是要给我介绍女朋友，但是我怕谈不成自己伤心会就算了，伤了人家女孩子的心就不好了，伤了父母心就更不好了，就说最近公司很忙推脱了。可能屌丝如我者总是有点自卑心理，亦或是自己依旧图样图森破。</p>
-<p>萍总也给介绍了一个，这个程序媛我很喜欢，人很漂亮，但是她一直说自己很忙，即使我抱着没有任何目的试探接触都屡屡被忽略，哎，its rope life，这就是一个程序猿屌丝的绳命啊。</p>
-<p>喜欢听Code Monkey这首歌，里面有句歌词我很喜欢</p>
-<blockquote>
-<p>Code Monkey think someday he have everything even pretty girl like you</p>
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="257" height="33" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://www.xiami.com/widget/0_1769297142/singlePlayer.swf"><param name="wmode" value="transparent"><embed type="application/x-shockwave-flash" width="257" height="33" src="http://www.xiami.com/widget/0_1769297142/singlePlayer.swf" wmode="transparent"></object></blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1054,7 +1093,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">129</span>
+              <span class="site-state-item-count">130</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1071,7 +1110,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">86</span>
+                <span class="site-state-item-count">89</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
