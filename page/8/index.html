@@ -219,6 +219,227 @@
             
               
                 
+                <a class="post-title-link" href="/phantomjs-e7-ad-be-e5-88-b0/" itemprop="url">
+                  phantomjs签到
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-25T15:08:12+08:00" content="2015-12-25">
+              2015-12-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/phantomjs-e7-ad-be-e5-88-b0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="phantomjs-e7-ad-be-e5-88-b0/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近用积分换了一个2345的抱枕，皮面比较脏，不过放在办公司还好。</p>
+<p>因为SAE收费，所以之前的SAE上的Python签到也不能运行了，所以只能想起来才会去2345签到一次，有点影响本来就很少的收入啦，haha.</p>
+<p>看到微信可以绑定2345账号，并且登录和签到根本不需要验证码，抓了下url，大概格式如下：</p>
+<blockquote>
+<p><a href="http://jifen.2345.com/m/guess.php?ctl=login&amp;act=checkBind&amp;openid=xxxxx&amp;urlParam=xxxx&amp;t=xxxx&amp;s=xxxx" target="_blank" rel="external">http://jifen.2345.com/m/guess.php?ctl=login&amp;act=checkBind&amp;openid=xxxxx&amp;urlParam=xxxx&amp;t=xxxx&amp;s=xxxx</a></p>
+</blockquote>
+<p>xxxx都是特定的内容，用于用户的验证，这样用户可以直接通过微信登录不需要用户名密码了</p>
+<p>最近看到同事用phantomjs进行网页截图，很好很强大，简单研究了一下，想用它写个签到脚本。</p>
+<p>于是有了下面的粗糙代码，写的不好。主要是phantomjs有自身的局限性，比如不能像java Python那样按照代码的顺序执行，而是像Javascript一样，是基于消息驱动的。代码的执行都是异步化的。所以有些痛苦，感觉用于自动化测试应该效果不很理想。</p>
+<p>运行方式：./phantomjs 2345.js</p>
+<pre name="code" class="c-sharp">
+
+//设置输出编码
+phantom.outputEncoding = 'gb2312';
+
+var page ;
+
+//绑定微信号登录，防止验证码的问题
+var myurl = "绑定2345微信后可从微信客户端获取";
+
+var shoujiurl = "http://shouji.2345.com/index.php";
+
+var renderPage = function (url) {
+page = require('webpage').create();
+
+page.onConsoleMessage = function(msg, lineNum, sourceId) {
+  console.log('CONSOLE: ' + msg + ' (from line #' + lineNum + ' in "' + sourceId + '")');
+};
+
+page.onNavigationRequested = function(url, type, willNavigate, main) {
+    if (main && url!=myurl && url!=shoujiurl) {
+        myurl = url;
+        console.log("redirect caught")
+        page.close()
+        setTimeout('renderPage(myurl)',1); //Note the setTimeout here
+    }
+};
+
+page.open(url, function(status) {
+    if (status==="success") {
+            console.log("The final url is :"+myurl);
+
+            //pc推广
+            page.evaluate(function() {
+                var href= $(".aSignBtn").attr("href");
+                console.log("href = "+href);
+
+                if($(".aSignBtn").attr("onclick")){
+                    $(".aSignBtn").attr("onclick",href);
+                    $(".aSignBtn").click();
+                }else{
+                    console.log("pc already checked");
+                }
+
+                console.log("pc checked...");
+            });
+
+            //手机推广
+            page.open(shoujiurl, function(status) {
+                    page.evaluate(function() {
+                        console.log($(".signBtn").html());
+                        $(".signBtn").click();
+
+                        console.log("shouji checked...");
+                    });
+            });
+    } else {
+            console.log("failed")
+            phantom.exit(1);
+    }
+});
+
+}
+
+renderPage(myurl);
+
+setTimeout(function(){
+    page.close;
+    page = require('webpage').create();
+
+    page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 2345chrome v2.3.0.2200';
+    //console.log('The default user agent is ' + page.settings.userAgent);
+
+    page.open("http://www.2345.com/?k718881649",function(status){
+        //page.render('index.png');
+        console.log("visit index page...");
+        phantom.exit(1);
+    });
+},15000);
+
+</pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/douban-simple/" itemprop="url">
                   豆瓣radio简约版
                 </a>
@@ -849,145 +1070,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/magnet-thunder-urs/" itemprop="url">
-                  磁力链接magnet:?xt=urn:btih:与迅雷thunder://地址进行转换
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-10-19T11:05:24+08:00" content="2015-10-19">
-              2015-10-19
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/代码/" itemprop="url" rel="index">
-                    <span itemprop="name">代码</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/magnet-thunder-urs/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="magnet-thunder-urs/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在研究DHT，发现现在很多bt搜索的网站在放上磁力链接和种子的同时，又加上了一个thunder的地址。</p>
-<p>磁力链接的获取好说，用海外主机伪装DHT节点使劲爬就可以，但是这个迅雷地址怎么来的，很无解啊…</p>
-<p>于是搜索了好久，才发现这个迅雷地址是用磁力地址加密来的，直接看代码吧：</p>
-<pre class="c-sharp">
-# -*- coding: utf-8 -*-
-import base64
-
-def thunderEncode(url):
-    return ''.join(['thunder://',base64.b64encode(''.join(['AA',url,'ZZ']))])
-
-# using example
-if __name__ == "__main__":
-    tUrl = thunderEncode("magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173")
-    print (tUrl)
-</pre>
-
-<p>AA ZZ怎来的，我也不知道，但是地址是对的，不信你试试</p>
-<p>数据sample：</p>
-<p>磁力链接 ：magnet:?xt=urn:btih:d9f48f4ddcccdd14d27c75977472eac905847173</p>
-<p>迅雷链接：thunder://QUFtYWduZXQ6P3h0PXVybjpidGloOmQ5ZjQ4ZjRkZGNjY2RkMTRkMjdjNzU5Nzc0NzJlYWM5MDU4NDcxNzNaWg==</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1033,7 +1115,7 @@ if __name__ == "__main__":
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">130</span>
+              <span class="site-state-item-count">131</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1050,7 +1132,7 @@ if __name__ == "__main__":
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">89</span>
+                <span class="site-state-item-count">92</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
