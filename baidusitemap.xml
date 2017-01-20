@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/the-future-is-already-here/</loc>
+    <lastmod>2017-01-20T07:22:19.161Z</lastmod>
+    <data>
+        <display>
+        <title>未来早已到来，只是尚未平均分布</title>
+        <pubTime>2017-01-20T08:05:18.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>特德·蒋</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</loc>
     <lastmod>2017-01-17T11:34:57.225Z</lastmod>
     <data>
@@ -945,24 +967,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/house-of-cards/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>纸牌屋</title>
-        <pubTime>2016-03-13T14:14:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/how-programer-pretent-to-workhard/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1398,12 +1402,12 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
+    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>今年的腊八是八号</title>
-        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
+        <title>在景洪的最后一天</title>
+        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
         
          
            
@@ -1416,17 +1420,17 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
+    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>深夜食堂2.0</title>
-        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
+        <title>今年的腊八是八号</title>
+        <pubTime>2014-01-07T05:42:07.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
@@ -1452,17 +1456,17 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
+    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
         <display>
-        <title>在景洪的最后一天</title>
-        <pubTime>2015-01-26T09:17:51.000Z</pubTime>
+        <title>深夜食堂2.0</title>
+        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2852,6 +2856,24 @@
            
              
               <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/house-of-cards/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>纸牌屋</title>
+        <pubTime>2016-03-13T14:14:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
