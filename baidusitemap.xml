@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/the-future-is-already-here/</loc>
-    <lastmod>2017-01-20T07:26:21.008Z</lastmod>
-    <data>
-        <display>
-        <title>未来早已到来，只是尚未平均分布</title>
-        <pubTime>2017-01-20T08:05:18.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-        <tag>特德·蒋</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</loc>
-    <lastmod>2017-01-17T11:34:57.225Z</lastmod>
+    <lastmod>2017-01-27T00:59:29.839Z</lastmod>
     <data>
         <display>
         <title>一行js代码破解百度云大文件下载限制</title>
@@ -43,6 +21,28 @@
            
              
               <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/the-future-is-already-here/</loc>
+    <lastmod>2017-01-20T07:26:21.008Z</lastmod>
+    <data>
+        <display>
+        <title>未来早已到来，只是尚未平均分布</title>
+        <pubTime>2017-01-20T08:05:18.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>特德·蒋</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
           
         </display>
     </data>
