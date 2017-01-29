@@ -8,8 +8,38 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 20 Jan 2017 07:26:21 GMT</pubDate>
+    <pubDate>Sun, 29 Jan 2017 13:29:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>编写可维护的JavaScript_读书总结</title>
+      <link>http://blog.jarjar.cn/how-to-write-matinable-javascript/</link>
+      <guid>http://blog.jarjar.cn/how-to-write-matinable-javascript/</guid>
+      <pubDate>Sun, 29 Jan 2017 02:26:17 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这段时间断断续续的在看这本书，总结一下读书心得。&lt;/p&gt;
+&lt;h1 id=&quot;这本书主要讲了什么？&quot;&gt;&lt;a href=&quot;#这本书主要讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;这本书主要讲了什么？&quot;&gt;&lt;/a&gt;这本书主要讲了什么？&lt;/h1&gt;&lt;p&gt;1、编程风格。介绍了JavaScript中流行的几种编程风格。&lt;br&gt;2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。&lt;br&gt;3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。&lt;/p&gt;
+&lt;h1 id=&quot;为什么要讲编程风格？&quot;&gt;&lt;a href=&quot;#为什么要讲编程风格？&quot; class=&quot;headerlink&quot; title=&quot;为什么要讲编程风格？&quot;&gt;&lt;/a&gt;为什么要讲编程风格？&lt;/h1&gt;&lt;p&gt;每个人都有自己的编程风格，比如说，html代码缩进，有人喜欢用两个空格，有人喜欢用四个空格。在团队开发中，当我们打开一个别人写的文件的时候，常常不是立即工作，而是首先修复代码缩进。当代码很多文件很大的时候，你会体会到统一编程风格的确会节省大量的时间。&lt;br&gt;还有就是，当代码风格统一的时候，能更容易的看出问题，比如html少了一个闭合标签。&lt;/p&gt;
+&lt;h1 id=&quot;编程实践讲了什么？&quot;&gt;&lt;a href=&quot;#编程实践讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;编程实践讲了什么？&quot;&gt;&lt;/a&gt;编程实践讲了什么？&lt;/h1&gt;&lt;p&gt;说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。&lt;br&gt;编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。&lt;br&gt;这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。&lt;/p&gt;
+&lt;h1 id=&quot;自动化这部分讲了什么？&quot;&gt;&lt;a href=&quot;#自动化这部分讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;自动化这部分讲了什么？&quot;&gt;&lt;/a&gt;自动化这部分讲了什么？&lt;/h1&gt;&lt;p&gt;这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。&lt;br&gt;如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具&lt;/p&gt;
+&lt;h1 id=&quot;能从这本书学到的东西：&quot;&gt;&lt;a href=&quot;#能从这本书学到的东西：&quot; class=&quot;headerlink&quot; title=&quot;能从这本书学到的东西：&quot;&gt;&lt;/a&gt;能从这本书学到的东西：&lt;/h1&gt;&lt;p&gt;避免使用全局变量。&lt;br&gt;在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。&lt;br&gt;UI松耦合。&lt;br&gt;一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这段时间断断续续的在看这本书，总结一下读书心得。&lt;/p&gt;
+&lt;h1 id=&quot;这本书主要讲了什么？&quot;&gt;&lt;a href=&quot;#这本书主要讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;这本书主要讲了什么？&quot;&gt;&lt;/a&gt;这本书主要讲了什么？&lt;/h1&gt;&lt;p&gt;1、编程风格。介绍了JavaScript中流行的几种编程风格。&lt;br&gt;2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。&lt;br&gt;3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。&lt;/p&gt;
+&lt;h1 id=&quot;为什么要讲编程风格？&quot;&gt;&lt;a href=&quot;#为什么要讲编程风格？&quot; class=&quot;headerlink&quot; title=&quot;为什么要讲编程风格？&quot;&gt;&lt;/a&gt;为什么要讲编程风格？&lt;/h1&gt;&lt;p&gt;每个人都有自己的编程风格，比如说，html代码缩进，有人喜欢用两个空格，有人喜欢用四个空格。在团队开发中，当我们打开一个别人写的文件的时候，常常不是立即工作，而是首先修复代码缩进。当代码很多文件很大的时候，你会体会到统一编程风格的确会节省大量的时间。&lt;br&gt;还有就是，当代码风格统一的时候，能更容易的看出问题，比如html少了一个闭合标签。&lt;/p&gt;
+&lt;h1 id=&quot;编程实践讲了什么？&quot;&gt;&lt;a href=&quot;#编程实践讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;编程实践讲了什么？&quot;&gt;&lt;/a&gt;编程实践讲了什么？&lt;/h1&gt;&lt;p&gt;说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。&lt;br&gt;编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。&lt;br&gt;这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。&lt;/p&gt;
+&lt;h1 id=&quot;自动化这部分讲了什么？&quot;&gt;&lt;a href=&quot;#自动化这部分讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;自动化这部分讲了什么？&quot;&gt;&lt;/a&gt;自动化这部分讲了什么？&lt;/h1&gt;&lt;p&gt;这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。&lt;br&gt;如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具&lt;/p&gt;
+&lt;h1 id=&quot;能从这本书学到的东西：&quot;&gt;&lt;a href=&quot;#能从这本书学到的东西：&quot; class=&quot;headerlink&quot; title=&quot;能从这本书学到的东西：&quot;&gt;&lt;/a&gt;能从这本书学到的东西：&lt;/h1&gt;&lt;p&gt;避免使用全局变量。&lt;br&gt;在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。&lt;br&gt;UI松耦合。&lt;br&gt;一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;将JavaScript从CSS中分离。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.box &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: expression(document.body.offsetWidth + &amp;quot;px&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将CSS从JavaScript中分离。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.color = &amp;quot;red&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.left = &amp;quot;10px&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.top = &amp;quot;100px&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.visibility = &amp;quot;visible&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我们需要这样分离：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.reveal &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    color: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    left: 10px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    top: 100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    visibility: visible;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//原生写法&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.className += &amp;quot; reveal&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//HTML5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.classList.add(&amp;quot;reveal&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//jQuery&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(element).addClass(&amp;quot;reveal&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将JavaScript从HTML中抽离&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;button onclick=&amp;quot;doSomething()&amp;quot; id=&amp;quot;action-btn&amp;quot;&amp;gt;Click Me&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//原生JavaScript方法&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;document.getElementById(&amp;quot;action-btn&amp;quot;).onclick = function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   //codes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//jQuery&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(&amp;quot;#action-btn&amp;quot;).on(&amp;apos;Click&amp;apos;, function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //codes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将HTML代码从JavaScript中抽离&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var div = document.getElementById(&amp;quot;my-div&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;div.innerHTML = &amp;quot;&amp;lt;h3&amp;gt;Error&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Invalid e-mail address.&amp;lt;/p&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;好的写法就是利用JS模板。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;对于小html代码片段，直接拼字符串就可以；对于大段的html代码段，用模板比较好一些。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;总结：&quot;&gt;&lt;a href=&quot;#总结：&quot; class=&quot;headerlink&quot; title=&quot;总结：&quot;&gt;&lt;/a&gt;总结：&lt;/h1&gt;&lt;p&gt;虽然这本书很薄，200多页，但是里面讲的内容很重要，可以作为提高JavaScript程序可维护性的一个起点。&lt;/p&gt;
+&lt;h1 id=&quot;一些编码规范&quot;&gt;&lt;a href=&quot;#一些编码规范&quot; class=&quot;headerlink&quot; title=&quot;一些编码规范&quot;&gt;&lt;/a&gt;一些编码规范&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/html-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team HTML编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/css-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team CSS编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team JavaScript编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/styleguide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub 编码规范&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-write-matinable-javascript/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>未来早已到来，只是尚未平均分布</title>
@@ -711,36 +741,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/work-hard-live-better/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Hexo博客手机APP</title>
-      <link>http://blog.jarjar.cn/hexo-app/</link>
-      <guid>http://blog.jarjar.cn/hexo-app/</guid>
-      <pubDate>Tue, 16 Aug 2016 02:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;学习了下Hbuilder+Mui，Mui这个框架是快速开发安卓和ios端H5应用的一个利器。唯一的缺点就是开源项目太少，并且开发文档编写水平低，有的重要函数都不知道是用来做什么的….&lt;/p&gt;
-&lt;p&gt;由于h5对我来说学习成本比较低，所以简单给博客做了一个app。是根据官方提供的的36kr阅读器改造而来的，具体参见：&lt;a href=&quot;https://github.com/dcloudio/casecode/tree/master/reader&quot;&gt;https://github.com/dcloudio/casecode/tree/master/reader&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;针对hexo类博客需要注意的是，博客本身都是静态html，怎么考虑文章的增量获取和刷新呢？仅仅通过rss不行，因为rss最多只显示最新的几十篇文章。所以最好采用类似谷歌之前rss阅读器的那种api接口，但是google rss已经退出市场，只能找feedly进行代替。&lt;/p&gt;
-&lt;p&gt;feedly api接口文档：&lt;a href=&quot;https://developer.feedly.com/&quot;&gt;https://developer.feedly.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有了文章获取的接口，剩下的就是开发了，其实就是把36kr阅读器改改，官方提供的这个例子并不好，代码耦合太多，后续有时间可以进一步改进。&lt;/p&gt;
-&lt;p&gt;附上安卓版安装包和截图：&lt;br&gt;apk下载：&lt;a href=&quot;http://pan.baidu.com/s/1boNLtsr&quot;&gt;http://pan.baidu.com/s/1boNLtsr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;截图：&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;学习了下Hbuilder+Mui，Mui这个框架是快速开发安卓和ios端H5应用的一个利器。唯一的缺点就是开源项目太少，并且开发文档编写水平低，有的重要函数都不知道是用来做什么的….&lt;/p&gt;
-&lt;p&gt;由于h5对我来说学习成本比较低，所以简单给博客做了一个app。是根据官方提供的的36kr阅读器改造而来的，具体参见：&lt;a href=&quot;https://github.com/dcloudio/casecode/tree/master/reader&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/dcloudio/casecode/tree/master/reader&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;针对hexo类博客需要注意的是，博客本身都是静态html，怎么考虑文章的增量获取和刷新呢？仅仅通过rss不行，因为rss最多只显示最新的几十篇文章。所以最好采用类似谷歌之前rss阅读器的那种api接口，但是google rss已经退出市场，只能找feedly进行代替。&lt;/p&gt;
-&lt;p&gt;feedly api接口文档：&lt;a href=&quot;https://developer.feedly.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://developer.feedly.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有了文章获取的接口，剩下的就是开发了，其实就是把36kr阅读器改改，官方提供的这个例子并不好，代码耦合太多，后续有时间可以进一步改进。&lt;/p&gt;
-&lt;p&gt;附上安卓版安装包和截图：&lt;br&gt;apk下载：&lt;a href=&quot;http://pan.baidu.com/s/1boNLtsr&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1boNLtsr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;截图：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/bmiddle/7d6b7503jw1f6ve9388d9j20jz0zkwgd.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503jw1f6vea1rssoj20jz0zkacy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;PS:IOS端没有证书所以不能发布，重复文章是因为feedly自身的问题…&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/hexo-app/#disqus_thread</comments>
     </item>
     
   </channel>
