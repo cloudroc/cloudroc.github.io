@@ -8,8 +8,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sun, 29 Jan 2017 13:29:58 GMT</pubDate>
+    <pubDate>Sat, 04 Feb 2017 02:58:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何屏蔽迅雷9右侧广告首页</title>
+      <link>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/</link>
+      <guid>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/</guid>
+      <pubDate>Sat, 04 Feb 2017 02:26:17 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
+&lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 http://home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后这个广告首页就是白屏了&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
+&lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 http://home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后这个广告首页就是白屏了&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;屏蔽后的效果图：&lt;br&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fce93huqpcj20yb0j6tbg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;同样可参考我在知乎的回答：&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/43640207/answer/144125441&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/43640207/answer/144125441&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>编写可维护的JavaScript_读书总结</title>
@@ -720,27 +744,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/join-jianshu/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>我想</title>
-      <link>http://blog.jarjar.cn/work-hard-live-better/</link>
-      <guid>http://blog.jarjar.cn/work-hard-live-better/</guid>
-      <pubDate>Sat, 27 Aug 2016 07:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这周重新听了一遍袁腾飞老师的精华学校教学视频。他讲的中国近代史和徐中约先生的中国近现代史遥相呼应，收益不浅。&lt;/p&gt;
-&lt;p&gt;去年和今年读了很多历史类的书籍，加上反复看了纸牌屋这类腹黑政治类剧。最大的感触就是看的时候感觉学习到了，但是为人处事过程中还是用不上，更多继承了之前的
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这周重新听了一遍袁腾飞老师的精华学校教学视频。他讲的中国近代史和徐中约先生的中国近现代史遥相呼应，收益不浅。&lt;/p&gt;
-&lt;p&gt;去年和今年读了很多历史类的书籍，加上反复看了纸牌屋这类腹黑政治类剧。最大的感触就是看的时候感觉学习到了，但是为人处事过程中还是用不上，更多继承了之前的明知不可为偏要为之的古怪性格，自我性格塑造真是一件很难的事情。&lt;/p&gt;
-&lt;p&gt;思前想后如果这样很难的话，不如尽力保持端正的态度，少说多做好微小的工作，把握和寻找机会。&lt;/p&gt;
-&lt;p&gt;看了北京折叠，虽然不喜欢女性写的书，但是里面写的事情好像自己都经历过，有种酸痛的感觉。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/work-hard-live-better/#disqus_thread</comments>
     </item>
     
   </channel>

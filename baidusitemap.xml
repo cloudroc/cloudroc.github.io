@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/</loc>
+    <lastmod>2017-02-04T02:58:26.555Z</lastmod>
+    <data>
+        <display>
+        <title>如何屏蔽迅雷9右侧广告首页</title>
+        <pubTime>2017-02-04T02:26:17.000Z</pubTime>
+        
+        <tag>广告屏蔽</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/how-to-write-matinable-javascript/</loc>
     <lastmod>2017-01-29T13:29:58.856Z</lastmod>
     <data>
@@ -987,26 +1007,6 @@
 
     
   <url>
-    <loc>http://blog.jarjar.cn/i-will-meet-u/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>世间所有的相遇，都是久别重逢</title>
-        <pubTime>2013-02-16T04:46:34.000Z</pubTime>
-        
-        <tag>世间所有相遇都是久别重逢</tag>
-         
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://blog.jarjar.cn/i-loved-u-nancy/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1420,6 +1420,24 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>深夜食堂2.0</title>
+        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/2014-birthday/</loc>
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     <data>
@@ -1449,24 +1467,6 @@
            
              
               <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E6%84%9F%E6%82%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/kindle-comics/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>深夜食堂2.0</title>
-        <pubTime>2015-08-30T11:56:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -2894,6 +2894,26 @@
            
              
               <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/i-will-meet-u/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>世间所有的相遇，都是久别重逢</title>
+        <pubTime>2013-02-16T04:46:34.000Z</pubTime>
+        
+        <tag>世间所有相遇都是久别重逢</tag>
+         
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>

@@ -219,6 +219,317 @@
             
               
                 
+                <a class="post-title-link" href="/360-everyday-checkin/" itemprop="url">
+                  360每日自动签到
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-11-25T17:38:52+08:00" content="2013-11-25">
+              2013-11-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码/技术宅/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/360-everyday-checkin/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="360-everyday-checkin/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>上一篇讲了<a href="http://www.kaedeen.com/693.html" title="每日自动登陆淘宝领取金币" target="_blank" rel="external">每日自动登陆淘宝领取金币</a>，这一篇讲讲如何登陆360，并每日自动签到</p>
+<p>这次的难点主要集中在登陆这里了，开始抓包发现360登陆验证很麻烦，但是后来发现一个简单的方法。<br>因为我安装了360安全卫士，发现点击那个金币的按钮能直接验证登陆，哈哈~所以httpclient直接get这个url就能创建cookie完成登陆了~</p>
+<p>上面说的不明白，看图：<br><img src="http://ww3.sinaimg.cn/large/7d6b7503tw1eaxe7rxa0fj207l03naa5.jpg" alt="" title="360安全卫士"></p>
+<p>具体请看代码了：</p>
+<pre name="code" class="c-sharp">
+import java.io.IOException;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import net.sf.json.JSONObject;
+
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
+
+import com.kae.common.CustomerHttpClient;
+import com.kae.common.DummyRedirectHandler;
+
+/**
+ * 
+ * @ClassName: Jifen360
+ * @Description: 360积分
+ * @author kaedeen.com
+ * @date 2013-11-22 下午9:28:24
+ * 
+ */
+
+public class Jifen360 {
+
+    private static final Logger logger = Logger.getLogger(Jifen360.class);
+
+    private static DefaultHttpClient httpclient = null;// HttpClient对象
+
+    private static HttpResponse response = null;
+
+    private String url = "";
+
+    public Jifen360(String url) {
+        this.url = url;
+    }
+
+    /**
+     * 签到
+     * 
+     * @return
+     */
+    @SuppressWarnings({ "deprecation","rawtypes" })
+    public boolean signIn() {
+        boolean flag = false;
+
+        httpclient = new DefaultHttpClient();
+        // 设定cookie策略
+        HttpClientParams.setCookiePolicy(httpclient.getParams(),
+                CookiePolicy.BROWSER_COMPATIBILITY);
+
+        httpclient.setRedirectHandler(new DummyRedirectHandler());
+
+        HttpGet httpGet = new HttpGet(url);
+
+        try {
+            response = httpclient.execute(httpGet);
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+            logger.error("Jifen360 signIn ClientProtocolException:"+e.toString());
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            logger.error("Jifen360 signIn IOException:"+e.toString());
+        } finally {
+            httpGet.abort();
+        }
+
+        String token = getToken();
+
+        // 请求签到链接
+        String signInUrl="http://jifen.360.cn/safe/ajax_signin.html?token="+token;
+
+        HttpPost httppost = new HttpPost(signInUrl);
+        httppost.setHeader("Accept", "*/*");
+        httppost.setHeader("Accept-Language","zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4,zh-TW;q=0.2");
+        httppost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+        httppost.setHeader("Host", "jifen.360.cn");
+        httppost.setHeader("Origin", "http://jifen.360.cn");
+        httppost.setHeader("Proxy-Connection", "keep-alive");
+        httppost.setHeader("Referer", "http://jifen.360.cn/safe?src=safe");
+        httppost.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36");
+        httppost.setHeader("X-Requested-With", "XMLHttpRequest");
+
+        try {
+            //获取签到应答内容
+            response = httpclient.execute(httppost);
+            HttpEntity httpEntity = response.getEntity();
+            String responseJsonStr = EntityUtils.toString(httpEntity);
+
+            //请求示例
+            //{"errno":0,"errmsg":"","data":{"dayslen":1,"score":2,"signin_count":608904}} 成功
+            //{"errno":1,"errmsg":"u60a8u4ecau5929u5df2u7ecfu7b7eu8fc7u5230u4e86~","data":""} 失败
+
+            logger.info("Jifen360 请求签到链接 responseJsonStr:"+responseJsonStr);
+
+            Map map = JSONObject.fromObject(responseJsonStr);
+            int code=(Integer)map.get("errno");
+
+            if(0==code){
+                flag=true;
+                logger.info("Jifen360 签到 成功！");
+            }else{
+                logger.info("Jifen360 今天已经签到了！");
+            }
+
+        }catch (Exception e) {
+            logger.error("Jifen360 signIn 请求签到链接 失败:"+e.toString());
+            return false;
+        } finally {
+            httppost.abort();
+        }
+
+        return flag;
+    }
+
+    /**
+     * 获取302跳转的
+     * 
+     * @return
+     */
+    private String getRedirectLocation() {
+        Header locationHeader = response.getFirstHeader("Location");
+        if (locationHeader == null) {
+            return null;
+        }
+        return locationHeader.getValue();
+    }
+
+    /**
+     * 获取360 token
+     * 
+     * @return
+     */
+    private String getToken() {
+
+        String redirectUrl = getRedirectLocation();
+
+        String token = "";
+
+        String responseBody = CustomerHttpClient.get(httpclient, redirectUrl);
+        // System.out.println(responseBody);
+
+        Pattern pattern1 = Pattern.compile("token":"(.*)","mall_tpl");
+        Matcher m1 = pattern1.matcher(responseBody);
+        if (m1.find()) {
+            token = m1.group(1);
+            logger.info("Jifen360 360 token:"+token);
+        } else {
+            logger.error("Jifen360 360 获取360 token失败！");
+        }
+
+        return token;
+    }
+
+}
+</pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/taobo-coins/" itemprop="url">
                   每日自动领取淘金币（java httpclient4）
                 </a>
@@ -1117,133 +1428,6 @@ Taobao taobao=new Taobao(userName,passWord);
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/how-programer-pretent-to-workhard/" itemprop="url">
-                  程序员如何成功的假装在很努力的工作
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2013-06-29T22:03:01+08:00" content="2013-06-29">
-              2013-06-29
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/how-programer-pretent-to-workhard/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="how-programer-pretent-to-workhard/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这两周都没更新，大抵是太忙了……这几天都是晚上12点之后回家的……</p>
-<p>从微博上看到这个，启发很大，发出来分享~</p>
-<p>《程序员如何成功的假装在很努力的工作》</p>
-<p>1.给人一个良好的第一印象；</p>
-<p>2.在团队中不要太冒尖。老板会很快的习惯你的工作效率，会给你安排越来越多的工作。</p>
-<p>3.写出优秀的代码，让代码维护起来很容易。</p>
-<p>4.你的人际关系越好，你遇到问题时解决方法就越多。</p>
-<p>原文短连接：<a href="http://t.cn/zHeyrri" title="http://cloudbbs.org/forum.php?mod=viewthread&amp;tid=16141" target="_blank" rel="external">http://t.cn/zHeyrri</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1289,7 +1473,7 @@ Taobao taobao=new Taobao(userName,passWord);
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">133</span>
+              <span class="site-state-item-count">134</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1306,7 +1490,7 @@ Taobao taobao=new Taobao(userName,passWord);
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">95</span>
+                <span class="site-state-item-count">96</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1358,6 +1542,10 @@ Taobao taobao=new Taobao(userName,passWord);
               Links
             </div>
             <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fcd48784grj20hs0vktae.jpg" title="我的开发者头条" target="_blank">我的开发者头条</a>
+                </li>
               
                 <li class="links-of-blogroll-item">
                   <a href="http://www.2345.com/?k718881649" title="网址导航" target="_blank">网址导航</a>
