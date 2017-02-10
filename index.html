@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -27,9 +27,12 @@
 
 
 
+
+
+
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -37,12 +40,12 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,java,html5,mybatis,jfinal,life,jarjar,httpclient" />
+  <meta name="keywords" content="凤凰山笔记,原创技术笔记" />
 
 
 
@@ -53,7 +56,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -72,19 +75,35 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
+    root: '/',
+    scheme: 'Muse',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 925690,
-      author: 'Author'
+      userId: '925690',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://blog.jarjar.cn/"/>
+
+
+
+
 
   <title> 凤凰山笔记 </title>
 </head>
@@ -95,15 +114,19 @@
 
 
 
+
+
   <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?c5127ebccef09f61efbb5ce4885b2c1f";
+      hm.src = "https://hm.baidu.com/hm.js?c5127ebccef09f61efbb5ce4885b2c1f";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
 
 
 
@@ -133,7 +156,9 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">just a diary</p>
+    
+      <p class="site-subtitle">just a diary</p>
+    
 </div>
 
 <div class="site-nav-toggle">
@@ -182,11 +207,43 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
   
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'wjEACQsGVHNzjwiBid1V','2.0.0');
+</script>
+
+
+
+    </div>
+  
 </nav>
+
+
 
  </div>
     </header>
@@ -201,13 +258,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -229,24 +299,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-04T10:26:17+08:00" content="2017-02-04">
-              2017-02-04
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-04T10:26:17+08:00">
+                2017-02-04
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术/" itemprop="url" rel="index">
                     <span itemprop="name">技术</span>
                   </a>
@@ -254,7 +336,6 @@
 
                 
                 
-
               
             </span>
           
@@ -262,20 +343,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/how-to-block-xunlei9-ad-homepage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="how-to-block-xunlei9-ad-homepage/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="how-to-block-xunlei9-ad-homepage/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -290,12 +377,14 @@
         
           <p>针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：</p>
 <p>过程很简单<br>1.找到host文件路径：C:\Windows\System32\drivers\etc<br>2.在host文件增加一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1 home.xl9.xunlei.com</span><br></pre></td></tr></table></figure></p>
-<p>然后这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器<br>
-          <div class="post-more-link text-center">
+<p>然后重启下迅雷9，这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器<br>
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/how-to-block-xunlei9-ad-homepage/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -308,7 +397,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -325,13 +417,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/how-to-write-matinable-javascript/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -353,24 +458,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-29T10:26:17+08:00" content="2017-01-29">
-              2017-01-29
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-29T10:26:17+08:00">
+                2017-01-29
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术/" itemprop="url" rel="index">
                     <span itemprop="name">技术</span>
                   </a>
@@ -378,7 +495,6 @@
 
                 
                 
-
               
             </span>
           
@@ -386,20 +502,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/how-to-write-matinable-javascript/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="how-to-write-matinable-javascript/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="how-to-write-matinable-javascript/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -418,11 +540,13 @@
 <h1 id="编程实践讲了什么？"><a href="#编程实践讲了什么？" class="headerlink" title="编程实践讲了什么？"></a>编程实践讲了什么？</h1><p>说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。<br>编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。<br>这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。</p>
 <h1 id="自动化这部分讲了什么？"><a href="#自动化这部分讲了什么？" class="headerlink" title="自动化这部分讲了什么？"></a>自动化这部分讲了什么？</h1><p>这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。<br>如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具</p>
 <h1 id="能从这本书学到的东西："><a href="#能从这本书学到的东西：" class="headerlink" title="能从这本书学到的东西："></a>能从这本书学到的东西：</h1><p>避免使用全局变量。<br>在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。<br>UI松耦合。<br>一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。<br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/how-to-write-matinable-javascript/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -435,7 +559,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -452,13 +579,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/the-future-is-already-here/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -480,24 +620,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-20T16:05:18+08:00" content="2017-01-20">
-              2017-01-20
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-20T16:05:18+08:00">
+                2017-01-20
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/life/" itemprop="url" rel="index">
                     <span itemprop="name">life</span>
                   </a>
@@ -505,7 +657,6 @@
 
                 
                 
-
               
             </span>
           
@@ -513,20 +664,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/the-future-is-already-here/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="the-future-is-already-here/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="the-future-is-already-here/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -542,11 +699,13 @@
           <p>最近把特德·蒋的小说读了几部。从15年就开始知道这位科幻作家了，这个作家在中国可能很冷门，不如刘慈欣的影响力。相比外国的科幻小说作家，可能更多的人知道的是阿莫西夫，所以他的小说阅读量估计比较小。</p>
 <p>他写的小说不是很多，我这里仅列一下我读过的：<br>《巴比伦塔》<br>主要在喜马拉雅听的，讲的是有人终于到达了天边，然后看到了世界的奥秘…</p>
 <p>《你一生的故事》<br>我最喜欢的一部，讲的通过学习外星人七肢桶的语言，女主掌握了一种可以看到未来的和过去的本领，即她知道自己的未来会是什么样子。即使看到未来的种种杯具，也只能默默的活下去，等待未来的到来。最近的电影《降临》就是根据这个小说改编的，很期待高清片源。<br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/the-future-is-already-here/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -559,7 +718,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -576,13 +738,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/in-the-memory-of-yaorenwo/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -604,24 +779,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-09T16:05:18+08:00" content="2017-01-09">
-              2017-01-09
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-09T16:05:18+08:00">
+                2017-01-09
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/life/" itemprop="url" rel="index">
                     <span itemprop="name">life</span>
                   </a>
@@ -629,7 +816,6 @@
 
                 
                 
-
               
             </span>
           
@@ -637,20 +823,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/in-the-memory-of-yaorenwo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="in-the-memory-of-yaorenwo/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="in-the-memory-of-yaorenwo/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -667,11 +859,13 @@
 <p><a href="http://blog.sina.com.cn/yaorenwo" title="咬人画的">漫画家咬人的新浪博客</a>从2015-07-24最后一篇《咬人画的-电梯里的短暂推理》之后再也没有更新，音信全无…</p>
 <p>可能他最早出名是因为画魔兽世界的相关漫画，但是我最早关注他是因为他画的宅人食谱系列。一个小小的电热茶缸还有一个小电饭锅就能做出各种宅人美食，虽然我相信那是他画工高超以及用色好…但是简单纯粹的美好，模糊记忆的温暖描述，总是会让人默默感动。</p>
 <p>为了纪念咬人特定制作了他新浪博客2011~2015的备份，格式为pdf，纸张大小为A4，作为永久珍藏。<br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/in-the-memory-of-yaorenwo/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -684,7 +878,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -701,13 +898,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/one-line-js-crack-baidu-yun/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -729,24 +939,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-06T14:05:18+08:00" content="2017-01-06">
-              2017-01-06
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T14:05:18+08:00">
+                2017-01-06
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/技术/" itemprop="url" rel="index">
                     <span itemprop="name">技术</span>
                   </a>
@@ -754,7 +976,6 @@
 
                 
                 
-
               
             </span>
           
@@ -762,20 +983,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/one-line-js-crack-baidu-yun/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="one-line-js-crack-baidu-yun/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="one-line-js-crack-baidu-yun/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -793,11 +1020,13 @@
 <p>这个很烦：<br>1.百度云客户端下载很慢，而且故意限速<br>2.我使用的chrome浏览器，经常启动不了百度云客户端</p>
 <p>看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object.defineProperty(this , &apos;navigator&apos; , &#123;value: &#123; platform: &quot;&quot; &#125;&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。</p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/one-line-js-crack-baidu-yun/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -810,7 +1039,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -827,13 +1059,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/there-is-always-a-force-let-us-burst-into-tears/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -855,24 +1100,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-01T00:00:18+08:00" content="2017-01-01">
-              2017-01-01
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-01T00:00:18+08:00">
+                2017-01-01
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/life/" itemprop="url" rel="index">
                     <span itemprop="name">life</span>
                   </a>
@@ -880,7 +1137,6 @@
 
                 
                 
-
               
             </span>
           
@@ -888,20 +1144,26 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/there-is-always-a-force-let-us-burst-into-tears/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="there-is-always-a-force-let-us-burst-into-tears/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="there-is-always-a-force-let-us-burst-into-tears/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
@@ -917,11 +1179,13 @@
           <p>本文刊载于1999年的《南方周末》</p>
 <p>这是新年的第一天。这是我们与你见面的第777次。祝愿阳光打在你的脸上。</p>
 <p>阳光打在你的脸上，温暖留在我们心里。这是冬天里平常的一天。北方的树叶已经落尽，南方的树叶还留在枝上，人们在大街上懒洋洋地走着，或者急匆匆地跑着，每个人都怀着自己的希望，每个人都握紧自己的心事。</p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/there-is-always-a-force-let-us-burst-into-tears/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
@@ -934,7 +1198,10 @@
       
     </div>
 
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -956,7 +1223,7 @@
   </nav>
 
 
-
+          
           </div>
           
 
@@ -982,7 +1249,7 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg"
@@ -991,12 +1258,15 @@
           <p class="site-description motion-element" itemprop="description">很惭愧，只做了些微小的工作，也没赚到钱</p>
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">134</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">134</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
 
           
             <div class="site-state-item site-state-categories">
@@ -1040,11 +1310,11 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/cloudroc" target="_blank" title="Weibo">
+                <a href="https://www.zhihu.com/people/honta/" target="_blank" title="知乎">
                   
-                    <i class="fa fa-fw fa-weibo"></i>
+                    <i class="fa fa-fw fa-globe"></i>
                   
-                  Weibo
+                  知乎
                 </a>
               </span>
             
@@ -1064,7 +1334,7 @@
             <ul class="links-of-blogroll-list">
               
                 <li class="links-of-blogroll-item">
-                  <a href="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fcd48784grj20hs0vktae.jpg" title="我的开发者头条" target="_blank">我的开发者头条</a>
+                  <a href="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fcd48784grj20hs0vktae.jpg" title="开发者头条" target="_blank">开发者头条</a>
                 </li>
               
                 <li class="links-of-blogroll-item">
@@ -1095,6 +1365,9 @@
           </div>
         
 
+        
+
+
       </section>
 
       
@@ -1111,7 +1384,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2013 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -1119,16 +1392,18 @@
   <span class="author" itemprop="copyrightHolder">cloudroc</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Muse
   </a>
 </div>
+
 
         
 
@@ -1161,50 +1436,44 @@
 
 
 
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
+  
 
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -1230,22 +1499,52 @@
   
     
       
-      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
     
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
-  
+
+
+
+
+
+
+
+
   
   
 
   
 
   
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
 
 </body>
 </html>

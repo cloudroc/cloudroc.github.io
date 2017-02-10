@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 04 Feb 2017 03:07:30 GMT</pubDate>
+    <pubDate>Sat, 04 Feb 2017 03:13:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,13 +20,13 @@
       
         &lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
 &lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;然后这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;
+&lt;p&gt;然后重启下迅雷9，这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;
       
       </description>
       
       <content:encoded>&lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
 &lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;然后这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;屏蔽后的效果图：&lt;br&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fce93huqpcj20yb0j6tbg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后重启下迅雷9，这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;屏蔽后的效果图：&lt;br&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fce93huqpcj20yb0j6tbg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;同样可参考我在知乎的回答：&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/43640207/answer/144125441&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/43640207/answer/144125441&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
       
