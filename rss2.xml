@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 10 Feb 2017 11:12:03 GMT</pubDate>
+    <pubDate>Mon, 13 Feb 2017 09:07:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>tornado中websocket握手失败问题（Windows环境）</title>
+      <link>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/</link>
+      <guid>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/</guid>
+      <pubDate>Mon, 13 Feb 2017 10:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;运行一个tornado websocket程序的时候，遇到一个问题，客户端发送websocket请求的时候一直报错：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cl
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;运行一个tornado websocket程序的时候，遇到一个问题，客户端发送websocket请求的时候一直报错：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;WebSocket connection to &amp;apos;ws://127.0.0.1:8888/soc&amp;apos; failed: Connection closed before receiving a handshake response&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;code没有问题，如果放在linux ubbantu中执行是完全可以看到效果的，但是windows环境就是有问题&lt;/p&gt;
+&lt;p&gt;google了半天终于找到一个人遇见了和我类似的问题：&lt;br&gt;tornado issue：&lt;a href=&quot;https://github.com/tornadoweb/tornado/issues/1793&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/tornadoweb/tornado/issues/1793&lt;/a&gt;&lt;br&gt;stackoverflow：&lt;a href=&quot;http://stackoverflow.com/questions/38661067/connection-closes-immediately-on-open&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/38661067/connection-closes-immediately-on-open&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;阅读英文解答的结论是：windows并不能完全支持tornado，遇到这个问题和代码无关，就是环境的问题…&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>光剑音效小程序</title>
@@ -707,52 +727,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/ThreeKingdoms-Conqueror/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>简书刷分插件</title>
-      <link>http://blog.jarjar.cn/jianshu-plugin/</link>
-      <guid>http://blog.jarjar.cn/jianshu-plugin/</guid>
-      <pubDate>Sat, 01 Oct 2016 09:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
-&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
-&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
-&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
-&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;下载了简书的app，发现里面竟然有个积分商城，虽然积分可换的实物很少，但是一个官方出品的笔记本感觉真的不错，很有个性，萌生了脚本刷分的想法。&lt;/p&gt;
-&lt;p&gt;首先是如果按照以往的方式进行模拟登录发现非常蛋疼，因为简书采用了geetest作为验证码，也就是滑动解锁，这种模拟登录的成本太大，模拟登录的方式果断放弃。&lt;/p&gt;
-&lt;p&gt;仔细观察app之后发现有两个途径可以刷分：&lt;br&gt;1.关注用户 每次2分，每天上限3次共6分&lt;br&gt;2.日常任务中，‘第一个喜欢别人文章’，一次5分每天日常任务积分上限为100&lt;/p&gt;
-&lt;p&gt;刷分尝试：&lt;br&gt;1.网站中多次点击关注用户再取消关注用户，可以被系统认为是关注用户的操作从而获取积分&lt;br&gt;2.网站中找到一篇没有任何人点赞（喜欢）的文章，多次点击喜欢和取消喜欢，可以被系统认为是‘第一个喜欢别人文章’从而获取积分&lt;/p&gt;
-&lt;p&gt;这样就简单多了，写个脚本post请求关注用户和喜欢文章的url即可，但是这样太麻烦了，每次需要把代码复制到console中执行，所以写了一个chrome插件代劳，git地址：&lt;a href=&quot;https://github.com/cloudroc/jianshu.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/jianshu.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件打包下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1qY3uGY4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1qY3uGY4&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;简单说下插件的使用方式：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;（1）安装插件，这里不做赘述，安装完插件之后的效果为：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0m84827j20a206m74u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;strong&gt;（2）使用之前需要登录简书，否则点击“一键刷分”会有以下提示：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/7d6b7503jw1f8czuc8hacj20d6084q3j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;（3）第一次使用需要配置一个未关注的用户ID以及一篇从未有人喜欢过的文章ID，这种文章很多仔细找找就能找到，所谓ID就是F12抓包过程中的一段编码，如下图：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;比如打开某篇文章，URL格式为&lt;a href=&quot;http://www.jianshu.com/p/xxxxxxxx，点击关注按钮和喜欢按钮抓取URL信息&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/xxxxxxxx，点击关注按钮和喜欢按钮抓取URL信息&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这张图是关注用户的URL请求，涂抹的部分就是用户ID&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/7d6b7503jw1f8d0snwe4ej215h08wgnj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这张图是喜欢文章的URL请求，涂抹的部分就是文章ID&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1f8d0u1lgczj21350adacg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;（4）配置完毕之后就开始使用吧，打开简书任意的URL会出现“一键刷分”的按钮，不好意思做的很丑…&lt;/strong&gt;&lt;br&gt;点击后的效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1f8czuct9s2j20iu094q3x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;（5）手机端查询积分获取的情况：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1f8d0xr5qlzj20fb0fpta1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;大概就是这样了，通过这种方式大概一天能刷到100积分左右，由于简书的限制可能点击一次不能刷够积分，多点几次就好…&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;PS:脚本刷积分也许成了多年的技术癖好，幸好不在阿里不然估计会被开除…&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/jianshu-plugin/#disqus_thread</comments>
     </item>
     
   </channel>
