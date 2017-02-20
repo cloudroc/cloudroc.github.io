@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/Decisive-moments-in-history/</loc>
+    <lastmod>2017-02-20T11:12:59.064Z</lastmod>
+    <data>
+        <display>
+        <title>人类群星闪耀时</title>
+        <pubTime>2017-02-20T14:05:18.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/the-future-is-already-here/</loc>
+    <lastmod>2017-02-15T07:22:22.687Z</lastmod>
+    <data>
+        <display>
+        <title>未来早已到来，只是尚未平均分布</title>
+        <pubTime>2017-01-20T08:05:18.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>特德·蒋</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/</loc>
     <lastmod>2017-02-13T09:07:53.903Z</lastmod>
     <data>
@@ -108,28 +150,6 @@
            
              
               <breadCrumb title="技术" url="http://blog.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/the-future-is-already-here/</loc>
-    <lastmod>2017-01-20T07:26:21.008Z</lastmod>
-    <data>
-        <display>
-        <title>未来早已到来，只是尚未平均分布</title>
-        <pubTime>2017-01-20T08:05:18.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-        <tag>特德·蒋</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
           
         </display>
     </data>
@@ -1060,24 +1080,6 @@
         <display>
         <title>在景洪的最后一天</title>
         <pubTime>2015-01-26T09:17:51.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/bestman/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>当伴郎的节奏</title>
-        <pubTime>2013-12-10T09:04:06.000Z</pubTime>
         
          
            
@@ -2961,6 +2963,24 @@
           
              
               <breadCrumb title="感悟" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/%E6%84%9F%E6%82%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/bestman/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>当伴郎的节奏</title>
+        <pubTime>2013-12-10T09:04:06.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
