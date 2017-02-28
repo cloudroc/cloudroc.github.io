@@ -8,8 +8,45 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Mon, 20 Feb 2017 11:12:59 GMT</pubDate>
+    <pubDate>Tue, 28 Feb 2017 10:42:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用PyEnchant库进行单词拼写检查</title>
+      <link>http://blog.jarjar.cn/check-spell-with-pyenchant/</link>
+      <guid>http://blog.jarjar.cn/check-spell-with-pyenchant/</guid>
+      <pubDate>Tue, 28 Feb 2017 11:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好的域名的一个标准就是最好是一个完整的英文单词，或者有意义
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用&lt;strong&gt;python中的PyEnchant库&lt;/strong&gt;进行单词拼写检查。&lt;/p&gt;
+&lt;h1 id=&quot;PyEnchant安装&quot;&gt;&lt;a href=&quot;#PyEnchant安装&quot; class=&quot;headerlink&quot; title=&quot;PyEnchant安装&quot;&gt;&lt;/a&gt;PyEnchant安装&lt;/h1&gt;&lt;p&gt;官网有安装教程，附上链接&lt;a href=&quot;http://pythonhosted.org/pyenchant/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pythonhosted.org/pyenchant/download.html&lt;/a&gt;&lt;br&gt;这里主要碰到的问题是，官方仅提供了32bit的windows安装包，安装之后64位windows系统会报错&lt;/p&gt;
+&lt;p&gt;64位系统报错信息：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;_test.py&amp;quot;, line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    import enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;C:\Python27\lib\site-packages\enchant\__init__.py&amp;quot;, line 92, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    from enchant import _enchant as _e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;C:\Python27\lib\site-packages\enchant\_enchant.py&amp;quot;, line 102, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    raise WinError()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;WindowsError: [Error 193] &amp;lt;no description&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;所以最好使用Linux或者Mac作为开发系统…&lt;/p&gt;
+&lt;h1 id=&quot;PyEnchant简单使用&quot;&gt;&lt;a href=&quot;#PyEnchant简单使用&quot; class=&quot;headerlink&quot; title=&quot;PyEnchant简单使用&quot;&gt;&lt;/a&gt;PyEnchant简单使用&lt;/h1&gt;&lt;h2 id=&quot;示例1：仅使用en-US库进行校验&quot;&gt;&lt;a href=&quot;#示例1：仅使用en-US库进行校验&quot; class=&quot;headerlink&quot; title=&quot;示例1：仅使用en_US库进行校验&quot;&gt;&lt;/a&gt;示例1：仅使用en_US库进行校验&lt;/h2&gt;&lt;p&gt;python代码：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;en_dict = enchant.Dict(&lt;span class=&quot;string&quot;&gt;&quot;en_US&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# sample worldshift.net&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; en_dict.check(&lt;span class=&quot;string&quot;&gt;&quot;worldshift&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; en_dict.suggest(&lt;span class=&quot;string&quot;&gt;&quot;worldshift&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;输出结果：&lt;br&gt;python domain_check.py&lt;br&gt;False&lt;br&gt;[‘world shift’, ‘world-shift’, ‘worldliest’, ‘redshift’, ‘afterworld’, ‘Wordsworth’, ‘Waldensian’, ‘validation’]&lt;/p&gt;
+&lt;p&gt;结果说明这个域名不错是两个单词的拼接&lt;/p&gt;
+&lt;h2 id=&quot;示例2：使用自定义词库&quot;&gt;&lt;a href=&quot;#示例2：使用自定义词库&quot; class=&quot;headerlink&quot; title=&quot;示例2：使用自定义词库&quot;&gt;&lt;/a&gt;示例2：使用自定义词库&lt;/h2&gt;&lt;p&gt;my_words.txt 是本地的词库，里面只有一行记录就是 “OK”&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;my_dict = enchant.request_pwl_dict(&lt;span class=&quot;string&quot;&gt;&quot;my_words.txt&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# sample ok666.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; my_dict.check(&lt;span class=&quot;string&quot;&gt;&quot;OK666&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; my_dict.suggest(&lt;span class=&quot;string&quot;&gt;&quot;OK666&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输出结果：&lt;br&gt;python domain_check.py&lt;br&gt;False&lt;br&gt;[‘OK’]&lt;/p&gt;
+&lt;p&gt;结果说明符合了自己定义的词库规则，是一个符合某种条件的域名&lt;/p&gt;
+&lt;h2 id=&quot;示例3：多种词库混合使用&quot;&gt;&lt;a href=&quot;#示例3：多种词库混合使用&quot; class=&quot;headerlink&quot; title=&quot;示例3：多种词库混合使用&quot;&gt;&lt;/a&gt;示例3：多种词库混合使用&lt;/h2&gt;&lt;p&gt;提供示例&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2 = enchant.DictWithPWL(&lt;span class=&quot;string&quot;&gt;&quot;en_US&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;mywords.txt&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2.check(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2.suggest(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;以上，希望对您的工作和学习有帮助&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/check-spell-with-pyenchant/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>人类群星闪耀时</title>
@@ -713,29 +750,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/next-theme-css-js-404/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>读书2016</title>
-      <link>http://blog.jarjar.cn/read-book-2016/</link>
-      <guid>http://blog.jarjar.cn/read-book-2016/</guid>
-      <pubDate>Thu, 03 Nov 2016 08:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;还有2个月2016年就过去了，写年总结为时尚早。今年的冬天来的格外的早也格外的冷，本地的热力公司也没有兑现看天供暖的承诺的意思，回家后只能蜷缩在床上。&lt;/p&gt;
-&lt;p&gt;整整两个月没有认真写过代码以及学习框架什么的，仅仅在弄公司的东西而已，所以也写不出什么技术文章了。&lt;/p&gt;
-
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;还有2个月2016年就过去了，写年总结为时尚早。今年的冬天来的格外的早也格外的冷，本地的热力公司也没有兑现看天供暖的承诺的意思，回家后只能蜷缩在床上。&lt;/p&gt;
-&lt;p&gt;整整两个月没有认真写过代码以及学习框架什么的，仅仅在弄公司的东西而已，所以也写不出什么技术文章了。&lt;/p&gt;
-&lt;p&gt;想总结一下16年看过的书，因为kindle在家里所以只能先写一个TODO，等待更新：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//TODO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;主观的总结一下：&lt;br&gt;（1）读过书的数量和文字量比去年多了，但是很多没有读完&lt;br&gt;（2）看过启发很大的东西没有记录下来，仅仅在kindle上面标记了一下，这个没有好办法解决，怎么对kindle设备的笔记做个梳理呢？好像支持发送邮件什么的，觉得效果不会很好呢&lt;br&gt;（3）读的书毫无系统可言，都是随性而读的。专业类书籍涉猎为0&lt;/p&gt;
-&lt;p&gt;今天聊到大学课本的事情，想想家里仅留下的一本大学课本竟然是《计算机科学概论》，准备好好再读一遍，做点笔记。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/read-book-2016/#disqus_thread</comments>
     </item>
     
   </channel>

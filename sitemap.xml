@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.jarjar.cn/check-spell-with-pyenchant/</loc>
+    
+    <lastmod>2017-02-28T10:42:52.448Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.jarjar.cn/Decisive-moments-in-history/</loc>
     
     <lastmod>2017-02-20T11:12:59.064Z</lastmod>
@@ -366,13 +373,6 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.jarjar.cn/i-have-to-find-a-new-place/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
@@ -492,14 +492,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
+    <loc>http://blog.jarjar.cn/last-day-in-jinghong/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/douban-simple-chrome-plugin/</loc>
+    <loc>http://blog.jarjar.cn/2014-birthday/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -520,14 +520,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/douban-simple/</loc>
+    <loc>http://blog.jarjar.cn/douban-simple-chrome-plugin/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/etcs-in-kunming/</loc>
+    <loc>http://blog.jarjar.cn/douban-simple/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -555,6 +555,13 @@
   </url>
   
   <url>
+    <loc>http://blog.jarjar.cn/etcs-in-kunming/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.jarjar.cn/fangfalun/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
@@ -576,13 +583,6 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/farewell-merlin/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.jarjar.cn/one-way-to-use-simsimi/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
@@ -597,7 +597,7 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/first-selenium-python/</loc>
+    <loc>http://blog.jarjar.cn/farewell-merlin/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -611,14 +611,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/forget-the-key/</loc>
+    <loc>http://blog.jarjar.cn/first-selenium-python/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/fried-yogurt/</loc>
+    <loc>http://blog.jarjar.cn/forget-the-key/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -646,14 +646,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/geek-iciba/</loc>
+    <loc>http://blog.jarjar.cn/fried-yogurt/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/goagent-cannot-conect/</loc>
+    <loc>http://blog.jarjar.cn/geek-iciba/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -709,7 +709,7 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
+    <loc>http://blog.jarjar.cn/goagent-cannot-conect/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -723,7 +723,7 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/google-guitar/</loc>
+    <loc>http://blog.jarjar.cn/google-e5-8f-91-e5-b8-83-angular-2-beta/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -758,7 +758,7 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/gothanm/</loc>
+    <loc>http://blog.jarjar.cn/google-guitar/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -772,14 +772,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/SimSimi-new-trick/</loc>
+    <loc>http://blog.jarjar.cn/gothanm/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/happiness/</loc>
+    <loc>http://blog.jarjar.cn/SimSimi-new-trick/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -807,7 +807,7 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/Betwixt/</loc>
+    <loc>http://blog.jarjar.cn/happiness/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -870,14 +870,14 @@
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/hellowordpress-for-sae/</loc>
+    <loc>http://blog.jarjar.cn/Betwixt/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.jarjar.cn/health-is-everything/</loc>
+    <loc>http://blog.jarjar.cn/hellowordpress-for-sae/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
@@ -927,6 +927,13 @@
   
   <url>
     <loc>http://blog.jarjar.cn/yuantengfei-chengjisihan/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.jarjar.cn/health-is-everything/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
