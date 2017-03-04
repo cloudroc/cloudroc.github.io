@@ -264,6 +264,170 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/import-folder-of-documnet-with-solar4.0-plus-tika/" itemprop="url">
+                  使用solr4.0+tika索引文件夹下所有文件
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-06-08T09:50:26+08:00">
+                2016-06-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/import-folder-of-documnet-with-solar4.0-plus-tika/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="import-folder-of-documnet-with-solar4.0-plus-tika/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从<a href="https://tika.apache.org/1.3/formats.html" target="_blank" rel="external">这里</a>找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。</p>
+<p>首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目录下，我强烈建议你将contrib\extraction\lib下所有的文件复制到你的core下面，这样你可以随意使用solr自带的 Data Import Handler，并且避免缺少jar包的各种错误。</p>
+<p>以下为一个文档导入的配置文件示例：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;dataConfig&gt;  </span><br><span class="line">    &lt;dataSource type="BinFileDataSource" /&gt;</span><br><span class="line">        &lt;document&gt;</span><br><span class="line">            &lt;entity name="files" dataSource="null" rootEntity="false"</span><br><span class="line">            processor="FileListEntityProcessor"</span><br><span class="line">            baseDir="c:/temp/docs" fileName=".*\.(doc)|(pdf)|(docx)"</span><br><span class="line">            onError="skip"</span><br><span class="line">            recursive="true"&gt;</span><br><span class="line">                &lt;field column="fileAbsolutePath" name="id" /&gt;</span><br><span class="line">                &lt;field column="fileSize" name="size" /&gt;</span><br><span class="line">                &lt;field column="fileLastModified" name="lastModified" /&gt;</span><br><span class="line">                 </span><br><span class="line">                &lt;entity</span><br><span class="line">                    name="documentImport"</span><br><span class="line">                    processor="TikaEntityProcessor"</span><br><span class="line">                    url="$&#123;files.fileAbsolutePath&#125;"</span><br><span class="line">                    format="text"&gt;</span><br><span class="line">                    &lt;field column="file" name="fileName"/&gt;</span><br><span class="line">                    &lt;field column="Author" name="author" meta="true"/&gt;</span><br><span class="line">                    &lt;field column="title" name="title" meta="true"/&gt;</span><br><span class="line">                    &lt;field column="text" name="text"/&gt;</span><br><span class="line"> </span><br><span class="line">                &lt;/entity&gt;</span><br><span class="line">        &lt;/entity&gt;</span><br><span class="line">        &lt;/document&gt; </span><br><span class="line">&lt;/dataConfig&gt;</span><br></pre></td></tr></table></figure>
+<p>这是最简单的一个导入示例，但是有几个关键点你需要明白：</p>
+<p>在我所有的schema.xml中都有一个名字叫id的field，它能帮助你唯一确认一个文件，然后它也能告诉solr你这个文件的索引是要被插入还是更新。然后就是用了一个叫做BinFiledataSource的数据源，这个东西可以很容易的抓取到文件夹下文档的一些标准值，如文档名称、最后修改日期，但是它并不能获取文档里面的文本内容。这个叫BinFiledataSource的数据源有个文档实例叫做“files”，并且有个rootEntity=”false”，这个原因是它并非真正的根节点实例，而根节点实例才是用来对文档进行索引的，其他的属性仅仅简单的说明哪个文件夹要去被抓取，文档的扩展名等，但是这些都可以被solr进行索引的。</p>
+<p>所以我决定在实例中使用以下3个属性加入索引：<br><strong>1.fileAbsolutePath:</strong> 这个可以用来作为文档的唯一索引<br><strong>2.fileSize:</strong> 文档的大小<br><strong>3.fileLastModified:</strong> 文档的最后修改时间</p>
+<p>这三个字段之后有个叫做documentImport的实体，使用的处理器为TikaEntityProcessor，这个处理器可以帮助你抽取文档中的文本和metadata(作者、标题等这些属性)，下面列一下我想存在索引里面的字段：</p>
+<p><strong>1.file:</strong>文件名称，与上面写的fileAbsolutePath不同<br><strong>2.Autor、Title:</strong>都是文档的meta属性<br><strong>3.text:</strong>文档的文本内容</p>
+<p>当然不要忘了schema.xml也应该有这些字段的配置：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;field name=<span class="string">"id"</span> type=<span class="string">"string"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> required=<span class="string">"true"</span> multiValued=<span class="string">"false"</span> /&gt; </span><br><span class="line">&lt;field name=<span class="string">"fileName"</span> type=<span class="string">"string"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> /&gt;</span><br><span class="line">&lt;field name=<span class="string">"author"</span> type=<span class="string">"string"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> /&gt;</span><br><span class="line">&lt;field name=<span class="string">"title"</span> type=<span class="string">"string"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> /&gt;</span><br><span class="line"> </span><br><span class="line">&lt;field name=<span class="string">"size"</span> type=<span class="string">"plong"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> /&gt;</span><br><span class="line">&lt;field name=<span class="string">"lastModified"</span> type=<span class="string">"pdate"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"true"</span> /&gt;</span><br><span class="line"> </span><br><span class="line">&lt;field name=<span class="string">"text"</span> type=<span class="string">"text_general"</span> indexed=<span class="string">"true"</span> stored=<span class="string">"false"</span> multiValued=<span class="string">"true"</span>/&gt;</span><br></pre></td></tr></table></figure>
+<p>这样你通过solr4.0自带的UI中进行dataimport即可，具体搜索测试这里不作赘述。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/start-with-solr/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1044,170 +1208,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/java-simulate-login-weibo/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/java-simulate-login-weibo/" itemprop="url">
-                  java httpclient模拟登录微博完整版
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-22T10:26:17+08:00">
-                2016-04-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/java-simulate-login-weibo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="java-simulate-login-weibo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>上篇说在研究java模拟登录新浪微博的事情，现在放出全部代码，研究过程中学到不少东西。<br>首先感谢shrik3写的<a href="http://shrik3.com/2016/03/25/sina-login/">微博模拟登陆研究</a>，虽然是python版本的但是对我启发很大，描述抓包的过程很详细，我做的工作仅仅是把python代码翻译成java而已。</p>
-<p>jar包只有httpclient和fastjson没有其他工具引入，用自己的帐号亲测可用，BTW代码还有很多可以完善的地方。</p>
-<p>启动类<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">		Weibo weibo = <span class="keyword">new</span> Weibo(<span class="string">"用户名"</span>,<span class="string">"密码明文"</span>);</span><br><span class="line">		weibo.login();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/java-simulate-login-weibo/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1250,7 +1255,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">138</span>
+                <span class="site-state-item-count">139</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1259,7 +1264,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -1268,7 +1273,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">100</span>
+                <span class="site-state-item-count">101</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

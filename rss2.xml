@@ -8,8 +8,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Tue, 28 Feb 2017 10:42:52 GMT</pubDate>
+    <pubDate>Sat, 04 Mar 2017 07:46:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>大型网站系统与JAVA中间件实践_读书总结</title>
+      <link>http://blog.jarjar.cn/book-about-java-middleware/</link>
+      <guid>http://blog.jarjar.cn/book-about-java-middleware/</guid>
+      <pubDate>Sat, 04 Mar 2017 09:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;什么是大型网站？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;关于大型网站的解释，在学术上并没有精确的定义。但是作为一个大型网站，数据量和访问量二者是缺一不可的，此外，除了海量数据和高并发的访问量，网站本身的业务逻辑和系统的复杂度也是一个很重要的考量方面。&lt;/p&gt;
+&lt;p
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;&lt;strong&gt;什么是大型网站？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;关于大型网站的解释，在学术上并没有精确的定义。但是作为一个大型网站，数据量和访问量二者是缺一不可的，此外，除了海量数据和高并发的访问量，网站本身的业务逻辑和系统的复杂度也是一个很重要的考量方面。&lt;/p&gt;
+&lt;p&gt;网站技术发展最初，通常是使用JAVA技术进行单机构建网站，但是随着数据量和访问量不断增长、业务逻辑复杂度不断增加，网站结构也逐渐发生了变化。当初始单机构建的网站负载告警后，采取数据库和应用分离可暂时从一定程度上缓解系统压力；随着生产过程中使用量增加，应用服务器负载告警，我们采取将应用服务器走向集群部署的形式来缓解应用的访问压力。并且在这个过程中引入了负载均衡设备且解决了服务器变为集群环境后SESSION会话数据的管理问题；然而，业务的发展激增使得数据库读写压力很大，于是我们采取数据库读写分离的方式缓解数据库的压力。可是，在当前数据读的压力遇到瓶颈后，往往会采取分布式缓存系统技术来进一步分担数据库的读压力。尽管我们采取了增加缓存，读写分离的方式，这个数据库压力也是在继续飙升，因为业务复杂度和访问量在持续飙升，因此，要解决这个问题，我们开始考虑分布式数据库和数据库水平拆分、垂直拆分的思路，即将数据库进行分布式部署或者使用专库专用、数据分割的水平拆分方式。&lt;/p&gt;
+&lt;p&gt;然而，在数据库的问题解决后，应用程序继续面临着新的挑战，应用压力在持续性增大。这时，我们要考虑就是应该把应用拆分开，将一个应用根据业务划分拆分成多个业务应用（这个在很多大型业务系统中都有体现）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JAVA中间件是什么?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;字面意思是基于JAVA技术构建的中间件，处于“中间位置”的组件。因此，它既可以是应用与应用之间的桥梁，也可以是应用和服务之间的桥梁。特定的中间件是解决特定场景下问题的组件，它能够让软件开发人员专注于自己的开发。当今的JAVA中间件包括但不限于下面三个领域：远程过程调用和对象访问的中间件、消息中间件、数据访问中间件。&lt;br&gt;当今，随着技术和程序管理思路上的进步，很多大型网站开始走服务化的路子，将散落在各个业务的代码集中起来提供统一服务调用，同时也一定程度上降低了数据库的连接。应用间交互的服务通过服务中心来集中，由专门小团队维护，相对来说也提高了系统对外交互的稳定性。&lt;br&gt;从传统意义上来讲，作为目前互联网应用的流行工具，消息中间件为我们带来异步数据交换的特性，它对系统进行了解耦，同时为系统间数据交互提供了种种可靠的机制来保证数据收发的一致性，因此它的存在为数据交互带来了很大便利性和价值。&lt;/p&gt;
+&lt;p&gt;技术绝不仅仅是脱离业务使用而孤立存在的，它总是通过解决某种问题而产生和进步的。如《程序员的职业素养》书中所写：&lt;strong&gt;深刻理解业务目标。这并不是说你必须成为业务方面的老学究，而是说你需要理解手上正在编写的代码的业务价值是什么，了解雇佣你的企业将如何从你的工作中获得回报。&lt;/strong&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/book-about-java-middleware/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>使用PyEnchant库进行单词拼写检查</title>
@@ -724,32 +749,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/Multi-riveting-just-steam/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用Hexo NexT主题上传文章到github-pages css js 出现404问题的解决方案</title>
-      <link>http://blog.jarjar.cn/next-theme-css-js-404/</link>
-      <guid>http://blog.jarjar.cn/next-theme-css-js-404/</guid>
-      <pubDate>Fri, 04 Nov 2016 03:30:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;昨天上传文章到github pages之后博客就打不开了，抓包发现类似”&lt;a href=&quot;http://www.example.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&quot; target=&quot;_blank&quot; 
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;昨天上传文章到github pages之后博客就打不开了，抓包发现类似”&lt;a href=&quot;http://www.example.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.example.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5&lt;/a&gt;“ 的这种css和js文件都出下了404错误，导致博客成为一片空白…&lt;/p&gt;
-&lt;p&gt;问题的症结是vendors文件夹下面资源不会被加载。&lt;/p&gt;
-&lt;p&gt;这个问题耗费了大半上午，没有找到解决方案。最后准备在NexT主题里面反馈这个issue的时候发现已经有人反馈了这个issue，呵呵…&lt;/p&gt;
-&lt;p&gt;引用回复：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Thanks for reaching out! We recently updated to Jekyll v3.3, which ignores the vendor folder by default. If you’re not using Jekyll, you can add a .nojekyll file to the root of your repository to disable Jekyll from building your site. Once you do that, your site should build with your vendor folder.&lt;/p&gt;
-&lt;p&gt;各位，这是我给github官方邮件，他们的回复，就是在根目录下加一个.nojekyll 资源就可以访问了。&lt;br&gt;但是如果.nojekyll加在source文件夹内，不会被hexo 生成出来，不知道各位谁有解决办法？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;简单说就是在github pages的repo的根目录加一个.nojekyll的文件就可以解决了，关于windows如何建立.nojekyll文件可以参见这篇文章：&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外，更换其他的主题，即hexo编译后没有vendor文件夹的主题，也可以解决这个问题。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/next-theme-css-js-404/#disqus_thread</comments>
     </item>
     
   </channel>
