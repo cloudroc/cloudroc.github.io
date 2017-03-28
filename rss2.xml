@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 04 Mar 2017 07:46:15 GMT</pubDate>
+    <pubDate>Tue, 28 Mar 2017 11:21:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>七年</title>
+      <link>http://blog.jarjar.cn/seven-years/</link>
+      <guid>http://blog.jarjar.cn/seven-years/</guid>
+      <pubDate>Tue, 28 Mar 2017 13:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。&lt;/p&gt;
+&lt;p&gt;再就是很多软文说人每七年会变为另一个人，因为细胞确实7年左右更新一次。针对这点，我记得神经细胞好像终身不会更新的，从这个角度看，你还
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。&lt;/p&gt;
+&lt;p&gt;再就是很多软文说人每七年会变为另一个人，因为细胞确实7年左右更新一次。针对这点，我记得神经细胞好像终身不会更新的，从这个角度看，你还是以前的那个人吧。&lt;/p&gt;
+&lt;p&gt;早上和熟识但是不在一个部门的同事一起抽了一根烟，他问我最近忙吗？我说：“老板天天付工资给我，我必须天天忙才对。”他默默笑道：“呵呵，你成长了”&lt;/p&gt;
+&lt;p&gt;10年毕业到现在为止已经是七年了。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/seven-years/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>大型网站系统与JAVA中间件实践_读书总结</title>
@@ -726,29 +747,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/regards-for-castro/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>多铆蒸刚</title>
-      <link>http://blog.jarjar.cn/Multi-riveting-just-steam/</link>
-      <guid>http://blog.jarjar.cn/Multi-riveting-just-steam/</guid>
-      <pubDate>Wed, 16 Nov 2016 03:50:26 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;双十一从淘宝买了一个1:700的大和号战列舰模型，周末的几天基本完工了。&lt;/p&gt;
-&lt;p&gt;因为比例太小，所以拼接粘合的时候特别费力，虽然拿着电子镊极度小心的弄，最终还是把舰桥的天线弄歪，不过应该看不出来…&lt;/p&gt;
-&lt;p&gt;记得小时候第一次看到俾斯麦和大和、武藏的时候就十分喜欢，
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;双十一从淘宝买了一个1:700的大和号战列舰模型，周末的几天基本完工了。&lt;/p&gt;
-&lt;p&gt;因为比例太小，所以拼接粘合的时候特别费力，虽然拿着电子镊极度小心的弄，最终还是把舰桥的天线弄歪，不过应该看不出来…&lt;/p&gt;
-&lt;p&gt;记得小时候第一次看到俾斯麦和大和、武藏的时候就十分喜欢，应该是从一部叫《探索兵器世界/三毛大世界》的彩色儿童读物看到的，后来才知道这种对多炮塔舰船的痴迷属于多炮塔神教的范畴…&lt;/p&gt;
-&lt;p&gt;下面是完工后的素颜照，未涂色以及贴纸，仅仅把军旗粘上了。三个三联装的主炮和主炮后的前后两门副炮可以自由转动，其他都是胶水粘合的。&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/7d6b7503jw1f9ts35fcw0j20jp16q0zf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;多铆蒸刚，炮塔至大！&lt;br&gt;亿万星辰，亿万炮塔！&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/Multi-riveting-just-steam/#disqus_thread</comments>
     </item>
     
   </channel>
