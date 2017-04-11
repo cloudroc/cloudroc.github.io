@@ -67,15 +67,15 @@
 今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行hexo d命令进行发布的时候突然就报错了：
 以下是比较详细的报错信息：1234567891011121314151617INFO  Deploying: gitINFO  Clearing .de">
 <meta property="og:type" content="article">
-<meta property="og:title" content="凤凰山笔记">
+<meta property="og:title" content="Hexo博客 Error spawn git ENOENT问题解决">
 <meta property="og:url" content="http://blog.jarjar.cn/hexo-git-problems/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
 <meta property="og:description" content="最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能从装系统。
 今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行hexo d命令进行发布的时候突然就报错了：
 以下是比较详细的报错信息：1234567891011121314151617INFO  Deploying: gitINFO  Clearing .de">
-<meta property="og:updated_time" content="2017-04-11T06:34:58.945Z">
+<meta property="og:updated_time" content="2017-04-11T06:42:16.801Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="凤凰山笔记">
+<meta name="twitter:title" content="Hexo博客 Error spawn git ENOENT问题解决">
 <meta name="twitter:description" content="最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能从装系统。
 今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行hexo d命令进行发布的时候突然就报错了：
 以下是比较详细的报错信息：1234567891011121314151617INFO  Deploying: gitINFO  Clearing .de">
@@ -112,7 +112,7 @@
 
 
 
-  <title>  | 凤凰山笔记 </title>
+  <title> Hexo博客 Error spawn git ENOENT问题解决 | 凤凰山笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -293,7 +293,7 @@
             
             
               
-                
+                Hexo博客 Error spawn git ENOENT问题解决
               
             
           </h1>
@@ -381,9 +381,9 @@
 <p>以下是比较详细的报错信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">&apos;git&apos; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���</span><br><span class="line">�������ļ�</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br><span class="line">FATAL spawn git ENOENT</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br></pre></td></tr></table></figure></p>
 <p>搜索了很久，说由于git安装的有问题或者git环境变量没有配置，但是重装过几次git，并且从新配置了环境变量也是没有效果，报错是一样的。</p>
 <p>最后看到有人说要用gitbash执行可以解决这个问题，所以打开git shell执行了下<strong> hexo d</strong>，果然发布成功…</p>
-<p>所以这个问题的解决方案就是gitbash执行 hexo的发布命令</p>
+<p><strong>所以这个问题的解决方案就是gitbash执行 hexo的发布命令</strong></p>
 <p>同时碰到另外一个问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Warning: Permanently added &apos;git.coding.net,61.133.64.67&apos; (RSA) to the list of known hosts.</span><br><span class="line">Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p>
-<p>这个主要是从装系统后coding.net的公钥没有从新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章<a href="http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/">将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</a></p>
+<p>这个主要是从装系统后coding.net的公钥没有从新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章<a href="http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/">将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</a>从新配置下coding.net上面的公钥即可</p>
 
       
     </div>
@@ -483,7 +483,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="hexo-git-problems/"
-           data-title="" data-url="http://blog.jarjar.cn/hexo-git-problems/">
+           data-title="Hexo博客 Error spawn git ENOENT问题解决" data-url="http://blog.jarjar.cn/hexo-git-problems/">
       </div>
     
   </div>
