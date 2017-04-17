@@ -8,8 +8,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Tue, 11 Apr 2017 06:51:54 GMT</pubDate>
+    <pubDate>Mon, 17 Apr 2017 08:55:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>故乡</title>
+      <link>http://blog.jarjar.cn/homeland/</link>
+      <guid>http://blog.jarjar.cn/homeland/</guid>
+      <pubDate>Mon, 17 Apr 2017 13:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;图片来自咬人画的&lt;/p&gt;
+&lt;p&gt;早上看到咬人更新漫画，点进去看到了这幅图，在绿地上面有几株绿树，后面
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;图片来自咬人画的&lt;/p&gt;
+&lt;p&gt;早上看到咬人更新漫画，点进去看到了这幅图，在绿地上面有几株绿树，后面的背景是密密麻麻的厂房，突然触发的却是思乡的情愫。&lt;/p&gt;
+&lt;p&gt;经常会有人问我是哪的人，每次回答的时候都很扭捏。有时回答是父亲的家乡，有时回答的是从小长大的那个城镇，有时就干脆说自己是XX省人。&lt;/p&gt;
+&lt;p&gt;我觉得我的故乡应该是从小看到大的那片厂房和烟囱。&lt;/p&gt;
+&lt;p&gt;空气中总是弥漫着化肥厂的氨气味。晚上看不到星星，因为旁边的炼油厂的大火炬一直在燃烧着浓烟，天色一直都是可爱的暗红色。直到懂事后第一次回到父亲的老家，才知道什么什么叫做星空，晚上不开灯为什么会伸手不见十指。&lt;/p&gt;
+&lt;p&gt;有人会说这种真的不适合孩子成长，现在看来的确是这样。但是我从0岁到16岁基本所有的时间都是在这些厂房周围长大的，在我看来没有什么比这些厂房和烟囱更能定义为故乡。&lt;/p&gt;
+&lt;p&gt;我这样的人现在被人称为子弟。还有一个叫杨潇的人出了一本书叫《子弟》，虽然没有读，仅仅读了一下介绍就有很强的认同感，讲的就是我们这代人成长的故事。&lt;/p&gt;
+&lt;p&gt;我想如果我有幸有了自己的下一代，他/她的故乡应该是一片片的高层建筑以及高新区吧&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/homeland/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Hexo博客 Error spawn git ENOENT问题解决</title>
@@ -727,25 +752,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/use-ant-to-build-jar/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用java执行javascript脚本</title>
-      <link>http://blog.jarjar.cn/java-run-js/</link>
-      <guid>http://blog.jarjar.cn/java-run-js/</guid>
-      <pubDate>Mon, 28 Nov 2016 12:26:17 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;原来java可以执行javascript脚本的，这个可帮了大忙。&lt;/p&gt;
-&lt;p&gt;以下代码可以执行一个js文件中的某个js方法：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;spa
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;原来java可以执行javascript脚本的，这个可帮了大忙。&lt;/p&gt;
-&lt;p&gt;以下代码可以执行一个js文件中的某个js方法：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;RunJs&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; FileNotFoundException, ScriptException, NoSuchMethodException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ScriptEngineManager scriptEngineManager = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ScriptEngineManager();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScriptEngine engine = scriptEngineManager.getEngineByExtension(&lt;span class=&quot;string&quot;&gt;&quot;js&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        BufferedReader reader = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; BufferedReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; InputStreamReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; FileInputStream(&lt;span class=&quot;string&quot;&gt;&quot;google_tk.js&quot;&lt;/span&gt;)));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        engine.eval(reader);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Invocable invocable = (Invocable)engine;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;comment&quot;&gt;//这里参数 第一个是js文件中的js function名字，第二个是funciton接受的参数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Object result = invocable.invokeFunction(&lt;span class=&quot;string&quot;&gt;&quot;VL&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;happy new year!&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(result);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * java调用js&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; filePath&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; menthod&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; parm&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 * &lt;span class=&quot;doctag&quot;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; String &lt;span class=&quot;title&quot;&gt;invokeJs&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String filePath,String menthod,String parm)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		ScriptEngineManager scriptEngineManager = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ScriptEngineManager();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScriptEngine engine = scriptEngineManager.getEngineByExtension(&lt;span class=&quot;string&quot;&gt;&quot;js&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        BufferedReader reader = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; BufferedReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; InputStreamReader(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; FileInputStream(filePath)));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        engine.eval(reader);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Invocable invocable = (Invocable)engine;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Object result = invocable.invokeFunction(menthod,parm);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; result.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/java-run-js/#disqus_thread</comments>
     </item>
     
   </channel>
