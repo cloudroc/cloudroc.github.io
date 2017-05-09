@@ -264,6 +264,168 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/next-theme-css-js-404/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/next-theme-css-js-404/" itemprop="url">
+                  使用Hexo NexT主题上传文章到github-pages css js 出现404问题的解决方案
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-04T11:30:26+08:00">
+                2016-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/next-theme-css-js-404/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="next-theme-css-js-404/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天上传文章到github pages之后博客就打不开了，抓包发现类似”<a href="http://www.example.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" target="_blank" rel="external">http://www.example.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5</a>“ 的这种css和js文件都出下了404错误，导致博客成为一片空白…</p>
+<p>问题的症结是vendors文件夹下面资源不会被加载。</p>
+<p>这个问题耗费了大半上午，没有找到解决方案。最后准备在NexT主题里面反馈这个issue的时候发现已经有人反馈了这个issue，呵呵…</p>
+<p>引用回复：</p>
+<blockquote>
+<p>Thanks for reaching out! We recently updated to Jekyll v3.3, which ignores the vendor folder by default. If you’re not using Jekyll, you can add a .nojekyll file to the root of your repository to disable Jekyll from building your site. Once you do that, your site should build with your vendor folder.</p>
+<p>各位，这是我给github官方邮件，他们的回复，就是在根目录下加一个.nojekyll 资源就可以访问了。<br>但是如果.nojekyll加在source文件夹内，不会被hexo 生成出来，不知道各位谁有解决办法？</p>
+</blockquote>
+<p>简单说就是在github pages的repo的根目录加一个.nojekyll的文件就可以解决了，关于windows如何建立.nojekyll文件可以参见这篇文章：<br><a href="http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html" target="_blank" rel="external">http://jingyan.baidu.com/article/6181c3e065531c152ef1532d.html</a></p>
+<p>另外，更换其他的主题，即hexo编译后没有vendor文件夹的主题，也可以解决这个问题。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/read-book-2016/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1046,169 +1208,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/hexo-app/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/hexo-app/" itemprop="url">
-                  Hexo博客手机APP
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-16T10:30:26+08:00">
-                2016-08-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/代码/" itemprop="url" rel="index">
-                    <span itemprop="name">代码</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/hexo-app/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="hexo-app/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>学习了下Hbuilder+Mui，Mui这个框架是快速开发安卓和ios端H5应用的一个利器。唯一的缺点就是开源项目太少，并且开发文档编写水平低，有的重要函数都不知道是用来做什么的….</p>
-<p>由于h5对我来说学习成本比较低，所以简单给博客做了一个app。是根据官方提供的的36kr阅读器改造而来的，具体参见：<a href="https://github.com/dcloudio/casecode/tree/master/reader">https://github.com/dcloudio/casecode/tree/master/reader</a></p>
-<p>针对hexo类博客需要注意的是，博客本身都是静态html，怎么考虑文章的增量获取和刷新呢？仅仅通过rss不行，因为rss最多只显示最新的几十篇文章。所以最好采用类似谷歌之前rss阅读器的那种api接口，但是google rss已经退出市场，只能找feedly进行代替。</p>
-<p>feedly api接口文档：<a href="https://developer.feedly.com/">https://developer.feedly.com/</a></p>
-<p>有了文章获取的接口，剩下的就是开发了，其实就是把36kr阅读器改改，官方提供的这个例子并不好，代码耦合太多，后续有时间可以进一步改进。</p>
-<p>附上安卓版安装包和截图：<br>apk下载：<a href="http://pan.baidu.com/s/1boNLtsr">http://pan.baidu.com/s/1boNLtsr</a></p>
-<p>截图：<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/hexo-app/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1256,7 +1255,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">142</span>
+                <span class="site-state-item-count">143</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
