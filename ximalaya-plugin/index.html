@@ -83,7 +83,7 @@ http://www.ximalaya.com/7712455/sound/2272558
 你会发现多出来两个链">
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zes36ej20nk075t9g.jpg">
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zdcpkjj20w30rf48f.jpg">
-<meta property="og:updated_time" content="2017-05-09T12:59:31.967Z">
+<meta property="og:updated_time" content="2017-05-20T15:17:46.402Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="喜马拉雅下载助手">
 <meta name="twitter:description" content="使用方法1.下载插件安装包，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：
@@ -402,6 +402,7 @@ http://www.ximalaya.com/7712455/sound/2272558
 <p>这里要注意的是<br>（1）下载后的文件格式为.m4a（一般的PC播放器都可以播放）</p>
 <p>（2）32kps的音频可能只有24kps，这个是喜马的问题</p>
 <p>（3）下载的文件名是一串乱码，最好自己改一下名字</p>
+<a id="more"></a>
 <h1 id="插件原理"><a href="#插件原理" class="headerlink" title="插件原理"></a>插件原理</h1><p>记得我上面说到的声音明细页面URL中的sound吗，后面跟着的数字就是这个声音在喜马拉雅上面的唯一ID。</p>
 <p>喜马拉雅在播放声音前会请求一个URL，比如：<br><a href="http://www.ximalaya.com/tracks/2272558.json" target="_blank" rel="external">http://www.ximalaya.com/tracks/2272558.json</a><br>获取一个包涵音频文件实际地址的json：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: 2272558,</span><br><span class="line">    &quot;play_path_64&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&quot;,</span><br><span class="line">    &quot;play_path_32&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/6A/wKgDaVWVCC_hoDuwAEH7lqBPx3k059.m4a&quot;,</span><br><span class="line">    &quot;play_path&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&quot;,</span><br><span class="line">    &quot;duration&quot;: 1400,</span><br><span class="line">    &quot;title&quot;: &quot;银河帝国1_基地_08&quot;,</span><br><span class="line">    &quot;nickname&quot;: &quot;大屁股老鼠哈哈笑&quot;,</span><br><span class="line">    &quot;uid&quot;: 7712455,</span><br><span class="line">    &quot;waveform&quot;: &quot;group4/M02/0C/E7/wKgDtFMlI3qysDNYAAAKbDrnGSU1990.js&quot;,</span><br><span class="line">    &quot;upload_id&quot;: &quot;u_2639732&quot;,</span><br><span class="line">    &quot;cover_url&quot;: &quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006.jpg&quot;,</span><br><span class="line">    &quot;cover_url_142&quot;: &quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006_web_large.jpg&quot;,</span><br><span class="line">    &quot;formatted_created_at&quot;: &quot;3月16日 12:08&quot;,</span><br><span class="line">    &quot;is_favorited&quot;: false,</span><br><span class="line">    &quot;play_count&quot;: 32701,</span><br><span class="line">    &quot;comments_count&quot;: 36,</span><br><span class="line">    &quot;shares_count&quot;: 0,</span><br><span class="line">    &quot;favorites_count&quot;: 92,</span><br><span class="line">    &quot;album_id&quot;: 244444,</span><br><span class="line">    &quot;album_title&quot;: &quot;阿西莫夫_基地（银河帝国基地系列第一部）&quot;,</span><br><span class="line">    &quot;intro&quot;: &quot;长篇科幻小说，基地，阿西莫夫[美]著，叶李华译，连载中...，播讲：哈哈笑。&quot;,</span><br><span class="line">    &quot;have_more_intro&quot;: false,</span><br><span class="line">    &quot;time_until_now&quot;: &quot;3年前&quot;,</span><br><span class="line">    &quot;category_name&quot;: &quot;book&quot;,</span><br><span class="line">    &quot;category_title&quot;: &quot;有声书&quot;,</span><br><span class="line">    &quot;played_secs&quot;: null,</span><br><span class="line">    &quot;is_paid&quot;: false,</span><br><span class="line">    &quot;is_free&quot;: null,</span><br><span class="line">    &quot;price&quot;: null,</span><br><span class="line">    &quot;discounted_price&quot;: null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -486,6 +487,10 @@ http://www.ximalaya.com/7712455/sound/2272558
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/how-to-looup-baiduyun-filelist/" rel="prev" title="如何导出百度云文件列表">
+                如何导出百度云文件列表 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -556,7 +561,7 @@ http://www.ximalaya.com/7712455/sound/2272558
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">143</span>
+                <span class="site-state-item-count">144</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -574,7 +579,7 @@ http://www.ximalaya.com/7712455/sound/2272558
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">102</span>
+                <span class="site-state-item-count">103</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

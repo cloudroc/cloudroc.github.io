@@ -8,8 +8,55 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Tue, 09 May 2017 12:59:31 GMT</pubDate>
+    <pubDate>Sat, 20 May 2017 15:23:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何导出百度云文件列表</title>
+      <link>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/</link>
+      <guid>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/</guid>
+      <pubDate>Sat, 20 May 2017 09:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;看到知乎有同学问网盘的文件列表如何进行导出，比如像是百度、dropbox、google drive、OneDrive是否存在导出列表命令，类似DOS命令Dir/S&lt;/p&gt;
+&lt;p&gt;首先请明确一个概念，dir之类的命令是针对操作系统的，百度网盘你可以认为是个网站，你的文件数据都存在数据库里面的，所以操作系统命令肯定不行&lt;/p&gt;
+&lt;p&gt;这里提供一个导出百度云盘文件列表可行的办法：&lt;/p&gt;
+&lt;p&gt;1.首先安装&lt;em&gt;云客户端，登陆一次，最好只用一个用户，&lt;em&gt;*方便后面找db文件&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2.我没有设置安装路径，在类似这个文件夹路径下面&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;C:\Users\你的用户名\AppData\Roaming\baidu\BaiduNetdisk\users\6e1731cdddddddbb3231c1486f6f6b66&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;找到一个叫&lt;strong&gt;BaiduYunCacheFileV0.db&lt;/strong&gt;的文件&lt;/p&gt;
+&lt;p&gt;6e1731cdddddddbb3231c1486f6f6b66可能是个哈希码，你碰下运气就找到，或者你用Everything之类的文件搜索工具全盘搜索名字叫BaiduYunCacheFileV0.db的文件&lt;/p&gt;
+&lt;p&gt;3.安装&lt;strong&gt;SQLiteExpertPro&lt;/strong&gt;软件，一般是绿色版的，将BaiduYunCacheFileV0.db文件复制到另外一个地方，然后直接拖入SQLiteExpertPro即可&lt;/p&gt;
+&lt;p&gt;在sql的输入框中输入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from cache_file&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;点击 &lt;strong&gt;execute sql&lt;/strong&gt;得到下图的结果&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;看到知乎有同学问网盘的文件列表如何进行导出，比如像是百度、dropbox、google drive、OneDrive是否存在导出列表命令，类似DOS命令Dir/S&lt;/p&gt;
+&lt;p&gt;首先请明确一个概念，dir之类的命令是针对操作系统的，百度网盘你可以认为是个网站，你的文件数据都存在数据库里面的，所以操作系统命令肯定不行&lt;/p&gt;
+&lt;p&gt;这里提供一个导出百度云盘文件列表可行的办法：&lt;/p&gt;
+&lt;p&gt;1.首先安装&lt;em&gt;云客户端，登陆一次，最好只用一个用户，&lt;em&gt;*方便后面找db文件&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2.我没有设置安装路径，在类似这个文件夹路径下面&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;C:\Users\你的用户名\AppData\Roaming\baidu\BaiduNetdisk\users\6e1731cdddddddbb3231c1486f6f6b66&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;找到一个叫&lt;strong&gt;BaiduYunCacheFileV0.db&lt;/strong&gt;的文件&lt;/p&gt;
+&lt;p&gt;6e1731cdddddddbb3231c1486f6f6b66可能是个哈希码，你碰下运气就找到，或者你用Everything之类的文件搜索工具全盘搜索名字叫BaiduYunCacheFileV0.db的文件&lt;/p&gt;
+&lt;p&gt;3.安装&lt;strong&gt;SQLiteExpertPro&lt;/strong&gt;软件，一般是绿色版的，将BaiduYunCacheFileV0.db文件复制到另外一个地方，然后直接拖入SQLiteExpertPro即可&lt;/p&gt;
+&lt;p&gt;在sql的输入框中输入&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from cache_file&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;点击 &lt;strong&gt;execute sql&lt;/strong&gt;得到下图的结果&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/large/7d6b7503ly1ffs8mq4ix3j212q0nwgpd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;（原谅我不羁的书法）&lt;/p&gt;
+&lt;p&gt;4.这个就是你说的文件目录列表了，&lt;strong&gt;parent_path&lt;/strong&gt;是父目录，&lt;strong&gt;server_filename&lt;/strong&gt;是文件名称&lt;/p&gt;
+&lt;p&gt;，具体怎么用看你。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原理：&lt;/strong&gt;&lt;br&gt;其实百度云盘客户端将你的文件列表存放在了本地的一个sqllite数据库中的.db文件，找工具打开即可&lt;/p&gt;
+&lt;p&gt;*盘将用户文件列表存为明文，倒是也比较良心，方便自己查阅整理了&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/59979415/answer/171042842&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎问答链接&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>喜马拉雅下载助手</title>
@@ -18,7 +65,17 @@
       <pubDate>Tue, 09 May 2017 09:05:18 GMT</pubDate>
       <description>
       
-        &lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h1&gt;&lt;p&gt;1.&lt;a href=&quot;https://raw.githubusercontent.com/cloudroc/ximalaya
+        &lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h1&gt;&lt;p&gt;1.&lt;a href=&quot;https://raw.githubusercontent.com/cloudroc/ximalaya-plugin/master/DIST/ximalaya_v1.0.0.crx&quot;&gt;下载插件安装包&lt;/a&gt;，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zes36ej20nk075t9g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2.无需特殊设置，打开喜马拉雅网站，进入某个专辑，点击某个声音查看进入明细页面，比如：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ximalaya.com/7712455/sound/2272558&quot;&gt;http://www.ximalaya.com/7712455/sound/2272558&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zdcpkjj20w30rf48f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;注意URL里面的sound单词，这个在后面的插件原理里面会讲&lt;/p&gt;
+&lt;p&gt;你会发现多出来两个链接&lt;strong&gt;“下载32kps音频”&lt;/strong&gt; &lt;strong&gt;“下载64kps音频”&lt;/strong&gt;，点击链接下载音频即可，是不是很简单…&lt;/p&gt;
+&lt;p&gt;应用图标是银河护卫队里面勇度的乐高版头像，希望以此纪念这位好父亲…&lt;/p&gt;
+&lt;p&gt;这里要注意的是&lt;br&gt;（1）下载后的文件格式为.m4a（一般的PC播放器都可以播放）&lt;/p&gt;
+&lt;p&gt;（2）32kps的音频可能只有24kps，这个是喜马的问题&lt;/p&gt;
+&lt;p&gt;（3）下载的文件名是一串乱码，最好自己改一下名字&lt;/p&gt;
       
       </description>
       
@@ -33,6 +90,7 @@
 &lt;p&gt;这里要注意的是&lt;br&gt;（1）下载后的文件格式为.m4a（一般的PC播放器都可以播放）&lt;/p&gt;
 &lt;p&gt;（2）32kps的音频可能只有24kps，这个是喜马的问题&lt;/p&gt;
 &lt;p&gt;（3）下载的文件名是一串乱码，最好自己改一下名字&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;插件原理&quot;&gt;&lt;a href=&quot;#插件原理&quot; class=&quot;headerlink&quot; title=&quot;插件原理&quot;&gt;&lt;/a&gt;插件原理&lt;/h1&gt;&lt;p&gt;记得我上面说到的声音明细页面URL中的sound吗，后面跟着的数字就是这个声音在喜马拉雅上面的唯一ID。&lt;/p&gt;
 &lt;p&gt;喜马拉雅在播放声音前会请求一个URL，比如：&lt;br&gt;&lt;a href=&quot;http://www.ximalaya.com/tracks/2272558.json&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ximalaya.com/tracks/2272558.json&lt;/a&gt;&lt;br&gt;获取一个包涵音频文件实际地址的json：&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;id&amp;quot;: 2272558,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path_64&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path_32&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/6A/wKgDaVWVCC_hoDuwAEH7lqBPx3k059.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;duration&amp;quot;: 1400,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;title&amp;quot;: &amp;quot;银河帝国1_基地_08&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;nickname&amp;quot;: &amp;quot;大屁股老鼠哈哈笑&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;uid&amp;quot;: 7712455,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;waveform&amp;quot;: &amp;quot;group4/M02/0C/E7/wKgDtFMlI3qysDNYAAAKbDrnGSU1990.js&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;upload_id&amp;quot;: &amp;quot;u_2639732&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;cover_url&amp;quot;: &amp;quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006.jpg&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;cover_url_142&amp;quot;: &amp;quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006_web_large.jpg&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;formatted_created_at&amp;quot;: &amp;quot;3月16日 12:08&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_favorited&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_count&amp;quot;: 32701,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;comments_count&amp;quot;: 36,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;shares_count&amp;quot;: 0,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;favorites_count&amp;quot;: 92,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;album_id&amp;quot;: 244444,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;album_title&amp;quot;: &amp;quot;阿西莫夫_基地（银河帝国基地系列第一部）&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;intro&amp;quot;: &amp;quot;长篇科幻小说，基地，阿西莫夫[美]著，叶李华译，连载中...，播讲：哈哈笑。&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;have_more_intro&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;time_until_now&amp;quot;: &amp;quot;3年前&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;category_name&amp;quot;: &amp;quot;book&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;category_title&amp;quot;: &amp;quot;有声书&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;played_secs&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_paid&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_free&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;price&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;discounted_price&amp;quot;: null&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -743,31 +801,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/db2-error-code/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</title>
-      <link>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</link>
-      <guid>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/</guid>
-      <pubDate>Fri, 16 Dec 2016 02:26:17 GMT</pubDate>
-      <description>
-      
-        &lt;h1 id=&quot;背景：&quot;&gt;&lt;a href=&quot;#背景：&quot; class=&quot;headerlink&quot; title=&quot;背景：&quot;&gt;&lt;/a&gt;背景：&lt;/h1&gt;&lt;p&gt;由于github禁止百度爬虫访问，造成托管在github Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再
-      
-      </description>
-      
-      <content:encoded>&lt;h1 id=&quot;背景：&quot;&gt;&lt;a href=&quot;#背景：&quot; class=&quot;headerlink&quot; title=&quot;背景：&quot;&gt;&lt;/a&gt;背景：&lt;/h1&gt;&lt;p&gt;由于github禁止百度爬虫访问，造成托管在github Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误…&lt;/p&gt;
-&lt;h1 id=&quot;解决方案：&quot;&gt;&lt;a href=&quot;#解决方案：&quot; class=&quot;headerlink&quot; title=&quot;解决方案：&quot;&gt;&lt;/a&gt;解决方案：&lt;/h1&gt;&lt;h2 id=&quot;将hexo同时同步到github和coding-net&quot;&gt;&lt;a href=&quot;#将hexo同时同步到github和coding-net&quot; class=&quot;headerlink&quot; title=&quot;将hexo同时同步到github和coding.net&quot;&gt;&lt;/a&gt;将hexo同时同步到github和coding.net&lt;/h2&gt;&lt;h3 id=&quot;（1）在github使用hexo可以参见相关文章：&quot;&gt;&lt;a href=&quot;#（1）在github使用hexo可以参见相关文章：&quot; class=&quot;headerlink&quot; title=&quot;（1）在github使用hexo可以参见相关文章：&quot;&gt;&lt;/a&gt;（1）在github使用hexo可以参见相关文章：&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://blog.jarjar.cn/write-blog-with-github/&quot; title=&quot;2016年使用Github写博客&quot;&gt;http://blog.jarjar.cn/write-blog-with-github/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;（2）在coding-net开启pages功能&quot;&gt;&lt;a href=&quot;#（2）在coding-net开启pages功能&quot; class=&quot;headerlink&quot; title=&quot;（2）在coding.net开启pages功能&quot;&gt;&lt;/a&gt;（2）在coding.net开启pages功能&lt;/h3&gt;&lt;p&gt;在coding.net上注册后，创建一个与用户名相同的项目，如用户名是cloudroc，则项目名称也是cloudroc。创建项目后，在项目的Pages页面里，修改Pages服务的关联分支为master，然后开启Pages服务。再填入你要绑定的域名。注意项目类型我这里设置的是共有。&lt;/p&gt;
-&lt;h3 id=&quot;（3）在本机建立coding-net的ssh-key&quot;&gt;&lt;a href=&quot;#（3）在本机建立coding-net的ssh-key&quot; class=&quot;headerlink&quot; title=&quot;（3）在本机建立coding.net的ssh key&quot;&gt;&lt;/a&gt;（3）在本机建立coding.net的ssh key&lt;/h3&gt;&lt;p&gt;首先本地需要安装git客户端，在任意路径右键-&amp;gt;git bash here&lt;br&gt;输入：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -t rsa -C &amp;quot;yourmail@domain.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;可以一路按enter键，然后可在C:\Users\主机名.ssh下找到，文件名：id_rsa(私钥)，id_rsa.pub(公钥)&lt;/p&gt;
-&lt;p&gt;最后在coding.net，刚建立的pages项目中维护这个公钥，如下图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/bmiddle/7d6b7503gw1fasfq2slsmj20kr0av0sx.jpg&quot; alt=&quot;rsa public key&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;（4）修改hexo目录的-config-yml，设置多个仓库同步&quot;&gt;&lt;a href=&quot;#（4）修改hexo目录的-config-yml，设置多个仓库同步&quot; class=&quot;headerlink&quot; title=&quot;（4）修改hexo目录的_config.yml，设置多个仓库同步&quot;&gt;&lt;/a&gt;（4）修改hexo目录的_config.yml，设置多个仓库同步&lt;/h3&gt;&lt;p&gt;示例：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    github: https://github.com/cloudroc/cloudroc.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    coding: git@git.coding.net:cloudroc/cloudroc.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  message: a little wroks&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这里github好像只能是https，ssh是不行的，但是coding.net的ssh没有问题&lt;/p&gt;
-&lt;h2 id=&quot;在DNSPOD设置CNAME&quot;&gt;&lt;a href=&quot;#在DNSPOD设置CNAME&quot; class=&quot;headerlink&quot; title=&quot;在DNSPOD设置CNAME&quot;&gt;&lt;/a&gt;在DNSPOD设置CNAME&lt;/h2&gt;&lt;p&gt;首先要在coding里你的pages项目绑定一个域名，然后会提示你需要将你的域名cname到pages.coding.me，照着做就好。&lt;br&gt;我使用的dnspod，设置完之后讲这个cname的&lt;strong&gt;线路类型&lt;/strong&gt;选择为&lt;strong&gt;百度&lt;/strong&gt;，这样百度爬虫就会去找你在coding上面的镜像了。这个过程可能很慢，百度嘛，呵呵&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/#disqus_thread</comments>
     </item>
     
   </channel>
