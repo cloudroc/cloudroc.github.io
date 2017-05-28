@@ -264,6 +264,156 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/hexo-git-problems/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/hexo-git-problems/" itemprop="url">
+                  Hexo博客 Error spawn git ENOENT问题解决
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-11T17:05:18+08:00">
+                2017-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能重装系统。</p>
+<p>今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行<strong>hexo d</strong>命令进行发布的时候突然就报错了：</p>
+<p>以下是比较详细的报错信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">&apos;git&apos; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���</span><br><span class="line">�������ļ�</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br><span class="line">FATAL spawn git ENOENT</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br></pre></td></tr></table></figure></p>
+<p>搜索了很久，说由于git安装的有问题或者git环境变量没有配置，但是重装过几次git，并且从新配置了环境变量也是没有效果，报错是一样的。</p>
+<p>最后看到有人说要用gitbash执行可以解决这个问题，所以打开git shell执行了下<strong> hexo d</strong>，果然发布成功…</p>
+<p><strong>所以这个问题的解决方案就是gitbash执行 hexo的发布命令</strong></p>
+<p>同时碰到另外一个问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Warning: Permanently added &apos;git.coding.net,61.133.64.67&apos; (RSA) to the list of known hosts.</span><br><span class="line">Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p>
+<p>这个主要是重装系统后coding.net的公钥没有重新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章<a href="http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/">将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</a>从新配置下coding.net上面的公钥即可</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/seven-years/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1013,171 +1163,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://blog.jarjar.cn/html5-lightsaber-sound-app/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/html5-lightsaber-sound-app/" itemprop="url">
-                  光剑音效小程序
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-10T18:05:18+08:00">
-                2017-02-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index">
-                    <span itemprop="name">life</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>小时候在别人家看过一点星球大战的碟片，就对光剑非常痴迷，一直幻想自己有一把光剑<br>后来慢慢补起了星球大战6部曲还有卢卡斯的《克隆人战争》CG动画，当刚出第七部原力觉醒的时候，终于按捺不住，开发了一个<strong>挥动手机触发光剑音效的小程序</strong></p>
-<p>先看下使用效果，视频拍的不好，走廊有回声，也听不清：<br>优酷视频地址：<a href="http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html">http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html</a><br>我手里握着的是手机，还有一个荧光棒，就当是光剑了吧… </p>
-<p>这个程序是基于html5手机端设备加速传感器制作的，光剑音效是网上下载的。<br>挥动手机会造成手机坐标的变化，捕捉在某一个时间间隔内手机移动的距离，用来作为触发不同光剑音效的参数，这个原理和微信的摇一摇是一样的</p>
-<p>这个程序已经开源，Github地址：<a href="https://github.com/cloudroc/lightsaber_sound">https://github.com/cloudroc/lightsaber_sound</a></p>
-<p><strong>使用方法：</strong><br>1.将手机音效开到最大</p>
-<p>2.使用手机浏览器打开index.html，然后短时间挥动手机，会发出光剑的嗡嗡声效</p>
-<p>3.根据移动的距离会发出不同的声效</p>
-<p>程序运行效果：<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/html5-lightsaber-sound-app/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1225,7 +1210,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">146</span>
+                <span class="site-state-item-count">147</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

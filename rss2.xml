@@ -8,8 +8,49 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Wed, 24 May 2017 14:52:54 GMT</pubDate>
+    <pubDate>Sun, 28 May 2017 09:03:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何在微信公众号中优雅的分享代码</title>
+      <link>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/</link>
+      <guid>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/</guid>
+      <pubDate>Sun, 28 May 2017 11:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…&lt;/p&gt;
+&lt;p&gt;找了半天,总结出&lt;strong&gt;两个比较优雅
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…&lt;/p&gt;
+&lt;p&gt;找了半天,总结出&lt;strong&gt;两个比较优雅的分享代码方法&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法1：&lt;/strong&gt;使用&lt;strong&gt;html2canvas&lt;/strong&gt; 将代码转为图片&lt;/p&gt;
+&lt;p&gt;这种方法确实比较优雅，但是比较大的问题就是如果将代码转换为图片就意味着要消耗用户流量，并且展示时耗费的时间更久一些，感觉并不可取&lt;/p&gt;
+&lt;p&gt;详细介绍可以参考这篇文章：&lt;a href=&quot;https://www.h5jun.com/post/convert-code-to-image-via-html2canvas.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;html2canvas 将代码转为图片&lt;/a&gt;（微信端同学请点击原文获取链接）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法2：&lt;/strong&gt;使用开源软件&lt;strong&gt;online-markdown&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在Github上找到一个叫小胡子哥大神的写的这个开源软件，可以非常优雅的通过md编辑器将代码转换为html，直接复制到微信公众号编辑器即可&lt;/p&gt;
+&lt;p&gt;并且&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;支持更换代码样式主题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码长度溢出时横向滚动&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个非常适合解决微信公众号中复制代码的问题&lt;/p&gt;
+&lt;p&gt;简单介绍下online-markdown的用法：&lt;/p&gt;
+&lt;p&gt;（1）从Github下载&lt;a href=&quot;https://github.com/barretlee/online-markdown&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;online-markdown源码&lt;/a&gt;（微信端同学请点击原文获取链接）&lt;/p&gt;
+&lt;p&gt;（2）解压后进入online-markdown-master\docs文件夹，打开index.html即可看到界面&lt;/p&gt;
+&lt;p&gt;（3）将你的代码复制进md编辑器，注意要使用md语法，比如下面这段&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzj9h64kj20m10f5my7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;（4）点击“预览”即可看到生成代码的html，并且可以选择多种代码主题和样式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzjaf9rzj20m10e5wfx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;（5）弄好之后直接复制到微信公众号编辑器即可，是不是很优雅 /笑cry&lt;/p&gt;
+&lt;p&gt;经过测试online-markdown&lt;strong&gt;只有在chrome浏览器中运行的比较正常&lt;/strong&gt;，其他浏览器可能会存在不加载样式文件的问题，如果您有更好的方法也请留言给我，谢谢&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>程序猿是如何解智力题的</title>
@@ -596,29 +637,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/happy-new-year-2017/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>通过坚果云同步wiz笔记，应对wiz全面收费问题</title>
-      <link>http://blog.jarjar.cn/sync-wiz-with-nutstore/</link>
-      <guid>http://blog.jarjar.cn/sync-wiz-with-nutstore/</guid>
-      <pubDate>Wed, 28 Dec 2016 09:16:18 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;12月9日消息，昨日，知名跨平台云笔记软件“为知笔记”发布公告，宣布自试用期结束后全面收费，如果免费用户不升级成VIP的话便只能使用本地笔记功能，无法同步云端。同时，为知笔记也下调了VIP的价格，从12元每月改为6元每月，年付费60元。在2017年
-      
-      </description>
-      
-      <content:encoded>&lt;blockquote&gt;
-&lt;p&gt;12月9日消息，昨日，知名跨平台云笔记软件“为知笔记”发布公告，宣布自试用期结束后全面收费，如果免费用户不升级成VIP的话便只能使用本地笔记功能，无法同步云端。同时，为知笔记也下调了VIP的价格，从12元每月改为6元每月，年付费60元。在2017年1月1日前升级的用户，年费优惠至50元。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;马上就17年了，突然看到这个消息也不知道怎么评价是好，毕竟用了wiz接近6年了，经历了wiz很多版本和政策的更迭，的确认为是个好工具，走上这条路也是没有办法的办法。&lt;/p&gt;
-&lt;p&gt;今天想到一个临时不充值会员也能解决wiz同步的解决方案：&lt;br&gt;（1）下载wiz提供的便携免安装版的压缩包，解压&lt;br&gt;（2）登录wiz帐号，同步好之前所有的笔记&lt;br&gt;（3）注册坚果云帐号，下载坚果客户端，安装….&lt;br&gt;（4）设置坚果的同步目录，把wiz的便携版放到这个目录里面&lt;/p&gt;
-&lt;p&gt;然后就ok了,坐等同步就可以了,临时可以应对不能同步笔记的问题。希望有帮助。&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/sync-wiz-with-nutstore/#disqus_thread</comments>
     </item>
     
   </channel>
