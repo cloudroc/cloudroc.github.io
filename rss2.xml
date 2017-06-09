@@ -8,8 +8,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sun, 28 May 2017 09:03:37 GMT</pubDate>
+    <pubDate>Fri, 09 Jun 2017 12:51:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何做一个低熵体</title>
+      <link>http://blog.jarjar.cn/hwo-to-be-low-entropy/</link>
+      <guid>http://blog.jarjar.cn/hwo-to-be-low-entropy/</guid>
+      <pubDate>Fri, 09 Jun 2017 13:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。&lt;/p&gt;
+&lt;p&gt;仔细看了一些关于熵的资料，物质什么时候可以说有生命呢？就是它可以继续做某件事、不
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。&lt;/p&gt;
+&lt;p&gt;仔细看了一些关于熵的资料，物质什么时候可以说有生命呢？就是它可以继续做某件事、不断地运动，并于外界交换物质，它的寿命比我们预计无生命的物质在相似情况下能够“持续”的时间要长的多。这要归功于新陈代谢的功劳，新陈代谢的主要作用是帮助有机体成功地消除了当它活着时免不了要产生的、全部的熵。这是个人认为关于保持低熵状态的最合理的解释。&lt;/p&gt;
+&lt;p&gt;也正如《三体》中“歌者”的描述：“宇宙的熵在升高，有序度在降低，像平衡鹏那无边无际的黑翅膀，向存在的一切压下来，压下来。可是低熵体不一样，低熵体的熵还在降低。有序度还在上升，像漆黑海面上升起的磷火，这就是意义，最高层的意义，比乐趣的意义层次要高。要维持这种意义，低熵体就必须存在和延续。”  这一段话的意思是作为外星文明物种的“歌者”感叹生命存在对于宇宙的重要性，而保持生命的存在和延续正是低熵体的最大意义。&lt;/p&gt;
+&lt;p&gt;所以能够过好这一生就是保持低熵的最大体现。而非大富大贵的人，在平凡的人生中享受平凡的成果，就是在过好这一生了。&lt;/p&gt;
+&lt;p&gt;以上仅代表个人观点。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/hwo-to-be-low-entropy/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>如何在微信公众号中优雅的分享代码</title>
@@ -619,24 +641,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/there-is-always-a-force-let-us-burst-into-tears/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>2016 summary</title>
-      <link>http://blog.jarjar.cn/happy-new-year-2017/</link>
-      <guid>http://blog.jarjar.cn/happy-new-year-2017/</guid>
-      <pubDate>Sat, 31 Dec 2016 09:16:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;A lot of troubles/pains，gained a little， but no regrets &amp;amp; sorrows.&lt;br&gt;Happy new Year.&lt;br&gt;Best wishes.&lt;/p&gt;
-
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;A lot of troubles/pains，gained a little， but no regrets &amp;amp; sorrows.&lt;br&gt;Happy new Year.&lt;br&gt;Best wishes.&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/happy-new-year-2017/#disqus_thread</comments>
     </item>
     
   </channel>
