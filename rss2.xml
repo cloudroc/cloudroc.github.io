@@ -8,8 +8,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sun, 02 Jul 2017 12:18:03 GMT</pubDate>
+    <pubDate>Fri, 14 Jul 2017 10:56:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何解决hexo博客样式不加载问题</title>
+      <link>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/</link>
+      <guid>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/</guid>
+      <pubDate>Fri, 14 Jul 2017 12:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。&lt;/p&gt;
+&lt;p&gt;然后因为忙，一直来不及解决….&lt;/p&gt;
+&lt;p&gt;今天有空，搜了好久找不到解决方案，索性想从新部署一次。但是想想部署又要花费好长时间，所以尝试使用了 hex
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。&lt;/p&gt;
+&lt;p&gt;然后因为忙，一直来不及解决….&lt;/p&gt;
+&lt;p&gt;今天有空，搜了好久找不到解决方案，索性想从新部署一次。但是想想部署又要花费好长时间，所以尝试使用了 hexo clean命令，出于意料的是，竟然显示正常了……&lt;/p&gt;
+&lt;p&gt;总结下解决方法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;hexo clean很关键，可以将public下所有文件进行清空，也类似清空缓存了。希望对碰到同样麻烦的朋友有所帮助&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>路过中原</title>
@@ -606,43 +630,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/in-the-memory-of-yaorenwo/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>一行js代码破解百度云大文件下载限制</title>
-      <link>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</link>
-      <guid>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/</guid>
-      <pubDate>Fri, 06 Jan 2017 06:05:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近做了一个直接在下载百度云大文件，而不用启动百度云客户端的chrome插件，插件核心代码只有一行，分享一下。&lt;/p&gt;
-&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度网盘里面的小文件，直接用浏览器和下载工具就行，但是大文件、还有文件夹就只能使用客户端了。因为百度云的PC页面会默认要求你使用客户端进行下载…&lt;/p&gt;
-&lt;p&gt;这个很烦：&lt;br&gt;1.百度云客户端下载很慢，而且故意限速&lt;br&gt;2.我使用的chrome浏览器，经常启动不了百度云客户端&lt;/p&gt;
-&lt;p&gt;看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Object.defineProperty(this , &amp;apos;navigator&amp;apos; , &amp;#123;value: &amp;#123; platform: &amp;quot;&amp;quot; &amp;#125;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;最近做了一个直接在下载百度云大文件，而不用启动百度云客户端的chrome插件，插件核心代码只有一行，分享一下。&lt;/p&gt;
-&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;大家知道，百度网盘里面的小文件，直接用浏览器和下载工具就行，但是大文件、还有文件夹就只能使用客户端了。因为百度云的PC页面会默认要求你使用客户端进行下载…&lt;/p&gt;
-&lt;p&gt;这个很烦：&lt;br&gt;1.百度云客户端下载很慢，而且故意限速&lt;br&gt;2.我使用的chrome浏览器，经常启动不了百度云客户端&lt;/p&gt;
-&lt;p&gt;看到一篇文章，里面有人通过开发人员工具(按F12)，在console里面输入&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Object.defineProperty(this , &amp;apos;navigator&amp;apos; , &amp;#123;value: &amp;#123; platform: &amp;quot;&amp;quot; &amp;#125;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;就可以直接使用浏览器下载百度云的大文件以及文件夹了，于是我想这个直接做成chrome插件就行了，直接在百度云PC端界面注入这段js即可。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;插件使用效果&quot;&gt;&lt;a href=&quot;#插件使用效果&quot; class=&quot;headerlink&quot; title=&quot;插件使用效果&quot;&gt;&lt;/a&gt;插件使用效果&lt;/h1&gt;&lt;p&gt;一番捣腾之后，这个插件终于做出来了，实际运行效果如图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1fbgvliwo0fj20vx0dcq7r.jpg&quot; alt=&quot;插件使用效果1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;很大的一个文件夹直接就获取了下载地址….，把这个链接复制到迅雷就可以很快的把文件下载下来了。&lt;/p&gt;
-&lt;p&gt;插件安装截图：&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/7d6b7503jw1fbgw59rygbj20mt04q0tg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;插件下载&quot;&gt;&lt;a href=&quot;#插件下载&quot; class=&quot;headerlink&quot; title=&quot;插件下载&quot;&gt;&lt;/a&gt;插件下载&lt;/h1&gt;&lt;p&gt;插件已开源：&lt;br&gt; &lt;a href=&quot;https://github.com/cloudroc/baidu-nolimit&quot; title=&quot;github地址&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/baidu-nolimit&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;插件下载地址：&lt;br&gt;链接: &lt;a href=&quot;https://pan.baidu.com/s/1eSDTUDW&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1eSDTUDW&lt;/a&gt; 密码: tehm&lt;br&gt;（crx文件安装方法请自行百度）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;20160110更新:&lt;/strong&gt;看到有站长已经转载，转载请注明原文链接以及标题。同时为保证一定权利，插件增加了简要说明，虽然这有悖于极简的初衷。如果您不喜欢，请下载github源码自行修改。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;20160117更新:&lt;/strong&gt;&lt;br&gt;看到有人原文一字不改就转载了，我只能说你很厉害…&lt;br&gt;大家主要遇到的几个问题，评论里面基本都有涉及。其实最大的问题是百度服务器限速，这个无能为力，各位就作为一个百度网盘直链获取的小工具就好。感谢关注和支持&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;20160127更新:&lt;/strong&gt;&lt;br&gt;感谢网友上传到chrome应用商店，商店安装地址：&lt;a href=&quot;https://chrome.google.com/webstore/detail/jnodfjpjimimdaikplcmpoknojongked&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://chrome.google.com/webstore/detail/jnodfjpjimimdaikplcmpoknojongked&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考链接：&lt;br&gt;知乎：&lt;a href=&quot;https://www.zhihu.com/question/36609103&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/36609103&lt;/a&gt;&lt;br&gt;stackoverflow：&lt;a href=&quot;http://stackoverflow.com/questions/23202136/changing-navigator-useragent-using-chrome-extension&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/23202136/changing-navigator-useragent-using-chrome-extension&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/one-line-js-crack-baidu-yun/#disqus_thread</comments>
     </item>
     
   </channel>
