@@ -8,8 +8,44 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 14 Jul 2017 10:56:57 GMT</pubDate>
+    <pubDate>Fri, 01 Sep 2017 04:47:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>护眼软件哪家强？</title>
+      <link>http://blog.jarjar.cn/eye-protectiong-softwares/</link>
+      <guid>http://blog.jarjar.cn/eye-protectiong-softwares/</guid>
+      <pubDate>Fri, 01 Sep 2017 12:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。&lt;/p&gt;
+&lt;p&gt;最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。&lt;/p&gt;
+&lt;p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。&lt;/p&gt;
+&lt;p&gt;最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。&lt;/p&gt;
+&lt;p&gt;所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用&lt;/p&gt;
+&lt;p&gt;（1）护眼宝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（2）f.lux&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fj3ypth31fj20f208cq2r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是一款自动调节屏幕色温的软件。和iphone的nightswitch功能类似，白天会将屏幕颜色自动调节的较量，晚上会变成柔和的暖色。并且官方也没有提及该软件有保护视力过滤硬件蓝光什么的作用（歪国人就是这么实诚），不过这个软件做的挺好的，使用起来很方便。&lt;/p&gt;
+&lt;p&gt;官方下载地址：&lt;a href=&quot;https://justgetflux.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://justgetflux.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（3）猎豹护眼大师&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypu5h90j20eu09mweh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这个产品官方好像已经不维护了，费了一些功夫才知道一个能用的版本，但是效果挺给力。比如提供多种护眼模式，和定时提醒休息的功能。另外一个优点是，相对猎豹的其他产品，这个不维护的产品一个商业广告没有，体积也不大，所以值得推荐&lt;/p&gt;
+&lt;p&gt;po几张使用的对比图：&lt;br&gt;使用前亮白的屏幕：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypusk37j20fp0cx75k.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;使用后的护眼效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypvf82vj20fh0d4wfp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;附猎豹护眼大师载地址：&lt;br&gt;链接: &lt;a href=&quot;https://pan.baidu.com/s/1kVqpXLd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1kVqpXLd&lt;/a&gt; 密码: 5tht&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://blog.jarjar.cn/eye-protectiong-softwares/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>如何解决hexo博客样式不加载问题</title>
@@ -604,32 +640,6 @@
 </content:encoded>
       
       <comments>http://blog.jarjar.cn/the-future-is-already-here/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>咬人画的大合集（2011~2015）</title>
-      <link>http://blog.jarjar.cn/in-the-memory-of-yaorenwo/</link>
-      <guid>http://blog.jarjar.cn/in-the-memory-of-yaorenwo/</guid>
-      <pubDate>Mon, 09 Jan 2017 08:05:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;strong&gt;20170113更新 咬大回来了。。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/yaorenwo&quot; title=&quot;咬人画的&quot;&gt;漫画家咬人的新浪博客&lt;/a&gt;从2015-07-24最后一篇《咬人画的-电梯里的短暂推理》之后再也没有更新，音信全无…&lt;/p&gt;
-&lt;p&gt;可能他最早出名是因为画魔兽世界的相关漫画，但是我最早关注他是因为他画的宅人食谱系列。一个小小的电热茶缸还有一个小电饭锅就能做出各种宅人美食，虽然我相信那是他画工高超以及用色好…但是简单纯粹的美好，模糊记忆的温暖描述，总是会让人默默感动。&lt;/p&gt;
-&lt;p&gt;为了纪念咬人特定制作了他新浪博客2011~2015的备份，格式为pdf，纸张大小为A4，作为永久珍藏。&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;&lt;strong&gt;20170113更新 咬大回来了。。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/yaorenwo&quot; title=&quot;咬人画的&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;漫画家咬人的新浪博客&lt;/a&gt;从2015-07-24最后一篇《咬人画的-电梯里的短暂推理》之后再也没有更新，音信全无…&lt;/p&gt;
-&lt;p&gt;可能他最早出名是因为画魔兽世界的相关漫画，但是我最早关注他是因为他画的宅人食谱系列。一个小小的电热茶缸还有一个小电饭锅就能做出各种宅人美食，虽然我相信那是他画工高超以及用色好…但是简单纯粹的美好，模糊记忆的温暖描述，总是会让人默默感动。&lt;/p&gt;
-&lt;p&gt;为了纪念咬人特定制作了他新浪博客2011~2015的备份，格式为pdf，纸张大小为A4，作为永久珍藏。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;PC端效果截图：&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/7d6b7503jw1fbkh8of8o6j214s0pfdwt.jpg&quot; alt=&quot;咬人画的PDF&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Kindle阅读效果请参见我15年的文章：&lt;a href=&quot;http://blog.jarjar.cn/tears-in-nine-miles/&quot; title=&quot;泪奔九英里&quot;&gt;http://blog.jarjar.cn/tears-in-nine-miles/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;度盘链接：&lt;a href=&quot;https://pan.baidu.com/s/1eSeHXXC&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1eSeHXXC&lt;/a&gt; 密码: hi44&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;特别说明：&lt;br&gt;（1）版权归咬人画的新浪博客所有，仅供学习珍藏使用，请勿商用&lt;br&gt;（2）pdf为程序生成，纸张大小为A4，未添加水印，技术选型：itext+jsoup，编程语言为java&lt;br&gt;（3）有兴趣可以购买咬人作品《只是想和自己聊聊天：又是咬人画的》、《还是咬人画的:温暖又简单的生活》，给咬人买串羊肉串&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://blog.jarjar.cn/in-the-memory-of-yaorenwo/#disqus_thread</comments>
     </item>
     
   </channel>

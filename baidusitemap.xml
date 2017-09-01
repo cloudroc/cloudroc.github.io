@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://blog.jarjar.cn/eye-protectiong-softwares/</loc>
+    <lastmod>2017-09-01T04:47:44.840Z</lastmod>
+    <data>
+        <display>
+        <title>护眼软件哪家强？</title>
+        <pubTime>2017-09-01T12:05:18.000Z</pubTime>
+        
+        <tag>保护眼睛</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.jarjar.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/</loc>
     <lastmod>2017-07-14T10:56:57.167Z</lastmod>
     <data>
@@ -1370,29 +1390,6 @@
           
              
               <breadCrumb title="技术宅" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.jarjar.cn/i-have-to-find-a-new-place/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>或无安身之地</title>
-        <pubTime>2013-04-26T14:46:53.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -3253,6 +3250,29 @@
            
              
               <breadCrumb title="代码" url="http://blog.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.jarjar.cn/i-have-to-find-a-new-place/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>或无安身之地</title>
+        <pubTime>2013-04-26T14:46:53.000Z</pubTime>
+        
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://blog.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
