@@ -4,7 +4,7 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>凤凰山笔记</title>
-    <link>http://blog.jarjar.cn/</link>
+    <link>http://www.jarjar.cn/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
@@ -13,8 +13,8 @@
     
     <item>
       <title>护眼软件哪家强？</title>
-      <link>http://blog.jarjar.cn/eye-protectiong-softwares/</link>
-      <guid>http://blog.jarjar.cn/eye-protectiong-softwares/</guid>
+      <link>http://www.jarjar.cn/eye-protectiong-softwares/</link>
+      <guid>http://www.jarjar.cn/eye-protectiong-softwares/</guid>
       <pubDate>Fri, 01 Sep 2017 12:05:18 GMT</pubDate>
       <description>
       
@@ -44,13 +44,13 @@
 &lt;p&gt;附猎豹护眼大师载地址：&lt;br&gt;链接: &lt;a href=&quot;https://pan.baidu.com/s/1kVqpXLd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1kVqpXLd&lt;/a&gt; 密码: 5tht&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/eye-protectiong-softwares/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/eye-protectiong-softwares/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何解决hexo博客样式不加载问题</title>
-      <link>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/</link>
-      <guid>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/</guid>
+      <link>http://www.jarjar.cn/how-to-slove-hexo-304-problems/</link>
+      <guid>http://www.jarjar.cn/how-to-slove-hexo-304-problems/</guid>
       <pubDate>Fri, 14 Jul 2017 12:05:18 GMT</pubDate>
       <description>
       
@@ -68,13 +68,13 @@
 &lt;p&gt;hexo clean很关键，可以将public下所有文件进行清空，也类似清空缓存了。希望对碰到同样麻烦的朋友有所帮助&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-slove-hexo-304-problems/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-slove-hexo-304-problems/#disqus_thread</comments>
     </item>
     
     <item>
       <title>路过中原</title>
-      <link>http://blog.jarjar.cn/i-am-a-passenger/</link>
-      <guid>http://blog.jarjar.cn/i-am-a-passenger/</guid>
+      <link>http://www.jarjar.cn/i-am-a-passenger/</link>
+      <guid>http://www.jarjar.cn/i-am-a-passenger/</guid>
       <pubDate>Sun, 02 Jul 2017 13:05:18 GMT</pubDate>
       <description>
       
@@ -105,13 +105,13 @@
 &lt;p&gt;11元的拌面&lt;br&gt;&lt;a href=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/i-am-a-passenger/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/i-am-a-passenger/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何做一个低熵体</title>
-      <link>http://blog.jarjar.cn/hwo-to-be-low-entropy/</link>
-      <guid>http://blog.jarjar.cn/hwo-to-be-low-entropy/</guid>
+      <link>http://www.jarjar.cn/hwo-to-be-low-entropy/</link>
+      <guid>http://www.jarjar.cn/hwo-to-be-low-entropy/</guid>
       <pubDate>Fri, 09 Jun 2017 13:05:18 GMT</pubDate>
       <description>
       
@@ -127,13 +127,13 @@
 &lt;p&gt;以上仅代表个人观点。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/hwo-to-be-low-entropy/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/hwo-to-be-low-entropy/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何在微信公众号中优雅的分享代码</title>
-      <link>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/</link>
-      <guid>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/</guid>
+      <link>http://www.jarjar.cn/how-to-share-your-code-in-weixin/</link>
+      <guid>http://www.jarjar.cn/how-to-share-your-code-in-weixin/</guid>
       <pubDate>Sun, 28 May 2017 11:05:18 GMT</pubDate>
       <description>
       
@@ -168,13 +168,13 @@
 &lt;p&gt;经过测试online-markdown&lt;strong&gt;只有在chrome浏览器中运行的比较正常&lt;/strong&gt;，其他浏览器可能会存在不加载样式文件的问题，如果您有更好的方法也请留言给我，谢谢&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-share-your-code-in-weixin/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-share-your-code-in-weixin/#disqus_thread</comments>
     </item>
     
     <item>
       <title>程序猿是如何解智力题的</title>
-      <link>http://blog.jarjar.cn/how-programmer-slove-a-Intellectual-problem/</link>
-      <guid>http://blog.jarjar.cn/how-programmer-slove-a-Intellectual-problem/</guid>
+      <link>http://www.jarjar.cn/how-programmer-slove-a-Intellectual-problem/</link>
+      <guid>http://www.jarjar.cn/how-programmer-slove-a-Intellectual-problem/</guid>
       <pubDate>Wed, 24 May 2017 11:05:18 GMT</pubDate>
       <description>
       
@@ -213,13 +213,13 @@
 &lt;p&gt;果然是博士智力水平就是高，默默献上膝盖！&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-programmer-slove-a-Intellectual-problem/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-programmer-slove-a-Intellectual-problem/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何用好你身边的体验设计人员</title>
-      <link>http://blog.jarjar.cn/how-to-use-your-ui-emloyee/</link>
-      <guid>http://blog.jarjar.cn/how-to-use-your-ui-emloyee/</guid>
+      <link>http://www.jarjar.cn/how-to-use-your-ui-emloyee/</link>
+      <guid>http://www.jarjar.cn/how-to-use-your-ui-emloyee/</guid>
       <pubDate>Mon, 22 May 2017 09:05:18 GMT</pubDate>
       <description>
       
@@ -243,13 +243,13 @@
 &lt;p&gt;设计师还有其他的能力，这是后话了…&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-use-your-ui-emloyee/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-use-your-ui-emloyee/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何导出百度云文件列表</title>
-      <link>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/</link>
-      <guid>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/</guid>
+      <link>http://www.jarjar.cn/how-to-looup-baiduyun-filelist/</link>
+      <guid>http://www.jarjar.cn/how-to-looup-baiduyun-filelist/</guid>
       <pubDate>Sat, 20 May 2017 09:05:18 GMT</pubDate>
       <description>
       
@@ -290,13 +290,13 @@
 &lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/59979415/answer/171042842&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎问答链接&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-looup-baiduyun-filelist/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-looup-baiduyun-filelist/#disqus_thread</comments>
     </item>
     
     <item>
       <title>喜马拉雅下载助手</title>
-      <link>http://blog.jarjar.cn/ximalaya-plugin/</link>
-      <guid>http://blog.jarjar.cn/ximalaya-plugin/</guid>
+      <link>http://www.jarjar.cn/ximalaya-plugin/</link>
+      <guid>http://www.jarjar.cn/ximalaya-plugin/</guid>
       <pubDate>Tue, 09 May 2017 09:05:18 GMT</pubDate>
       <description>
       
@@ -338,13 +338,13 @@
 &lt;p&gt;希望对您的生活和学习有帮助，enjoy~&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/ximalaya-plugin/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/ximalaya-plugin/#disqus_thread</comments>
     </item>
     
     <item>
       <title>故乡</title>
-      <link>http://blog.jarjar.cn/homeland/</link>
-      <guid>http://blog.jarjar.cn/homeland/</guid>
+      <link>http://www.jarjar.cn/homeland/</link>
+      <guid>http://www.jarjar.cn/homeland/</guid>
       <pubDate>Mon, 17 Apr 2017 13:05:18 GMT</pubDate>
       <description>
       
@@ -363,13 +363,13 @@
 &lt;p&gt;我想如果我有幸有了自己的下一代，他/她的故乡应该是一片片的高层建筑以及高新区吧&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/homeland/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/homeland/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo博客 Error spawn git ENOENT问题解决</title>
-      <link>http://blog.jarjar.cn/hexo-git-problems/</link>
-      <guid>http://blog.jarjar.cn/hexo-git-problems/</guid>
+      <link>http://www.jarjar.cn/hexo-git-problems/</link>
+      <guid>http://www.jarjar.cn/hexo-git-problems/</guid>
       <pubDate>Tue, 11 Apr 2017 09:05:18 GMT</pubDate>
       <description>
       
@@ -388,13 +388,13 @@
 &lt;p&gt;这个主要是重装系统后coding.net的公钥没有重新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章&lt;a href=&quot;http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/&quot;&gt;将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题&lt;/a&gt;从新配置下coding.net上面的公钥即可&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/hexo-git-problems/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/hexo-git-problems/#disqus_thread</comments>
     </item>
     
     <item>
       <title>七年</title>
-      <link>http://blog.jarjar.cn/seven-years/</link>
-      <guid>http://blog.jarjar.cn/seven-years/</guid>
+      <link>http://www.jarjar.cn/seven-years/</link>
+      <guid>http://www.jarjar.cn/seven-years/</guid>
       <pubDate>Tue, 28 Mar 2017 13:05:18 GMT</pubDate>
       <description>
       
@@ -409,13 +409,13 @@
 &lt;p&gt;10年毕业到现在为止已经是七年了。&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/seven-years/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/seven-years/#disqus_thread</comments>
     </item>
     
     <item>
       <title>大型网站系统与JAVA中间件实践_读书总结</title>
-      <link>http://blog.jarjar.cn/book-about-java-middleware/</link>
-      <guid>http://blog.jarjar.cn/book-about-java-middleware/</guid>
+      <link>http://www.jarjar.cn/book-about-java-middleware/</link>
+      <guid>http://www.jarjar.cn/book-about-java-middleware/</guid>
       <pubDate>Sat, 04 Mar 2017 09:05:18 GMT</pubDate>
       <description>
       
@@ -434,13 +434,13 @@
 &lt;p&gt;技术绝不仅仅是脱离业务使用而孤立存在的，它总是通过解决某种问题而产生和进步的。如《程序员的职业素养》书中所写：&lt;strong&gt;深刻理解业务目标。这并不是说你必须成为业务方面的老学究，而是说你需要理解手上正在编写的代码的业务价值是什么，了解雇佣你的企业将如何从你的工作中获得回报。&lt;/strong&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/book-about-java-middleware/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/book-about-java-middleware/#disqus_thread</comments>
     </item>
     
     <item>
       <title>使用PyEnchant库进行单词拼写检查</title>
-      <link>http://blog.jarjar.cn/check-spell-with-pyenchant/</link>
-      <guid>http://blog.jarjar.cn/check-spell-with-pyenchant/</guid>
+      <link>http://www.jarjar.cn/check-spell-with-pyenchant/</link>
+      <guid>http://www.jarjar.cn/check-spell-with-pyenchant/</guid>
       <pubDate>Tue, 28 Feb 2017 11:05:18 GMT</pubDate>
       <description>
       
@@ -471,13 +471,13 @@
 &lt;p&gt;以上，希望对您的工作和学习有帮助&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/check-spell-with-pyenchant/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/check-spell-with-pyenchant/#disqus_thread</comments>
     </item>
     
     <item>
       <title>人类群星闪耀时</title>
-      <link>http://blog.jarjar.cn/Decisive-moments-in-history/</link>
-      <guid>http://blog.jarjar.cn/Decisive-moments-in-history/</guid>
+      <link>http://www.jarjar.cn/Decisive-moments-in-history/</link>
+      <guid>http://www.jarjar.cn/Decisive-moments-in-history/</guid>
       <pubDate>Mon, 20 Feb 2017 14:05:18 GMT</pubDate>
       <description>
       
@@ -502,13 +502,13 @@
 &lt;/blockquote&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/Decisive-moments-in-history/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/Decisive-moments-in-history/#disqus_thread</comments>
     </item>
     
     <item>
       <title>tornado中websocket握手失败问题（Windows环境）</title>
-      <link>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/</link>
-      <guid>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/</guid>
+      <link>http://www.jarjar.cn/tornado-not-receiving-handshake-response/</link>
+      <guid>http://www.jarjar.cn/tornado-not-receiving-handshake-response/</guid>
       <pubDate>Mon, 13 Feb 2017 10:05:18 GMT</pubDate>
       <description>
       
@@ -522,13 +522,13 @@
 &lt;p&gt;阅读英文解答的结论是：windows并不能完全支持tornado，遇到这个问题和代码无关，就是环境的问题…&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/tornado-not-receiving-handshake-response/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/tornado-not-receiving-handshake-response/#disqus_thread</comments>
     </item>
     
     <item>
       <title>光剑音效小程序</title>
-      <link>http://blog.jarjar.cn/html5-lightsaber-sound-app/</link>
-      <guid>http://blog.jarjar.cn/html5-lightsaber-sound-app/</guid>
+      <link>http://www.jarjar.cn/html5-lightsaber-sound-app/</link>
+      <guid>http://www.jarjar.cn/html5-lightsaber-sound-app/</guid>
       <pubDate>Fri, 10 Feb 2017 10:05:18 GMT</pubDate>
       <description>
       
@@ -554,13 +554,13 @@
 &lt;p&gt;嗯，写这种程序是有点无聊了…不过我开发的时候觉得挺有趣，毕竟实现了儿时的一个梦想&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/html5-lightsaber-sound-app/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/html5-lightsaber-sound-app/#disqus_thread</comments>
     </item>
     
     <item>
       <title>如何屏蔽迅雷9右侧广告首页</title>
-      <link>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/</link>
-      <guid>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/</guid>
+      <link>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/</link>
+      <guid>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/</guid>
       <pubDate>Sat, 04 Feb 2017 02:26:17 GMT</pubDate>
       <description>
       
@@ -576,13 +576,13 @@
 &lt;p&gt;同样可参考我在知乎的回答：&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/43640207/answer/144125441&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/43640207/answer/144125441&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-block-xunlei9-ad-homepage/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/#disqus_thread</comments>
     </item>
     
     <item>
       <title>编写可维护的JavaScript_读书总结</title>
-      <link>http://blog.jarjar.cn/how-to-write-matinable-javascript/</link>
-      <guid>http://blog.jarjar.cn/how-to-write-matinable-javascript/</guid>
+      <link>http://www.jarjar.cn/how-to-write-matinable-javascript/</link>
+      <guid>http://www.jarjar.cn/how-to-write-matinable-javascript/</guid>
       <pubDate>Sun, 29 Jan 2017 02:26:17 GMT</pubDate>
       <description>
       
@@ -606,13 +606,13 @@
 &lt;h1 id=&quot;一些编码规范&quot;&gt;&lt;a href=&quot;#一些编码规范&quot; class=&quot;headerlink&quot; title=&quot;一些编码规范&quot;&gt;&lt;/a&gt;一些编码规范&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/html-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team HTML编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/css-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team CSS编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team JavaScript编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/styleguide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub 编码规范&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/how-to-write-matinable-javascript/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/how-to-write-matinable-javascript/#disqus_thread</comments>
     </item>
     
     <item>
       <title>未来早已到来，只是尚未平均分布</title>
-      <link>http://blog.jarjar.cn/the-future-is-already-here/</link>
-      <guid>http://blog.jarjar.cn/the-future-is-already-here/</guid>
+      <link>http://www.jarjar.cn/the-future-is-already-here/</link>
+      <guid>http://www.jarjar.cn/the-future-is-already-here/</guid>
       <pubDate>Fri, 20 Jan 2017 08:05:18 GMT</pubDate>
       <description>
       
@@ -639,7 +639,7 @@
 &lt;p&gt;本图选自官方指定读物《长征》&lt;/p&gt;
 </content:encoded>
       
-      <comments>http://blog.jarjar.cn/the-future-is-already-here/#disqus_thread</comments>
+      <comments>http://www.jarjar.cn/the-future-is-already-here/#disqus_thread</comments>
     </item>
     
   </channel>
