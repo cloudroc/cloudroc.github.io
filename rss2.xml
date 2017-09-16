@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Fri, 01 Sep 2017 04:47:44 GMT</pubDate>
+    <pubDate>Sat, 16 Sep 2017 05:38:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>DB2和ORACLE修改字段长度的区别</title>
+      <link>http://www.jarjar.cn/db2-oracle-chage-colmun-length/</link>
+      <guid>http://www.jarjar.cn/db2-oracle-chage-colmun-length/</guid>
+      <pubDate>Sat, 16 Sep 2017 09:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而&lt;strong&gt;DB2和Oracle的修改字段长度方言差异很大&lt;/strong&gt;，比如修改字段长度，以下举一个&lt;strong&gt;修改字段长度&lt;/strong&gt;的例子：&lt;/p&gt;
+&lt;figure clas
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而&lt;strong&gt;DB2和Oracle的修改字段长度方言差异很大&lt;/strong&gt;，比如修改字段长度，以下举一个&lt;strong&gt;修改字段长度&lt;/strong&gt;的例子：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DB2修改字段长度&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE SOME_TABLE(表名) ALTER COLUMN SOME_COL(字段名) SET DATA TYPE VARCHAR(4000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Oracle修改字段长度&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE SOME_TABLE(表名) MODIFY SOME_COL(字段名) VARCHAR2(4) ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;注意DB2要使用alter语句，而Oracle是用的modify&lt;/strong&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.jarjar.cn/db2-oracle-chage-colmun-length/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>护眼软件哪家强？</title>
@@ -20,7 +40,10 @@
       
         &lt;p&gt;最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。&lt;/p&gt;
 &lt;p&gt;最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。&lt;/p&gt;
-&lt;p&gt;
+&lt;p&gt;所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用&lt;/p&gt;
+&lt;p&gt;（1）护眼宝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
       
       </description>
       
@@ -30,6 +53,7 @@
 &lt;p&gt;（1）护眼宝&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;（2）f.lux&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fj3ypth31fj20f208cq2r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这是一款自动调节屏幕色温的软件。和iphone的nightswitch功能类似，白天会将屏幕颜色自动调节的较量，晚上会变成柔和的暖色。并且官方也没有提及该软件有保护视力过滤硬件蓝光什么的作用（歪国人就是这么实诚），不过这个软件做的挺好的，使用起来很方便。&lt;/p&gt;
@@ -607,39 +631,6 @@
 </content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-write-matinable-javascript/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>未来早已到来，只是尚未平均分布</title>
-      <link>http://www.jarjar.cn/the-future-is-already-here/</link>
-      <guid>http://www.jarjar.cn/the-future-is-already-here/</guid>
-      <pubDate>Fri, 20 Jan 2017 08:05:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近把特德·蒋的小说读了几部。从15年就开始知道这位科幻作家了，这个作家在中国可能很冷门，不如刘慈欣的影响力。相比外国的科幻小说作家，可能更多的人知道的是阿莫西夫，所以他的小说阅读量估计比较小。&lt;/p&gt;
-&lt;p&gt;他写的小说不是很多，我这里仅列一下我读过的：&lt;br&gt;《巴比伦塔》&lt;br&gt;主要在喜马拉雅听的，讲的是有人终于到达了天边，然后看到了世界的奥秘…&lt;/p&gt;
-&lt;p&gt;《你一生的故事》&lt;br&gt;我最喜欢的一部，讲的通过学习外星人七肢桶的语言，女主掌握了一种可以看到未来的和过去的本领，即她知道自己的未来会是什么样子。即使看到未来的种种杯具，也只能默默的活下去，等待未来的到来。最近的电影《降临》就是根据这个小说改编的。看了降临的电影版，觉得虽然把迷一样的七肢桶用影像的方式展现出来了，但是结局和原作相差甚远，七肢桶来地球的目的也变成了希望3000年以后可以寻求到地球的帮助…美国大片真的是把以“人”为本的概念体现的淋漓尽致&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;最近把特德·蒋的小说读了几部。从15年就开始知道这位科幻作家了，这个作家在中国可能很冷门，不如刘慈欣的影响力。相比外国的科幻小说作家，可能更多的人知道的是阿莫西夫，所以他的小说阅读量估计比较小。&lt;/p&gt;
-&lt;p&gt;他写的小说不是很多，我这里仅列一下我读过的：&lt;br&gt;《巴比伦塔》&lt;br&gt;主要在喜马拉雅听的，讲的是有人终于到达了天边，然后看到了世界的奥秘…&lt;/p&gt;
-&lt;p&gt;《你一生的故事》&lt;br&gt;我最喜欢的一部，讲的通过学习外星人七肢桶的语言，女主掌握了一种可以看到未来的和过去的本领，即她知道自己的未来会是什么样子。即使看到未来的种种杯具，也只能默默的活下去，等待未来的到来。最近的电影《降临》就是根据这个小说改编的。看了降临的电影版，觉得虽然把迷一样的七肢桶用影像的方式展现出来了，但是结局和原作相差甚远，七肢桶来地球的目的也变成了希望3000年以后可以寻求到地球的帮助…美国大片真的是把以“人”为本的概念体现的淋漓尽致&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;《地狱是上帝不在的地方》&lt;br&gt;感触不深，但是挺有意思。地狱、天堂、天使下凡就像自然现象，时刻都在发生，所以人们应该坚持信仰上帝？&lt;/p&gt;
-&lt;p&gt;《七十二个字母》&lt;br&gt;字母和语言可以生成永动机甚至生命啊。结合作者的职业，技术编写师，不难理解其实想说，代码最终可以生成新的智能体和生命吧，抱歉，理解不深。&lt;/p&gt;
-&lt;p&gt;《除以零》&lt;br&gt;没看懂，也可能是中文译本的原因，确实没看出讲的道理&lt;/p&gt;
-&lt;p&gt;《人类科学之演变》&lt;br&gt;不算一本小说，就是讲随着科技发展形成了新人类：后人类，对于之前古人发明的东西可能只会使用，但是并不理解，于是又产生了一部分人去解释这些“古人”的科技，并解释其中的原理。就这点来说，倒是挺适合现在的码农使用框架开发，很熟练的使用了框架，但是框架工作原理并不得而知。作者真是程序员！&lt;/p&gt;
-&lt;p&gt;《领悟》&lt;br&gt;讲的通过注射一种激素，一批人获得了终极的智力（有点像超体的设定？），并用这些终极的智力开展自己的事业。最后两位智力超人进行对决，这个真的应该拍成电影，素材很好&lt;/p&gt;
-&lt;p&gt;《商人和炼金术士之门》&lt;br&gt;很悲凉的一部小说，讲一个炼金术士或者商人知道了一个类似虫洞的时光之门，人可以穿过门去和未来或者以前的自己对话。寓意和《你一生的故事》类似，即使可以去往未来或者过去，你并不能改变自己的过去和命运，你只能更好的理解它。&lt;/p&gt;
-&lt;p&gt;《软件体的生命周期》&lt;br&gt;嗯，好像唯一一部长篇吧，中间中断好久看的，讲的人工智能的成长和命运&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;未来早已到来，只是尚未平均分布。&lt;br&gt;The future is already here — it’s just not very evenly distributed. - William Gibson&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;作者喜欢在小说后面写一点后记，这句话提到过多次，当我读完这些小说之后也慢慢理解了这句话的意思，但是我不会解释。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fbx4elc4qej20kl0i275t.jpg&quot; alt=&quot;本图选自官方指定读物《长征》&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本图选自官方指定读物《长征》&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.jarjar.cn/the-future-is-already-here/#disqus_thread</comments>
     </item>
     
   </channel>

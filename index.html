@@ -241,6 +241,151 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/db2-oracle-chage-colmun-length/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/db2-oracle-chage-colmun-length/" itemprop="url">
+                  DB2和ORACLE修改字段长度的区别
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-16T17:05:18+08:00">
+                2017-09-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而<strong>DB2和Oracle的修改字段长度方言差异很大</strong>，比如修改字段长度，以下举一个<strong>修改字段长度</strong>的例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DB2修改字段长度</span><br><span class="line">ALTER TABLE SOME_TABLE(表名) ALTER COLUMN SOME_COL(字段名) SET DATA TYPE VARCHAR(4000);</span><br><span class="line"></span><br><span class="line">Oracle修改字段长度</span><br><span class="line">ALTER TABLE SOME_TABLE(表名) MODIFY SOME_COL(字段名) VARCHAR2(4) ;</span><br></pre></td></tr></table></figure>
+<p><strong>注意DB2要使用alter语句，而Oracle是用的modify</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/eye-protectiong-softwares/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -342,27 +487,19 @@
 
       
         
-          
-            <p>最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。</p>
+          <p>最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。</p>
 <p>最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。</p>
 <p>所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用</p>
 <p>（1）护眼宝</p>
 <p><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg" alt=""></p>
-<p>这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：<a href="https://www.zhihu.com/question/24841235" target="_blank" rel="external">https://www.zhihu.com/question/24841235</a></p>
-<p>（2）f.lux</p>
-<p><img src="http://wx4.sinaimg.cn/mw690/7d6b7503ly1fj3ypth31fj20f208cq2r.jpg" alt=""></p>
-<p>这是一款自动调节屏幕色温的软件。和iphone的nightswitch功能类似，白天会将屏幕颜色自动调节的较量，晚上会变成柔和的暖色。并且官方也没有提及该软件有保护视力过滤硬件蓝光什么的作用（歪国人就是这么实诚），不过这个软件做的挺好的，使用起来很方便。</p>
-<p>官方下载地址：<a href="https://justgetflux.com/" target="_blank" rel="external">https://justgetflux.com/</a></p>
-<p>（3）猎豹护眼大师</p>
-<p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypu5h90j20eu09mweh.jpg" alt=""></p>
-<p>这个产品官方好像已经不维护了，费了一些功夫才知道一个能用的版本，但是效果挺给力。比如提供多种护眼模式，和定时提醒休息的功能。另外一个优点是，相对猎豹的其他产品，这个不维护的产品一个商业广告没有，体积也不大，所以值得推荐</p>
-<p>po几张使用的对比图：<br>使用前亮白的屏幕：</p>
-<p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypusk37j20fp0cx75k.jpg" alt=""></p>
-<p>使用后的护眼效果：</p>
-<p><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypvf82vj20fh0d4wfp.jpg" alt=""></p>
-<p>附猎豹护眼大师载地址：<br>链接: <a href="https://pan.baidu.com/s/1kVqpXLd" target="_blank" rel="external">https://pan.baidu.com/s/1kVqpXLd</a> 密码: 5tht</p>
-
-          
+<p>这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：<a href="https://www.zhihu.com/question/24841235">https://www.zhihu.com/question/24841235</a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/eye-protectiong-softwares/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1007,159 +1144,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/how-programmer-slove-a-Intellectual-problem/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="http://ww2.sinaimg.cn/small/7d6b7503jw1f8v463xdo2j207n07zwf8.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/how-programmer-slove-a-Intellectual-problem/" itemprop="url">
-                  程序猿是如何解智力题的
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-24T19:05:18+08:00">
-                2017-05-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>晚上被问了一个智力题，题目如下：</p>
-<blockquote>
-<p>求解：一筐鸡蛋：<br>1个1个拿，正好拿完<br>2个2个拿，还剩1个<br>3个3个拿，正好拿完<br>4个4个拿，还剩1个<br>5个5个拿，还差1个<br>6个6个拿，还剩3个<br>7个7个拿，正好拿完<br>8个8个拿，还剩1个<br>9个9个拿，正好拿完<br>问筐里最少有多少鸡蛋</p>
-<p>能算出这道题的智商不一般！求答案？有高手没，算算吧！</p>
-</blockquote>
-<p>友情提示，”<strong>5个5个拿，是还差1个</strong>“，也就是还剩下4个，这是这个题目的一个小陷阱…</p>
-<p>下面会公布答案，请先忍住往下看，自己下解一下</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/how-programmer-slove-a-Intellectual-problem/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1207,7 +1191,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">151</span>
+                <span class="site-state-item-count">152</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1225,7 +1209,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">106</span>
+                <span class="site-state-item-count">108</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
