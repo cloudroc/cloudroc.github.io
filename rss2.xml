@@ -8,8 +8,42 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>很惭愧，只做了些微小的工作，也没赚到钱</description>
-    <pubDate>Sat, 16 Sep 2017 05:38:39 GMT</pubDate>
+    <pubDate>Mon, 18 Sep 2017 02:41:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>谈谈程序紧急包发布</title>
+      <link>http://www.jarjar.cn/Talking-about-emergency-release/</link>
+      <guid>http://www.jarjar.cn/Talking-about-emergency-release/</guid>
+      <pubDate>Mon, 18 Sep 2017 02:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;为什么原来用得好好的功能，又不能用了！？几乎所有公司的项目现场实施人员经常被这类的问题苦苦困扰。那么为什么会出现这样的问题呢？原因大家可能都清楚，那就是“旧”版本覆盖了“新”版本，导致某些功能回到了解放前。我们进一步探究，为什么项目版本反而比后台研发中心提供的升级包更“新”呢？其实，其中一个主要原因就是程序紧急包。&lt;/p&gt;
+&lt;p&gt;程序紧急包，顾名思义就是紧急情况下发布的程序升级包。也就是说，它是有别于正式的程序升级包的，它是未经测试无质量保障的程序升级包。项目前台出于时间上的考虑，无法等测试完成、走正式流程发正式包，只能发紧急包。经过项目自己的测试，后台配合调试和修改，这个急用的功能调通了，就交付给用户使用了。但是，这个项目可用并不代表这个包质量是过关的，有可能在其他环境下、不同的机构参数下并不可用，有可能专业的测试人员会发现更多潜在的问题。如果这个包未通过测试，就会形成一定的时间差，但是，在这个时间差内会有其他的正式包通过测试，提交发布，这个包中可能包含有紧急包中同名文件的旧版本，项目发布时就造成“旧”版本覆盖“新”版本了。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;为什么原来用得好好的功能，又不能用了！？几乎所有公司的项目现场实施人员经常被这类的问题苦苦困扰。那么为什么会出现这样的问题呢？原因大家可能都清楚，那就是“旧”版本覆盖了“新”版本，导致某些功能回到了解放前。我们进一步探究，为什么项目版本反而比后台研发中心提供的升级包更“新”呢？其实，其中一个主要原因就是程序紧急包。&lt;/p&gt;
+&lt;p&gt;程序紧急包，顾名思义就是紧急情况下发布的程序升级包。也就是说，它是有别于正式的程序升级包的，它是未经测试无质量保障的程序升级包。项目前台出于时间上的考虑，无法等测试完成、走正式流程发正式包，只能发紧急包。经过项目自己的测试，后台配合调试和修改，这个急用的功能调通了，就交付给用户使用了。但是，这个项目可用并不代表这个包质量是过关的，有可能在其他环境下、不同的机构参数下并不可用，有可能专业的测试人员会发现更多潜在的问题。如果这个包未通过测试，就会形成一定的时间差，但是，在这个时间差内会有其他的正式包通过测试，提交发布，这个包中可能包含有紧急包中同名文件的旧版本，项目发布时就造成“旧”版本覆盖“新”版本了。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;为了更好的理解这一现象的原因，我们来看几张图：&lt;/p&gt;
+&lt;p&gt;图1：假设最初研发库与项目环境是一致的，括号内为文件版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fjnikf1iylj20jx082dg3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图2：后台研发中心接收变更申请，形成两个升级包，&lt;strong&gt;变更包1和变更包2，分别包括FileB的两个版本&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikfk3iij20jl07ygm2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图3：项目紧急发布&lt;strong&gt;变更包2&lt;/strong&gt;中的文件，调通之后，用户反响不错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikg6srtj20ms07yt9a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图4：变更包2由于质量问题未通过测试，&lt;strong&gt;但变更包1通过测试，提交正式发布了，项目发布，产生了旧版本覆盖，用户报怨&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fjnikgtohuj20mh084t9a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我们如何避免旧版本覆盖问题，维持用户的满意度呢？&lt;/p&gt;
+&lt;p&gt;一方面，是项目前台要清楚地了解紧急包的风险，它不仅仅本身的质量没有保障，更容易带来后续一系列的质量问题。所以，要尽可能地少发紧急包，即使发了紧急包，也要认真做好测试，并记录发布历史，只有该紧急包正式发布之后，才能再发同一个war的其他升级包，否则就有可能产生旧版本覆盖。&lt;/p&gt;
+&lt;p&gt;另一方面，是后台研发中心尽可能地提升发包速度和升级包质量。发包速度提升能够从一定程度上降低项目对紧急包的需求，升级包质量能够缩减升级包紧急发布到正式发布之间的时间差，降低版本覆盖的可能性。这就需要建立完善的程序质量度量、冒烟测试等机制。&lt;/p&gt;
+&lt;p&gt;程序紧急包是在紧急情况下很无奈的一种选择，也只能通过前后台积极地配合，才能够最大限度地控制紧急包的数量和发布风险。&lt;/p&gt;
+&lt;p&gt;以上仅为个人经验，主要针对j2ee项目经验的总结，希望对大家有帮助。&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.jarjar.cn/Talking-about-emergency-release/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>DB2和ORACLE修改字段长度的区别</title>
@@ -601,36 +635,6 @@
 </content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>编写可维护的JavaScript_读书总结</title>
-      <link>http://www.jarjar.cn/how-to-write-matinable-javascript/</link>
-      <guid>http://www.jarjar.cn/how-to-write-matinable-javascript/</guid>
-      <pubDate>Sun, 29 Jan 2017 02:26:17 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这段时间断断续续的在看这本书，总结一下读书心得。&lt;/p&gt;
-&lt;h1 id=&quot;这本书主要讲了什么？&quot;&gt;&lt;a href=&quot;#这本书主要讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;这本书主要讲了什么？&quot;&gt;&lt;/a&gt;这本书主要讲了什么？&lt;/h1&gt;&lt;p&gt;1、编程风格。介绍了JavaScript中流行的几种编程风格。&lt;br&gt;2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。&lt;br&gt;3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。&lt;/p&gt;
-&lt;h1 id=&quot;为什么要讲编程风格？&quot;&gt;&lt;a href=&quot;#为什么要讲编程风格？&quot; class=&quot;headerlink&quot; title=&quot;为什么要讲编程风格？&quot;&gt;&lt;/a&gt;为什么要讲编程风格？&lt;/h1&gt;&lt;p&gt;每个人都有自己的编程风格，比如说，html代码缩进，有人喜欢用两个空格，有人喜欢用四个空格。在团队开发中，当我们打开一个别人写的文件的时候，常常不是立即工作，而是首先修复代码缩进。当代码很多文件很大的时候，你会体会到统一编程风格的确会节省大量的时间。&lt;br&gt;还有就是，当代码风格统一的时候，能更容易的看出问题，比如html少了一个闭合标签。&lt;/p&gt;
-&lt;h1 id=&quot;编程实践讲了什么？&quot;&gt;&lt;a href=&quot;#编程实践讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;编程实践讲了什么？&quot;&gt;&lt;/a&gt;编程实践讲了什么？&lt;/h1&gt;&lt;p&gt;说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。&lt;br&gt;编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。&lt;br&gt;这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。&lt;/p&gt;
-&lt;h1 id=&quot;自动化这部分讲了什么？&quot;&gt;&lt;a href=&quot;#自动化这部分讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;自动化这部分讲了什么？&quot;&gt;&lt;/a&gt;自动化这部分讲了什么？&lt;/h1&gt;&lt;p&gt;这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。&lt;br&gt;如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具&lt;/p&gt;
-&lt;h1 id=&quot;能从这本书学到的东西：&quot;&gt;&lt;a href=&quot;#能从这本书学到的东西：&quot; class=&quot;headerlink&quot; title=&quot;能从这本书学到的东西：&quot;&gt;&lt;/a&gt;能从这本书学到的东西：&lt;/h1&gt;&lt;p&gt;避免使用全局变量。&lt;br&gt;在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。&lt;br&gt;UI松耦合。&lt;br&gt;一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;这段时间断断续续的在看这本书，总结一下读书心得。&lt;/p&gt;
-&lt;h1 id=&quot;这本书主要讲了什么？&quot;&gt;&lt;a href=&quot;#这本书主要讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;这本书主要讲了什么？&quot;&gt;&lt;/a&gt;这本书主要讲了什么？&lt;/h1&gt;&lt;p&gt;1、编程风格。介绍了JavaScript中流行的几种编程风格。&lt;br&gt;2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。&lt;br&gt;3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。&lt;/p&gt;
-&lt;h1 id=&quot;为什么要讲编程风格？&quot;&gt;&lt;a href=&quot;#为什么要讲编程风格？&quot; class=&quot;headerlink&quot; title=&quot;为什么要讲编程风格？&quot;&gt;&lt;/a&gt;为什么要讲编程风格？&lt;/h1&gt;&lt;p&gt;每个人都有自己的编程风格，比如说，html代码缩进，有人喜欢用两个空格，有人喜欢用四个空格。在团队开发中，当我们打开一个别人写的文件的时候，常常不是立即工作，而是首先修复代码缩进。当代码很多文件很大的时候，你会体会到统一编程风格的确会节省大量的时间。&lt;br&gt;还有就是，当代码风格统一的时候，能更容易的看出问题，比如html少了一个闭合标签。&lt;/p&gt;
-&lt;h1 id=&quot;编程实践讲了什么？&quot;&gt;&lt;a href=&quot;#编程实践讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;编程实践讲了什么？&quot;&gt;&lt;/a&gt;编程实践讲了什么？&lt;/h1&gt;&lt;p&gt;说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。&lt;br&gt;编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。&lt;br&gt;这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。&lt;/p&gt;
-&lt;h1 id=&quot;自动化这部分讲了什么？&quot;&gt;&lt;a href=&quot;#自动化这部分讲了什么？&quot; class=&quot;headerlink&quot; title=&quot;自动化这部分讲了什么？&quot;&gt;&lt;/a&gt;自动化这部分讲了什么？&lt;/h1&gt;&lt;p&gt;这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。&lt;br&gt;如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具&lt;/p&gt;
-&lt;h1 id=&quot;能从这本书学到的东西：&quot;&gt;&lt;a href=&quot;#能从这本书学到的东西：&quot; class=&quot;headerlink&quot; title=&quot;能从这本书学到的东西：&quot;&gt;&lt;/a&gt;能从这本书学到的东西：&lt;/h1&gt;&lt;p&gt;避免使用全局变量。&lt;br&gt;在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。&lt;br&gt;UI松耦合。&lt;br&gt;一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;将JavaScript从CSS中分离。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.box &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: expression(document.body.offsetWidth + &amp;quot;px&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将CSS从JavaScript中分离。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.color = &amp;quot;red&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.left = &amp;quot;10px&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.top = &amp;quot;100px&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.style.visibility = &amp;quot;visible&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我们需要这样分离：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.reveal &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    color: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    left: 10px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    top: 100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    visibility: visible;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//原生写法&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.className += &amp;quot; reveal&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//HTML5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;element.classList.add(&amp;quot;reveal&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//jQuery&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(element).addClass(&amp;quot;reveal&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将JavaScript从HTML中抽离&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;button onclick=&amp;quot;doSomething()&amp;quot; id=&amp;quot;action-btn&amp;quot;&amp;gt;Click Me&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//原生JavaScript方法&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;document.getElementById(&amp;quot;action-btn&amp;quot;).onclick = function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   //codes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//jQuery&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(&amp;quot;#action-btn&amp;quot;).on(&amp;apos;Click&amp;apos;, function () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //codes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将HTML代码从JavaScript中抽离&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*不好的写法*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var div = document.getElementById(&amp;quot;my-div&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;div.innerHTML = &amp;quot;&amp;lt;h3&amp;gt;Error&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Invalid e-mail address.&amp;lt;/p&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;好的写法就是利用JS模板。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;对于小html代码片段，直接拼字符串就可以；对于大段的html代码段，用模板比较好一些。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;总结：&quot;&gt;&lt;a href=&quot;#总结：&quot; class=&quot;headerlink&quot; title=&quot;总结：&quot;&gt;&lt;/a&gt;总结：&lt;/h1&gt;&lt;p&gt;虽然这本书很薄，200多页，但是里面讲的内容很重要，可以作为提高JavaScript程序可维护性的一个起点。&lt;/p&gt;
-&lt;h1 id=&quot;一些编码规范&quot;&gt;&lt;a href=&quot;#一些编码规范&quot; class=&quot;headerlink&quot; title=&quot;一些编码规范&quot;&gt;&lt;/a&gt;一些编码规范&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/html-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team HTML编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/css-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team CSS编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Baidu EFE team JavaScript编码规范&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/styleguide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub 编码规范&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.jarjar.cn/how-to-write-matinable-javascript/#disqus_thread</comments>
     </item>
     
   </channel>

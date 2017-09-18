@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.jarjar.cn/Talking-about-emergency-release/</loc>
+    <lastmod>2017-09-18T02:41:29.380Z</lastmod>
+    <data>
+        <display>
+        <title>谈谈程序紧急包发布</title>
+        <pubTime>2017-09-18T02:05:18.000Z</pubTime>
+        
+        <tag>研发管理</tag>
+         
+        <tag>j2ee</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://www.jarjar.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jarjar.cn/eye-protectiong-softwares/</loc>
     <lastmod>2017-09-16T09:03:54.260Z</lastmod>
     <data>
@@ -1443,26 +1465,6 @@
           
              
               <breadCrumb title="爬虫" url="http://www.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E7%88%AC%E8%99%AB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jarjar.cn/i-will-meet-u/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>世间所有的相遇，都是久别重逢</title>
-        <pubTime>2013-02-16T04:46:34.000Z</pubTime>
-        
-        <tag>世间所有相遇都是久别重逢</tag>
-         
-         
-           
-             
-              <breadCrumb title="啰B嗦" url="http://www.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -3295,6 +3297,26 @@
            
              
               <breadCrumb title="博客" url="http://www.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jarjar.cn/i-will-meet-u/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>世间所有的相遇，都是久别重逢</title>
+        <pubTime>2013-02-16T04:46:34.000Z</pubTime>
+        
+        <tag>世间所有相遇都是久别重逢</tag>
+         
+         
+           
+             
+              <breadCrumb title="啰B嗦" url="http://www.jarjar.cn/categories/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
