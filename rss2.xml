@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>某种原因留言关闭，如有问题请微信发给我</description>
-    <pubDate>Sat, 30 Sep 2017 05:14:00 GMT</pubDate>
+    <pubDate>Sat, 30 Sep 2017 05:15:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -39,7 +39,7 @@
 &lt;p&gt;戚继光在书中笔墨也很多，关于戚继光在这本书中才知道，他其实更加像个有理想的文人。奈何武将往往都是政治的牺牲品，因为和张居正有往来，所以最终也被牵连。&lt;/p&gt;
 &lt;p&gt;李贽这一章，没怎么看懂，可能对这个人不了解，只是觉得可能是当时的一个“愤青”，敢于反对当时的正统思想。&lt;/p&gt;
 &lt;p&gt;然后其他大部分空闲时间一直在学习NLTK，因为中文文档版本太老，只能学习英文版的。自然语言处理和机器学习陡峭的学习曲线显露无疑，只能一遍慢慢敲书中的代码，然后一点点看为什么会有这种效果。希望看完之后能有所输出。&lt;/p&gt;
-&lt;p&gt;如果您耐心看到了这里，首先感谢您的关注，祝您中秋快乐！&lt;/p&gt;
+&lt;p&gt;如果您耐心看到了这里，感谢您的关注，祝您中秋快乐！&lt;/p&gt;
 </content:encoded>
       
       <comments>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/#disqus_thread</comments>
