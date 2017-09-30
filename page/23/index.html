@@ -235,6 +235,180 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/xiaoibot-weixin/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/xiaoibot-weixin/" itemprop="url">
+                  小i机器人微信版(已公布源码 )
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-01-08T22:37:19+08:00">
+                2013-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码/啰B嗦/" itemprop="url" rel="index">
+                    <span itemprop="name">啰B嗦</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>先说明一下，这个是文字版的不支持语音，官方有语音版的。</p>
+<p>最近比较忙，但是做公司的东西总感觉没意思，就想抽空搞搞自己的东东。于是就有了这个小i机器人，这种权当是思维娱乐了，谁叫美剧冬歇了呢，不过最近一些美剧已经开始更新啦。哈哈</p>
+<p>可以通过扫描下面的二维码或者直接添加微信号<strong>xiaoibot</strong>进行关注哈~</p>
+<p><img src="http://ww1.sinaimg.cn/large/a74ecc4cjw1e0mj45fm30j.jpg" alt="" title="xiaoibot"></p>
+<p>关于源码：</p>
+<p>其实很简单，我是抓包分析小i机器人wap版然后用正则表达式处理了一下，原理和之前我博客微信一样，博客微信的源码已经公布了， <a href="http://www.kaedeen.com/weixin-source-code/" target="_blank" rel="external">Kaedeen博客公众微信源码</a>。</p>
+<p>源码已经被<a href="http://wzwahl36.net/" target="_blank" rel="external">红色石头</a>公布了，我也不藏着掖着了，大家可以帮我改改，有好意见要告诉我哦~</p>
+<pre><code>     &lt;div style=&quot;background:#fdfdfd;color:black;&quot;&gt;&lt;u&gt;HTML+PHP语言&lt;/u&gt;: &lt;/div&gt;
+&lt;div class=&quot;source&quot; style=&quot;font-family: &apos;[object HTMLOptionElement]&apos;, Consolas, &apos;Lucida Console&apos;, &apos;Courier New&apos;; color: rgb(246, 243, 232); background-color: rgb(36, 36, 36);&quot;&gt;&lt;span style=&quot;color: rgb(229, 120, 109);&quot;&gt;&amp;lt;?php&lt;/span&gt; 
+</code></pre><p><span style="color: rgb(149, 228, 84); font-style: italic;">/<strong></strong></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 作者：Kaedeen &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> <em>来源：<a href="http://www.kaedeen.com/" target="_blank" rel="external">http://www.kaedeen.com/</a> &nbsp;</em></span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> 日期：2013.1.7 &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> * &nbsp;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> /</span> </p>
+<p><span style="color: rgb(153, 150, 139); font-style: italic;">//define your token</span><br><span style="color: rgb(246, 243, 232);">define</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;TOKEN&quot;</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;kaede&quot;</span>);<br><span style="color: rgb(202, 230, 130);">$wxObj</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(138, 198, 242);">new</span> <span style="color: rgb(246, 243, 232);">weixinCallbackApi</span>();<br><span style="color: rgb(153, 150, 139); font-style: italic;">//$wxObj-&gt;valid(); //第一次验证时使用</span><br><span style="color: rgb(202, 230, 130);">$wxObj</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">responseMsg</span>();</p>
+<p><span style="color: rgb(138, 198, 242);">class</span> <span style="color: rgb(246, 243, 232);">weixinCallbackApi</span><br><span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">public</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">valid</span>()<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$echoStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$_GET</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;echostr&quot;</span><span style="color: rgb(246, 243, 232);">];</span></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//valid signature , option</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(202, 230, 130);">$this</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">checkSignature</span><span style="color: rgb(246, 243, 232);">()){</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">echo</span> <span style="color: rgb(202, 230, 130);">$echoStr</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">exit</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span></p>
+<p> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">public</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">responseMsg</span>()<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//get post data, May be due to the different environments</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$postStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$GLOBALS</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;HTTP_RAW_POST_DATA&quot;</span><span style="color: rgb(246, 243, 232);">];</span></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//extract post data</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span> (<span style="color: rgb(246, 243, 232);">!</span><span style="color: rgb(138, 198, 242);">empty</span>(<span style="color: rgb(202, 230, 130);">$postStr</span><span style="color: rgb(246, 243, 232);">)){</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$postObj</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">simplexml_load_string</span>(<span style="color: rgb(202, 230, 130);">$postStr</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&#39;SimpleXMLElement&#39;</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(246, 243, 232);">LIBXML_NOCDATA</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$fromUsername</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$postObj</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">FromUserName</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$toUsername</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$postObj</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">ToUserName</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$keyword</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">trim</span>(<span style="color: rgb(202, 230, 130);">$postObj</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">Content</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$time</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">time</span>();<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$textTpl</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;&lt;xml&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;ToUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/ToUserName&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;FromUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/FromUserName&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;CreateTime&gt;%s&lt;/CreateTime&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;MsgType&gt;&lt;![CDATA[%s]]&gt;&lt;/MsgType&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;Content&gt;&lt;![CDATA[%s]]&gt;&lt;/Content&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;FuncFlag&gt;0&lt;/FuncFlag&gt;</span><br><span style="color: rgb(149, 228, 84); font-style: italic;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/xml&gt;&quot;</span>; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(246, 243, 232);">!</span><span style="color: rgb(138, 198, 242);">empty</span>( <span style="color: rgb(202, 230, 130);">$keyword</span> ))<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$msgType</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;text&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$contentStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$picnews</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//新关注我的用户</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(202, 230, 130);">$keyword</span><span style="color: rgb(246, 243, 232);">==</span><span style="color: rgb(149, 228, 84); font-style: italic;">&#39;Hello2BizUser&#39;</span>)<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$contentStr</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(202, 230, 130);">$this</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">welcome</span>(<span style="color: rgb(202, 230, 130);">$toUsername</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$contentStr</span> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$this</span><span style="color: rgb(246, 243, 232);">-&gt;</span><span style="color: rgb(202, 230, 130);">get_wap_xiaoi</span>(<span style="color: rgb(202, 230, 130);">$keyword</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$resultStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">sprintf</span>(<span style="color: rgb(202, 230, 130);">$textTpl</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$fromUsername</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$toUsername</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$time</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$msgType</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$contentStr</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">echo</span> <span style="color: rgb(202, 230, 130);">$resultStr</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><span style="color: rgb(138, 198, 242);">else</span><span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">echo</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;Input something…&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span></p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><span style="color: rgb(138, 198, 242);">else</span> <span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">echo</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">exit</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">private</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">checkSignature</span>()<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$signature</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$_GET</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;signature&quot;</span><span style="color: rgb(246, 243, 232);">];</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$timestamp</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$_GET</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;timestamp&quot;</span><span style="color: rgb(246, 243, 232);">];</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$nonce</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(202, 230, 130);">$_GET</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;nonce&quot;</span><span style="color: rgb(246, 243, 232);">];</span> &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$token</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">TOKEN</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$tmpArr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(138, 198, 242);">array</span>(<span style="color: rgb(202, 230, 130);">$token</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$timestamp</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$nonce</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">sort</span>(<span style="color: rgb(202, 230, 130);">$tmpArr</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$tmpStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">implode</span>( <span style="color: rgb(202, 230, 130);">$tmpArr</span> );<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$tmpStr</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">sha1</span>( <span style="color: rgb(202, 230, 130);">$tmpStr</span> );<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>( <span style="color: rgb(202, 230, 130);">$tmpStr</span> <span style="color: rgb(246, 243, 232);">==</span> <span style="color: rgb(202, 230, 130);">$signature</span> <span style="color: rgb(246, 243, 232);">){</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">return</span> <span style="color: rgb(138, 198, 242);">true</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><span style="color: rgb(138, 198, 242);">else</span><span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">return</span> <span style="color: rgb(138, 198, 242);">false</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<br> &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//调用小i机器人wap版</span><br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">public</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">get_wap_xiaoi</span>(<span style="color: rgb(202, 230, 130);">$key</span><span style="color: rgb(246, 243, 232);">){</span><br> &nbsp; &nbsp;<br> &nbsp; &nbsp; <span style="color: rgb(202, 230, 130);">$post_data</span> <span style="color: rgb(246, 243, 232);">=</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">array</span>(<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(149, 228, 84); font-style: italic;">&#39;requestContent=&#39;</span><span style="color: rgb(246, 243, 232);">.</span><span style="color: rgb(202, 230, 130);">$key</span><span style="color: rgb(246, 243, 232);">,</span><br> &nbsp; &nbsp; &nbsp; &nbsp;);</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$post_data</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">implode</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&#39;&amp;&#39;</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(202, 230, 130);">$post_data</span>);</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$url</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(149, 228, 84); font-style: italic;">&#39;<a href="http://nlp.xiaoi.com/robot/demo/wap/wap-demo.action&amp;#39" target="_blank" rel="external">http://nlp.xiaoi.com/robot/demo/wap/wap-demo.action&amp;#39</a>;</span>;</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$ch</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">curl_init</span>();<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">curl_setopt</span>(<span style="color: rgb(202, 230, 130);">$ch</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(246, 243, 232);">CURLOPT_POST</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(229, 120, 109);">1</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">curl_setopt</span>(<span style="color: rgb(202, 230, 130);">$ch</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(246, 243, 232);">CURLOPT_URL</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(202, 230, 130);">$url</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">curl_setopt</span>(<span style="color: rgb(202, 230, 130);">$ch</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(246, 243, 232);">CURLOPT_POSTFIELDS</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$post_data</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">ob_start</span>();<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">curl_exec</span>(<span style="color: rgb(202, 230, 130);">$ch</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$result</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">ob_get_contents</span>() ;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">ob_end_clean</span>();<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$preg</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&#39;/&lt;/span&gt;(.*)&lt;/p&gt;/iUs&#39;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">preg_match_all</span>(<span style="color: rgb(202, 230, 130);">$preg</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(202, 230, 130);">$result</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(202, 230, 130);">$match</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$response_msg</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(202, 230, 130);">$match</span><span style="color: rgb(246, 243, 232);">[</span><span style="color: rgb(229, 120, 109);">0</span><span style="color: rgb(246, 243, 232);">][</span><span style="color: rgb(229, 120, 109);">0</span><span style="color: rgb(246, 243, 232);">];</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$preg</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(149, 228, 84); font-style: italic;">&quot;/&lt;/?[^&gt;]+&gt;/i&quot;</span>;<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$response_msg</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(246, 243, 232);">preg_replace</span>(<span style="color: rgb(202, 230, 130);">$preg</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(149, 228, 84); font-style: italic;">&#39;&#39;</span><span style="color: rgb(246, 243, 232);">,</span><span style="color: rgb(202, 230, 130);">$response_msg</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;hello,how are you&quot;</span><span style="color: rgb(246, 243, 232);">==</span><span style="color: rgb(202, 230, 130);">$response_msg</span>||<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;how do you do&quot;</span><span style="color: rgb(246, 243, 232);">==</span><span style="color: rgb(202, 230, 130);">$response_msg</span>)<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$response_msg</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;小i机器人欢迎您，作者主页地址：www.kaedeen.com。小i机器人不断学习中，欢迎各种调戏…/:,@-D&quot;</span>;<span style="color: rgb(153, 150, 139); font-style: italic;">//欢迎语</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$response_msg</span><span style="color: rgb(246, 243, 232);">=</span><span style="color: rgb(246, 243, 232);">trim</span>(<span style="color: rgb(202, 230, 130);">$response_msg</span>);<br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">return</span> <span style="color: rgb(202, 230, 130);">$response_msg</span>;<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<br> &nbsp; &nbsp;<span style="color: rgb(153, 150, 139); font-style: italic;">//问候语</span><br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">public</span> <span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">welcome</span>(<span style="color: rgb(202, 230, 130);">$toUsername</span>) <span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span>(<span style="color: rgb(202, 230, 130);">$toUsername</span><span style="color: rgb(246, 243, 232);">==</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;gh_48776be7ef17&quot;</span><span style="color: rgb(246, 243, 232);">){</span><span style="color: rgb(153, 150, 139); font-style: italic;">//微信原始id</span><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">return</span> &nbsp;<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;小i机器人欢迎您，作者主页地址：www.kaedeen.com。小i机器人不断学习中，欢迎各种调戏…/:,@-D&quot;</span>;<span style="color: rgb(153, 150, 139); font-style: italic;">//欢迎语</span><br> &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<br><span style="color: rgb(246, 243, 232);">}</span></p>
+<p><span style="color: rgb(153, 150, 139); font-style: italic;">//sae打日志封装函数</span><br><span style="color: rgb(138, 198, 242);">function</span> <span style="color: rgb(202, 230, 130);">sae_log</span>(<span style="color: rgb(202, 230, 130);">$msg</span>)<br><span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">sae_set_display_errors</span>(<span style="color: rgb(138, 198, 242);">false</span>);<span style="color: rgb(153, 150, 139); font-style: italic;">//关闭信息输出</span><br> &nbsp; &nbsp;<span style="color: rgb(138, 198, 242);">if</span> (<span style="color: rgb(246, 243, 232);">is_array</span>(<span style="color: rgb(202, 230, 130);">$msg</span>))<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">{</span><br> &nbsp; &nbsp;<span style="color: rgb(202, 230, 130);">$msg</span> <span style="color: rgb(246, 243, 232);">=</span> <span style="color: rgb(246, 243, 232);">implode</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;,&quot;</span><span style="color: rgb(246, 243, 232);">,</span> <span style="color: rgb(202, 230, 130);">$msg</span>);<br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">}</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">sae_debug</span>(<span style="color: rgb(149, 228, 84); font-style: italic;">&quot;[kaedeen_begin]&quot;</span><span style="color: rgb(246, 243, 232);">.</span><span style="color: rgb(202, 230, 130);">$msg</span><span style="color: rgb(246, 243, 232);">.</span><span style="color: rgb(149, 228, 84); font-style: italic;">&quot;[kaedeen_begin]&quot;</span>);<span style="color: rgb(153, 150, 139); font-style: italic;">//记录日志</span><br> &nbsp; &nbsp;<span style="color: rgb(246, 243, 232);">sae_set_display_errors</span>(<span style="color: rgb(138, 198, 242);">true</span>);<span style="color: rgb(153, 150, 139); font-style: italic;">//记录日志后再打开信息输出，否则会阻止正常的错误信息的显示</span><br><span style="color: rgb(246, 243, 232);">}</span></p>
+<p> &nbsp; &nbsp;<br><span style="color: rgb(229, 120, 109);">?&gt;</span><br></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/very-busy-these-days/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1023,164 +1197,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/weixin/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/weixin/" itemprop="url">
-                  本博开通公共微信，敬请关注
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-12-18T18:44:33+08:00">
-                2012-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客/技术宅/" itemprop="url" rel="index">
-                    <span itemprop="name">技术宅</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/kaedeen-8cm-e1355827662127.jpg" target="_blank" rel="external"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/kaedeen-8cm-e1355827662127.jpg" alt="" title="微信"></a></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;无良的博主开通公共微信号…希望各位朋友踊跃关注。<br>&nbsp;&nbsp;&nbsp;&nbsp;目前尚未成型，只是个无知的文本机器人，尚不支持约炮、约架、以及交互链接、洽谈合作业务等高等功能，需要类似服务的童鞋请自行联系博主本人…</p>
-<blockquote>
-<p>目前提供以下服务和功能~<br>1-&gt;博文搜索<br>2-&gt;天气查询<br>3-&gt;聊天机器人<br>4-&gt;英汉互译 （尚未开发…）<br>5-&gt;快递跟进 （尚未开发…）<br>to be continued…<br>博主将逐渐调教这个弱智的机器人~<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>速速关注起来啊~</strong></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1228,7 +1244,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">153</span>
+                <span class="site-state-item-count">154</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1246,7 +1262,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">110</span>
+                <span class="site-state-item-count">111</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

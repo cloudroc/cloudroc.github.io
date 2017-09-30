@@ -8,8 +8,42 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>某种原因留言关闭，如有问题请微信发给我</description>
-    <pubDate>Mon, 18 Sep 2017 02:41:29 GMT</pubDate>
+    <pubDate>Sat, 30 Sep 2017 05:14:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>万历十五年和NLTK</title>
+      <link>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/</link>
+      <guid>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/</guid>
+      <pubDate>Sat, 30 Sep 2017 03:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这是一篇读书笔记。&lt;/p&gt;
+&lt;p&gt;自从出差回来，一直没有充分休息的机会，忙于各种琐事。但是读书不能停，不能停…&lt;/p&gt;
+&lt;p&gt;一共读了三本书，《万历十五年》 《科技想要什么》以及《用Python进行自然语言处理》英文版也就是传说中的NLTK&lt;/p&gt;
+&lt;p&gt;其中只有《万历十五年》读完了，凯文·凯利的《科技想要什么》只读了一半（因为是一本纸质书并且放在了办公室，不敢随便翻阅），然后就是NLTK，看英文版并不是为了装x，是因为中文翻译的版本实在太古老了&lt;/p&gt;
+&lt;p&gt;《万历十五年》比较偏向于学术，与《明朝那些事》这种商业文学作品的风格完全不同，从万历这一代的切面看整个历史的发展进程。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;这是一篇读书笔记。&lt;/p&gt;
+&lt;p&gt;自从出差回来，一直没有充分休息的机会，忙于各种琐事。但是读书不能停，不能停…&lt;/p&gt;
+&lt;p&gt;一共读了三本书，《万历十五年》 《科技想要什么》以及《用Python进行自然语言处理》英文版也就是传说中的NLTK&lt;/p&gt;
+&lt;p&gt;其中只有《万历十五年》读完了，凯文·凯利的《科技想要什么》只读了一半（因为是一本纸质书并且放在了办公室，不敢随便翻阅），然后就是NLTK，看英文版并不是为了装x，是因为中文翻译的版本实在太古老了&lt;/p&gt;
+&lt;p&gt;《万历十五年》比较偏向于学术，与《明朝那些事》这种商业文学作品的风格完全不同，从万历这一代的切面看整个历史的发展进程。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;首先是政治方面，明朝一朝从洪武开始官僚阶级薪俸很低，希望的是通过儒家的无私奉公精神来治理天下，这就导致了贪腐的滋生，历史总是惊人的相似是不是。同时没有很好的法制，如果一件事符合核心价值观，那么即使违反了法律，也会认为你无罪。&lt;/p&gt;
+&lt;p&gt;上自官僚下至村民，&lt;strong&gt;其判断是非的标准是“善”、“恶”，而不是“合法”、“非法”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;然后是人物，书中基本是按照每人一章的形式写的，分别是万历、申时行、张居正、海瑞、戚继光、李贽。&lt;/p&gt;
+&lt;p&gt;其中贯穿始终的其实还是万历和张居正，而张居正才是万历这一代的灵魂。张居正是个有理想的人，做事符合帝国的大局，但同时又有对利益的渴求和自己的傲慢和偏见。比如他对士人的看法是，不看你诗书的理论能力，只看你实际的做事能力。这些对士人不够尊敬的态度，导致了他在世之时被士人的攻击，和死了以后被清算，甚至被后世之人诟病。就连他自己都说“如入火聚，得清凉门”。&lt;/p&gt;
+&lt;p&gt;戚继光在书中笔墨也很多，关于戚继光在这本书中才知道，他其实更加像个有理想的文人。奈何武将往往都是政治的牺牲品，因为和张居正有往来，所以最终也被牵连。&lt;/p&gt;
+&lt;p&gt;李贽这一章，没怎么看懂，可能对这个人不了解，只是觉得可能是当时的一个“愤青”，敢于反对当时的正统思想。&lt;/p&gt;
+&lt;p&gt;然后其他大部分空闲时间一直在学习NLTK，因为中文文档版本太老，只能学习英文版的。自然语言处理和机器学习陡峭的学习曲线显露无疑，只能一遍慢慢敲书中的代码，然后一点点看为什么会有这种效果。希望看完之后能有所输出。&lt;/p&gt;
+&lt;p&gt;如果您耐心看到了这里，首先感谢您的关注，祝您中秋快乐！&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>谈谈程序紧急包发布</title>
@@ -613,28 +647,6 @@
 </content:encoded>
       
       <comments>http://www.jarjar.cn/html5-lightsaber-sound-app/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>如何屏蔽迅雷9右侧广告首页</title>
-      <link>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/</link>
-      <guid>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/</guid>
-      <pubDate>Sat, 04 Feb 2017 02:26:17 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
-&lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;然后重启下迅雷9，这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;针对迅雷9的右侧内嵌广告首页，可以用改host文件的方法屏蔽：&lt;/p&gt;
-&lt;p&gt;过程很简单&lt;br&gt;1.找到host文件路径：C:\Windows\System32\drivers\etc&lt;br&gt;2.在host文件增加一行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127.0.0.1 home.xl9.xunlei.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;然后重启下迅雷9，这个广告首页就是白屏了，原理和通过改host文件正确访问google和屏蔽谷歌和百度360广告类似，就是让广告链接访问不到服务器&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;屏蔽后的效果图：&lt;br&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fce93huqpcj20yb0j6tbg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;同样可参考我在知乎的回答：&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/43640207/answer/144125441&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/43640207/answer/144125441&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.jarjar.cn/how-to-block-xunlei9-ad-homepage/#disqus_thread</comments>
     </item>
     
   </channel>
