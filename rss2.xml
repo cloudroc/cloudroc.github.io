@@ -8,8 +8,33 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>某种原因留言关闭，如有问题请微信发给我</description>
-    <pubDate>Sat, 30 Sep 2017 05:15:44 GMT</pubDate>
+    <pubDate>Mon, 23 Oct 2017 10:55:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>iphone 8 &amp; iOS 11系统自带高清壁纸</title>
+      <link>http://www.jarjar.cn/ios11-pics/</link>
+      <guid>http://www.jarjar.cn/ios11-pics/</guid>
+      <pubDate>Mon, 23 Oct 2017 03:05:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdhpo3xoj20ku11240
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdhpo3xoj20ku11240u.jpg&quot; alt=&quot;IOS11壁纸效果&quot;&gt;&lt;/p&gt;
+&lt;p&gt;搜集了一下资源，这套iOS11壁纸提供了iPhone版和iPad版两种版本，格式为 jpg，适用于所有手机/平板。&lt;/p&gt;
+&lt;p&gt;分辨率分别是 2706x2706 与 2524x2524。&lt;/p&gt;
+&lt;p&gt;一共20张。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdm8f6m3j20q70dc0tu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;附下载链接：&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1i57XRm9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1i57XRm9&lt;/a&gt; 密码: f6rq&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;明天程序猿节，祝福各位是程序猿的盆友节日快乐，早点下班 ：）&lt;/strong&gt;&lt;/p&gt;
+</content:encoded>
+      
+      <comments>http://www.jarjar.cn/ios11-pics/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>万历十五年和NLTK</title>
@@ -615,38 +640,6 @@
 </content:encoded>
       
       <comments>http://www.jarjar.cn/tornado-not-receiving-handshake-response/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>光剑音效小程序</title>
-      <link>http://www.jarjar.cn/html5-lightsaber-sound-app/</link>
-      <guid>http://www.jarjar.cn/html5-lightsaber-sound-app/</guid>
-      <pubDate>Fri, 10 Feb 2017 10:05:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;小时候在别人家看过一点星球大战的碟片，就对光剑非常痴迷，一直幻想自己有一把光剑&lt;br&gt;后来慢慢补起了星球大战6部曲还有卢卡斯的《克隆人战争》CG动画，当刚出第七部原力觉醒的时候，终于按捺不住，开发了一个&lt;strong&gt;挥动手机触发光剑音效的小程序&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;先看下使用效果，视频拍的不好，走廊有回声，也听不清：&lt;br&gt;优酷视频地址：&lt;a href=&quot;http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html&quot;&gt;http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html&lt;/a&gt;&lt;br&gt;我手里握着的是手机，还有一个荧光棒，就当是光剑了吧… &lt;/p&gt;
-&lt;p&gt;这个程序是基于html5手机端设备加速传感器制作的，光剑音效是网上下载的。&lt;br&gt;挥动手机会造成手机坐标的变化，捕捉在某一个时间间隔内手机移动的距离，用来作为触发不同光剑音效的参数，这个原理和微信的摇一摇是一样的&lt;/p&gt;
-&lt;p&gt;这个程序已经开源，Github地址：&lt;a href=&quot;https://github.com/cloudroc/lightsaber_sound&quot;&gt;https://github.com/cloudroc/lightsaber_sound&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用方法：&lt;/strong&gt;&lt;br&gt;1.将手机音效开到最大&lt;/p&gt;
-&lt;p&gt;2.使用手机浏览器打开index.html，然后短时间挥动手机，会发出光剑的嗡嗡声效&lt;/p&gt;
-&lt;p&gt;3.根据移动的距离会发出不同的声效&lt;/p&gt;
-&lt;p&gt;程序运行效果：&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;小时候在别人家看过一点星球大战的碟片，就对光剑非常痴迷，一直幻想自己有一把光剑&lt;br&gt;后来慢慢补起了星球大战6部曲还有卢卡斯的《克隆人战争》CG动画，当刚出第七部原力觉醒的时候，终于按捺不住，开发了一个&lt;strong&gt;挥动手机触发光剑音效的小程序&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;先看下使用效果，视频拍的不好，走廊有回声，也听不清：&lt;br&gt;优酷视频地址：&lt;a href=&quot;http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://v.youku.com/v_show/id_XMjUwNTUzNTE2MA==.html&lt;/a&gt;&lt;br&gt;我手里握着的是手机，还有一个荧光棒，就当是光剑了吧… &lt;/p&gt;
-&lt;p&gt;这个程序是基于html5手机端设备加速传感器制作的，光剑音效是网上下载的。&lt;br&gt;挥动手机会造成手机坐标的变化，捕捉在某一个时间间隔内手机移动的距离，用来作为触发不同光剑音效的参数，这个原理和微信的摇一摇是一样的&lt;/p&gt;
-&lt;p&gt;这个程序已经开源，Github地址：&lt;a href=&quot;https://github.com/cloudroc/lightsaber_sound&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cloudroc/lightsaber_sound&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用方法：&lt;/strong&gt;&lt;br&gt;1.将手机音效开到最大&lt;/p&gt;
-&lt;p&gt;2.使用手机浏览器打开index.html，然后短时间挥动手机，会发出光剑的嗡嗡声效&lt;/p&gt;
-&lt;p&gt;3.根据移动的距离会发出不同的声效&lt;/p&gt;
-&lt;p&gt;程序运行效果：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fcll2vlycbj20go0tn3zx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;嗯，写这种程序是有点无聊了…不过我开发的时候觉得挺有趣，毕竟实现了儿时的一个梦想&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.jarjar.cn/html5-lightsaber-sound-app/#disqus_thread</comments>
     </item>
     
   </channel>

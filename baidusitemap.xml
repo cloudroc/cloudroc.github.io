@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.jarjar.cn/ios11-pics/</loc>
+    <lastmod>2017-10-23T10:55:50.431Z</lastmod>
+    <data>
+        <display>
+        <title>iphone 8 & iOS 11系统自带高清壁纸</title>
+        <pubTime>2017-10-23T03:05:18.000Z</pubTime>
+        
+        <tag>ios</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://www.jarjar.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/</loc>
     <lastmod>2017-09-30T05:15:44.475Z</lastmod>
     <data>
@@ -1456,29 +1476,6 @@
           
              
               <breadCrumb title="技术宅" url="http://www.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/%E6%8A%80%E6%9C%AF%E5%AE%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jarjar.cn/i-have-to-find-a-new-place/</loc>
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
-    <data>
-        <display>
-        <title>或无安身之地</title>
-        <pubTime>2013-04-26T14:46:53.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-             
-              <breadCrumb title="啰B嗦" url="http://www.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>
@@ -3339,6 +3336,29 @@
            
              
               <breadCrumb title="代码" url="http://www.jarjar.cn/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jarjar.cn/i-have-to-find-a-new-place/</loc>
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    <data>
+        <display>
+        <title>或无安身之地</title>
+        <pubTime>2013-04-26T14:46:53.000Z</pubTime>
+        
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+             
+              <breadCrumb title="啰B嗦" url="http://www.jarjar.cn/categories/%E5%8D%9A%E5%AE%A2/%E5%95%B0B%E5%97%A6/"/>
           
         </display>
     </data>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.jarjar.cn/ios11-pics/</loc>
+    
+    <lastmod>2017-10-23T10:55:50.431Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/</loc>
     
     <lastmod>2017-09-30T05:15:44.475Z</lastmod>
@@ -488,13 +495,6 @@
     <loc>http://www.jarjar.cn/2345-auto-checkin/</loc>
     
     <lastmod>2016-04-16T12:28:11.909Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.jarjar.cn/i-have-to-find-a-new-place/</loc>
-    
-    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
   </url>
   
@@ -1088,6 +1088,13 @@
   
   <url>
     <loc>http://www.jarjar.cn/douban-simple/</loc>
+    
+    <lastmod>2016-04-16T12:25:46.831Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.jarjar.cn/i-have-to-find-a-new-place/</loc>
     
     <lastmod>2016-04-16T12:25:46.831Z</lastmod>
     
