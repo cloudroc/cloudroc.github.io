@@ -235,6 +235,158 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/how-to-write-matinable-javascript/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/how-to-write-matinable-javascript/" itemprop="url">
+                  编写可维护的JavaScript_读书总结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-29T10:26:17+08:00">
+                2017-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>这段时间断断续续的在看这本书，总结一下读书心得。</p>
+<h1 id="这本书主要讲了什么？"><a href="#这本书主要讲了什么？" class="headerlink" title="这本书主要讲了什么？"></a>这本书主要讲了什么？</h1><p>1、编程风格。介绍了JavaScript中流行的几种编程风格。<br>2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。<br>3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。</p>
+<h1 id="为什么要讲编程风格？"><a href="#为什么要讲编程风格？" class="headerlink" title="为什么要讲编程风格？"></a>为什么要讲编程风格？</h1><p>每个人都有自己的编程风格，比如说，html代码缩进，有人喜欢用两个空格，有人喜欢用四个空格。在团队开发中，当我们打开一个别人写的文件的时候，常常不是立即工作，而是首先修复代码缩进。当代码很多文件很大的时候，你会体会到统一编程风格的确会节省大量的时间。<br>还有就是，当代码风格统一的时候，能更容易的看出问题，比如html少了一个闭合标签。</p>
+<h1 id="编程实践讲了什么？"><a href="#编程实践讲了什么？" class="headerlink" title="编程实践讲了什么？"></a>编程实践讲了什么？</h1><p>说起编程风格，不得不提编程规范了。编程规范包含了编程风格、编程最佳实践、文件和目录的规划等等。这本书主要讲的就是JavaScript的编程规范。<br>编程规范对团队开发来说非常重要。统一编程规范节约了大量的后期维护时间，因为所有代码看起来写得就像是一个人写得一样。<br>这本书的第二部分就是讲了编程规范中一些编程的最佳实践。比如说：UI层的松耦合、避免使用全局变量、避免”空比较“等等。</p>
+<h1 id="自动化这部分讲了什么？"><a href="#自动化这部分讲了什么？" class="headerlink" title="自动化这部分讲了什么？"></a>自动化这部分讲了什么？</h1><p>这个部分主要介绍了前端开发JavaScript用到工具。JavaScript合并压缩工具等等。<br>如果对于这些前端工具感兴趣，可以看一下慕课网的视频。Grunt-beginner前端自动化工具</p>
+<h1 id="能从这本书学到的东西："><a href="#能从这本书学到的东西：" class="headerlink" title="能从这本书学到的东西："></a>能从这本书学到的东西：</h1><p>避免使用全局变量。<br>在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。<br>UI松耦合。<br>一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/how-to-write-matinable-javascript/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/the-future-is-already-here/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -968,159 +1120,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/sync-wiz-with-nutstore/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/sync-wiz-with-nutstore/" itemprop="url">
-                  通过坚果云同步wiz笔记，应对wiz全面收费问题
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-28T17:16:18+08:00">
-                2016-12-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>12月9日消息，昨日，知名跨平台云笔记软件“为知笔记”发布公告，宣布自试用期结束后全面收费，如果免费用户不升级成VIP的话便只能使用本地笔记功能，无法同步云端。同时，为知笔记也下调了VIP的价格，从12元每月改为6元每月，年付费60元。在2017年1月1日前升级的用户，年费优惠至50元。</p>
-</blockquote>
-<p>马上就17年了，突然看到这个消息也不知道怎么评价是好，毕竟用了wiz接近6年了，经历了wiz很多版本和政策的更迭，的确认为是个好工具，走上这条路也是没有办法的办法。</p>
-<p>今天想到一个临时不充值会员也能解决wiz同步的解决方案：<br>（1）下载wiz提供的便携免安装版的压缩包，解压<br>（2）登录wiz帐号，同步好之前所有的笔记<br>（3）注册坚果云帐号，下载坚果客户端，安装….<br>（4）设置坚果的同步目录，把wiz的便携版放到这个目录里面</p>
-<p>然后就ok了,坐等同步就可以了,临时可以应对不能同步笔记的问题。希望有帮助。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1163,7 +1167,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">156</span>
+                <span class="site-state-item-count">157</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1181,7 +1185,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">113</span>
+                <span class="site-state-item-count">114</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
