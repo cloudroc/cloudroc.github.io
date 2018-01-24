@@ -63,22 +63,18 @@
 
 
 
-<meta name="description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题：
-1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。
-但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
+<meta name="description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题： 1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。 但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
+<meta name="keywords" content="mybatis,java,jfinal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jfinal和mybatis集成的问题">
 <meta property="og:url" content="http://www.jarjar.cn/questions-about-jfinal-merge-with-mybatis/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题：
-1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。
-但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
+<meta property="og:description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题： 1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。 但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-05-20T05:59:59.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jfinal和mybatis集成的问题">
-<meta name="twitter:description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题：
-1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。
-但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
+<meta name="twitter:description" content="做了jfinal集成mybatis的工作，发现了这么几个方面的问题： 1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。 但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增">
 
 
 
@@ -349,7 +345,7 @@
       
         <p>做了jfinal集成mybatis的工作，发现了这么几个方面的问题：</p>
 <p>1、虽然研制了类似spring+mybatis集成环境下SqlSessionTemplate的一个工具类，即：使用中不必像原始mybatis那杨显式开关SqlSession，同样也可以用这个自由调用mapper接口完成数据库操作。</p>
-<p>但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增删查改了，类似这样：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">	NoticeMapper noticeMapper ;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span><br><span class="line">	 * 根据id查询一条数据</span><br><span class="line">	 * <span class="doctag">@param</span> id</span><br><span class="line">	 * <span class="doctag">@return</span></span><br><span class="line">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Notice <span class="title">findOneByid</span><span class="params">(String id)</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> noticeMapper.findOneByid(id);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是总觉得不如mybaits-spring里面推宠的那种接口类AutoWired一下，就可以直接增删查改了，类似这样：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">	NoticeMapper noticeMapper ;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 根据id查询一条数据</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> id</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Notice <span class="title">findOneByid</span><span class="params">(String id)</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> noticeMapper.findOneByid(id);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
 <p>2、虽然实现了自动扫描mapper配置文件的功能。但是mybaits-spring里面那种自动扫描mapper接口的方式无法实现。</p>
 <p>3、要实现上面说的两点务必要使用依赖注入这种方式了，也就是使用spring了。虽然jfinal也提供了集成spring的方式，但是难道要这样 jfinal集成spring-&gt;用spring去集成mybatis？这种玩法就不如直接springmvc和mybatis直接集成了~~<br>当时做jfinal集成的目的就是嫌弃spring过多莫名其妙的配置文件的玩法，同时不喜欢jfinal的ActiveRecord的玩法，更多无脑的偏爱mybatis吧<br><a id="more"></a><br>4、我觉得还是先研究jfinal集成shiro吧，</p>
 
@@ -493,7 +489,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -511,7 +507,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

@@ -8,8 +8,30 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>某种原因留言关闭，如有问题请微信发给我</description>
-    <pubDate>Mon, 11 Dec 2017 01:41:50 GMT</pubDate>
+    <pubDate>Wed, 24 Jan 2018 15:02:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2017年终总结</title>
+      <link>http://www.jarjar.cn/summary-2017/</link>
+      <guid>http://www.jarjar.cn/summary-2017/</guid>
+      <pubDate>Wed, 24 Jan 2018 03:05:18 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;这是一篇迟到的年终总结。&lt;/p&gt;
+&lt;p&gt;列下在2017这又一个普通而又重要的年份我所做的事情：&lt;/p&gt;
+&lt;p&gt;1.去了很多地方出差，讲ppt、培训、解答问题，都是和客户直接面对面的接触和沟通。真正做到了深刻理解客户的业务需求，理解怎样给客户带来真正的价值。&lt;/p&gt;
+&lt;p&gt;2
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>这是一篇迟到的年终总结。</p><p>列下在2017这又一个普通而又重要的年份我所做的事情：</p><p>1.去了很多地方出差，讲ppt、培训、解答问题，都是和客户直接面对面的接触和沟通。真正做到了深刻理解客户的业务需求，理解怎样给客户带来真正的价值。</p><p>2.在Github发布了几个开源的项目，虽然都很简单，但是尽力做到实用为主。比如度盘获取直链以及喜马拉雅FM下载音频的插件。也通过度盘获取直链的插件认识了不少朋友，很可惜的是在知乎上的答案被以“违法违规”的理由被和谐了，插件的接口可能也被度盘官方不断的限制，所以决定不再维护了，对应插件的代码还可以通过Github获取。</p><p>3.技能方面。接触了很多手机端的开发，都是混合式的。从Ng1.x一直用到Ng4.x和Ionic3，很可惜的是没有用Vue做一些东西。然后对NLP（自然语言处理）有了很多接触，因为工作和数学水平的限制，没有很大的成果。还有今年重拾了开车的技能，感谢诚哥和杨哥的耐心指导。</p><p>4.写作方面。之前一直维持一月两篇的进度更新，中间几个月中断了，很惭愧。准备写一个“ionic3从入门到吃鸡”的教程。</p><p>5.读书方面。通读了阿西莫夫老爷的银河帝国和机器人系列小说，大为折服。对应的读后感也要慢慢补上。</p><p>今天是腊八节，过了腊八就是年，又要老一岁了。</p><p>提前祝2018年新年快乐。</p>]]></content:encoded>
+      
+      <comments>http://www.jarjar.cn/summary-2017/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>双城记</title>
@@ -24,21 +46,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;最近一直在出差，先去了成都，然后又去了海南。&lt;/p&gt;
-&lt;p&gt;15年的秋天来过成都，记得挺舒服的，还吃了炒酸奶，游了宽窄巷子、锦里还有武侯祠。今年是冬天来的，天气很湿冷，很不巧的是住的宿舍热水器也坏了，连续几天只能洗冷水澡，终于知道南方的冬天是要靠自己的一身浩然正气才能过下来的。&lt;/p&gt;
-&lt;p&gt;呆的不久。只逛了一下传说中的春熙路，看到了那只著名的大熊猫，吃了四川的火锅和翘脚牛肉。另外一个细节是即使在书店里面都是一股串串的味道，成都人民真的在吃上为GDP做了不少贡献。至此，对成都了有了比较完整的印象。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/7d6b7503gy1fmckugphfkj20u0140gsp.jpg&quot; alt=&quot;那只著名的熊猫&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugl65cj20u01400vz.jpg&quot; alt=&quot;茶叶蛋也要配辣椒&quot;&gt;&lt;/p&gt;
-&lt;p&gt;然后又到了海南，开始了为期一周的“环岛游”，路线是海口-&amp;gt;琼海-&amp;gt; 三亚-&amp;gt;儋州。当然环岛游还是为了工作，但这是我第一个去过所有地级市的省。去三亚的时候，早起了一会去海边看了日出，中午偷偷的逛了一下天涯海角公园，看到了“南天一柱”“天海边涯”“海角”这几块著名而且富有力量的石头。&lt;/p&gt;
-&lt;p&gt;说说我对海南的印象：&lt;br&gt;（1）吃的东西很贵，简单的早饭也要10元起步。普通水果蔬菜的价格也是3~4元一斤起步的，而且并不怎么新鲜。&lt;br&gt;（2）人行道很宽，但是跑满了横冲直撞的电动车，马路的车道特别窄，随便一个B级车就能两个轮都要压到实线。&lt;br&gt;（3）我在这里会被本地人称作“大陆”来的，这种感觉有点奇怪又有点荣幸&lt;br&gt;（4）传统的海南菜应该和粤菜很像，追求食材的真味，一般都不会放酱油，酱油是用来作为蘸水的。比如白切鸡，要带一点血色…羊肉要带皮…蔬菜尽量不切，炒出来也要保持一整根的形状…&lt;/p&gt;
-&lt;p&gt;以上几点并不是吐槽，是一个北方人对海南比较直观的印象。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/7d6b7503gy1fmckugo24fj20u0140n2m.jpg&quot; alt=&quot;三亚的日出1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugm5mdj20rt112775.jpg&quot; alt=&quot;三亚的日出2&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugy5c0j20u01407hw.jpg&quot; alt=&quot;天涯石&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/7d6b7503gy1fmckugw267j20u0140n7r.jpg&quot; alt=&quot;海角石&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/7d6b7503gy1fmckuhbccwj20u0140qb4.jpg&quot; alt=&quot;南天一柱&quot;&gt;&lt;/p&gt;
-&lt;p&gt;又是一篇匆忙的游记。&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>最近一直在出差，先去了成都，然后又去了海南。</p><p>15年的秋天来过成都，记得挺舒服的，还吃了炒酸奶，游了宽窄巷子、锦里还有武侯祠。今年是冬天来的，天气很湿冷，很不巧的是住的宿舍热水器也坏了，连续几天只能洗冷水澡，终于知道南方的冬天是要靠自己的一身浩然正气才能过下来的。</p><p>呆的不久。只逛了一下传说中的春熙路，看到了那只著名的大熊猫，吃了四川的火锅和翘脚牛肉。另外一个细节是即使在书店里面都是一股串串的味道，成都人民真的在吃上为GDP做了不少贡献。至此，对成都了有了比较完整的印象。</p><a id="more"></a><p><img src="https://wx4.sinaimg.cn/mw690/7d6b7503gy1fmckugphfkj20u0140gsp.jpg" alt="那只著名的熊猫"><br><img src="https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugl65cj20u01400vz.jpg" alt="茶叶蛋也要配辣椒"></p><p>然后又到了海南，开始了为期一周的“环岛游”，路线是海口-&gt;琼海-&gt; 三亚-&gt;儋州。当然环岛游还是为了工作，但这是我第一个去过所有地级市的省。去三亚的时候，早起了一会去海边看了日出，中午偷偷的逛了一下天涯海角公园，看到了“南天一柱”“天海边涯”“海角”这几块著名而且富有力量的石头。</p><p>说说我对海南的印象：<br>（1）吃的东西很贵，简单的早饭也要10元起步。普通水果蔬菜的价格也是3~4元一斤起步的，而且并不怎么新鲜。<br>（2）人行道很宽，但是跑满了横冲直撞的电动车，马路的车道特别窄，随便一个B级车就能两个轮都要压到实线。<br>（3）我在这里会被本地人称作“大陆”来的，这种感觉有点奇怪又有点荣幸<br>（4）传统的海南菜应该和粤菜很像，追求食材的真味，一般都不会放酱油，酱油是用来作为蘸水的。比如白切鸡，要带一点血色…羊肉要带皮…蔬菜尽量不切，炒出来也要保持一整根的形状…</p><p>以上几点并不是吐槽，是一个北方人对海南比较直观的印象。</p><p><img src="https://wx2.sinaimg.cn/mw690/7d6b7503gy1fmckugo24fj20u0140n2m.jpg" alt="三亚的日出1"></p><p><img src="https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugm5mdj20rt112775.jpg" alt="三亚的日出2"></p><p><img src="https://wx3.sinaimg.cn/mw690/7d6b7503gy1fmckugy5c0j20u01407hw.jpg" alt="天涯石"></p><p><img src="https://wx2.sinaimg.cn/mw690/7d6b7503gy1fmckugw267j20u0140n7r.jpg" alt="海角石"></p><p><img src="https://wx4.sinaimg.cn/mw690/7d6b7503gy1fmckuhbccwj20u0140qb4.jpg" alt="南天一柱"></p><p>又是一篇匆忙的游记。</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/two-cities-tale/#disqus_thread</comments>
     </item>
@@ -50,33 +58,15 @@
       <pubDate>Thu, 02 Nov 2017 03:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;以下笔记是实际驾驶中的操作经验，可能对驾照考试帮助不是很多，仅供参考：&lt;/p&gt;
+        
+        
+          &lt;p&gt;以下笔记是实际驾驶中的操作经验，可能对驾照考试帮助不是很多，仅供参考：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;左转向：&lt;/strong&gt;&lt;br&gt;（1）首先务必观察道路指示标记，以及红绿灯，确定可以左转&lt;br&gt;（2）到达转弯路口减速至怠速或者20km左右，并打开左转灯&lt;br&gt;（3）当
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;以下笔记是实际驾驶中的操作经验，可能对驾照考试帮助不是很多，仅供参考：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;左转向：&lt;/strong&gt;&lt;br&gt;（1）首先务必观察道路指示标记，以及红绿灯，确定可以左转&lt;br&gt;（2）到达转弯路口减速至怠速或者20km左右，并打开左转灯&lt;br&gt;（3）当驾驶员视线没过斑马线，向左打四分之一圈左右，即可进入下个直行车道，车辆行驶变正之后及时回正方向盘&lt;br&gt;（4）如果是长拐弯，应该保持一定速度向前行驶，并提前向左打方向，方向盘转度一般也是四分之一即可，车辆行驶变正之后及时回正方向盘&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;右转向：&lt;/strong&gt;&lt;br&gt;（1）首先务必观察道路指示标记，以及红绿灯，确定可以右转，一般直行红灯都可以右转，除非有右转指示灯，如果是红灯请不要右转&lt;/p&gt;
-&lt;p&gt;（2）到达转弯路口减速至怠速或者20km左右，并打开右转灯&lt;br&gt;（3）当驾驶员视线没过斑马线，向右打半圈左右，即可进入下个直行车道，车辆行驶变正之后及时回正方向盘&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;左右转向应该避让直行车，让直行的车先走&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;变道：&lt;/strong&gt;&lt;br&gt;确定前方道路不是实线，即虚线，在不减速的情况下，打转向灯闪烁3次以上，向左或者向右稍微偏方向盘，进入车道后及时回正。同时应观察左右后视镜，观察后方的车辆，歪果仁说能完全看到后方车头就无危险，建议更远一点吧&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;倒车入库：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;此方法来源网络，实际经验不足，先不做自己的总结&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;倒库要点：一，慢走快打，二，宁早勿晚，三，找准30厘米。&lt;/p&gt;
-&lt;p&gt;倒库步骤：&lt;/p&gt;
-&lt;p&gt;一，车中柱对准隔一个库的中间，右打死（或左打死）。&lt;/p&gt;
-&lt;p&gt;二，看右（左）后视镜，车身与右（左）边车角之间夹角30厘米时，向左（右）打一圈方向盘。&lt;/p&gt;
-&lt;p&gt;三，看右（左）后视镜，第二个门把手与右（左）边车角平行时（对齐）方向盘再向右（左）打倒底。&lt;/p&gt;
-&lt;p&gt;四，看左右后视镜，自己车身与两侧车身平行时，方向盘向快速回正。自己后视镜与两边车的后视镜（或后门把手）对齐，马上停车。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;侧位停车：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;此方法来源网络，实际经验不足，先不做自己的总结&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;一，自己的车与旁边的车之间相距40-50厘米，肩膀与旁边车头对齐停车。&lt;/p&gt;
-&lt;p&gt;二，向后倒车，看右后视镜或回头看到自己车尾和旁边车尾平行时，快速向右打死方向盘。&lt;/p&gt;
-&lt;p&gt;三，然后看左后视镜，后面车头或车尾在镜子里全部出现，向左回正方向盘。&lt;/p&gt;
-&lt;p&gt;四，看自己车的右车角与前车左前角或左后角（还有你自己）对齐（三点一线）时，方向盘向左打死。自己的车与前后车在一条线上时停车，回正方向盘。&lt;/p&gt;
-&lt;p&gt;出库：首先方向盘左打死，打左转向灯，看左后视镜后面车头或车尾全部出现，向右回正方向盘，再看自己车右侧中柱和前车车灯平行时，向右打一圈方向盘，看自己车头正了，快速向左回正方向盘。&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>以下笔记是实际驾驶中的操作经验，可能对驾照考试帮助不是很多，仅供参考：</p><p><strong>左转向：</strong><br>（1）首先务必观察道路指示标记，以及红绿灯，确定可以左转<br>（2）到达转弯路口减速至怠速或者20km左右，并打开左转灯<br>（3）当驾驶员视线没过斑马线，向左打四分之一圈左右，即可进入下个直行车道，车辆行驶变正之后及时回正方向盘<br>（4）如果是长拐弯，应该保持一定速度向前行驶，并提前向左打方向，方向盘转度一般也是四分之一即可，车辆行驶变正之后及时回正方向盘</p><p><strong>右转向：</strong><br>（1）首先务必观察道路指示标记，以及红绿灯，确定可以右转，一般直行红灯都可以右转，除非有右转指示灯，如果是红灯请不要右转</p><p>（2）到达转弯路口减速至怠速或者20km左右，并打开右转灯<br>（3）当驾驶员视线没过斑马线，向右打半圈左右，即可进入下个直行车道，车辆行驶变正之后及时回正方向盘</p><p><strong>左右转向应该避让直行车，让直行的车先走</strong></p><p><strong>变道：</strong><br>确定前方道路不是实线，即虚线，在不减速的情况下，打转向灯闪烁3次以上，向左或者向右稍微偏方向盘，进入车道后及时回正。同时应观察左右后视镜，观察后方的车辆，歪果仁说能完全看到后方车头就无危险，建议更远一点吧</p><p><strong>倒车入库：</strong></p><p><em>此方法来源网络，实际经验不足，先不做自己的总结</em></p><p>倒库要点：一，慢走快打，二，宁早勿晚，三，找准30厘米。</p><p>倒库步骤：</p><p>一，车中柱对准隔一个库的中间，右打死（或左打死）。</p><p>二，看右（左）后视镜，车身与右（左）边车角之间夹角30厘米时，向左（右）打一圈方向盘。</p><p>三，看右（左）后视镜，第二个门把手与右（左）边车角平行时（对齐）方向盘再向右（左）打倒底。</p><p>四，看左右后视镜，自己车身与两侧车身平行时，方向盘向快速回正。自己后视镜与两边车的后视镜（或后门把手）对齐，马上停车。</p><p><strong>侧位停车：</strong></p><p><em>此方法来源网络，实际经验不足，先不做自己的总结</em></p><p>一，自己的车与旁边的车之间相距40-50厘米，肩膀与旁边车头对齐停车。</p><p>二，向后倒车，看右后视镜或回头看到自己车尾和旁边车尾平行时，快速向右打死方向盘。</p><p>三，然后看左后视镜，后面车头或车尾在镜子里全部出现，向左回正方向盘。</p><p>四，看自己车的右车角与前车左前角或左后角（还有你自己）对齐（三点一线）时，方向盘向左打死。自己的车与前后车在一条线上时停车，回正方向盘。</p><p>出库：首先方向盘左打死，打左转向灯，看左后视镜后面车头或车尾全部出现，向右回正方向盘，再看自己车右侧中柱和前车车灯平行时，向右打一圈方向盘，看自己车头正了，快速向左回正方向盘。</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/driver-parctice/#disqus_thread</comments>
     </item>
@@ -88,20 +78,15 @@
       <pubDate>Mon, 23 Oct 2017 03:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：&lt;/p&gt;
+        
+        
+          &lt;p&gt;今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdhpo3xoj20ku11240
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdhpo3xoj20ku11240u.jpg&quot; alt=&quot;IOS11壁纸效果&quot;&gt;&lt;/p&gt;
-&lt;p&gt;搜集了一下资源，这套iOS11壁纸提供了iPhone版和iPad版两种版本，格式为 jpg，适用于所有手机/平板。&lt;/p&gt;
-&lt;p&gt;分辨率分别是 2706x2706 与 2524x2524。&lt;/p&gt;
-&lt;p&gt;一共20张。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdm8f6m3j20q70dc0tu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;附下载链接：&lt;br&gt;&lt;a href=&quot;https://pan.baidu.com/s/1i57XRm9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1i57XRm9&lt;/a&gt; 密码: f6rq&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;明天程序猿节，祝福各位是程序猿的盆友节日快乐，早点下班 ：）&lt;/strong&gt;&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>今天翻手机发现新版的ios11竟然多出了好多张新的壁纸，于是赶紧换上了试试，感觉还不错。于是赶紧换上了试试，效果还不错：</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdhpo3xoj20ku11240u.jpg" alt="IOS11壁纸效果"></p><p>搜集了一下资源，这套iOS11壁纸提供了iPhone版和iPad版两种版本，格式为 jpg，适用于所有手机/平板。</p><p>分辨率分别是 2706x2706 与 2524x2524。</p><p>一共20张。</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fksdm8f6m3j20q70dc0tu.jpg" alt=""></p><p>附下载链接：<br><a href="https://pan.baidu.com/s/1i57XRm9" target="_blank" rel="noopener">https://pan.baidu.com/s/1i57XRm9</a> 密码: f6rq</p><p><strong>明天程序猿节，祝福各位是程序猿的盆友节日快乐，早点下班 ：）</strong></p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/ios11-pics/#disqus_thread</comments>
     </item>
@@ -121,21 +106,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;这是一篇读书笔记。&lt;/p&gt;
-&lt;p&gt;自从出差回来，一直没有充分休息的机会，忙于各种琐事。但是读书不能停，不能停…&lt;/p&gt;
-&lt;p&gt;一共读了三本书，《万历十五年》 《科技想要什么》以及《用Python进行自然语言处理》英文版也就是传说中的NLTK&lt;/p&gt;
-&lt;p&gt;其中只有《万历十五年》读完了，凯文·凯利的《科技想要什么》只读了一半（因为是一本纸质书并且放在了办公室，不敢随便翻阅），然后就是NLTK，看英文版并不是为了装x，是因为中文翻译的版本实在太古老了&lt;/p&gt;
-&lt;p&gt;《万历十五年》比较偏向于学术，与《明朝那些事》这种商业文学作品的风格完全不同，从万历这一代的切面看整个历史的发展进程。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;首先是政治方面，明朝一朝从洪武开始官僚阶级薪俸很低，希望的是通过儒家的无私奉公精神来治理天下，这就导致了贪腐的滋生，历史总是惊人的相似是不是。同时没有很好的法制，如果一件事符合核心价值观，那么即使违反了法律，也会认为你无罪。&lt;/p&gt;
-&lt;p&gt;上自官僚下至村民，&lt;strong&gt;其判断是非的标准是“善”、“恶”，而不是“合法”、“非法”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然后是人物，书中基本是按照每人一章的形式写的，分别是万历、申时行、张居正、海瑞、戚继光、李贽。&lt;/p&gt;
-&lt;p&gt;其中贯穿始终的其实还是万历和张居正，而张居正才是万历这一代的灵魂。张居正是个有理想的人，做事符合帝国的大局，但同时又有对利益的渴求和自己的傲慢和偏见。比如他对士人的看法是，不看你诗书的理论能力，只看你实际的做事能力。这些对士人不够尊敬的态度，导致了他在世之时被士人的攻击，和死了以后被清算，甚至被后世之人诟病。就连他自己都说“如入火聚，得清凉门”。&lt;/p&gt;
-&lt;p&gt;戚继光在书中笔墨也很多，关于戚继光在这本书中才知道，他其实更加像个有理想的文人。奈何武将往往都是政治的牺牲品，因为和张居正有往来，所以最终也被牵连。&lt;/p&gt;
-&lt;p&gt;李贽这一章，没怎么看懂，可能对这个人不了解，只是觉得可能是当时的一个“愤青”，敢于反对当时的正统思想。&lt;/p&gt;
-&lt;p&gt;然后其他大部分空闲时间一直在学习NLTK，因为中文文档版本太老，只能学习英文版的。自然语言处理和机器学习陡峭的学习曲线显露无疑，只能一遍慢慢敲书中的代码，然后一点点看为什么会有这种效果。希望看完之后能有所输出。&lt;/p&gt;
-&lt;p&gt;如果您耐心看到了这里，感谢您的关注，祝您中秋快乐！&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>这是一篇读书笔记。</p><p>自从出差回来，一直没有充分休息的机会，忙于各种琐事。但是读书不能停，不能停…</p><p>一共读了三本书，《万历十五年》 《科技想要什么》以及《用Python进行自然语言处理》英文版也就是传说中的NLTK</p><p>其中只有《万历十五年》读完了，凯文·凯利的《科技想要什么》只读了一半（因为是一本纸质书并且放在了办公室，不敢随便翻阅），然后就是NLTK，看英文版并不是为了装x，是因为中文翻译的版本实在太古老了</p><p>《万历十五年》比较偏向于学术，与《明朝那些事》这种商业文学作品的风格完全不同，从万历这一代的切面看整个历史的发展进程。</p><a id="more"></a><p>首先是政治方面，明朝一朝从洪武开始官僚阶级薪俸很低，希望的是通过儒家的无私奉公精神来治理天下，这就导致了贪腐的滋生，历史总是惊人的相似是不是。同时没有很好的法制，如果一件事符合核心价值观，那么即使违反了法律，也会认为你无罪。</p><p>上自官僚下至村民，<strong>其判断是非的标准是“善”、“恶”，而不是“合法”、“非法”</strong></p><p>然后是人物，书中基本是按照每人一章的形式写的，分别是万历、申时行、张居正、海瑞、戚继光、李贽。</p><p>其中贯穿始终的其实还是万历和张居正，而张居正才是万历这一代的灵魂。张居正是个有理想的人，做事符合帝国的大局，但同时又有对利益的渴求和自己的傲慢和偏见。比如他对士人的看法是，不看你诗书的理论能力，只看你实际的做事能力。这些对士人不够尊敬的态度，导致了他在世之时被士人的攻击，和死了以后被清算，甚至被后世之人诟病。就连他自己都说“如入火聚，得清凉门”。</p><p>戚继光在书中笔墨也很多，关于戚继光在这本书中才知道，他其实更加像个有理想的文人。奈何武将往往都是政治的牺牲品，因为和张居正有往来，所以最终也被牵连。</p><p>李贽这一章，没怎么看懂，可能对这个人不了解，只是觉得可能是当时的一个“愤青”，敢于反对当时的正统思想。</p><p>然后其他大部分空闲时间一直在学习NLTK，因为中文文档版本太老，只能学习英文版的。自然语言处理和机器学习陡峭的学习曲线显露无疑，只能一遍慢慢敲书中的代码，然后一点点看为什么会有这种效果。希望看完之后能有所输出。</p><p>如果您耐心看到了这里，感谢您的关注，祝您中秋快乐！</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/a-year-of-no-significance-and-nltk/#disqus_thread</comments>
     </item>
@@ -152,24 +123,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;为什么原来用得好好的功能，又不能用了！？几乎所有公司的项目现场实施人员经常被这类的问题苦苦困扰。那么为什么会出现这样的问题呢？原因大家可能都清楚，那就是“旧”版本覆盖了“新”版本，导致某些功能回到了解放前。我们进一步探究，为什么项目版本反而比后台研发中心提供的升级包更“新”呢？其实，其中一个主要原因就是程序紧急包。&lt;/p&gt;
-&lt;p&gt;程序紧急包，顾名思义就是紧急情况下发布的程序升级包。也就是说，它是有别于正式的程序升级包的，它是未经测试无质量保障的程序升级包。项目前台出于时间上的考虑，无法等测试完成、走正式流程发正式包，只能发紧急包。经过项目自己的测试，后台配合调试和修改，这个急用的功能调通了，就交付给用户使用了。但是，这个项目可用并不代表这个包质量是过关的，有可能在其他环境下、不同的机构参数下并不可用，有可能专业的测试人员会发现更多潜在的问题。如果这个包未通过测试，就会形成一定的时间差，但是，在这个时间差内会有其他的正式包通过测试，提交发布，这个包中可能包含有紧急包中同名文件的旧版本，项目发布时就造成“旧”版本覆盖“新”版本了。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;为了更好的理解这一现象的原因，我们来看几张图：&lt;/p&gt;
-&lt;p&gt;图1：假设最初研发库与项目环境是一致的，括号内为文件版本&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fjnikf1iylj20jx082dg3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;图2：后台研发中心接收变更申请，形成两个升级包，&lt;strong&gt;变更包1和变更包2，分别包括FileB的两个版本&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikfk3iij20jl07ygm2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;图3：项目紧急发布&lt;strong&gt;变更包2&lt;/strong&gt;中的文件，调通之后，用户反响不错&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikg6srtj20ms07yt9a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;图4：变更包2由于质量问题未通过测试，&lt;strong&gt;但变更包1通过测试，提交正式发布了，项目发布，产生了旧版本覆盖，用户报怨&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fjnikgtohuj20mh084t9a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;我们如何避免旧版本覆盖问题，维持用户的满意度呢？&lt;/p&gt;
-&lt;p&gt;一方面，是项目前台要清楚地了解紧急包的风险，它不仅仅本身的质量没有保障，更容易带来后续一系列的质量问题。所以，要尽可能地少发紧急包，即使发了紧急包，也要认真做好测试，并记录发布历史，只有该紧急包正式发布之后，才能再发同一个war的其他升级包，否则就有可能产生旧版本覆盖。&lt;/p&gt;
-&lt;p&gt;另一方面，是后台研发中心尽可能地提升发包速度和升级包质量。发包速度提升能够从一定程度上降低项目对紧急包的需求，升级包质量能够缩减升级包紧急发布到正式发布之间的时间差，降低版本覆盖的可能性。这就需要建立完善的程序质量度量、冒烟测试等机制。&lt;/p&gt;
-&lt;p&gt;程序紧急包是在紧急情况下很无奈的一种选择，也只能通过前后台积极地配合，才能够最大限度地控制紧急包的数量和发布风险。&lt;/p&gt;
-&lt;p&gt;以上仅为个人经验，主要针对j2ee项目经验的总结，希望对大家有帮助。&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>为什么原来用得好好的功能，又不能用了！？几乎所有公司的项目现场实施人员经常被这类的问题苦苦困扰。那么为什么会出现这样的问题呢？原因大家可能都清楚，那就是“旧”版本覆盖了“新”版本，导致某些功能回到了解放前。我们进一步探究，为什么项目版本反而比后台研发中心提供的升级包更“新”呢？其实，其中一个主要原因就是程序紧急包。</p><p>程序紧急包，顾名思义就是紧急情况下发布的程序升级包。也就是说，它是有别于正式的程序升级包的，它是未经测试无质量保障的程序升级包。项目前台出于时间上的考虑，无法等测试完成、走正式流程发正式包，只能发紧急包。经过项目自己的测试，后台配合调试和修改，这个急用的功能调通了，就交付给用户使用了。但是，这个项目可用并不代表这个包质量是过关的，有可能在其他环境下、不同的机构参数下并不可用，有可能专业的测试人员会发现更多潜在的问题。如果这个包未通过测试，就会形成一定的时间差，但是，在这个时间差内会有其他的正式包通过测试，提交发布，这个包中可能包含有紧急包中同名文件的旧版本，项目发布时就造成“旧”版本覆盖“新”版本了。</p><a id="more"></a><p>为了更好的理解这一现象的原因，我们来看几张图：</p><p>图1：假设最初研发库与项目环境是一致的，括号内为文件版本</p><p><img src="http://wx4.sinaimg.cn/mw690/7d6b7503ly1fjnikf1iylj20jx082dg3.jpg" alt=""></p><p>图2：后台研发中心接收变更申请，形成两个升级包，<strong>变更包1和变更包2，分别包括FileB的两个版本</strong></p><p><img src="http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikfk3iij20jl07ygm2.jpg" alt=""></p><p>图3：项目紧急发布<strong>变更包2</strong>中的文件，调通之后，用户反响不错</p><p><img src="http://wx3.sinaimg.cn/mw690/7d6b7503ly1fjnikg6srtj20ms07yt9a.jpg" alt=""></p><p>图4：变更包2由于质量问题未通过测试，<strong>但变更包1通过测试，提交正式发布了，项目发布，产生了旧版本覆盖，用户报怨</strong>。</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fjnikgtohuj20mh084t9a.jpg" alt=""></p><p>我们如何避免旧版本覆盖问题，维持用户的满意度呢？</p><p>一方面，是项目前台要清楚地了解紧急包的风险，它不仅仅本身的质量没有保障，更容易带来后续一系列的质量问题。所以，要尽可能地少发紧急包，即使发了紧急包，也要认真做好测试，并记录发布历史，只有该紧急包正式发布之后，才能再发同一个war的其他升级包，否则就有可能产生旧版本覆盖。</p><p>另一方面，是后台研发中心尽可能地提升发包速度和升级包质量。发包速度提升能够从一定程度上降低项目对紧急包的需求，升级包质量能够缩减升级包紧急发布到正式发布之间的时间差，降低版本覆盖的可能性。这就需要建立完善的程序质量度量、冒烟测试等机制。</p><p>程序紧急包是在紧急情况下很无奈的一种选择，也只能通过前后台积极地配合，才能够最大限度地控制紧急包的数量和发布风险。</p><p>以上仅为个人经验，主要针对j2ee项目经验的总结，希望对大家有帮助。</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/Talking-about-emergency-release/#disqus_thread</comments>
     </item>
@@ -181,15 +135,15 @@
       <pubDate>Sat, 16 Sep 2017 09:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而&lt;strong&gt;DB2和Oracle的修改字段长度方言差异很大&lt;/strong&gt;，比如修改字段长度，以下举一个&lt;strong&gt;修改字段长度&lt;/strong&gt;的例子：&lt;/p&gt;
+        
+        
+          &lt;p&gt;公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而&lt;strong&gt;DB2和Oracle的修改字段长度方言差异很大&lt;/strong&gt;，比如修改字段长度，以下举一个&lt;strong&gt;修改字段长度&lt;/strong&gt;的例子：&lt;/p&gt;
 &lt;figure clas
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而&lt;strong&gt;DB2和Oracle的修改字段长度方言差异很大&lt;/strong&gt;，比如修改字段长度，以下举一个&lt;strong&gt;修改字段长度&lt;/strong&gt;的例子：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DB2修改字段长度&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE SOME_TABLE(表名) ALTER COLUMN SOME_COL(字段名) SET DATA TYPE VARCHAR(4000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Oracle修改字段长度&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE SOME_TABLE(表名) MODIFY SOME_COL(字段名) VARCHAR2(4) ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;注意DB2要使用alter语句，而Oracle是用的modify&lt;/strong&gt;&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>公司的系统要兼容DB2和Oracle，所以写的sql脚本要兼容两种数据库，而<strong>DB2和Oracle的修改字段长度方言差异很大</strong>，比如修改字段长度，以下举一个<strong>修改字段长度</strong>的例子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DB2修改字段长度</span><br><span class="line">ALTER TABLE SOME_TABLE(表名) ALTER COLUMN SOME_COL(字段名) SET DATA TYPE VARCHAR(4000);</span><br><span class="line"></span><br><span class="line">Oracle修改字段长度</span><br><span class="line">ALTER TABLE SOME_TABLE(表名) MODIFY SOME_COL(字段名) VARCHAR2(4) ;</span><br></pre></td></tr></table></figure><p><strong>注意DB2要使用alter语句，而Oracle是用的modify</strong></p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/db2-oracle-chage-colmun-length/#disqus_thread</comments>
     </item>
@@ -206,30 +160,11 @@
 &lt;p&gt;所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用&lt;/p&gt;
 &lt;p&gt;（1）护眼宝&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
       
       </description>
       
-      <content:encoded>&lt;p&gt;最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。&lt;/p&gt;
-&lt;p&gt;最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。&lt;/p&gt;
-&lt;p&gt;所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用&lt;/p&gt;
-&lt;p&gt;（1）护眼宝&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：&lt;a href=&quot;https://www.zhihu.com/question/24841235&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.zhihu.com/question/24841235&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;（2）f.lux&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fj3ypth31fj20f208cq2r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这是一款自动调节屏幕色温的软件。和iphone的nightswitch功能类似，白天会将屏幕颜色自动调节的较量，晚上会变成柔和的暖色。并且官方也没有提及该软件有保护视力过滤硬件蓝光什么的作用（歪国人就是这么实诚），不过这个软件做的挺好的，使用起来很方便。&lt;/p&gt;
-&lt;p&gt;官方下载地址：&lt;a href=&quot;https://justgetflux.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://justgetflux.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;（3）猎豹护眼大师&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypu5h90j20eu09mweh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;这个产品官方好像已经不维护了，费了一些功夫才知道一个能用的版本，但是效果挺给力。比如提供多种护眼模式，和定时提醒休息的功能。另外一个优点是，相对猎豹的其他产品，这个不维护的产品一个商业广告没有，体积也不大，所以值得推荐&lt;/p&gt;
-&lt;p&gt;po几张使用的对比图：&lt;br&gt;使用前亮白的屏幕：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypusk37j20fp0cx75k.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;使用后的护眼效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypvf82vj20fh0d4wfp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;附猎豹护眼大师载地址：&lt;br&gt;链接: &lt;a href=&quot;https://pan.baidu.com/s/1kVqpXLd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1kVqpXLd&lt;/a&gt; 密码: 5tht&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>最近用了公司配的电脑，除了内存16G比较给力，其他的配置尤其是显卡的配置都非常一般。</p><p>最让人担忧的还是屏幕，分辨率比较低就算了，毕竟只是研发工作，对屏幕分辨率要求不会过高。主要是屏幕异常的白亮和刺眼，通过FN+亮度键调节总也不能达到满意的效果。</p><p>所以找了一下市面上的护眼软件，做个简单的对比，希望对大家有用</p><p>（1）护眼宝</p><p><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypsxj6jj20e80e80ss.jpg" alt=""></p><p>这款智能护眼软件，在知乎上面很多人在安利，据说可以有效过滤蓝光，就不过多介绍了，有兴趣可以参见这个问题：<a href="https://www.zhihu.com/question/24841235" target="_blank" rel="noopener">https://www.zhihu.com/question/24841235</a></p><a id="more"></a><p>（2）f.lux</p><p><img src="http://wx4.sinaimg.cn/mw690/7d6b7503ly1fj3ypth31fj20f208cq2r.jpg" alt=""></p><p>这是一款自动调节屏幕色温的软件。和iphone的nightswitch功能类似，白天会将屏幕颜色自动调节的较量，晚上会变成柔和的暖色。并且官方也没有提及该软件有保护视力过滤硬件蓝光什么的作用（歪国人就是这么实诚），不过这个软件做的挺好的，使用起来很方便。</p><p>官方下载地址：<a href="https://justgetflux.com/" target="_blank" rel="noopener">https://justgetflux.com/</a></p><p>（3）猎豹护眼大师</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypu5h90j20eu09mweh.jpg" alt=""></p><p>这个产品官方好像已经不维护了，费了一些功夫才知道一个能用的版本，但是效果挺给力。比如提供多种护眼模式，和定时提醒休息的功能。另外一个优点是，相对猎豹的其他产品，这个不维护的产品一个商业广告没有，体积也不大，所以值得推荐</p><p>po几张使用的对比图：<br>使用前亮白的屏幕：</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fj3ypusk37j20fp0cx75k.jpg" alt=""></p><p>使用后的护眼效果：</p><p><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fj3ypvf82vj20fh0d4wfp.jpg" alt=""></p><p>附猎豹护眼大师载地址：<br>链接: <a href="https://pan.baidu.com/s/1kVqpXLd" target="_blank" rel="noopener">https://pan.baidu.com/s/1kVqpXLd</a> 密码: 5tht</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/eye-protectiong-softwares/#disqus_thread</comments>
     </item>
@@ -241,19 +176,16 @@
       <pubDate>Fri, 14 Jul 2017 12:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。&lt;/p&gt;
+        
+        
+          &lt;p&gt;最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。&lt;/p&gt;
 &lt;p&gt;然后因为忙，一直来不及解决….&lt;/p&gt;
 &lt;p&gt;今天有空，搜了好久找不到解决方案，索性想从新部署一次。但是想想部署又要花费好长时间，所以尝试使用了 hex
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。&lt;/p&gt;
-&lt;p&gt;然后因为忙，一直来不及解决….&lt;/p&gt;
-&lt;p&gt;今天有空，搜了好久找不到解决方案，索性想从新部署一次。但是想想部署又要花费好长时间，所以尝试使用了 hexo clean命令，出于意料的是，竟然显示正常了……&lt;/p&gt;
-&lt;p&gt;总结下解决方法：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;hexo clean很关键，可以将public下所有文件进行清空，也类似清空缓存了。希望对碰到同样麻烦的朋友有所帮助&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>最近博客一直显示不正常，原因是github pages的css和js不能正常加载，抓包分析都是304错误。</p><p>然后因为忙，一直来不及解决….</p><p>今天有空，搜了好久找不到解决方案，索性想从新部署一次。但是想想部署又要花费好长时间，所以尝试使用了 hexo clean命令，出于意料的是，竟然显示正常了……</p><p>总结下解决方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>hexo clean很关键，可以将public下所有文件进行清空，也类似清空缓存了。希望对碰到同样麻烦的朋友有所帮助</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-slove-hexo-304-problems/#disqus_thread</comments>
     </item>
@@ -276,21 +208,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;最近来了一趟河南。&lt;/p&gt;
-&lt;p&gt;首先去的是郑州，惊讶于中原地区的道路如此齐整，道路都是正南正北正东正西的，从地图上看如棋盘一般，除了好评想不出第二个词来评价。&lt;/p&gt;
-&lt;p&gt;第二天在郑州呆了一上午，中午吃了一大碗“滋补烩面“后，就赶往平顶山，讲了一下午的ppt，没顾得上喝一口水，就马上又赶回郑州了。匆匆的去正如我匆匆的回。坐汽车坐的屁股都疼…&lt;/p&gt;
-&lt;p&gt;第三天坐高铁到了商丘，并且一直待到现在。在这里培训客户，调试系统，连续好几周都没有静静的写过程序，不断地解答客户提出的问题。倒是觉得收获比写程序更多。因为直接和客户接触，能更深入的理解客户需求，能掌握更多的沟通技巧和增加抗压能力。&lt;/p&gt;
-&lt;p&gt;再说说在中原的见闻。&lt;/p&gt;
-&lt;p&gt;首先是烩面和各种面，不仅便宜而且好吃。一大碗好吃的拌面只要11块，里面有小半碗的鸡蛋和肉，而且提供面汤和蒜。这种配置在北方其他城市至少需要20元左右才行。&lt;/p&gt;
-&lt;p&gt;然后就是迷之交通规则。前面说过中原的路很直，如棋盘一般。所以这里人喜好骑各种电动车，从两个轮的到四个轮的都有，而且从来不看红灯，以及随意逆行。所以路上必须多加小心才是。&lt;/p&gt;
-&lt;p&gt;再就是中原的文化底蕴。北方的夜生活很单调，主要以广场舞大妈为主力军。但是就我在商丘这个地方的见闻刷新了我的认识。到了晚上，这里的大妈不仅仅只会跳舞，她们还组织了走秀比赛。你还能欣赏到大叔唱豫剧，还有很多街舞和管弦乐的比赛，都是自发组织的。商丘虽然地方很小而po，但是夜生活比我在的那个城市丰富很多倍。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;写了这么多无聊的流水账，顺便po几张图吧：&lt;/p&gt;
-&lt;p&gt;商丘古城中陈家大院后人的画一幅&lt;br&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fh5stychpej20qo0zkgp5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;商丘古城中孔庙的迷之孔夫子&lt;br&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503ly1fh5stz6icsj20qo0zk0wk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;滋补烩面&lt;br&gt;&lt;a href=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fh5stzsusyj20qo0zkgp9.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wx3.sinaimg.cn/mw690/7d6b7503ly1fh5stzsusyj20qo0zkgp9.jpg&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;11元的拌面&lt;br&gt;&lt;a href=&quot;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>最近来了一趟河南。</p><p>首先去的是郑州，惊讶于中原地区的道路如此齐整，道路都是正南正北正东正西的，从地图上看如棋盘一般，除了好评想不出第二个词来评价。</p><p>第二天在郑州呆了一上午，中午吃了一大碗“滋补烩面“后，就赶往平顶山，讲了一下午的ppt，没顾得上喝一口水，就马上又赶回郑州了。匆匆的去正如我匆匆的回。坐汽车坐的屁股都疼…</p><p>第三天坐高铁到了商丘，并且一直待到现在。在这里培训客户，调试系统，连续好几周都没有静静的写过程序，不断地解答客户提出的问题。倒是觉得收获比写程序更多。因为直接和客户接触，能更深入的理解客户需求，能掌握更多的沟通技巧和增加抗压能力。</p><p>再说说在中原的见闻。</p><p>首先是烩面和各种面，不仅便宜而且好吃。一大碗好吃的拌面只要11块，里面有小半碗的鸡蛋和肉，而且提供面汤和蒜。这种配置在北方其他城市至少需要20元左右才行。</p><p>然后就是迷之交通规则。前面说过中原的路很直，如棋盘一般。所以这里人喜好骑各种电动车，从两个轮的到四个轮的都有，而且从来不看红灯，以及随意逆行。所以路上必须多加小心才是。</p><p>再就是中原的文化底蕴。北方的夜生活很单调，主要以广场舞大妈为主力军。但是就我在商丘这个地方的见闻刷新了我的认识。到了晚上，这里的大妈不仅仅只会跳舞，她们还组织了走秀比赛。你还能欣赏到大叔唱豫剧，还有很多街舞和管弦乐的比赛，都是自发组织的。商丘虽然地方很小而po，但是夜生活比我在的那个城市丰富很多倍。</p><a id="more"></a><p>写了这么多无聊的流水账，顺便po几张图吧：</p><p>商丘古城中陈家大院后人的画一幅<br><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fh5stychpej20qo0zkgp5.jpg" alt=""></p><p>商丘古城中孔庙的迷之孔夫子<br><img src="http://wx1.sinaimg.cn/mw690/7d6b7503ly1fh5stz6icsj20qo0zk0wk.jpg" alt=""></p><p>滋补烩面<br><a href="http://wx3.sinaimg.cn/mw690/7d6b7503ly1fh5stzsusyj20qo0zkgp9.jpg" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/7d6b7503ly1fh5stzsusyj20qo0zkgp9.jpg</a></p><p>11元的拌面<br><a href="http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/7d6b7503ly1fh5su0ffb3j20qo0zkwim.jpg</a></p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/i-am-a-passenger/#disqus_thread</comments>
     </item>
@@ -302,17 +220,15 @@
       <pubDate>Fri, 09 Jun 2017 13:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。&lt;/p&gt;
+        
+        
+          &lt;p&gt;看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。&lt;/p&gt;
 &lt;p&gt;仔细看了一些关于熵的资料，物质什么时候可以说有生命呢？就是它可以继续做某件事、不
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。&lt;/p&gt;
-&lt;p&gt;仔细看了一些关于熵的资料，物质什么时候可以说有生命呢？就是它可以继续做某件事、不断地运动，并于外界交换物质，它的寿命比我们预计无生命的物质在相似情况下能够“持续”的时间要长的多。这要归功于新陈代谢的功劳，新陈代谢的主要作用是帮助有机体成功地消除了当它活着时免不了要产生的、全部的熵。这是个人认为关于保持低熵状态的最合理的解释。&lt;/p&gt;
-&lt;p&gt;也正如《三体》中“歌者”的描述：“宇宙的熵在升高，有序度在降低，像平衡鹏那无边无际的黑翅膀，向存在的一切压下来，压下来。可是低熵体不一样，低熵体的熵还在降低。有序度还在上升，像漆黑海面上升起的磷火，这就是意义，最高层的意义，比乐趣的意义层次要高。要维持这种意义，低熵体就必须存在和延续。”  这一段话的意思是作为外星文明物种的“歌者”感叹生命存在对于宇宙的重要性，而保持生命的存在和延续正是低熵体的最大意义。&lt;/p&gt;
-&lt;p&gt;所以能够过好这一生就是保持低熵的最大体现。而非大富大贵的人，在平凡的人生中享受平凡的成果，就是在过好这一生了。&lt;/p&gt;
-&lt;p&gt;以上仅代表个人观点。&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>看过《三体》的朋友，一定都知道低熵体这个名词，大刘用这个名词来表示那些有高等智慧生命体。这种生命体的主要特点是，隐藏自己，注意清理那些暴露坐标的有生命的星球，保持自身的低熵状态。</p><p>仔细看了一些关于熵的资料，物质什么时候可以说有生命呢？就是它可以继续做某件事、不断地运动，并于外界交换物质，它的寿命比我们预计无生命的物质在相似情况下能够“持续”的时间要长的多。这要归功于新陈代谢的功劳，新陈代谢的主要作用是帮助有机体成功地消除了当它活着时免不了要产生的、全部的熵。这是个人认为关于保持低熵状态的最合理的解释。</p><p>也正如《三体》中“歌者”的描述：“宇宙的熵在升高，有序度在降低，像平衡鹏那无边无际的黑翅膀，向存在的一切压下来，压下来。可是低熵体不一样，低熵体的熵还在降低。有序度还在上升，像漆黑海面上升起的磷火，这就是意义，最高层的意义，比乐趣的意义层次要高。要维持这种意义，低熵体就必须存在和延续。”  这一段话的意思是作为外星文明物种的“歌者”感叹生命存在对于宇宙的重要性，而保持生命的存在和延续正是低熵体的最大意义。</p><p>所以能够过好这一生就是保持低熵的最大体现。而非大富大贵的人，在平凡的人生中享受平凡的成果，就是在过好这一生了。</p><p>以上仅代表个人观点。</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/hwo-to-be-low-entropy/#disqus_thread</comments>
     </item>
@@ -324,36 +240,15 @@
       <pubDate>Sun, 28 May 2017 11:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…&lt;/p&gt;
+        
+        
+          &lt;p&gt;自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…&lt;/p&gt;
 &lt;p&gt;找了半天,总结出&lt;strong&gt;两个比较优雅
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…&lt;/p&gt;
-&lt;p&gt;找了半天,总结出&lt;strong&gt;两个比较优雅的分享代码方法&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;方法1：&lt;/strong&gt;使用&lt;strong&gt;html2canvas&lt;/strong&gt; 将代码转为图片&lt;/p&gt;
-&lt;p&gt;这种方法确实比较优雅，但是比较大的问题就是如果将代码转换为图片就意味着要消耗用户流量，并且展示时耗费的时间更久一些，感觉并不可取&lt;/p&gt;
-&lt;p&gt;详细介绍可以参考这篇文章：&lt;a href=&quot;https://www.h5jun.com/post/convert-code-to-image-via-html2canvas.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;html2canvas 将代码转为图片&lt;/a&gt;（微信端同学请点击原文获取链接）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;方法2：&lt;/strong&gt;使用开源软件&lt;strong&gt;online-markdown&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在Github上找到一个叫小胡子哥大神的写的这个开源软件，可以非常优雅的通过md编辑器将代码转换为html，直接复制到微信公众号编辑器即可&lt;/p&gt;
-&lt;p&gt;并且&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;支持更换代码样式主题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;代码长度溢出时横向滚动&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个非常适合解决微信公众号中复制代码的问题&lt;/p&gt;
-&lt;p&gt;简单介绍下online-markdown的用法：&lt;/p&gt;
-&lt;p&gt;（1）从Github下载&lt;a href=&quot;https://github.com/barretlee/online-markdown&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;online-markdown源码&lt;/a&gt;（微信端同学请点击原文获取链接）&lt;/p&gt;
-&lt;p&gt;（2）解压后进入online-markdown-master\docs文件夹，打开index.html即可看到界面&lt;/p&gt;
-&lt;p&gt;（3）将你的代码复制进md编辑器，注意要使用md语法，比如下面这段&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzj9h64kj20m10f5my7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;（4）点击“预览”即可看到生成代码的html，并且可以选择多种代码主题和样式&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzjaf9rzj20m10e5wfx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;（5）弄好之后直接复制到微信公众号编辑器即可，是不是很优雅 /笑cry&lt;/p&gt;
-&lt;p&gt;经过测试online-markdown&lt;strong&gt;只有在chrome浏览器中运行的比较正常&lt;/strong&gt;，其他浏览器可能会存在不加载样式文件的问题，如果您有更好的方法也请留言给我，谢谢&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>自从开通公众号以来，经常尝试分享一些技术文章，不可避免的里面会掺杂很多代码，以前是将写好的博客里面的代码直接粘到微信编辑器里，但是复制出来的代码都很乱。比如上一篇《程序猿是如何解智力题的》，里面粘贴的代码不忍卒视…</p><p>找了半天,总结出<strong>两个比较优雅的分享代码方法</strong>：</p><p><strong>方法1：</strong>使用<strong>html2canvas</strong> 将代码转为图片</p><p>这种方法确实比较优雅，但是比较大的问题就是如果将代码转换为图片就意味着要消耗用户流量，并且展示时耗费的时间更久一些，感觉并不可取</p><p>详细介绍可以参考这篇文章：<a href="https://www.h5jun.com/post/convert-code-to-image-via-html2canvas.html" target="_blank" rel="noopener">html2canvas 将代码转为图片</a>（微信端同学请点击原文获取链接）</p><p><strong>方法2：</strong>使用开源软件<strong>online-markdown</strong></p><p>在Github上找到一个叫小胡子哥大神的写的这个开源软件，可以非常优雅的通过md编辑器将代码转换为html，直接复制到微信公众号编辑器即可</p><p>并且</p><ul><li><p>支持更换代码样式主题</p></li><li><p>代码长度溢出时横向滚动</p></li></ul><p>这个非常适合解决微信公众号中复制代码的问题</p><p>简单介绍下online-markdown的用法：</p><p>（1）从Github下载<a href="https://github.com/barretlee/online-markdown" target="_blank" rel="noopener">online-markdown源码</a>（微信端同学请点击原文获取链接）</p><p>（2）解压后进入online-markdown-master\docs文件夹，打开index.html即可看到界面</p><p>（3）将你的代码复制进md编辑器，注意要使用md语法，比如下面这段</p><p><img src="http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzj9h64kj20m10f5my7.jpg" alt=""></p><p>（4）点击“预览”即可看到生成代码的html，并且可以选择多种代码主题和样式</p><p><img src="http://wx3.sinaimg.cn/mw690/7d6b7503ly1ffzzjaf9rzj20m10e5wfx.jpg" alt=""></p><p>（5）弄好之后直接复制到微信公众号编辑器即可，是不是很优雅 /笑cry</p><p>经过测试online-markdown<strong>只有在chrome浏览器中运行的比较正常</strong>，其他浏览器可能会存在不加载样式文件的问题，如果您有更好的方法也请留言给我，谢谢</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-share-your-code-in-weixin/#disqus_thread</comments>
     </item>
@@ -375,30 +270,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;晚上被问了一个智力题，题目如下：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;求解：一筐鸡蛋：&lt;br&gt;1个1个拿，正好拿完&lt;br&gt;2个2个拿，还剩1个&lt;br&gt;3个3个拿，正好拿完&lt;br&gt;4个4个拿，还剩1个&lt;br&gt;5个5个拿，还差1个&lt;br&gt;6个6个拿，还剩3个&lt;br&gt;7个7个拿，正好拿完&lt;br&gt;8个8个拿，还剩1个&lt;br&gt;9个9个拿，正好拿完&lt;br&gt;问筐里最少有多少鸡蛋&lt;/p&gt;
-&lt;p&gt;能算出这道题的智商不一般！求答案？有高手没，算算吧！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;友情提示，”&lt;strong&gt;5个5个拿，是还差1个&lt;/strong&gt;“，也就是还剩下4个，这是这个题目的一个小陷阱…&lt;/p&gt;
-&lt;p&gt;下面会公布答案，请先忍住往下看，自己下解一下&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;看到这个问题的我，一脸懵逼，首先某度了一下，结果发现问题描述不一样，答案是错的…&lt;/p&gt;
-&lt;p&gt;于是顺手打开了eclipse，写了个憋足的java程序，瞬间就解出了这个问题，以下是java代码的回答&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			System.out.println(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(i%&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;					&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&amp;amp;&amp;amp;i%&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;正确答案=&quot;&lt;/span&gt;+i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				&lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			i++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;运用无耻的穷举法，运行结果应该是1449&lt;/p&gt;
-&lt;p&gt;又拿这个问题问wenchao同学，又出现了javascript版本的答案：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (let i = 1; i+=2;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  let number = 63*i;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  if (number%5==4&amp;amp;&amp;amp;number%6==3&amp;amp;&amp;amp;number%8==1) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log(number);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    break;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;这个穷举法稍微先进了一些，运用了结果应该能被63整除这个事实，运行结果也是1449&lt;/p&gt;
-&lt;p&gt;好吧，以下正确的解答由夏博士提供：&lt;/p&gt;
-&lt;p&gt;首先，能被7整除，能被9整除，所以肯定是63的倍数&lt;/p&gt;
-&lt;p&gt;5个5个拿，还差1个，所以个位数肯定是4或者9&lt;/p&gt;
-&lt;p&gt;又因为两个两个拿剩下一个，肯定是个奇数，排除个位数是4的情况，所以个位数肯定是9，那么这个倍数的位数一定是3&lt;/p&gt;
-&lt;p&gt;3不对&lt;/p&gt;
-&lt;p&gt;13不对&lt;/p&gt;
-&lt;p&gt;23对了，63*23 = 1449&lt;/p&gt;
-&lt;p&gt;果然是博士智力水平就是高，默默献上膝盖！&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>晚上被问了一个智力题，题目如下：</p><blockquote><p>求解：一筐鸡蛋：<br>1个1个拿，正好拿完<br>2个2个拿，还剩1个<br>3个3个拿，正好拿完<br>4个4个拿，还剩1个<br>5个5个拿，还差1个<br>6个6个拿，还剩3个<br>7个7个拿，正好拿完<br>8个8个拿，还剩1个<br>9个9个拿，正好拿完<br>问筐里最少有多少鸡蛋</p><p>能算出这道题的智商不一般！求答案？有高手没，算算吧！</p></blockquote><p>友情提示，”<strong>5个5个拿，是还差1个</strong>“，也就是还剩下4个，这是这个题目的一个小陷阱…</p><p>下面会公布答案，请先忍住往下看，自己下解一下</p><a id="more"></a><p>看到这个问题的我，一脸懵逼，首先某度了一下，结果发现问题描述不一样，答案是错的…</p><p>于是顺手打开了eclipse，写了个憋足的java程序，瞬间就解出了这个问题，以下是java代码的回答</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">System.out.println(i);</span><br><span class="line"><span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">1</span>&amp;&amp;i%<span class="number">3</span>==<span class="number">0</span>&amp;&amp;i%<span class="number">4</span>==<span class="number">1</span>&amp;&amp;i%<span class="number">5</span>==<span class="number">4</span>&amp;&amp;i%<span class="number">6</span>==<span class="number">3</span>&amp;&amp;i%<span class="number">7</span>==<span class="number">0</span></span><br><span class="line">&amp;&amp;i%<span class="number">8</span>==<span class="number">1</span>&amp;&amp;i%<span class="number">9</span>==<span class="number">0</span>)&#123;</span><br><span class="line">System.out.println(<span class="string">"正确答案="</span>+i);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">i++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>运用无耻的穷举法，运行结果应该是1449</p><p>又拿这个问题问wenchao同学，又出现了javascript版本的答案：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for (let i = 1; i+=2;) &#123;</span><br><span class="line">  let number = 63*i;</span><br><span class="line">  if (number%5==4&amp;&amp;number%6==3&amp;&amp;number%8==1) &#123;</span><br><span class="line">    console.log(number);</span><br><span class="line">    break;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个穷举法稍微先进了一些，运用了结果应该能被63整除这个事实，运行结果也是1449</p><p>好吧，以下正确的解答由夏博士提供：</p><p>首先，能被7整除，能被9整除，所以肯定是63的倍数</p><p>5个5个拿，还差1个，所以个位数肯定是4或者9</p><p>又因为两个两个拿剩下一个，肯定是个奇数，排除个位数是4的情况，所以个位数肯定是9，那么这个倍数的位数一定是3</p><p>3不对</p><p>13不对</p><p>23对了，63*23 = 1449</p><p>果然是博士智力水平就是高，默默献上膝盖！</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/how-programmer-slove-a-Intellectual-problem/#disqus_thread</comments>
     </item>
@@ -418,17 +290,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;经常听到同事需要体验设计人员做东西时说：“帮我p个图。”体验设计人员想都不想说好。然后等同事把需求描述出来后，体验设计人员头顶就有一万只乌鸦掠过，不停的在嘎嘎的叫，时不时的会落下一些bianbian。心中在咆哮：这哪是p个图啊，明明是一套复杂的页面，还包括交互设计。&lt;/p&gt;
-&lt;p&gt;长期以来我们对体验设计人员的认识就是p图、抠图、会ps、修照片的。实际上他们主要能力并不在这里。&lt;/p&gt;
-&lt;p&gt;让我们来了解一下体验设计人员有什么样的能力，都能做什么。&lt;/p&gt;
-&lt;h1 id=&quot;1、排版、配色、构图&quot;&gt;&lt;a href=&quot;#1、排版、配色、构图&quot; class=&quot;headerlink&quot; title=&quot;1、排版、配色、构图&quot;&gt;&lt;/a&gt;1、排版、配色、构图&lt;/h1&gt;&lt;p&gt;先说说基础能力：排版、配色、构图等及平面设计师又称为视觉设计师的能力。一般来讲，排版构图与配色是一体的，没有完完全全单独排版不需要配色的，也没有只需要配色而不考虑排版的。因为颜色本身就是排版的一部分，设计师会根据颜色的搭配、点线面的结合、文字的重点与否、标题的样式等整体考虑一个页面的搭配和构图。&lt;br&gt;基于视觉设计师的基础能力，当我们需要设计师给我们进行排版配色设计的话，我们就需要给设计师&lt;strong&gt;提供明确的文字资料、想要突出的重点是什么、大概的颜色需求（因为需要跟整体的页面进行搭配）、图片的内容，更重要的是告诉设计师我们想要通过这个页面的排版表达一个什么样式含义&lt;/strong&gt;。剩下的事情就交给设计师来处理吧。设计师需要做的就是把我们提供给他们的内容，进行打散重构，通过颜色构图把我们要表达的意思表达出来，并考虑用户的阅读顺序。当然，我们也不会指望设计师一次设计就能达成我们的想法，这里需要反复迭代，多次进行交流。这里设计师需要如何做，在下次的文章中进行描述。&lt;/p&gt;
-&lt;h1 id=&quot;2、业务架构、原型设计&quot;&gt;&lt;a href=&quot;#2、业务架构、原型设计&quot; class=&quot;headerlink&quot; title=&quot;2、业务架构、原型设计&quot;&gt;&lt;/a&gt;2、业务架构、原型设计&lt;/h1&gt;&lt;p&gt;再说说设计师的另一种能力：对用户操作过程的设计、易用性设计（让用户便捷的操作系统）、交互控件的设计等及交互设计师的能力。设计师根据他的经验对用户操作界面进行可用性易用性设计，这里不仅仅是设计一两个图标，也不是设计按钮，而是用户的交互过程。&lt;br&gt;针对交互设计师的这方面能力，&lt;strong&gt;我们就需要给他们详细的讲述业务，可以跟设计师一起进行原型的设计，并提供操作时的真实数据&lt;/strong&gt;。千万不要简单扔给设计师就不管了，设计师对业务了解肯定不如你更加熟悉，要跟他们讲透。这里一定要把设计师当小白，不要认为他们都了解了。设计过程中设计师会经常来骚扰你，这时展现你人格魅力的时候到来了，要充分表现出你的耐心。最终我们跟设计师一起打造出操作简捷、易用性好、页面结构合理、颜色图标重点突出的好的产品设计出来。设计师离不开你，需要大家相互配合才行。这里需要注意的是不要轻视设计师做的每一个图标和按钮，这些都是有意义的，对于这种东西，我们就交给设计师，然后关注业务逻辑就行了。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;3、手绘、信息图、讲故事、内容重构&quot;&gt;&lt;a href=&quot;#3、手绘、信息图、讲故事、内容重构&quot; class=&quot;headerlink&quot; title=&quot;3、手绘、信息图、讲故事、内容重构&quot;&gt;&lt;/a&gt;3、手绘、信息图、讲故事、内容重构&lt;/h1&gt;&lt;p&gt;我们都知道体验设计师多数都是学艺术专业的，即使不是学艺术专业的，多少也会画点画。但在长期的工作中，由于设计师基本不需要手绘，画画的能力在退化。为了让咱们的设计师把绘画的能力找回来，我们就需要让设计师们干这么一件事情：信息图。通过信息图来表达大段的文字，展现用户需要看的主要数据，就是通过图来讲故事。体验设计师应该具备更强的内容重构的能力，通过专业的设计技术和绘画能力，把枯燥乏味的数据变成生动的易读的信息图。我们要相信设计师能够给我们创造出不一样的数据展示方式，一开始可能会有些障碍，当我们完全发掘出了设计师身上的这种能力，逐渐的事情就会变的越来越容易顺畅。&lt;/p&gt;
-&lt;h1 id=&quot;4、用户研究、需求调研、用户体验&quot;&gt;&lt;a href=&quot;#4、用户研究、需求调研、用户体验&quot; class=&quot;headerlink&quot; title=&quot;4、用户研究、需求调研、用户体验&quot;&gt;&lt;/a&gt;4、用户研究、需求调研、用户体验&lt;/h1&gt;&lt;p&gt;体验设计团队是目前事业部里专门研究用户体验的团队，但用户体验中一个十分重要的工作我们没有涉及，就是用户研究。不是我们的体验设计师们不想去做这方面的工作，而是因为用户研究是一个十分系统的工程，不仅仅需要投入一定的资金，同时还需要投入大量的时间和人力。以体验设计组目前这几个人是无法完成。这里要说明一下的是，在互联网公司，体验设计团队和研发团队的人员比例是1：3-5。这种比例就决定了，互联网公司里体验设计师是产品的主导团队。而我们的产品是按照客户的需求进行定制的，所以不需要体验设计团队来根据用户研究来设计产品的设计方向。&lt;br&gt;但是，并不是说我们就不需要用户研究。体验设计人员经过长期的内部培训和自我学习，做了大量的用户研究方法和用户体验知识的储备。我们需要做的就是把设计师的这种储备转变成为能力。如何去做呢？就是让体验设计师去接触客户和用户，了解他们的工作方式、工作场景、工作中的问题。在不改变现在事业部各团队工作方式的情况下，需求调研是体验设计师与客户接触的较好的时机。需求调研期间，需求调研研发负责人和体验设计负责人，共同参与，组成一个需求调研及用户研究小组。体验设计师在调研前要列出用户研究的内容，并在调研期间逐一进行，调研结束后完成用户研究报告。然后开始和研发团队一起进行原型设计，把用户研究的成果落实到产品设计中，设计出让用户更加满意的产品。这种用户研究方式较为省钱、省人、省时间。同时还能提升我们产品。&lt;/p&gt;
-&lt;h1 id=&quot;5、交流、沟通工具、记录过程&quot;&gt;&lt;a href=&quot;#5、交流、沟通工具、记录过程&quot; class=&quot;headerlink&quot; title=&quot;5、交流、沟通工具、记录过程&quot;&gt;&lt;/a&gt;5、交流、沟通工具、记录过程&lt;/h1&gt;&lt;p&gt;最后给大家说一下与设计师们协作时现成的工具：任务跟踪软件（工单系统）、邮件、通讯软件。与体验设计师最好的协作方式是当面交流，当面交流是一种最为直接快捷的方式。交流完后，为了确保大家交流的结果和想法是否达成一致，需要有明确的文字说明。这里要跟大家强调一下的是，不要觉得麻烦就不进行文字说明。文字说明有两个作用：1、避免大家口头交流后的想法不在一个层面上，交流过程中有些地方没有说明白或者理解有偏差。2、我们在进行说明文字描述时，也是我们对自己的思路整理的过程，很多时候写着写着就会有好的想法迸发而出。需求说明描述完后，我们可以通过邮件或td发给设计师。这里建议用邮件，邮件可以反复交流，而且公司有规定邮件处理要及时，所以设计师不会漏掉我们发的需求邮件，同时还可以抄送给相关的同事关注这个事情。录工单就有些不太方便了，当然如果我们习惯了用公司的工单系统也没有关系，录工单也很好。体验设计师收到邮件后，有不确定的地方会电话或当面进行交流。交流结果如果和之前的邮件有出入或补充的话，体验设计师回复邮件进行描述。通过邮件，我们记录下了工作的整个过程和交流过程，并让相关的领导和同事都知道我们整个的工作的过程和结果。这样就不会出现做了很多的工作领导都不知道的情况，何乐而不为呢！&lt;/p&gt;
-&lt;p&gt;设计师还有其他的能力，这是后话了…&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>经常听到同事需要体验设计人员做东西时说：“帮我p个图。”体验设计人员想都不想说好。然后等同事把需求描述出来后，体验设计人员头顶就有一万只乌鸦掠过，不停的在嘎嘎的叫，时不时的会落下一些bianbian。心中在咆哮：这哪是p个图啊，明明是一套复杂的页面，还包括交互设计。</p><p>长期以来我们对体验设计人员的认识就是p图、抠图、会ps、修照片的。实际上他们主要能力并不在这里。</p><p>让我们来了解一下体验设计人员有什么样的能力，都能做什么。</p><h1 id="1、排版、配色、构图"><a href="#1、排版、配色、构图" class="headerlink" title="1、排版、配色、构图"></a>1、排版、配色、构图</h1><p>先说说基础能力：排版、配色、构图等及平面设计师又称为视觉设计师的能力。一般来讲，排版构图与配色是一体的，没有完完全全单独排版不需要配色的，也没有只需要配色而不考虑排版的。因为颜色本身就是排版的一部分，设计师会根据颜色的搭配、点线面的结合、文字的重点与否、标题的样式等整体考虑一个页面的搭配和构图。<br>基于视觉设计师的基础能力，当我们需要设计师给我们进行排版配色设计的话，我们就需要给设计师<strong>提供明确的文字资料、想要突出的重点是什么、大概的颜色需求（因为需要跟整体的页面进行搭配）、图片的内容，更重要的是告诉设计师我们想要通过这个页面的排版表达一个什么样式含义</strong>。剩下的事情就交给设计师来处理吧。设计师需要做的就是把我们提供给他们的内容，进行打散重构，通过颜色构图把我们要表达的意思表达出来，并考虑用户的阅读顺序。当然，我们也不会指望设计师一次设计就能达成我们的想法，这里需要反复迭代，多次进行交流。这里设计师需要如何做，在下次的文章中进行描述。</p><h1 id="2、业务架构、原型设计"><a href="#2、业务架构、原型设计" class="headerlink" title="2、业务架构、原型设计"></a>2、业务架构、原型设计</h1><p>再说说设计师的另一种能力：对用户操作过程的设计、易用性设计（让用户便捷的操作系统）、交互控件的设计等及交互设计师的能力。设计师根据他的经验对用户操作界面进行可用性易用性设计，这里不仅仅是设计一两个图标，也不是设计按钮，而是用户的交互过程。<br>针对交互设计师的这方面能力，<strong>我们就需要给他们详细的讲述业务，可以跟设计师一起进行原型的设计，并提供操作时的真实数据</strong>。千万不要简单扔给设计师就不管了，设计师对业务了解肯定不如你更加熟悉，要跟他们讲透。这里一定要把设计师当小白，不要认为他们都了解了。设计过程中设计师会经常来骚扰你，这时展现你人格魅力的时候到来了，要充分表现出你的耐心。最终我们跟设计师一起打造出操作简捷、易用性好、页面结构合理、颜色图标重点突出的好的产品设计出来。设计师离不开你，需要大家相互配合才行。这里需要注意的是不要轻视设计师做的每一个图标和按钮，这些都是有意义的，对于这种东西，我们就交给设计师，然后关注业务逻辑就行了。</p><a id="more"></a><h1 id="3、手绘、信息图、讲故事、内容重构"><a href="#3、手绘、信息图、讲故事、内容重构" class="headerlink" title="3、手绘、信息图、讲故事、内容重构"></a>3、手绘、信息图、讲故事、内容重构</h1><p>我们都知道体验设计师多数都是学艺术专业的，即使不是学艺术专业的，多少也会画点画。但在长期的工作中，由于设计师基本不需要手绘，画画的能力在退化。为了让咱们的设计师把绘画的能力找回来，我们就需要让设计师们干这么一件事情：信息图。通过信息图来表达大段的文字，展现用户需要看的主要数据，就是通过图来讲故事。体验设计师应该具备更强的内容重构的能力，通过专业的设计技术和绘画能力，把枯燥乏味的数据变成生动的易读的信息图。我们要相信设计师能够给我们创造出不一样的数据展示方式，一开始可能会有些障碍，当我们完全发掘出了设计师身上的这种能力，逐渐的事情就会变的越来越容易顺畅。</p><h1 id="4、用户研究、需求调研、用户体验"><a href="#4、用户研究、需求调研、用户体验" class="headerlink" title="4、用户研究、需求调研、用户体验"></a>4、用户研究、需求调研、用户体验</h1><p>体验设计团队是目前事业部里专门研究用户体验的团队，但用户体验中一个十分重要的工作我们没有涉及，就是用户研究。不是我们的体验设计师们不想去做这方面的工作，而是因为用户研究是一个十分系统的工程，不仅仅需要投入一定的资金，同时还需要投入大量的时间和人力。以体验设计组目前这几个人是无法完成。这里要说明一下的是，在互联网公司，体验设计团队和研发团队的人员比例是1：3-5。这种比例就决定了，互联网公司里体验设计师是产品的主导团队。而我们的产品是按照客户的需求进行定制的，所以不需要体验设计团队来根据用户研究来设计产品的设计方向。<br>但是，并不是说我们就不需要用户研究。体验设计人员经过长期的内部培训和自我学习，做了大量的用户研究方法和用户体验知识的储备。我们需要做的就是把设计师的这种储备转变成为能力。如何去做呢？就是让体验设计师去接触客户和用户，了解他们的工作方式、工作场景、工作中的问题。在不改变现在事业部各团队工作方式的情况下，需求调研是体验设计师与客户接触的较好的时机。需求调研期间，需求调研研发负责人和体验设计负责人，共同参与，组成一个需求调研及用户研究小组。体验设计师在调研前要列出用户研究的内容，并在调研期间逐一进行，调研结束后完成用户研究报告。然后开始和研发团队一起进行原型设计，把用户研究的成果落实到产品设计中，设计出让用户更加满意的产品。这种用户研究方式较为省钱、省人、省时间。同时还能提升我们产品。</p><h1 id="5、交流、沟通工具、记录过程"><a href="#5、交流、沟通工具、记录过程" class="headerlink" title="5、交流、沟通工具、记录过程"></a>5、交流、沟通工具、记录过程</h1><p>最后给大家说一下与设计师们协作时现成的工具：任务跟踪软件（工单系统）、邮件、通讯软件。与体验设计师最好的协作方式是当面交流，当面交流是一种最为直接快捷的方式。交流完后，为了确保大家交流的结果和想法是否达成一致，需要有明确的文字说明。这里要跟大家强调一下的是，不要觉得麻烦就不进行文字说明。文字说明有两个作用：1、避免大家口头交流后的想法不在一个层面上，交流过程中有些地方没有说明白或者理解有偏差。2、我们在进行说明文字描述时，也是我们对自己的思路整理的过程，很多时候写着写着就会有好的想法迸发而出。需求说明描述完后，我们可以通过邮件或td发给设计师。这里建议用邮件，邮件可以反复交流，而且公司有规定邮件处理要及时，所以设计师不会漏掉我们发的需求邮件，同时还可以抄送给相关的同事关注这个事情。录工单就有些不太方便了，当然如果我们习惯了用公司的工单系统也没有关系，录工单也很好。体验设计师收到邮件后，有不确定的地方会电话或当面进行交流。交流结果如果和之前的邮件有出入或补充的话，体验设计师回复邮件进行描述。通过邮件，我们记录下了工作的整个过程和交流过程，并让相关的领导和同事都知道我们整个的工作的过程和结果。这样就不会出现做了很多的工作领导都不知道的情况，何乐而不为呢！</p><p>设计师还有其他的能力，这是后话了…</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-use-your-ui-emloyee/#disqus_thread</comments>
     </item>
@@ -455,27 +317,7 @@
       
       </description>
       
-      <content:encoded>&lt;p&gt;看到知乎有同学问网盘的文件列表如何进行导出，比如像是百度、dropbox、google drive、OneDrive是否存在导出列表命令，类似DOS命令Dir/S&lt;/p&gt;
-&lt;p&gt;首先请明确一个概念，dir之类的命令是针对操作系统的，百度网盘你可以认为是个网站，你的文件数据都存在数据库里面的，所以操作系统命令肯定不行&lt;/p&gt;
-&lt;p&gt;这里提供一个导出百度云盘文件列表可行的办法：&lt;/p&gt;
-&lt;p&gt;1.首先安装&lt;em&gt;云客户端，登陆一次，最好只用一个用户，&lt;em&gt;*方便后面找db文件&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;2.我没有设置安装路径，在类似这个文件夹路径下面&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;C:\Users\你的用户名\AppData\Roaming\baidu\BaiduNetdisk\users\6e1731cdddddddbb3231c1486f6f6b66&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;找到一个叫&lt;strong&gt;BaiduYunCacheFileV0.db&lt;/strong&gt;的文件&lt;/p&gt;
-&lt;p&gt;6e1731cdddddddbb3231c1486f6f6b66可能是个哈希码，你碰下运气就找到，或者你用Everything之类的文件搜索工具全盘搜索名字叫BaiduYunCacheFileV0.db的文件&lt;/p&gt;
-&lt;p&gt;3.安装&lt;strong&gt;SQLiteExpertPro&lt;/strong&gt;软件，一般是绿色版的，将BaiduYunCacheFileV0.db文件复制到另外一个地方，然后直接拖入SQLiteExpertPro即可&lt;/p&gt;
-&lt;p&gt;在sql的输入框中输入&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from cache_file&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;点击 &lt;strong&gt;execute sql&lt;/strong&gt;得到下图的结果&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx4.sinaimg.cn/large/7d6b7503ly1ffs8mq4ix3j212q0nwgpd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;（原谅我不羁的书法）&lt;/p&gt;
-&lt;p&gt;4.这个就是你说的文件目录列表了，&lt;strong&gt;parent_path&lt;/strong&gt;是父目录，&lt;strong&gt;server_filename&lt;/strong&gt;是文件名称&lt;/p&gt;
-&lt;p&gt;，具体怎么用看你。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;原理：&lt;/strong&gt;&lt;br&gt;其实百度云盘客户端将你的文件列表存放在了本地的一个sqllite数据库中的.db文件，找工具打开即可&lt;/p&gt;
-&lt;p&gt;*盘将用户文件列表存为明文，倒是也比较良心，方便自己查阅整理了&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/59979415/answer/171042842&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎问答链接&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>看到知乎有同学问网盘的文件列表如何进行导出，比如像是百度、dropbox、google drive、OneDrive是否存在导出列表命令，类似DOS命令Dir/S</p><p>首先请明确一个概念，dir之类的命令是针对操作系统的，百度网盘你可以认为是个网站，你的文件数据都存在数据库里面的，所以操作系统命令肯定不行</p><p>这里提供一个导出百度云盘文件列表可行的办法：</p><p>1.首先安装<em>云客户端，登陆一次，最好只用一个用户，<em>*方便后面找db文件</em></em></p><p>2.我没有设置安装路径，在类似这个文件夹路径下面</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\你的用户名\AppData\Roaming\baidu\BaiduNetdisk\users\6e1731cdddddddbb3231c1486f6f6b66</span><br></pre></td></tr></table></figure><p>找到一个叫<strong>BaiduYunCacheFileV0.db</strong>的文件</p><p>6e1731cdddddddbb3231c1486f6f6b66可能是个哈希码，你碰下运气就找到，或者你用Everything之类的文件搜索工具全盘搜索名字叫BaiduYunCacheFileV0.db的文件</p><p>3.安装<strong>SQLiteExpertPro</strong>软件，一般是绿色版的，将BaiduYunCacheFileV0.db文件复制到另外一个地方，然后直接拖入SQLiteExpertPro即可</p><p>在sql的输入框中输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from cache_file</span><br></pre></td></tr></table></figure><p>点击 <strong>execute sql</strong>得到下图的结果</p><a id="more"></a><p><img src="http://wx4.sinaimg.cn/large/7d6b7503ly1ffs8mq4ix3j212q0nwgpd.jpg" alt=""></p><p>（原谅我不羁的书法）</p><p>4.这个就是你说的文件目录列表了，<strong>parent_path</strong>是父目录，<strong>server_filename</strong>是文件名称</p><p>，具体怎么用看你。</p><p><strong>原理：</strong><br>其实百度云盘客户端将你的文件列表存放在了本地的一个sqllite数据库中的.db文件，找工具打开即可</p><p>*盘将用户文件列表存为明文，倒是也比较良心，方便自己查阅整理了</p><p><a href="https://www.zhihu.com/question/59979415/answer/171042842" target="_blank" rel="noopener">知乎问答链接</a></p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/how-to-looup-baiduyun-filelist/#disqus_thread</comments>
     </item>
@@ -487,10 +329,10 @@
       <pubDate>Tue, 09 May 2017 09:05:18 GMT</pubDate>
       <description>
       
-        &lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h1&gt;&lt;p&gt;1.&lt;a href=&quot;https://raw.githubusercontent.com/cloudroc/ximalaya-plugin/master/DIST/ximalaya_v1.0.0.crx&quot;&gt;下载插件安装包&lt;/a&gt;，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：&lt;/p&gt;
+        &lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h1&gt;&lt;p&gt;1.&lt;a href=&quot;https://raw.githubusercontent.com/cloudroc/ximalaya-plugin/master/DIST/ximalaya_v1.0.0.crx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载插件安装包&lt;/a&gt;，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zes36ej20nk075t9g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;2.无需特殊设置，打开喜马拉雅网站，进入某个专辑，点击某个声音查看进入明细页面，比如：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ximalaya.com/7712455/sound/2272558&quot;&gt;http://www.ximalaya.com/7712455/sound/2272558&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ximalaya.com/7712455/sound/2272558&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ximalaya.com/7712455/sound/2272558&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zdcpkjj20w30rf48f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;注意URL里面的sound单词，这个在后面的插件原理里面会讲&lt;/p&gt;
 &lt;p&gt;你会发现多出来两个链接&lt;strong&gt;“下载32kps音频”&lt;/strong&gt; &lt;strong&gt;“下载64kps音频”&lt;/strong&gt;，点击链接下载音频即可，是不是很简单…&lt;/p&gt;
@@ -501,29 +343,7 @@
       
       </description>
       
-      <content:encoded>&lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;使用方法&lt;/h1&gt;&lt;p&gt;1.&lt;a href=&quot;https://raw.githubusercontent.com/cloudroc/ximalaya-plugin/master/DIST/ximalaya_v1.0.0.crx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载插件安装包&lt;/a&gt;，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zes36ej20nk075t9g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2.无需特殊设置，打开喜马拉雅网站，进入某个专辑，点击某个声音查看进入明细页面，比如：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ximalaya.com/7712455/sound/2272558&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ximalaya.com/7712455/sound/2272558&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zdcpkjj20w30rf48f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;注意URL里面的sound单词，这个在后面的插件原理里面会讲&lt;/p&gt;
-&lt;p&gt;你会发现多出来两个链接&lt;strong&gt;“下载32kps音频”&lt;/strong&gt; &lt;strong&gt;“下载64kps音频”&lt;/strong&gt;，点击链接下载音频即可，是不是很简单…&lt;/p&gt;
-&lt;p&gt;应用图标是银河护卫队里面勇度的乐高版头像，希望以此纪念这位好父亲…&lt;/p&gt;
-&lt;p&gt;这里要注意的是&lt;br&gt;（1）下载后的文件格式为.m4a（一般的PC播放器都可以播放）&lt;/p&gt;
-&lt;p&gt;（2）32kps的音频可能只有24kps，这个是喜马的问题&lt;/p&gt;
-&lt;p&gt;（3）下载的文件名是一串乱码，最好自己改一下名字&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;插件原理&quot;&gt;&lt;a href=&quot;#插件原理&quot; class=&quot;headerlink&quot; title=&quot;插件原理&quot;&gt;&lt;/a&gt;插件原理&lt;/h1&gt;&lt;p&gt;记得我上面说到的声音明细页面URL中的sound吗，后面跟着的数字就是这个声音在喜马拉雅上面的唯一ID。&lt;/p&gt;
-&lt;p&gt;喜马拉雅在播放声音前会请求一个URL，比如：&lt;br&gt;&lt;a href=&quot;http://www.ximalaya.com/tracks/2272558.json&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ximalaya.com/tracks/2272558.json&lt;/a&gt;&lt;br&gt;获取一个包涵音频文件实际地址的json：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;id&amp;quot;: 2272558,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path_64&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path_32&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/6A/wKgDaVWVCC_hoDuwAEH7lqBPx3k059.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_path&amp;quot;: &amp;quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;duration&amp;quot;: 1400,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;title&amp;quot;: &amp;quot;银河帝国1_基地_08&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;nickname&amp;quot;: &amp;quot;大屁股老鼠哈哈笑&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;uid&amp;quot;: 7712455,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;waveform&amp;quot;: &amp;quot;group4/M02/0C/E7/wKgDtFMlI3qysDNYAAAKbDrnGSU1990.js&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;upload_id&amp;quot;: &amp;quot;u_2639732&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;cover_url&amp;quot;: &amp;quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006.jpg&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;cover_url_142&amp;quot;: &amp;quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006_web_large.jpg&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;formatted_created_at&amp;quot;: &amp;quot;3月16日 12:08&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_favorited&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;play_count&amp;quot;: 32701,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;comments_count&amp;quot;: 36,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;shares_count&amp;quot;: 0,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;favorites_count&amp;quot;: 92,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;album_id&amp;quot;: 244444,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;album_title&amp;quot;: &amp;quot;阿西莫夫_基地（银河帝国基地系列第一部）&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;intro&amp;quot;: &amp;quot;长篇科幻小说，基地，阿西莫夫[美]著，叶李华译，连载中...，播讲：哈哈笑。&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;have_more_intro&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;time_until_now&amp;quot;: &amp;quot;3年前&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;category_name&amp;quot;: &amp;quot;book&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;category_title&amp;quot;: &amp;quot;有声书&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;played_secs&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_paid&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;is_free&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;price&amp;quot;: null,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;discounted_price&amp;quot;: null&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;其中的play_path_64 play_path_32 就是64kps和32kps音频的实际服务器存放地址&lt;/p&gt;
-&lt;p&gt;然后事情就简单了，在chrome插件中注入一段js，根据这个id请求到实际地址，然后添加下载的链接即可&lt;/p&gt;
-&lt;p&gt;核心代码：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;quot;inject success!&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//音频Id&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var track_id = $(&amp;quot;.shareLink&amp;quot;).attr(&amp;quot;track_id&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&amp;quot;track_id=&amp;quot;+track_id);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var dataUrl = &amp;quot;http://www.ximalaya.com/tracks/&amp;quot;+track_id+&amp;quot;.json&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.get(dataUrl, function(result)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var href32 =  result.play_path_32; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	var href64 =  result.play_path_64;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	//增加按钮&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	$(&amp;apos;.sound_bottom .fr&amp;apos;).append(&amp;quot;&amp;lt;a class=&amp;apos;forwardBtn link1 down32&amp;apos; download href=&amp;apos;&amp;quot;+href32+&amp;quot;&amp;apos;&amp;gt;下载32kps音频&amp;lt;/a&amp;gt;&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	.append(&amp;quot;&amp;lt;a class=&amp;apos;forwardBtn link1 down64&amp;apos; download href=&amp;apos;&amp;quot;+href64+&amp;quot;&amp;apos;&amp;gt; 下载64kps音频&amp;lt;/a&amp;gt;&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h1 id=&quot;开发背景&quot;&gt;&lt;a href=&quot;#开发背景&quot; class=&quot;headerlink&quot; title=&quot;开发背景&quot;&gt;&lt;/a&gt;开发背景&lt;/h1&gt;&lt;p&gt;1.用了喜马好几年了，最近的广告越来越烦人，比如“XX老道勾引小妖精”这种声音广告特别烦人，而且即使不是在线听，缓存到手机，在联通网络的情况下还是会插播广告&lt;/p&gt;
-&lt;p&gt;2.所在company封网络，ximalya.com还有music.163.com都无法打开，让在线听歌也成了问题&lt;/p&gt;
-&lt;p&gt;基于以上两点，就花了点时间写出这个插件，可以提前将喜欢的有声读物下载到电脑上或者拷入手机&lt;/p&gt;
-&lt;p&gt;希望对您的生活和学习有帮助，enjoy~&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>1.<a href="https://raw.githubusercontent.com/cloudroc/ximalaya-plugin/master/DIST/ximalaya_v1.0.0.crx" target="_blank" rel="noopener">下载插件安装包</a>，拖进chrome浏览器的扩展程序内，这个操作需要打开chrome的开发者模式。安装完成之后应该是这样的：</p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zes36ej20nk075t9g.jpg" alt=""></p><p>2.无需特殊设置，打开喜马拉雅网站，进入某个专辑，点击某个声音查看进入明细页面，比如：</p><p><a href="http://www.ximalaya.com/7712455/sound/2272558" target="_blank" rel="noopener">http://www.ximalaya.com/7712455/sound/2272558</a></p><p><img src="http://wx2.sinaimg.cn/mw690/7d6b7503ly1fff3zdcpkjj20w30rf48f.jpg" alt=""></p><p>注意URL里面的sound单词，这个在后面的插件原理里面会讲</p><p>你会发现多出来两个链接<strong>“下载32kps音频”</strong> <strong>“下载64kps音频”</strong>，点击链接下载音频即可，是不是很简单…</p><p>应用图标是银河护卫队里面勇度的乐高版头像，希望以此纪念这位好父亲…</p><p>这里要注意的是<br>（1）下载后的文件格式为.m4a（一般的PC播放器都可以播放）</p><p>（2）32kps的音频可能只有24kps，这个是喜马的问题</p><p>（3）下载的文件名是一串乱码，最好自己改一下名字</p><a id="more"></a><h1 id="插件原理"><a href="#插件原理" class="headerlink" title="插件原理"></a>插件原理</h1><p>记得我上面说到的声音明细页面URL中的sound吗，后面跟着的数字就是这个声音在喜马拉雅上面的唯一ID。</p><p>喜马拉雅在播放声音前会请求一个URL，比如：<br><a href="http://www.ximalaya.com/tracks/2272558.json" target="_blank" rel="noopener">http://www.ximalaya.com/tracks/2272558.json</a><br>获取一个包涵音频文件实际地址的json：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;id&quot;: 2272558,</span><br><span class="line">    &quot;play_path_64&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&quot;,</span><br><span class="line">    &quot;play_path_32&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/6A/wKgDaVWVCC_hoDuwAEH7lqBPx3k059.m4a&quot;,</span><br><span class="line">    &quot;play_path&quot;: &quot;http://audio.xmcdn.com/group10/M08/35/72/wKgDZ1WVCBiSqUiVAKza8osLTaA696.m4a&quot;,</span><br><span class="line">    &quot;duration&quot;: 1400,</span><br><span class="line">    &quot;title&quot;: &quot;银河帝国1_基地_08&quot;,</span><br><span class="line">    &quot;nickname&quot;: &quot;大屁股老鼠哈哈笑&quot;,</span><br><span class="line">    &quot;uid&quot;: 7712455,</span><br><span class="line">    &quot;waveform&quot;: &quot;group4/M02/0C/E7/wKgDtFMlI3qysDNYAAAKbDrnGSU1990.js&quot;,</span><br><span class="line">    &quot;upload_id&quot;: &quot;u_2639732&quot;,</span><br><span class="line">    &quot;cover_url&quot;: &quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006.jpg&quot;,</span><br><span class="line">    &quot;cover_url_142&quot;: &quot;http://fdfs.xmcdn.com/group4/M01/0C/ED/wKgDs1MlI7-x71uZAAGl7WuFCDY006_web_large.jpg&quot;,</span><br><span class="line">    &quot;formatted_created_at&quot;: &quot;3月16日 12:08&quot;,</span><br><span class="line">    &quot;is_favorited&quot;: false,</span><br><span class="line">    &quot;play_count&quot;: 32701,</span><br><span class="line">    &quot;comments_count&quot;: 36,</span><br><span class="line">    &quot;shares_count&quot;: 0,</span><br><span class="line">    &quot;favorites_count&quot;: 92,</span><br><span class="line">    &quot;album_id&quot;: 244444,</span><br><span class="line">    &quot;album_title&quot;: &quot;阿西莫夫_基地（银河帝国基地系列第一部）&quot;,</span><br><span class="line">    &quot;intro&quot;: &quot;长篇科幻小说，基地，阿西莫夫[美]著，叶李华译，连载中...，播讲：哈哈笑。&quot;,</span><br><span class="line">    &quot;have_more_intro&quot;: false,</span><br><span class="line">    &quot;time_until_now&quot;: &quot;3年前&quot;,</span><br><span class="line">    &quot;category_name&quot;: &quot;book&quot;,</span><br><span class="line">    &quot;category_title&quot;: &quot;有声书&quot;,</span><br><span class="line">    &quot;played_secs&quot;: null,</span><br><span class="line">    &quot;is_paid&quot;: false,</span><br><span class="line">    &quot;is_free&quot;: null,</span><br><span class="line">    &quot;price&quot;: null,</span><br><span class="line">    &quot;discounted_price&quot;: null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>其中的play_path_64 play_path_32 就是64kps和32kps音频的实际服务器存放地址</p><p>然后事情就简单了，在chrome插件中注入一段js，根据这个id请求到实际地址，然后添加下载的链接即可</p><p>核心代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;inject success!&quot;);</span><br><span class="line"></span><br><span class="line">//音频Id</span><br><span class="line">var track_id = $(&quot;.shareLink&quot;).attr(&quot;track_id&quot;);</span><br><span class="line"></span><br><span class="line">console.log(&quot;track_id=&quot;+track_id);</span><br><span class="line"></span><br><span class="line">var dataUrl = &quot;http://www.ximalaya.com/tracks/&quot;+track_id+&quot;.json&quot;;</span><br><span class="line"></span><br><span class="line">$.get(dataUrl, function(result)&#123;</span><br><span class="line">var href32 =  result.play_path_32; </span><br><span class="line">var href64 =  result.play_path_64;</span><br><span class="line">//增加按钮</span><br><span class="line">$(&apos;.sound_bottom .fr&apos;).append(&quot;&lt;a class=&apos;forwardBtn link1 down32&apos; download href=&apos;&quot;+href32+&quot;&apos;&gt;下载32kps音频&lt;/a&gt;&quot;)</span><br><span class="line">.append(&quot;&lt;a class=&apos;forwardBtn link1 down64&apos; download href=&apos;&quot;+href64+&quot;&apos;&gt; 下载64kps音频&lt;/a&gt;&quot;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p><h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>1.用了喜马好几年了，最近的广告越来越烦人，比如“XX老道勾引小妖精”这种声音广告特别烦人，而且即使不是在线听，缓存到手机，在联通网络的情况下还是会插播广告</p><p>2.所在company封网络，ximalya.com还有music.163.com都无法打开，让在线听歌也成了问题</p><p>基于以上两点，就花了点时间写出这个插件，可以提前将喜欢的有声读物下载到电脑上或者拷入手机</p><p>希望对您的生活和学习有帮助，enjoy~</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/ximalaya-plugin/#disqus_thread</comments>
     </item>
@@ -535,20 +355,15 @@
       <pubDate>Mon, 17 Apr 2017 13:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;图片来自咬人画的&lt;/p&gt;
+        
+        
+          &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;图片来自咬人画的&lt;/p&gt;
 &lt;p&gt;早上看到咬人更新漫画，点进去看到了这幅图，在绿地上面有几株绿树，后面
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;图片来自咬人画的&lt;/p&gt;
-&lt;p&gt;早上看到咬人更新漫画，点进去看到了这幅图，在绿地上面有几株绿树，后面的背景是密密麻麻的厂房，突然触发的却是思乡的情愫。&lt;/p&gt;
-&lt;p&gt;经常会有人问我是哪的人，每次回答的时候都很扭捏。有时回答是父亲的家乡，有时回答的是从小长大的那个城镇，有时就干脆说自己是XX省人。&lt;/p&gt;
-&lt;p&gt;我觉得我的故乡应该是从小看到大的那片厂房和烟囱。&lt;/p&gt;
-&lt;p&gt;空气中总是弥漫着化肥厂的氨气味。晚上看不到星星，因为旁边的炼油厂的大火炬一直在燃烧着浓烟，天色一直都是可爱的暗红色。直到懂事后第一次回到父亲的老家，才知道什么什么叫做星空，晚上不点灯为什么会伸手不见十指。&lt;/p&gt;
-&lt;p&gt;有人会说这种真的不适合孩子成长，现在看来的确是这样。但是我从0岁到16岁基本所有的时间都是在这些厂房周围长大的，在我看来没有什么比这些厂房和烟囱更能定义为故乡。&lt;/p&gt;
-&lt;p&gt;我这样的人现在被人称为子弟。还有一个叫杨潇的人出了一本书叫《子弟》，虽然没有读，仅仅读了一下介绍就有很强的认同感，讲的就是我这样一代人成长的故事。&lt;/p&gt;
-&lt;p&gt;我想如果我有幸有了自己的下一代，他/她的故乡应该是一片片的高层建筑以及高新区吧&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p><img src="http://wx1.sinaimg.cn/mw690/7d6b7503gy1fepqvpd33hj20qe0g0q4k.jpg" alt=""><br>图片来自咬人画的</p><p>早上看到咬人更新漫画，点进去看到了这幅图，在绿地上面有几株绿树，后面的背景是密密麻麻的厂房，突然触发的却是思乡的情愫。</p><p>经常会有人问我是哪的人，每次回答的时候都很扭捏。有时回答是父亲的家乡，有时回答的是从小长大的那个城镇，有时就干脆说自己是XX省人。</p><p>我觉得我的故乡应该是从小看到大的那片厂房和烟囱。</p><p>空气中总是弥漫着化肥厂的氨气味。晚上看不到星星，因为旁边的炼油厂的大火炬一直在燃烧着浓烟，天色一直都是可爱的暗红色。直到懂事后第一次回到父亲的老家，才知道什么什么叫做星空，晚上不点灯为什么会伸手不见十指。</p><p>有人会说这种真的不适合孩子成长，现在看来的确是这样。但是我从0岁到16岁基本所有的时间都是在这些厂房周围长大的，在我看来没有什么比这些厂房和烟囱更能定义为故乡。</p><p>我这样的人现在被人称为子弟。还有一个叫杨潇的人出了一本书叫《子弟》，虽然没有读，仅仅读了一下介绍就有很强的认同感，讲的就是我这样一代人成长的故事。</p><p>我想如果我有幸有了自己的下一代，他/她的故乡应该是一片片的高层建筑以及高新区吧</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/homeland/#disqus_thread</comments>
     </item>
@@ -560,20 +375,15 @@
       <pubDate>Tue, 11 Apr 2017 09:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能重装系统。&lt;/p&gt;
+        
+        
+          &lt;p&gt;最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能重装系统。&lt;/p&gt;
 &lt;p&gt;今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行&lt;strong&gt;hexo d&lt;/strong&gt;命令进行发布
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能重装系统。&lt;/p&gt;
-&lt;p&gt;今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行&lt;strong&gt;hexo d&lt;/strong&gt;命令进行发布的时候突然就报错了：&lt;/p&gt;
-&lt;p&gt;以下是比较详细的报错信息：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;INFO  Deploying: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;INFO  Clearing .deploy_git folder...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;INFO  Copying files from public folder...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;apos;git&amp;apos; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;�������ļ�&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FATAL Something&amp;apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Error: spawn git ENOENT&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FATAL spawn git ENOENT&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Error: spawn git ENOENT&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;搜索了很久，说由于git安装的有问题或者git环境变量没有配置，但是重装过几次git，并且从新配置了环境变量也是没有效果，报错是一样的。&lt;/p&gt;
-&lt;p&gt;最后看到有人说要用gitbash执行可以解决这个问题，所以打开git shell执行了下&lt;strong&gt; hexo d&lt;/strong&gt;，果然发布成功…&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;所以这个问题的解决方案就是gitbash执行 hexo的发布命令&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同时碰到另外一个问题：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Please make sure you have the correct access rights&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;and the repository exists.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FATAL Something&amp;apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Error: Warning: Permanently added &amp;apos;git.coding.net,61.133.64.67&amp;apos; (RSA) to the list of known hosts.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fatal: Could not read from remote repository.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;....&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这个主要是重装系统后coding.net的公钥没有重新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章&lt;a href=&quot;http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题&lt;/a&gt;从新配置下coding.net上面的公钥即可&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>最近win10系统升级，可能由于操作失误，导致以前的word文档和ppt都打不开了，这很耽误工作，所以只能重装系统。</p><p>今天想更新下博客的时候，从新安装了下hexo，因为博客有备份所以有恃无恐，但是当运行<strong>hexo d</strong>命令进行发布的时候突然就报错了：</p><p>以下是比较详细的报错信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">&apos;git&apos; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���</span><br><span class="line">�������ļ�</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br><span class="line">FATAL spawn git ENOENT</span><br><span class="line">Error: spawn git ENOENT</span><br><span class="line">    at notFoundError (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:8:11)</span><br><span class="line">    at verifyENOENT (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:43:16)</span><br><span class="line">    at ChildProcess.cp.emit (D:\workspace\GitHub\hexo_blog\node_modules\hexo-deployer-git\node_modules\hexo-util\node_modules\cross-spawn\node_modules\cross-spawn-async\lib\enoent.js:30:19)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:204:12)</span><br></pre></td></tr></table></figure></p><p>搜索了很久，说由于git安装的有问题或者git环境变量没有配置，但是重装过几次git，并且从新配置了环境变量也是没有效果，报错是一样的。</p><p>最后看到有人说要用gitbash执行可以解决这个问题，所以打开git shell执行了下<strong> hexo d</strong>，果然发布成功…</p><p><strong>所以这个问题的解决方案就是gitbash执行 hexo的发布命令</strong></p><p>同时碰到另外一个问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Warning: Permanently added &apos;git.coding.net,61.133.64.67&apos; (RSA) to the list of known hosts.</span><br><span class="line">Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p><p>这个主要是重装系统后coding.net的公钥没有重新配置，如果您也遇到这个问题的话，请查看我以前的这篇文章<a href="http://blog.jarjar.cn/how-to-deploy-hexo-to-both-github-and-coding/" target="_blank" rel="noopener">将hexo博客（github pages）同时同步托管到github和coding.net,解决百度不收录问题</a>从新配置下coding.net上面的公钥即可</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/hexo-git-problems/#disqus_thread</comments>
     </item>
@@ -585,16 +395,15 @@
       <pubDate>Tue, 28 Mar 2017 13:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。&lt;/p&gt;
+        
+        
+          &lt;p&gt;七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。&lt;/p&gt;
 &lt;p&gt;再就是很多软文说人每七年会变为另一个人，因为细胞确实7年左右更新一次。针对这点，我记得神经细胞好像终身不会更新的，从这个角度看，你还
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。&lt;/p&gt;
-&lt;p&gt;再就是很多软文说人每七年会变为另一个人，因为细胞确实7年左右更新一次。针对这点，我记得神经细胞好像终身不会更新的，从这个角度看，你还是以前的那个人吧。&lt;/p&gt;
-&lt;p&gt;早上和熟识但是不在一个部门的同事一起抽了一根烟，他问我最近忙吗？我说：“老板天天付工资给我，我必须天天忙才对。”他默默笑道：“呵呵，你成长了”&lt;/p&gt;
-&lt;p&gt;10年毕业到现在为止已经是七年了。&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p>七在歪国人的眼里是个有魔力的数字，因为上帝创造世界用了六天，第七天他就安息了，并赐福给第七日，所以西方人对7这个数字很有好感。</p><p>再就是很多软文说人每七年会变为另一个人，因为细胞确实7年左右更新一次。针对这点，我记得神经细胞好像终身不会更新的，从这个角度看，你还是以前的那个人吧。</p><p>早上和熟识但是不在一个部门的同事一起抽了一根烟，他问我最近忙吗？我说：“老板天天付工资给我，我必须天天忙才对。”他默默笑道：“呵呵，你成长了”</p><p>10年毕业到现在为止已经是七年了。</p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/seven-years/#disqus_thread</comments>
     </item>
@@ -606,59 +415,18 @@
       <pubDate>Sat, 04 Mar 2017 09:05:18 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;strong&gt;什么是大型网站？&lt;/strong&gt;&lt;/p&gt;
+        
+        
+          &lt;p&gt;&lt;strong&gt;什么是大型网站？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;关于大型网站的解释，在学术上并没有精确的定义。但是作为一个大型网站，数据量和访问量二者是缺一不可的，此外，除了海量数据和高并发的访问量，网站本身的业务逻辑和系统的复杂度也是一个很重要的考量方面。&lt;/p&gt;
 &lt;p
+        
       
       </description>
       
-      <content:encoded>&lt;p&gt;&lt;strong&gt;什么是大型网站？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;关于大型网站的解释，在学术上并没有精确的定义。但是作为一个大型网站，数据量和访问量二者是缺一不可的，此外，除了海量数据和高并发的访问量，网站本身的业务逻辑和系统的复杂度也是一个很重要的考量方面。&lt;/p&gt;
-&lt;p&gt;网站技术发展最初，通常是使用JAVA技术进行单机构建网站，但是随着数据量和访问量不断增长、业务逻辑复杂度不断增加，网站结构也逐渐发生了变化。当初始单机构建的网站负载告警后，采取数据库和应用分离可暂时从一定程度上缓解系统压力；随着生产过程中使用量增加，应用服务器负载告警，我们采取将应用服务器走向集群部署的形式来缓解应用的访问压力。并且在这个过程中引入了负载均衡设备且解决了服务器变为集群环境后SESSION会话数据的管理问题；然而，业务的发展激增使得数据库读写压力很大，于是我们采取数据库读写分离的方式缓解数据库的压力。可是，在当前数据读的压力遇到瓶颈后，往往会采取分布式缓存系统技术来进一步分担数据库的读压力。尽管我们采取了增加缓存，读写分离的方式，这个数据库压力也是在继续飙升，因为业务复杂度和访问量在持续飙升，因此，要解决这个问题，我们开始考虑分布式数据库和数据库水平拆分、垂直拆分的思路，即将数据库进行分布式部署或者使用专库专用、数据分割的水平拆分方式。&lt;/p&gt;
-&lt;p&gt;然而，在数据库的问题解决后，应用程序继续面临着新的挑战，应用压力在持续性增大。这时，我们要考虑就是应该把应用拆分开，将一个应用根据业务划分拆分成多个业务应用（这个在很多大型业务系统中都有体现）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;JAVA中间件是什么?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;字面意思是基于JAVA技术构建的中间件，处于“中间位置”的组件。因此，它既可以是应用与应用之间的桥梁，也可以是应用和服务之间的桥梁。特定的中间件是解决特定场景下问题的组件，它能够让软件开发人员专注于自己的开发。当今的JAVA中间件包括但不限于下面三个领域：远程过程调用和对象访问的中间件、消息中间件、数据访问中间件。&lt;br&gt;当今，随着技术和程序管理思路上的进步，很多大型网站开始走服务化的路子，将散落在各个业务的代码集中起来提供统一服务调用，同时也一定程度上降低了数据库的连接。应用间交互的服务通过服务中心来集中，由专门小团队维护，相对来说也提高了系统对外交互的稳定性。&lt;br&gt;从传统意义上来讲，作为目前互联网应用的流行工具，消息中间件为我们带来异步数据交换的特性，它对系统进行了解耦，同时为系统间数据交互提供了种种可靠的机制来保证数据收发的一致性，因此它的存在为数据交互带来了很大便利性和价值。&lt;/p&gt;
-&lt;p&gt;技术绝不仅仅是脱离业务使用而孤立存在的，它总是通过解决某种问题而产生和进步的。如《程序员的职业素养》书中所写：&lt;strong&gt;深刻理解业务目标。这并不是说你必须成为业务方面的老学究，而是说你需要理解手上正在编写的代码的业务价值是什么，了解雇佣你的企业将如何从你的工作中获得回报。&lt;/strong&gt;&lt;/p&gt;
-</content:encoded>
+      <content:encoded><![CDATA[<p><strong>什么是大型网站？</strong></p><p>关于大型网站的解释，在学术上并没有精确的定义。但是作为一个大型网站，数据量和访问量二者是缺一不可的，此外，除了海量数据和高并发的访问量，网站本身的业务逻辑和系统的复杂度也是一个很重要的考量方面。</p><p>网站技术发展最初，通常是使用JAVA技术进行单机构建网站，但是随着数据量和访问量不断增长、业务逻辑复杂度不断增加，网站结构也逐渐发生了变化。当初始单机构建的网站负载告警后，采取数据库和应用分离可暂时从一定程度上缓解系统压力；随着生产过程中使用量增加，应用服务器负载告警，我们采取将应用服务器走向集群部署的形式来缓解应用的访问压力。并且在这个过程中引入了负载均衡设备且解决了服务器变为集群环境后SESSION会话数据的管理问题；然而，业务的发展激增使得数据库读写压力很大，于是我们采取数据库读写分离的方式缓解数据库的压力。可是，在当前数据读的压力遇到瓶颈后，往往会采取分布式缓存系统技术来进一步分担数据库的读压力。尽管我们采取了增加缓存，读写分离的方式，这个数据库压力也是在继续飙升，因为业务复杂度和访问量在持续飙升，因此，要解决这个问题，我们开始考虑分布式数据库和数据库水平拆分、垂直拆分的思路，即将数据库进行分布式部署或者使用专库专用、数据分割的水平拆分方式。</p><p>然而，在数据库的问题解决后，应用程序继续面临着新的挑战，应用压力在持续性增大。这时，我们要考虑就是应该把应用拆分开，将一个应用根据业务划分拆分成多个业务应用（这个在很多大型业务系统中都有体现）。</p><p><strong>JAVA中间件是什么?</strong></p><p>字面意思是基于JAVA技术构建的中间件，处于“中间位置”的组件。因此，它既可以是应用与应用之间的桥梁，也可以是应用和服务之间的桥梁。特定的中间件是解决特定场景下问题的组件，它能够让软件开发人员专注于自己的开发。当今的JAVA中间件包括但不限于下面三个领域：远程过程调用和对象访问的中间件、消息中间件、数据访问中间件。<br>当今，随着技术和程序管理思路上的进步，很多大型网站开始走服务化的路子，将散落在各个业务的代码集中起来提供统一服务调用，同时也一定程度上降低了数据库的连接。应用间交互的服务通过服务中心来集中，由专门小团队维护，相对来说也提高了系统对外交互的稳定性。<br>从传统意义上来讲，作为目前互联网应用的流行工具，消息中间件为我们带来异步数据交换的特性，它对系统进行了解耦，同时为系统间数据交互提供了种种可靠的机制来保证数据收发的一致性，因此它的存在为数据交互带来了很大便利性和价值。</p><p>技术绝不仅仅是脱离业务使用而孤立存在的，它总是通过解决某种问题而产生和进步的。如《程序员的职业素养》书中所写：<strong>深刻理解业务目标。这并不是说你必须成为业务方面的老学究，而是说你需要理解手上正在编写的代码的业务价值是什么，了解雇佣你的企业将如何从你的工作中获得回报。</strong></p>]]></content:encoded>
       
       <comments>http://www.jarjar.cn/book-about-java-middleware/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用PyEnchant库进行单词拼写检查</title>
-      <link>http://www.jarjar.cn/check-spell-with-pyenchant/</link>
-      <guid>http://www.jarjar.cn/check-spell-with-pyenchant/</guid>
-      <pubDate>Tue, 28 Feb 2017 11:05:18 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;好的域名的一个标准就是最好是一个完整的英文单词，或者有意义
-      
-      </description>
-      
-      <content:encoded>&lt;p&gt;尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用&lt;strong&gt;python中的PyEnchant库&lt;/strong&gt;进行单词拼写检查。&lt;/p&gt;
-&lt;h1 id=&quot;PyEnchant安装&quot;&gt;&lt;a href=&quot;#PyEnchant安装&quot; class=&quot;headerlink&quot; title=&quot;PyEnchant安装&quot;&gt;&lt;/a&gt;PyEnchant安装&lt;/h1&gt;&lt;p&gt;官网有安装教程，附上链接&lt;a href=&quot;http://pythonhosted.org/pyenchant/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pythonhosted.org/pyenchant/download.html&lt;/a&gt;&lt;br&gt;这里主要碰到的问题是，官方仅提供了32bit的windows安装包，安装之后64位windows系统会报错&lt;/p&gt;
-&lt;p&gt;64位系统报错信息：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Traceback (most recent call last):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;_test.py&amp;quot;, line 1, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    import enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;C:\Python27\lib\site-packages\enchant\__init__.py&amp;quot;, line 92, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    from enchant import _enchant as _e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  File &amp;quot;C:\Python27\lib\site-packages\enchant\_enchant.py&amp;quot;, line 102, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    raise WinError()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;WindowsError: [Error 193] &amp;lt;no description&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;所以最好使用Linux或者Mac作为开发系统…&lt;/p&gt;
-&lt;h1 id=&quot;PyEnchant简单使用&quot;&gt;&lt;a href=&quot;#PyEnchant简单使用&quot; class=&quot;headerlink&quot; title=&quot;PyEnchant简单使用&quot;&gt;&lt;/a&gt;PyEnchant简单使用&lt;/h1&gt;&lt;h2 id=&quot;示例1：仅使用en-US库进行校验&quot;&gt;&lt;a href=&quot;#示例1：仅使用en-US库进行校验&quot; class=&quot;headerlink&quot; title=&quot;示例1：仅使用en_US库进行校验&quot;&gt;&lt;/a&gt;示例1：仅使用en_US库进行校验&lt;/h2&gt;&lt;p&gt;python代码：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;en_dict = enchant.Dict(&lt;span class=&quot;string&quot;&gt;&quot;en_US&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# sample worldshift.net&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; en_dict.check(&lt;span class=&quot;string&quot;&gt;&quot;worldshift&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; en_dict.suggest(&lt;span class=&quot;string&quot;&gt;&quot;worldshift&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;输出结果：&lt;br&gt;python domain_check.py&lt;br&gt;False&lt;br&gt;[‘world shift’, ‘world-shift’, ‘worldliest’, ‘redshift’, ‘afterworld’, ‘Wordsworth’, ‘Waldensian’, ‘validation’]&lt;/p&gt;
-&lt;p&gt;结果说明这个域名不错是两个单词的拼接&lt;/p&gt;
-&lt;h2 id=&quot;示例2：使用自定义词库&quot;&gt;&lt;a href=&quot;#示例2：使用自定义词库&quot; class=&quot;headerlink&quot; title=&quot;示例2：使用自定义词库&quot;&gt;&lt;/a&gt;示例2：使用自定义词库&lt;/h2&gt;&lt;p&gt;my_words.txt 是本地的词库，里面只有一行记录就是 “OK”&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;my_dict = enchant.request_pwl_dict(&lt;span class=&quot;string&quot;&gt;&quot;my_words.txt&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# sample ok666.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; my_dict.check(&lt;span class=&quot;string&quot;&gt;&quot;OK666&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; my_dict.suggest(&lt;span class=&quot;string&quot;&gt;&quot;OK666&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输出结果：&lt;br&gt;python domain_check.py&lt;br&gt;False&lt;br&gt;[‘OK’]&lt;/p&gt;
-&lt;p&gt;结果说明符合了自己定义的词库规则，是一个符合某种条件的域名&lt;/p&gt;
-&lt;h2 id=&quot;示例3：多种词库混合使用&quot;&gt;&lt;a href=&quot;#示例3：多种词库混合使用&quot; class=&quot;headerlink&quot; title=&quot;示例3：多种词库混合使用&quot;&gt;&lt;/a&gt;示例3：多种词库混合使用&lt;/h2&gt;&lt;p&gt;提供示例&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; enchant&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2 = enchant.DictWithPWL(&lt;span class=&quot;string&quot;&gt;&quot;en_US&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;mywords.txt&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2.check(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d2.suggest(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;以上，希望对您的工作和学习有帮助&lt;/p&gt;
-</content:encoded>
-      
-      <comments>http://www.jarjar.cn/check-spell-with-pyenchant/#disqus_thread</comments>
     </item>
     
   </channel>

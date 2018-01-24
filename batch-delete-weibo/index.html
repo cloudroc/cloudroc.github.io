@@ -63,25 +63,17 @@
 
 
 
-<meta name="description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5
-没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。
-我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。
-这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
+<meta name="description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5 没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。 我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。 这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
 <meta property="og:type" content="article">
 <meta property="og:title" content="批量删除新浪微博">
 <meta property="og:url" content="http://www.jarjar.cn/batch-delete-weibo/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5
-没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。
-我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。
-这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
+<meta property="og:description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5 没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。 我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。 这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-04-16T12:25:46.831Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="批量删除新浪微博">
-<meta name="twitter:description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5
-没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。
-我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。
-这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
+<meta name="twitter:description" content="新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：http://weibo.com/lnk5 没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。 我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。 这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在co">
 
 
 
@@ -350,7 +342,7 @@
       
 
       
-        <p>新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：<a href="http://weibo.com/lnk5" target="_blank" rel="external">http://weibo.com/lnk5</a></p>
+        <p>新浪之前有个批量删除新浪微博的应用，但是因为官方接口收费已经下架了，有兴趣可继续关注他们的动态：<a href="http://weibo.com/lnk5" target="_blank" rel="noopener">http://weibo.com/lnk5</a></p>
 <p>没有批量删除的工具，只有两个方案：1.自己逐条删除 2.通过程序批量操作，如果你微博太多第一个方案实施还是相对有困难的。</p>
 <p>我采用第二种方案，通过在浏览器console里面执行脚本进行批量删除。</p>
 <p>这里有个问题，就是渣浪没有引入jquery的类库，这就造成了在console里面寻找元素的困难性。针对这个开始想到的是写个chrome插件在background里面引入，后来发现直接在console里面append元素就可以实现，有了jquery类库，其他都不是问题了。</p>
@@ -359,7 +351,7 @@
 <blockquote>
 <p>var fileref=document.createElement(‘script’)</p>
 <p>fileref.setAttribute(“type”,”text/javascript”)</p>
-<p>fileref.setAttribute(“src”, ‘<a href="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js" target="_blank" rel="external">http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js</a>‘)</p>
+<p>fileref.setAttribute(“src”, ‘<a href="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js" target="_blank" rel="noopener">http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js</a>‘)</p>
 <p>document.getElementsByTagName(“head”)[0].appendChild(fileref);</p>
 </blockquote>
 <p>（2）在页内寻找“删除”按钮模拟点击之后模拟点击“确定”</p>
@@ -507,7 +499,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -525,7 +517,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

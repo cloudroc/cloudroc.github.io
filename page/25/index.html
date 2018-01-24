@@ -69,6 +69,7 @@
 <meta property="og:url" content="http://www.jarjar.cn/page/25/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
 <meta property="og:description" content="某种原因留言关闭，如有问题请微信发给我">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凤凰山笔记">
 <meta name="twitter:description" content="某种原因留言关闭，如有问题请微信发给我">
@@ -235,6 +236,180 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/sae-gand-me/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="cloudroc">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="凤凰山笔记">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/sae-gand-me/" itemprop="url">
+                  SAE如何绑定Gandi免费.me域名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-12-13T22:15:40+08:00">
+                2012-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术宅/" itemprop="url" rel="index">
+                    <span itemprop="name">技术宅</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术宅/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天成功申请到了Gandi<strong>免费一年</strong>的.me域名，<a href="http://www.inspur.me/" target="_blank" rel="noopener">inspur.me</a> ,域名用的公司英文标示，哈哈。公司总是宣传云计算，索性把这个站暂时命名为<strong>云渣</strong>…</p>
+<p>关于如何申请.me域名，网上很多教程，各位自己去学习一下，我提供一个网址：<a href="http://www.myhack58.com/Article/free/72/2012/35699.htm" target="_blank" rel="noopener">http://www.myhack58.com/Article/free/72/2012/35699.htm</a></p>
+<p>这里主要讲讲SAE上如何绑定.me的域名：</p>
+<p>不管是godaddy还是Gandi这种外国注册的域名，最好把这种域名的DNS或者叫NS换成国内的DNSPOD，<a href="http://www.leyeang.com/" target="_blank" rel="noopener">leyeang</a>告诉我的…</p>
+<p><strong>Step 0</strong> 首先到DNSPOD中添加你在Gandi注册的.ME域名</p>
+<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me.jpg" target="_blank" rel="noopener"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me.jpg" alt="" title="sae-gandi-me"></a></p>
+<p><strong>Step 1</strong> 记下DNSPOD为你的域名生成的新的NS地址</p>
+<p><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me-1.jpg" target="_blank" rel="noopener"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me-1.jpg" alt="" title="sae-gandi-me-1"></a></p>
+<p><strong>Step 2</strong> 设置Gandi新注册域名的DNS<br>打开<a href="https://www.gandi.net/admin/domain" target="_blank" rel="noopener">https://www.gandi.net/admin/domain</a> ，默认是法文，最好选成英文，这样我反正能看懂呵呵。</p>
+<p>选择对应域名，然后选择对应的操作，这里选择Update DNS<br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/gandi-me-sae-2.jpg" target="_blank" rel="noopener"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/gandi-me-sae-2.jpg" alt="" title="gandi-me-sae-2"></a></p>
+<p>然后把<strong>Step1</strong> 中记录的NS值分别填到DNS1和DNS2中，点保存。</p>
+<p>&nbsp;</p>
+<p><strong>Step 3</strong> 最后一步，也是最关键的一步。设置DNSpod的指向。<br>如果绑定域名的时候sae告诉你</p>
+<blockquote>
+<p>请把inspur.me CNAME到jp.cname.cloudbbs.org以完成域名绑定。</p>
+<p>同时把abcefghj.inspur.me通过A记录解析到111.112.113.248以完成域名身份认证<br>可以按照下图来进行设置<br><a href="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me-4.jpg" target="_blank" rel="noopener"><img src="http://www.kaedeen.com/wp-content/uploads/2012/12/sae-gandi-me-4-150x150.jpg" alt="" title="sae-gandi-me-4"></a></p>
+</blockquote>
+<p>备注：今天看到朋友说，如果用中国大陆IP操作gandi的控制台可能会被封掉申请的时候我一直用的goagent做dai理，刚才截图貌似直接用本地地址登陆了，不知道会不会封掉。我刚才测试过还可以，不懂可以给我留言。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/my-new-funcitons-0/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -361,9 +536,9 @@
           
             <p>好几天没更新博客，最近博客又加了几个好玩的功能，和大家分享一下吧，哈哈。</p>
 <p><strong>function 0:jQuery浮云天气预报插件</strong></p>
-<p>看见博客上面漂浮的大太阳了吗？是我可耻的从<a href="http://nbsw.cc/扒拉下来的。呵呵，从这里获取[源码](http://julying.com/lab/weather/)挂到自己博客上吧。抽空再研究这位大大如何实现的吧，先膜拜下" target="_blank" rel="external">http://nbsw.cc/扒拉下来的。呵呵，从这里获取[源码](http://julying.com/lab/weather/)挂到自己博客上吧。抽空再研究这位大大如何实现的吧，先膜拜下</a></p>
+<p>看见博客上面漂浮的大太阳了吗？是我可耻的从<a href="http://nbsw.cc/扒拉下来的。呵呵，从这里获取[源码](http://julying.com/lab/weather/)挂到自己博客上吧。抽空再研究这位大大如何实现的吧，先膜拜下" target="_blank" rel="noopener">http://nbsw.cc/扒拉下来的。呵呵，从这里获取[源码](http://julying.com/lab/weather/)挂到自己博客上吧。抽空再研究这位大大如何实现的吧，先膜拜下</a></p>
 <p><strong>function 1:WordPress集成Qaptcha的滑动解锁插件–myQaptcha</strong></p>
-<p>昨天有个半青（见注0），一直在我留言板上发spam评论。我果断删了，又加上了一个滑动解锁才能评论的功能，但是估计对方是个伪程序猿用post的方式一直提交，当然加了解锁的限制之后他根本不可能提交spam评论！但是今天上午一看竟然造成了4w多垃圾pv，哎，研究了一下原来sae也有<strong>应用防火墙</strong>，就果断打开了。吃一堑长一智，但是这个解锁评论的功能我还是蛮喜欢的。大家快去<a href="http://blog.30c.org/2006.html" target="_blank" rel="external">这里</a>学习一下。</p>
+<p>昨天有个半青（见注0），一直在我留言板上发spam评论。我果断删了，又加上了一个滑动解锁才能评论的功能，但是估计对方是个伪程序猿用post的方式一直提交，当然加了解锁的限制之后他根本不可能提交spam评论！但是今天上午一看竟然造成了4w多垃圾pv，哎，研究了一下原来sae也有<strong>应用防火墙</strong>，就果断打开了。吃一堑长一智，但是这个解锁评论的功能我还是蛮喜欢的。大家快去<a href="http://blog.30c.org/2006.html" target="_blank" rel="noopener">这里</a>学习一下。</p>
 <p>我昨天调试遇到的主要问题就是，引用了两次jquery.min.js,主要是主题中的jquery类库比较老，于是果断换成新的了，又把他以前引用的jquery类库注释了，最后把插件中引用的谷歌的jquery-ui.min.js换成了本地的。加快了访问速度，伟大的墙…spam…</p>
 <p><strong>function 2:给WordPress添加评论等级和博主认证显示功能</strong></p>
 <p>具体要修改对应主题目录中的style.css和function.php，我也是从别人那里扒拉来的，附上源码以作备忘</p>
@@ -374,7 +549,7 @@
 <p><pre name="code" class="php">&lt;?php comment_author_link() ?&gt;</pre><br>查找到以后在其后面添加如下代码（我的就是在functions.php文件里面，因为主题不同，大家还是需要自行查找下的）：</p>
 <p><pre name="code" class="php">&lt;?php get_author_class($comment-&gt;comment_author_email,$comment-&gt;user_id)?&gt;</pre><br>如果你需要像我的一样给自己添加一个“博主认证”，那么就在上面代码的后面再添加下面的代码：</p>
 <p><pre name="code" class="php">&lt;?php if(user_can($comment-&gt;user_id, 1)){echo “<a title="博主认证" class="vip"></a>“;}; ?&gt;</pre><br>三、添加评论VIP 等级图片（上面已经说了，这个是使用了CSS sprites 合并，因此1个图片就搞定了）<br>把下载的图片上传到你的主题根目录的images 文件夹里即可</p>
-<p><a href="http://2.wellplay.sinaapp.com/wp-content/themes/weisay_heibai/images/vip.png" target="_blank" rel="external">VIP等级图片下载</a></p>
+<p><a href="http://2.wellplay.sinaapp.com/wp-content/themes/weisay_heibai/images/vip.png" target="_blank" rel="noopener">VIP等级图片下载</a></p>
 <p>&nbsp;</p>
 <p><em><strong>注释0：济南方言，意指二逼青年</strong></em></p>
 <p>&nbsp;</p>
@@ -532,7 +707,7 @@
       
         
           
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;记得03年刚上高中正好赶上人教版英语课本改版，第一篇课文讲的是<a href="http://baike.baidu.com/view/62223.htm" target="_blank" rel="external">汤姆·汉克斯</a>的荒岛余生，课文主题大概讲的是友谊，因为就记得一句：Friendship helps us understand who we are.当时的英语老师，是个教了很多年的旧版教材思维比较官方的老男人。他解释不通who we are这句话，就粗略的翻译为“我们是谁”。后来偶然听说他殴打一个女学生，学生家长找到学校来，他却躲在家里不敢上班，不再吐槽了……</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;记得03年刚上高中正好赶上人教版英语课本改版，第一篇课文讲的是<a href="http://baike.baidu.com/view/62223.htm" target="_blank" rel="noopener">汤姆·汉克斯</a>的荒岛余生，课文主题大概讲的是友谊，因为就记得一句：Friendship helps us understand who we are.当时的英语老师，是个教了很多年的旧版教材思维比较官方的老男人。他解释不通who we are这句话，就粗略的翻译为“我们是谁”。后来偶然听说他殴打一个女学生，学生家长找到学校来，他却躲在家里不敢上班，不再吐槽了……</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;说是奇怪，<strong>who you are</strong> 或者 <strong>who I am</strong>这种类似的句子，不断的出现我的英语课本上，包括中学英语和大学英语，后来开始追美剧，看美国电影了，类似的台词又时常会见到。</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;于是找了这个基督教的典故：</p>
 <blockquote>
@@ -697,10 +872,10 @@
           
             <p>因为伟大的Wall,国外很多网站都上不了，昨天看到月光博客发的一条微博说“Google+有了社群这个功能后，估计再也不可能在中国恢复正常访问了。”，杯桑……</p>
 <p>之前一直用<strong>goagent</strong>偶尔翻墙看看twitter什么的，但是十八大以来就goagent不能用了，于是搜集了一下解决方案，现在goagent已经基本恢复正常可以正常使用了。</p>
-<p>如果你还不知道什么是goagent或者不知道如何使用，就去<a href="http://www.x-berry.com/goagent" target="_blank" rel="external">这里</a>学习一下先。</p>
+<p>如果你还不知道什么是goagent或者不知道如何使用，就去<a href="http://www.x-berry.com/goagent" target="_blank" rel="noopener">这里</a>学习一下先。</p>
 <p>第一种解决方法是升级goagent到2.1版本的，如果说之前goagent已经配置好了不想再更换，可以在老版本的proxy.ini中把所有的 203.208.46.X 替换成 　 203.208.47.160|203.208.47.161|203.208.47.162|203.208.47.163| 203.208.47.164|203.208.47.165|203.208.47.166|203.208.47.167，重启goagent应该就可以了。</p>
 <p>可参看下图进行配置。</p>
-<p><a href="http://pic.filec2c.com/img/wpgogogo/0a7b2a31/" target="_blank" rel="external"><img src="http://pic.filec2c.com/img/wpgogogo/0a7b2a31/" alt=""></a></p>
+<p><a href="http://pic.filec2c.com/img/wpgogogo/0a7b2a31/" target="_blank" rel="noopener"><img src="http://pic.filec2c.com/img/wpgogogo/0a7b2a31/" alt=""></a></p>
 
           
         
@@ -865,7 +1040,7 @@
       
         
           
-            <p>昨天把换成wp4sae的3.4.1版本，现在很多插件都能直接使用了。但是貌似 <a href="http://wp4sae.org/author/elmerzhang/" target="_blank" rel="external">ElmerZhang</a> 现在把wp4sae放到新浪云商店专门去赚钱了，官方博客最后一次更新还是今年6月份的时候了，以后估计也只会更新云商店里面的了。</p>
+            <p>昨天把换成wp4sae的3.4.1版本，现在很多插件都能直接使用了。但是貌似 <a href="http://wp4sae.org/author/elmerzhang/" target="_blank" rel="noopener">ElmerZhang</a> 现在把wp4sae放到新浪云商店专门去赚钱了，官方博客最后一次更新还是今年6月份的时候了，以后估计也只会更新云商店里面的了。</p>
 <p>从开启sinaapp二级域名的博客开始，就一直想实现wp独立博客那种博文一旦有了回复会自动发邮件给评论的作者的功能。</p>
 <p>SAE的WordPress自带有<strong>WP-Mail-SMTP</strong>插件，在配置好邮箱设置后，默认可实现博文有评论时自动给博主发邮件提醒。但是阅读者发表评论后，一旦有了回复，是不会给阅读者（也就是这条评论的作者）发邮件提醒的。</p>
 <p><strong>所以要实现的功能概况来讲有两点：</strong></p>
@@ -874,9 +1049,9 @@
 <li>访客评论后收到回复也通过邮件被通知<br>几经谷歌终于找到了解决方案，现在和大家分享一下。</li>
 </ol>
 <p><strong>Step 0：</strong></p>
-<p>如果已经开启了<strong>WP-Mail-SMTP</strong> 那就先停用或者直接卸载掉吧，然后用<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="external"><strong>Configure SMTP</strong></a>这个插件来替代。</p>
+<p>如果已经开启了<strong>WP-Mail-SMTP</strong> 那就先停用或者直接卸载掉吧，然后用<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="noopener"><strong>Configure SMTP</strong></a>这个插件来替代。</p>
 <p><strong>Step 1:</strong></p>
-<p>在wordpress中配置<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="external"><strong>Configure SMTP</strong> </a>，参见下图</p>
+<p>在wordpress中配置<a href="http://www.ctdisk.com/file/13034820" target="_blank" rel="noopener"><strong>Configure SMTP</strong> </a>，参见下图</p>
 <p><img src="http://pic.filec2c.com/img/wpgogogo/0d25a927/" alt="" title="Configure SMTP配置"></p>
 <p>&nbsp;</p>
 <p><strong>注意：</strong>作者仅仅使用QQ邮箱实验成功（其他邮箱未试验），国内估计是某墙的存在，“Send e-mail via Gmail”您就别选了……还有就是SMTP username是完整的QQ邮箱，SMTP password 是你QQ邮箱的密码。</p>
@@ -1031,7 +1206,7 @@
       
         
           
-            <p>今天开始我SAE的Wordpress博客终于有自己的顶级域名啦：<a href="http://www.kaedeen.com/" target="_blank" rel="external">kaedeen.com</a></p>
+            <p>今天开始我SAE的Wordpress博客终于有自己的顶级域名啦：<a href="http://www.kaedeen.com/" target="_blank" rel="noopener">kaedeen.com</a></p>
 <p>顺便把皮肤也换了，这个皮肤看着好歹有点摩登的感觉了，呵呵</p>
 <p>但是网速不给力的时候打开还是有点卡，渣SAE是这样解释的：</p>
 <blockquote>
@@ -1040,178 +1215,6 @@
 <p>&nbsp;<br>所以下一步尽快搞个备案，或者直接用独立博客空间。</p>
 </blockquote>
 <p>&nbsp;</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.jarjar.cn/xiami-auto-checkin/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="cloudroc">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/3135295?v=4&s=460">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="凤凰山笔记">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="凤凰山笔记" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/xiami-auto-checkin/" itemprop="url">
-                  虾米自动签到
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-12-05T13:28:10+08:00">
-                2012-12-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/代码/" itemprop="url" rel="index">
-                    <span itemprop="name">代码</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/代码/啰B嗦/" itemprop="url" rel="index">
-                    <span itemprop="name">啰B嗦</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/代码/啰B嗦/技术宅/" itemprop="url" rel="index">
-                    <span itemprop="name">技术宅</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>上周末看了几位牛人用python写虾米网自动签到，其中还有一个利用sae平台上cron任务实现了自动签到。</p>
-<p>于是也顺便申请了一下sae上的python内测，来实验了一下虾米的自动签到，已经成功签到了两天，呵呵……</p>
-<p>以下是需要的代码，其中config.yaml是用来部署cron任务的。我现在是让它每天7：00自动执行自动签到，sae中有对应的cron日志可以检测是否执行成功。</p>
-<p><div style="background: #fdfdfd; color: black;"><a href="http://wellplay.sinaapp.com" target="_blank" rel="external">index.wsgi</a></div></p>
-<p><div class="source" style="font-family: Consolas, 'Lucida Console', 'Courier New'; color: #ffffff; background-color: #1e1e27;"><span style="color: #008800; font-style: italic; background-color: #0f140f;">01 </span><span style="color: #008800; font-style: italic; background-color: #0f140f;">#-<em>-coding:utf-8-</em>- </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">02 </span><span style="color: #ffffff;">from</span> <span style="color: #ffffff;">bottle</span> <span style="color: #ffffff;">import</span> <span style="color: #ffffff;">Bottle</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">run</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">03 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">04 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">sae</span><br><span style="color: #f810b0;">05 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">urllib2</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">06 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">urllib</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">07 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">cookielib</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">08 </span><span style="color: #ffffff;">import</span> <span style="color: #ffffff;">re</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">09 </span><br><span style="color: #f810b0;">10 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">11 </span><span style="color: #ffffff;">app</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">Bottle</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">12 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">13 </span><span style="color: #ffffff;">@app.route</span>(<span style="color: #0086d2;">‘/hello’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">14 </span><span style="color: #fb660a; font-weight: bold;">def</span> <span style="color: #ff0086; font-weight: bold;">hello</span><span style="color: #ffffff;">():</span><br><span style="color: #f810b0;">15 </span> <span style="color: #fb660a; font-weight: bold;">return</span> <span style="color: #0086d2;">“Hello, world! - Bottle”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">16 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">17 </span><span style="color: #ffffff;">@app.route</span>(<span style="color: #0086d2;">‘/xiamicheckin’</span> <span style="color: #ffffff;">,</span> <span style="color: #ffffff;">method</span><span style="color: #ffffff;">=</span><span style="color: #0086d2;">‘GET’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">18 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">19 </span><span style="color: #fb660a; font-weight: bold;">def</span> <span style="color: #ff0086; font-weight: bold;">xiami</span><span style="color: #ffffff;">():</span><br><span style="color: #f810b0;">20 </span> <span style="color: #ffffff;">email</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">“xxxx@qq.com”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">21 </span> <span style="color: #ffffff;">password</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">“<strong><strong>**</strong></strong>“</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">22 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">23 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Init</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">24 </span> <span style="color: #ffffff;">opener</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">build_opener</span>(<span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">HTTPCookieProcessor</span>(<span style="color: #ffffff;">cookielib</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">CookieJar</span>()))<br><span style="color: #f810b0;">25 </span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">install_opener</span>(<span style="color: #ffffff;">opener</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">26 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">27 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Login</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">28 </span> <span style="color: #ffffff;">login_url</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">‘<a href="http://www.xiami.com/web/login" target="_blank" rel="external">http://www.xiami.com/web/login</a>‘</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">29 </span> <span style="color: #ffffff;">login_data</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlencode</span><span style="color: #ffffff;">({</span><span style="color: #0086d2;">‘email’</span><span style="color: #ffffff;">:</span><span style="color: #ffffff;">email</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘password’</span><span style="color: #ffffff;">:</span><span style="color: #ffffff;">password</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘LoginButton’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘登陆’</span><span style="color: #ffffff;">,})</span><br><span style="color: #f810b0;">30 </span> <span style="color: #ffffff;">login_headers</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">{</span><span style="color: #0086d2;">‘Referer’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘<a href="http://www.xiami.com/web/login" target="_blank" rel="external">http://www.xiami.com/web/login</a>‘</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘User-Agent’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘Opera/9.60’</span><span style="color: #ffffff;">,}</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">31 </span> <span style="color: #ffffff;">login_request</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">Request</span>(<span style="color: #ffffff;">login_url</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">login_data</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">login_headers</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">32 </span> <span style="color: #ffffff;">login_response</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlopen</span>(<span style="color: #ffffff;">login_request</span>)<span style="color: #ffffff;">.</span><span style="color: #ffffff;">read</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">33 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">34 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;"># Checkin</span><br><span style="color: #f810b0;">35 </span> <span style="color: #ffffff;">checkin_pattern</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">re</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">compile</span>(<span style="color: #0086d2;">r’&lt;a class=”check_in” href=”(.*?)”&gt;’</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">36 </span> <span style="color: #ffffff;">checkin_result</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">checkin_pattern</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">search</span>(<span style="color: #ffffff;">login_response</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">37 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">38 </span> <span style="color: #008800; font-style: italic; background-color: #0f140f;">#return checkin_result.group(1)</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">39 </span><br><span style="color: #f810b0;">40 </span> <span style="color: #ffffff;">checkin_url</span> <span style="color: #ffffff;">=</span> <span style="color: #0086d2;">‘<a href="http://www.xiami.com" target="_blank" rel="external">http://www.xiami.com</a>‘</span> <span style="color: #ffffff;">+</span> <span style="color: #ffffff;">checkin_result</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">group</span>(<span style="color: #0086f7; font-weight: bold;">1</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">41 </span> <span style="color: #ffffff;">checkin_headers</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">{</span><span style="color: #0086d2;">‘Referer’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘<a href="http://www.xiami.com/web" target="_blank" rel="external">http://www.xiami.com/web</a>‘</span><span style="color: #ffffff;">,</span> <span style="color: #0086d2;">‘User-Agent’</span><span style="color: #ffffff;">:</span><span style="color: #0086d2;">‘Opera/9.60’</span><span style="color: #ffffff;">,}</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">42 </span> <span style="color: #ffffff;">checkin_request</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">Request</span>(<span style="color: #ffffff;">checkin_url</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">None</span><span style="color: #ffffff;">,</span> <span style="color: #ffffff;">checkin_headers</span>)<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">43 </span> <span style="color: #ffffff;">checkin_response</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">urllib2</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">urlopen</span>(<span style="color: #ffffff;">checkin_request</span>)<span style="color: #ffffff;">.</span><span style="color: #ffffff;">read</span>()<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">44 </span><br><span style="color: #f810b0;">45 </span> <span style="color: #fb660a; font-weight: bold;">return</span> <span style="color: #0086d2;">“whatever its done!”</span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">46 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">47 </span><br><span style="color: #008800; font-style: italic; background-color: #0f140f;">48 </span><span style="color: #ffffff;">application</span> <span style="color: #ffffff;">=</span> <span style="color: #ffffff;">sae</span><span style="color: #ffffff;">.</span><span style="color: #ffffff;">create_wsgi_app</span>(<span style="color: #ffffff;">app</span>)</div></p>
-<p><div style="background: #fdfdfd; color: black;"><span style="text-decoration: underline;">XML+Django/Jinja语言</span>: <a href="http://wellplay.sinaapp.com" target="_blank" rel="external">config.yaml</a></div></p>
-<p><div class="source" style="font-family: Consolas, 'Lucida Console', 'Courier New'; color: #ffffff; background-color: #1e1e27;"><span style="color: #008800; font-style: italic; background-color: #0f140f;">01 </span>—<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">02 </span>name: cloudroc<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">03 </span>version: 1<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">04 </span>accesskey: l4x2m5jwzj<br><span style="color: #f810b0;">05 </span>cron:<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">06 </span> - description: xiami_auto_checkin<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">07 </span> url: xiamicheckin<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">08 </span> schedule: every day of month 07:00<br><span style="color: #008800; font-style: italic; background-color: #0f140f;">09 </span> timezone: Beijing<br><span style="color: #f810b0;">10 </span>…</div><br>初学python感觉代码很草根，不像java那么博大精深看半天还感觉莫名奇妙，python里面模拟http请求的类库无比强大，也难怪google里面很多搜索元件都用python实现。</p>
-<p>就是python的缩进实在太头疼，开始config.yaml总是配置不成功，后来才发现是空格和tab都用了造成的，哎。</p>
 
           
         
@@ -1290,7 +1293,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1308,7 +1311,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

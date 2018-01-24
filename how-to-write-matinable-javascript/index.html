@@ -63,22 +63,18 @@
 
 
 
-<meta name="description" content="这段时间断断续续的在看这本书，总结一下读书心得。
-这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。
-为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
+<meta name="description" content="这段时间断断续续的在看这本书，总结一下读书心得。 这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。 为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编写可维护的JavaScript_读书总结">
 <meta property="og:url" content="http://www.jarjar.cn/how-to-write-matinable-javascript/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="这段时间断断续续的在看这本书，总结一下读书心得。
-这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。
-为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
+<meta property="og:description" content="这段时间断断续续的在看这本书，总结一下读书心得。 这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。 为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-01-29T13:29:58.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编写可维护的JavaScript_读书总结">
-<meta name="twitter:description" content="这段时间断断续续的在看这本书，总结一下读书心得。
-这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。
-为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
+<meta name="twitter:description" content="这段时间断断续续的在看这本书，总结一下读书心得。 这本书主要讲了什么？1、编程风格。介绍了JavaScript中流行的几种编程风格。2、编程实践。在实际运用当中，写JavaScript程序需要注意的一些tips，哪些东西应该用，哪些不应该用，如何使用。3、自动化。介绍了写JavaScript程序用到的一些工具，比如说合并、压缩、检查等工具。 为什么要讲编程风格？每个人都有自己的编程风格，比如说，h">
 
 
 
@@ -355,7 +351,7 @@
 <h1 id="能从这本书学到的东西："><a href="#能从这本书学到的东西：" class="headerlink" title="能从这本书学到的东西："></a>能从这本书学到的东西：</h1><p>避免使用全局变量。<br>在我们写的前端页面中，有许多全局变量。这么多全局变量是不提倡的。这本书给了一个解决方法就是：使用全局对象，把原来的全局变量当成属性放到全局对象里面去。这样就一个全局变量。容易控制。以后添加业务控制代码，直接添加属性就行。<br>UI松耦合。<br>一个UI界面由HTML、 CSS 和JavaScript三大部分组成。这三大部分耦合程度越低，代码的可维护性就会越高，同样出Bug的几率就越低。下面举例介绍一下如何实现松耦合。<br><a id="more"></a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">将JavaScript从CSS中分离。</span><br><span class="line">/*不好的写法*/</span><br><span class="line">.box &#123;</span><br><span class="line">    width: expression(document.body.offsetWidth + &quot;px&quot;);</span><br><span class="line">&#125;</span><br><span class="line">将CSS从JavaScript中分离。</span><br><span class="line">/*不好的写法*/</span><br><span class="line">element.style.color = &quot;red&quot;;</span><br><span class="line">element.style.left = &quot;10px&quot;;</span><br><span class="line">element.style.top = &quot;100px&quot;;</span><br><span class="line">element.style.visibility = &quot;visible&quot;;</span><br><span class="line">我们需要这样分离：</span><br><span class="line">/*好的写法*/</span><br><span class="line">.reveal &#123;</span><br><span class="line">    color: red;</span><br><span class="line">    left: 10px;</span><br><span class="line">    top: 100px;</span><br><span class="line">    visibility: visible;</span><br><span class="line">&#125;</span><br><span class="line">/*好的写法*/</span><br><span class="line">//原生写法</span><br><span class="line">element.className += &quot; reveal&quot;;</span><br><span class="line">//HTML5</span><br><span class="line">element.classList.add(&quot;reveal&quot;);</span><br><span class="line">//jQuery</span><br><span class="line">$(element).addClass(&quot;reveal&quot;);</span><br><span class="line">将JavaScript从HTML中抽离</span><br><span class="line">/*不好的写法*/</span><br><span class="line">&lt;button onclick=&quot;doSomething()&quot; id=&quot;action-btn&quot;&gt;Click Me&lt;/button&gt;</span><br><span class="line">/*好的写法*/</span><br><span class="line">//原生JavaScript方法</span><br><span class="line">document.getElementById(&quot;action-btn&quot;).onclick = function () &#123;</span><br><span class="line">   //codes</span><br><span class="line">&#125;;</span><br><span class="line">//jQuery</span><br><span class="line">$(&quot;#action-btn&quot;).on(&apos;Click&apos;, function () &#123;</span><br><span class="line">    //codes</span><br><span class="line">&#125;);</span><br><span class="line">将HTML代码从JavaScript中抽离</span><br><span class="line">/*不好的写法*/</span><br><span class="line">var div = document.getElementById(&quot;my-div&quot;);</span><br><span class="line">div.innerHTML = &quot;&lt;h3&gt;Error&lt;/h3&gt;&lt;p&gt;Invalid e-mail address.&lt;/p&gt;&quot;;</span><br><span class="line">好的写法就是利用JS模板。</span><br><span class="line">对于小html代码片段，直接拼字符串就可以；对于大段的html代码段，用模板比较好一些。</span><br></pre></td></tr></table></figure>
 <h1 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h1><p>虽然这本书很薄，200多页，但是里面讲的内容很重要，可以作为提高JavaScript程序可维护性的一个起点。</p>
-<h1 id="一些编码规范"><a href="#一些编码规范" class="headerlink" title="一些编码规范"></a>一些编码规范</h1><p><a href="https://github.com/ecomfe/spec/blob/master/html-style-guide.md" target="_blank" rel="external">Baidu EFE team HTML编码规范</a><br><a href="https://github.com/ecomfe/spec/blob/master/css-style-guide.md" target="_blank" rel="external">Baidu EFE team CSS编码规范</a><br><a href="https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md" target="_blank" rel="external">Baidu EFE team JavaScript编码规范</a><br><a href="https://github.com/styleguide" target="_blank" rel="external">GitHub 编码规范</a></p>
+<h1 id="一些编码规范"><a href="#一些编码规范" class="headerlink" title="一些编码规范"></a>一些编码规范</h1><p><a href="https://github.com/ecomfe/spec/blob/master/html-style-guide.md" target="_blank" rel="noopener">Baidu EFE team HTML编码规范</a><br><a href="https://github.com/ecomfe/spec/blob/master/css-style-guide.md" target="_blank" rel="noopener">Baidu EFE team CSS编码规范</a><br><a href="https://github.com/ecomfe/spec/blob/master/javascript-style-guide.md" target="_blank" rel="noopener">Baidu EFE team JavaScript编码规范</a><br><a href="https://github.com/styleguide" target="_blank" rel="noopener">GitHub 编码规范</a></p>
 
       
     </div>
@@ -502,7 +498,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -520,7 +516,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

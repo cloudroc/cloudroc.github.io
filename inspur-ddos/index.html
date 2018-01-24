@@ -64,11 +64,13 @@
 
 
 <meta name="description" content="写在前面：刚才有人人身威胁我，说的孔武有力的，这哥们手机号：15953100682，我把你不爽的那句话删了，其他都是事实，有劲你去找你们研发人员，为难自己员工，真的好意思吗？你们强制删微博，很好。这个博客的东西是我自己的，劳资哪怕不干了也不会删的。漏洞也当面告诉你们了，你们改不改BUG,看不看我博客你们随意。公司做了一个召出租车的软件，偶然发现了一个注册页面的短信验证码DDOS攻击漏洞。于是简单">
+<meta name="keywords" content="DDOS,爱召车">
 <meta property="og:type" content="article">
 <meta property="og:title" content="爱召车注册页面短信DDOS攻击漏洞">
 <meta property="og:url" content="http://www.jarjar.cn/inspur-ddos/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
 <meta property="og:description" content="写在前面：刚才有人人身威胁我，说的孔武有力的，这哥们手机号：15953100682，我把你不爽的那句话删了，其他都是事实，有劲你去找你们研发人员，为难自己员工，真的好意思吗？你们强制删微博，很好。这个博客的东西是我自己的，劳资哪怕不干了也不会删的。漏洞也当面告诉你们了，你们改不改BUG,看不看我博客你们随意。公司做了一个召出租车的软件，偶然发现了一个注册页面的短信验证码DDOS攻击漏洞。于是简单">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww2.sinaimg.cn/bmiddle/7d6b7503tw1e559r27qiwj20dc0nqtbb.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/bmiddle/7d6b7503jw1e594lvskq0j20g20cv75k.jpg">
 <meta property="og:updated_time" content="2016-04-16T12:25:46.831Z">
@@ -348,7 +350,7 @@
 <p>写在前面：<br>刚才有人人身威胁我，说的孔武有力的，这哥们手机号：15953100682，我把你不爽的那句话删了，其他都是事实，有劲你去找你们研发人员，为难自己员工，真的好意思吗？<br>你们强制删微博，很好。这个博客的东西是我自己的，劳资哪怕不干了也不会删的。漏洞也当面告诉你们了，你们改不改BUG,看不看我博客你们随意。<br>公司做了一个召出租车的软件，偶然发现了一个注册页面的短信验证码DDOS攻击漏洞。于是简单写个java类进行攻击测试，果然可以无限制发送垃圾短信。无奈这个也算自己公司做的，所以果断发微博@他们官方微博告知，没想到不一会就一个小姑娘给我打电话送来感谢话语，而且叮嘱马上关了程序吧，说工程师马上改……~hoho</p>
 </blockquote>
 <p>首先说下原理：短信验证码想法是好的，可以有效防止注册攻击。但是如果发送短信没有时间限制或者每日发送条数的显示，很容易被人用来制作短信炸弹。简单的说就是通过程序不断模拟发送短信的请求，从而对指定号码发送短信。当然现在都是智能手机，可以马上屏蔽掉，但是垃圾短信还是会发送到后台的，至少我用安卓手机测试是这样的。</p>
-<p>手机测试截图：<br><a href="http://ww2.sinaimg.cn/bmiddle/7d6b7503tw1e559r27qiwj20dc0nqtbb.jpg" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/bmiddle/7d6b7503tw1e559r27qiwj20dc0nqtbb.jpg" alt="" title="手机测试结果"></a></p>
+<p>手机测试截图：<br><a href="http://ww2.sinaimg.cn/bmiddle/7d6b7503tw1e559r27qiwj20dc0nqtbb.jpg" target="_blank" rel="noopener"><img src="http://ww2.sinaimg.cn/bmiddle/7d6b7503tw1e559r27qiwj20dc0nqtbb.jpg" alt="" title="手机测试结果"></a></p>
 <p><pre class="c-sharp">JAVA 测试类代码，继承了一个TimerTask类，大家懂得，可以写个定时器定时执行。他们已经改了，所以不用试了，仅供参考。</pre></p>
 <p>public class SmsBomb3 extends TimerTask{</p>
 <pre><code>public static int times=0;
@@ -552,7 +554,7 @@ public void run() {
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -570,7 +572,7 @@ public void run() {
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

@@ -63,23 +63,19 @@
 
 
 
-<meta name="description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。
-但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用…
-鉴于最近github打开的速度异常快，所以">
+<meta name="description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。 但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用… 鉴于最近github打开的速度异常快，所以">
+<meta name="keywords" content="hexo,github,npm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2016年使用Github写博客">
 <meta property="og:url" content="http://www.jarjar.cn/write-blog-with-github/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。
-但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用…
-鉴于最近github打开的速度异常快，所以">
+<meta property="og:description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。 但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用… 鉴于最近github打开的速度异常快，所以">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f2z1khtacej20bi0m8q5x.jpg">
 <meta property="og:updated_time" content="2016-04-16T17:37:02.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2016年使用Github写博客">
-<meta name="twitter:description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。
-但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用…
-鉴于最近github打开的速度异常快，所以">
+<meta name="twitter:description" content="why本来打算长期使用衡天主机作为博客的载体的，衡天有个好处除了能承载简单的php博客程序也可以部署goagent的php版，或者其他php类代理程序，而且主机在香港所以一直速度还是可以的。 但是最近这个简单的代理功能也不能用了。找了下客服，提供了ssh作为替代，但是一直也不能用，追问客服说“你懂得，最近开会呢…”，可是开完会都快一个月了也还是不能使用… 鉴于最近github打开的速度异常快，所以">
 <meta name="twitter:image" content="http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f2z1khtacej20bi0m8q5x.jpg">
 
 
@@ -359,7 +355,7 @@
 <h2 id="2-ERROR-Deployer-not-found-github-or-git"><a href="#2-ERROR-Deployer-not-found-github-or-git" class="headerlink" title="2.ERROR Deployer not found: github or git"></a>2.ERROR Deployer not found: github or git</h2><p>看了好几个教程写的deploy的配置，写的千奇百怪<br>我的hexo版本是3.2.0,，正确的配置是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/cloudroc/cloudroc.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: a little wroks</span><br></pre></td></tr></table></figure></p>
 <p>同时需要安装hexo git插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>这样正常运行 hexo deploy就可以部署到git了</p>
-<h2 id="3-从wrodpress博客导入hexo"><a href="#3-从wrodpress博客导入hexo" class="headerlink" title="3.从wrodpress博客导入hexo"></a>3.从wrodpress博客导入hexo</h2><p>请参考这篇文章 <a href="http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/" target="_blank" rel="external">http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/</a><br>写的比较详细，一步步来是可以从wordpress导入hexo的，</p>
+<h2 id="3-从wrodpress博客导入hexo"><a href="#3-从wrodpress博客导入hexo" class="headerlink" title="3.从wrodpress博客导入hexo"></a>3.从wrodpress博客导入hexo</h2><p>请参考这篇文章 <a href="http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/" target="_blank" rel="noopener">http://zhaiyz.com/2014/04/12/migrator-blogs-from-wordpress-to-hexo/</a><br>写的比较详细，一步步来是可以从wordpress导入hexo的，</p>
 <p>hexo-migrator-wordpress这个插件非常强大，我遇到的问题是因为我的wordpress文章标题都是汉字，插件导过来的时候有的比较简单给翻译为英文了，有的无法翻译就变得文件名超长类似uuid的样子…</p>
 <p>所以需要自己再编辑一下文件名，把之前写的文章标题都取个英文名字，这个过程很有趣，顺便回顾了一下这几年的经历，顺便附一张图<br><img src="http://ww2.sinaimg.cn/bmiddle/7d6b7503jw1f2z1khtacej20bi0m8q5x.jpg" alt=""></p>
 
@@ -512,7 +508,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -530,7 +526,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

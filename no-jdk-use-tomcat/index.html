@@ -63,20 +63,19 @@
 
 
 
-<meta name="description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……)
-但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
+<meta name="description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……) 但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
+<meta name="keywords" content="技术宅,java,Tomcat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="不装JDK不配置JAVA_HOME，使用Tomcat 6.x">
 <meta property="og:url" content="http://www.jarjar.cn/no-jdk-use-tomcat/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……)
-但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
+<meta property="og:description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……) 但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww3.sinaimg.cn/bmiddle/a74ecc4cjw1e3oftiudh8j.jpg">
 <meta property="og:updated_time" content="2016-04-16T12:32:07.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不装JDK不配置JAVA_HOME，使用Tomcat 6.x">
-<meta name="twitter:description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……)
-但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
+<meta name="twitter:description" content="windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……) 但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（如何配置java环境变量），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，">
 <meta name="twitter:image" content="http://ww3.sinaimg.cn/bmiddle/a74ecc4cjw1e3oftiudh8j.jpg">
 
 
@@ -358,7 +357,7 @@
 
       
         <p>windows下很多程序不用配置JAVA_HOME，是因为那些程序是直接通过读取注册表里边的路径获取了jdk的路径，比如eclipse(码农必备……)</p>
-<p>但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（<a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank" rel="external">如何配置java环境变量</a>），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，这个另当别论……</p>
+<p>但是Tomcat必须配置JAVA_HOME变量才能使用，给客户装每次也需要装一遍JDK然后再设置各种环境变量属性（<a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank" rel="noopener">如何配置java环境变量</a>），当然大型项目都是用websphere或者weblogic这种中间件，那是因为这种客户一般有钱买大型服务器，这个另当别论……</p>
 <p>今天简单看了一下，其实通过在tomcat下bin目录在startup.bat配置下JAVA_HOME，就可以不再安装JDK和配置环境变量，也可以使用tomcat了，当然这个必须拷贝一份绿色的jdk</p>
 <p>具体配置：</p>
 <p>1、下载绿色版的apache-tomcat-6.0.35解压到任何目录，把jdk放入tomcat路径下，我用的jdk1.5</p>
@@ -368,7 +367,7 @@
 <p>经实验，tomcat正常启动。</p>
 <p>当然您可以使用其他的绿色环境如JTM等，但是不太适合研究和修改。</p>
 <p>我打包放到网盘，大家可自己下载使用，里面带有jdk1.5</p>
-<p><a href="http://pan.baidu.com/share/link?shareid=523015&amp;uk=1914144947" target="_blank" rel="external">百度网盘</a> <a href="http://www.400gb.com/file/19168177" target="_blank" rel="external">其他网盘</a></p>
+<p><a href="http://pan.baidu.com/share/link?shareid=523015&amp;uk=1914144947" target="_blank" rel="noopener">百度网盘</a> <a href="http://www.400gb.com/file/19168177" target="_blank" rel="noopener">其他网盘</a></p>
 
       
     </div>
@@ -510,7 +509,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -528,7 +527,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

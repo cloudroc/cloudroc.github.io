@@ -63,19 +63,18 @@
 
 
 
-<meta name="description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。
-首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
+<meta name="description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。 首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
+<meta name="keywords" content="solr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用solr4.0+tika索引文件夹下所有文件">
 <meta property="og:url" content="http://www.jarjar.cn/import-folder-of-documnet-with-solar4.0-plus-tika/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。
-首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
+<meta property="og:description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。 首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-06-08T05:20:23.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用solr4.0+tika索引文件夹下所有文件">
-<meta name="twitter:description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。
-首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
+<meta name="twitter:description" content="配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从这里找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。 首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目">
 
 
 
@@ -344,10 +343,10 @@
       
 
       
-        <p>配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从<a href="https://tika.apache.org/1.3/formats.html" target="_blank" rel="external">这里</a>找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。</p>
+        <p>配合tika（一个开源的文档分析器，你就可以从各种格式的文件.doc,.pdf中提取文本），solr能够爬取和索引服务器文件夹下的所有文件，而且整合的成本很低。Apache tika是个独立的项目，你可以从<a href="https://tika.apache.org/1.3/formats.html" target="_blank" rel="noopener">这里</a>找到所有tika的资料和它支持的文件格式，你可以直接将它用在你的java或者.net的项目之中。</p>
 <p>首先你需要从Solr4.0的dist文件夹下复制所有你需要的jar包到你的core的lib目录下，我强烈建议你将contrib\extraction\lib下所有的文件复制到你的core下面，这样你可以随意使用solr自带的 Data Import Handler，并且避免缺少jar包的各种错误。</p>
 <p>以下为一个文档导入的配置文件示例：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;dataConfig&gt;  </span><br><span class="line">    &lt;dataSource type="BinFileDataSource" /&gt;</span><br><span class="line">        &lt;document&gt;</span><br><span class="line">            &lt;entity name="files" dataSource="null" rootEntity="false"</span><br><span class="line">            processor="FileListEntityProcessor"</span><br><span class="line">            baseDir="c:/temp/docs" fileName=".*\.(doc)|(pdf)|(docx)"</span><br><span class="line">            onError="skip"</span><br><span class="line">            recursive="true"&gt;</span><br><span class="line">                &lt;field column="fileAbsolutePath" name="id" /&gt;</span><br><span class="line">                &lt;field column="fileSize" name="size" /&gt;</span><br><span class="line">                &lt;field column="fileLastModified" name="lastModified" /&gt;</span><br><span class="line">                 </span><br><span class="line">                &lt;entity</span><br><span class="line">                    name="documentImport"</span><br><span class="line">                    processor="TikaEntityProcessor"</span><br><span class="line">                    url="$&#123;files.fileAbsolutePath&#125;"</span><br><span class="line">                    format="text"&gt;</span><br><span class="line">                    &lt;field column="file" name="fileName"/&gt;</span><br><span class="line">                    &lt;field column="Author" name="author" meta="true"/&gt;</span><br><span class="line">                    &lt;field column="title" name="title" meta="true"/&gt;</span><br><span class="line">                    &lt;field column="text" name="text"/&gt;</span><br><span class="line"> </span><br><span class="line">                &lt;/entity&gt;</span><br><span class="line">        &lt;/entity&gt;</span><br><span class="line">        &lt;/document&gt; </span><br><span class="line">&lt;/dataConfig&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;dataConfig&gt;  </span><br><span class="line">    &lt;dataSource type=<span class="string">"BinFileDataSource"</span> /&gt;</span><br><span class="line">        &lt;document&gt;</span><br><span class="line">            &lt;entity name=<span class="string">"files"</span> dataSource=<span class="string">"null"</span> rootEntity=<span class="string">"false"</span></span><br><span class="line">            processor=<span class="string">"FileListEntityProcessor"</span></span><br><span class="line">            baseDir=<span class="string">"c:/temp/docs"</span> fileName=<span class="string">".*\.(doc)|(pdf)|(docx)"</span></span><br><span class="line">            onError=<span class="string">"skip"</span></span><br><span class="line">            recursive=<span class="string">"true"</span>&gt;</span><br><span class="line">                &lt;field column=<span class="string">"fileAbsolutePath"</span> name=<span class="string">"id"</span> /&gt;</span><br><span class="line">                &lt;field column=<span class="string">"fileSize"</span> name=<span class="string">"size"</span> /&gt;</span><br><span class="line">                &lt;field column=<span class="string">"fileLastModified"</span> name=<span class="string">"lastModified"</span> /&gt;</span><br><span class="line">                 </span><br><span class="line">                &lt;entity</span><br><span class="line">                    name=<span class="string">"documentImport"</span></span><br><span class="line">                    processor=<span class="string">"TikaEntityProcessor"</span></span><br><span class="line">                    url=<span class="string">"$&#123;files.fileAbsolutePath&#125;"</span></span><br><span class="line">                    format=<span class="string">"text"</span>&gt;</span><br><span class="line">                    &lt;field column=<span class="string">"file"</span> name=<span class="string">"fileName"</span>/&gt;</span><br><span class="line">                    &lt;field column=<span class="string">"Author"</span> name=<span class="string">"author"</span> meta=<span class="string">"true"</span>/&gt;</span><br><span class="line">                    &lt;field column=<span class="string">"title"</span> name=<span class="string">"title"</span> meta=<span class="string">"true"</span>/&gt;</span><br><span class="line">                    &lt;field column=<span class="string">"text"</span> name=<span class="string">"text"</span>/&gt;</span><br><span class="line"> </span><br><span class="line">                &lt;/entity&gt;</span><br><span class="line">        &lt;/entity&gt;</span><br><span class="line">        &lt;/document&gt; </span><br><span class="line">&lt;/dataConfig&gt;</span><br></pre></td></tr></table></figure>
 <p>这是最简单的一个导入示例，但是有几个关键点你需要明白：</p>
 <p>在我所有的schema.xml中都有一个名字叫id的field，它能帮助你唯一确认一个文件，然后它也能告诉solr你这个文件的索引是要被插入还是更新。然后就是用了一个叫做BinFiledataSource的数据源，这个东西可以很容易的抓取到文件夹下文档的一些标准值，如文档名称、最后修改日期，但是它并不能获取文档里面的文本内容。这个叫BinFiledataSource的数据源有个文档实例叫做“files”，并且有个rootEntity=”false”，这个原因是它并非真正的根节点实例，而根节点实例才是用来对文档进行索引的，其他的属性仅仅简单的说明哪个文件夹要去被抓取，文档的扩展名等，但是这些都可以被solr进行索引的。</p>
 <p>所以我决定在实例中使用以下3个属性加入索引：<br><strong>1.fileAbsolutePath:</strong> 这个可以用来作为文档的唯一索引<br><strong>2.fileSize:</strong> 文档的大小<br><strong>3.fileLastModified:</strong> 文档的最后修改时间</p>
@@ -493,7 +492,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -511,7 +510,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

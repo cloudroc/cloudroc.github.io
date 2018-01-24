@@ -63,29 +63,19 @@
 
 
 
-<meta name="description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~
-守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~
-简单梳理下思路：
-
-0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
+<meta name="description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~ 守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~ 简单梳理下思路：  0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
+<meta name="keywords" content="httpclient,爬虫,java,jsoup,百度贴吧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java采集百度贴吧邮箱地址，Httpclient+Jsoup">
 <meta property="og:url" content="http://www.jarjar.cn/java-tieba-mail-crawl/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~
-守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~
-简单梳理下思路：
-
-0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
+<meta property="og:description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~ 守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~ 简单梳理下思路：  0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/a74eed94jw1e3xkxsgfssj20dv08pacf.jpg">
 <meta property="og:updated_time" content="2016-04-16T12:25:46.831Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java采集百度贴吧邮箱地址，Httpclient+Jsoup">
-<meta name="twitter:description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~
-守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~
-简单梳理下思路：
-
-0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
+<meta name="twitter:description" content="这几天经常看百度贴吧。发现好多童鞋为了求各种资源，都很自觉的留下了自己的邮箱，但是楼主到底发不发可要看楼主心情了~ 守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~ 简单梳理下思路：  0.某个贴吧首页:http://tieba.baidu.com/f?kw=XXXXXX1.遍历所有的展示页面:百度贴吧第几页的">
 <meta name="twitter:image" content="http://ww3.sinaimg.cn/large/a74eed94jw1e3xkxsgfssj20dv08pacf.jpg">
 
 
@@ -370,7 +360,7 @@
 <p>守着这么多邮箱，总是会让人衍生出很多想法的，具体怎么利用不知道，但是咱会写采集器啊…… 用的还是Httpclient+Jsoup没的说~</p>
 <p>简单梳理下思路：</p>
 <blockquote>
-<p>0.某个贴吧首页:<a href="http://tieba.baidu.com/f?kw=XXXXXX" target="_blank" rel="external">http://tieba.baidu.com/f?kw=XXXXXX</a><br>1.遍历所有的展示页面:百度贴吧第几页的规则为在对应贴吧url后面加上 &amp;pn=100 &amp;pn=150 ，每50个一页<br>2.遍历每个页面的帖子地址<br>3.对于每个帖子，不断获取“下一页”链接，同时收集email地址写入文件</p>
+<p>0.某个贴吧首页:<a href="http://tieba.baidu.com/f?kw=XXXXXX" target="_blank" rel="noopener">http://tieba.baidu.com/f?kw=XXXXXX</a><br>1.遍历所有的展示页面:百度贴吧第几页的规则为在对应贴吧url后面加上 &amp;pn=100 &amp;pn=150 ，每50个一页<br>2.遍历每个页面的帖子地址<br>3.对于每个帖子，不断获取“下一页”链接，同时收集email地址写入文件</p>
 <p>Think more 如何实现多线程？<br>最后那个多线程貌似不太好实现，基本木法实现，百度帖子地址很难有规律可循，除非遍历整个百度帖吧所有帖子，而不是某个贴吧的帖子。</p>
 </blockquote>
 <p>昨天晚上简单写了写，用“愣头青”的方式不断遍历，早上看了下，竟然采集到了大概11万左右的邮箱地址^^ ，当然很多应该是重复的，我只统计@的数量~</p>
@@ -525,7 +515,7 @@ http://pan.baidu.com/share/link?shareid=534479&uk=1914144947
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -543,7 +533,7 @@ http://pan.baidu.com/share/link?shareid=534479&uk=1914144947
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

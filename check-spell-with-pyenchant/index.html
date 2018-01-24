@@ -63,28 +63,18 @@
 
 
 
-<meta name="description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。
-
-好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。
-
-如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
+<meta name="description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。  好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。  如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
+<meta name="keywords" content="python,PyEnchant">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用PyEnchant库进行单词拼写检查">
 <meta property="og:url" content="http://www.jarjar.cn/check-spell-with-pyenchant/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。
-
-好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。
-
-如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
+<meta property="og:description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。  好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。  如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-02-28T10:42:52.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用PyEnchant库进行单词拼写检查">
-<meta name="twitter:description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。
-
-好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。
-
-如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
+<meta name="twitter:description" content="尝试想象这样一个业务场景：有人收集了一个庞大的、快要到期的域名列表，想从其中筛选出来适合作为自己域名的域名，因为确实存在很多无意义的垃圾域名，如果肉眼去寻找的话，非常费力气。  好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。  如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用python中的PyEnchan">
 
 
 
@@ -358,7 +348,7 @@
 <p>好的域名的一个标准就是最好是一个完整的英文单词，或者有意义的英文单词组合。</p>
 </blockquote>
 <p>如果仅将这个作为一个校验原则，那么需要一种API将这些域名列表进行拼写校验，将有意义的域名筛选出来，这里推荐使用<strong>python中的PyEnchant库</strong>进行单词拼写检查。</p>
-<h1 id="PyEnchant安装"><a href="#PyEnchant安装" class="headerlink" title="PyEnchant安装"></a>PyEnchant安装</h1><p>官网有安装教程，附上链接<a href="http://pythonhosted.org/pyenchant/download.html" target="_blank" rel="external">http://pythonhosted.org/pyenchant/download.html</a><br>这里主要碰到的问题是，官方仅提供了32bit的windows安装包，安装之后64位windows系统会报错</p>
+<h1 id="PyEnchant安装"><a href="#PyEnchant安装" class="headerlink" title="PyEnchant安装"></a>PyEnchant安装</h1><p>官网有安装教程，附上链接<a href="http://pythonhosted.org/pyenchant/download.html" target="_blank" rel="noopener">http://pythonhosted.org/pyenchant/download.html</a><br>这里主要碰到的问题是，官方仅提供了32bit的windows安装包，安装之后64位windows系统会报错</p>
 <p>64位系统报错信息：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;_test.py&quot;, line 1, in &lt;module&gt;</span><br><span class="line">    import enchant</span><br><span class="line">  File &quot;C:\Python27\lib\site-packages\enchant\__init__.py&quot;, line 92, in &lt;module&gt;</span><br><span class="line">    from enchant import _enchant as _e</span><br><span class="line">  File &quot;C:\Python27\lib\site-packages\enchant\_enchant.py&quot;, line 102, in &lt;module&gt;</span><br><span class="line">    raise WinError()</span><br><span class="line">WindowsError: [Error 193] &lt;no description&gt;</span><br></pre></td></tr></table></figure>
 <p>所以最好使用Linux或者Mac作为开发系统…</p>
@@ -520,7 +510,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -538,7 +528,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

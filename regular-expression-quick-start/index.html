@@ -63,22 +63,18 @@
 
 
 
-<meta name="description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。
-
-grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
+<meta name="description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。  grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
+<meta name="keywords" content="教程,re,正则表达式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式快速入门教程">
 <meta property="og:url" content="http://www.jarjar.cn/regular-expression-quick-start/index.html">
 <meta property="og:site_name" content="凤凰山笔记">
-<meta property="og:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。
-
-grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
+<meta property="og:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。  grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-12-23T08:05:25.635Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式快速入门教程">
-<meta name="twitter:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。
-
-grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
+<meta name="twitter:description" content="摘要：看到一本书写的正则表达式教程非常好，特地整理出来，本教程结合linux的grep命令，可以让大家迅速掌握正则表达式。正则在nginx配置和linux命令中应用非常广泛。这个正则教程尽量写的简单，肯定可以看懂，如果碰到一个很繁琐的正则表达式，只要耐心分析肯定可以看懂，因为正则表达式都是一段一段的，不像复杂抽象的程序逻辑。  grep是常用的linux命令，用于字符串数据的对比，将符合条件的字">
 
 
 
@@ -354,7 +350,7 @@ grep是常用的linux命令，用于字符串数据的对比，将符合条件�
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep &apos;搜寻字符串&apos; filename</span><br></pre></td></tr></table></figure>
 <p>一个栗子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep &apos;root&apos; /etc/passwd</span><br><span class="line">root:x:0:0:root:/root:/bin/bash</span><br></pre></td></tr></table></figure></p>
 <p>为了显示突出显示效果也就是高亮效果，可以定义grep别名：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep=&apos;grep --color=auto&apos;</span><br></pre></td></tr></table></figure></p>
-<p>范例文件<a href="http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt" target="_blank" rel="external">r.txt</a></p>
+<p>范例文件<a href="http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt" target="_blank" rel="noopener">r.txt</a></p>
 <a id="more"></a>
 <p>在linux可以通过下列命令获取：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">wget http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt</span><br><span class="line">mv regular_express.txt r.txt</span><br><span class="line">cat r.txt</span><br><span class="line">&quot;Open Source&quot; is a good mechanism to develop programs.</span><br><span class="line">apple is my favorite food.</span><br><span class="line">Football game is not use feet only.</span><br><span class="line">this dress doesn&apos;t fit me.</span><br><span class="line">However, this dress is about $ 3183 dollars.</span><br><span class="line">GNU is free air not free beer.</span><br><span class="line">Her hair is very beauty.</span><br><span class="line">I can&apos;t finish the test.</span><br><span class="line">Oh! The soup taste good.</span><br><span class="line">motorcycle is cheap than car.</span><br><span class="line">This window is clear.</span><br><span class="line">the symbol &apos;*&apos; is represented as start.</span><br><span class="line">Oh!     My god!</span><br><span class="line">The gd software is a library for drafting programs.</span><br><span class="line">You are the best is mean you are the no. 1.</span><br><span class="line">The world &lt;Happy&gt; is the same with &quot;glad&quot;.</span><br><span class="line">I like dog.</span><br><span class="line">google is the best tools for search keyword.</span><br><span class="line">goooooogle yes!</span><br><span class="line">go! go! Let&apos;s go.</span><br><span class="line"># I am VBird</span><br></pre></td></tr></table></figure></p>
 <p>这文件一共22行，最后一行是空白行。</p>
@@ -609,7 +605,7 @@ grep是常用的linux命令，用于字符串数据的对比，将符合条件�
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">157</span>
+                <span class="site-state-item-count">158</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -627,7 +623,7 @@ grep是常用的linux命令，用于字符串数据的对比，将符合条件�
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">114</span>
+                <span class="site-state-item-count">115</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
